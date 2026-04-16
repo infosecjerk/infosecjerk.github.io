@@ -1,0 +1,21 @@
+name: Infosec Jerk Subtask
+description: Add a new Infosec Jerk Subtask.
+title: "[SUBTASK]: "
+description: Add a new Infosec Jerk Subtask.
+labels: ["subtask", "backlog"]
+assignees:
+  - infosecjerk
+projects: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form to create a new Infosec Jerk Subtask Entry
+  - type: textarea
+    id: notes
+    attributes:
+      label: Subtask Notes
+      description: Describe the subtask
+      placeholder: Describe the subtask
+    validations:
+      required: false
