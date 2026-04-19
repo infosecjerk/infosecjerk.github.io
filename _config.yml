@@ -1,2 +1,13 @@
 permalink: /:year/:month/:day/:title.html
 highlighter: rouge
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      entity: Infosec Jerk
+      title: Infosec Jerk
+      subtitle: Secure AI Agency
+      quip: Automation.  Efficiency.  Uncertain Science.
+      logo_url: https://avatars.githubusercontent.com/u/276657749
