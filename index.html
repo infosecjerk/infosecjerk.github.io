@@ -6,3 +6,18 @@ entity: Infosec Jerk
 quip: Automation.  Efficiency.  Uncertain Science.
 logo_url: https://avatars.githubusercontent.com/u/276657749
 ---
+
+{% assign post = site.posts.first %}
+<div class='section_header'>Latest</div>
+<div id="post">
+
+    <div class='title'>
+        <a href="{{ post.url }}">{{ post.title }}</a>
+    </div>
+    <div class='date'>
+        {{ post.date | date_to_string }}
+    </div> 
+    <div id='body'>
+        {{ post.content }}
+    </div>
+</div>
