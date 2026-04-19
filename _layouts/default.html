@@ -3,9 +3,14 @@
     {% include html_head.html %}
     <body>
         <div class="container-fluid wrapper">
-            {% include site_header.html %}
+            <div class="row header">
+                {% include site_header.html %}
+            </div>
             <div class="content">
                 {{ content }}
+            </div>
+            <div class="row footer">
+                {% include site_footer.html %}
             </div>
         </div>
     </body>

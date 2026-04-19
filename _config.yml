@@ -13,4 +13,5 @@ defaults:
       subtitle: Secure AI Agency
       quip: Automation.  Efficiency.  Uncertain Science.
       logo_url: https://avatars.githubusercontent.com/u/276657749
-      layout_css: /www/css/www.css
+      layout_css: /www/css/layout.css
+      style_css: /www/css/style.css

@@ -1,0 +1,92 @@
+
+body {
+    font-family: "proxima-nova", sans-serif;
+    text-align: center;
+    font-size: 100%;
+    font-weight: 100;
+}
+
+
+/*
+ * **************************************************************** WRAPPER
+*/
+
+.wrapper{
+    background-color: #fff;
+    border: 1px solid #f0f3f7;
+    -webkit-transition: -webkit-transform .25s cubic-bezier(.215,.61,.355,1),-webkit-box-shadow .25s cubic-bezier(.215,.61,.355,1);
+    transition: -webkit-transform .25s cubic-bezier(.215,.61,.355,1),-webkit-box-shadow .25s cubic-bezier(.215,.61,.355,1);
+    transition: transform .25s cubic-bezier(.215,.61,.355,1),box-shadow .25s cubic-bezier(.215,.61,.355,1);
+    transition: transform .25s cubic-bezier(.215,.61,.355,1),box-shadow .25s cubic-bezier(.215,.61,.355,1),-webkit-transform .25s cubic-bezier(.215,.61,.355,1),-webkit-box-shadow .25s cubic-bezier(.215,.61,.355,1);
+    padding:  30px;
+
+    filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.2));
+
+    max-width: 90%;
+
+    margin-top:  5%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top:  2%;
+
+    border-radius:  0.25em;
+
+    background-image: url("../img/ux/swatch_ur.png");
+    background-position: top right;
+    background-repeat: no-repeat;
+}
+
+/*
+ * **************************************************************** HEADER
+*/
+
+.header {
+    margin: 15px;
+    margin-bottom: 40px;
+}
+
+.header .feature-img {
+    height: 200px;
+}
+
+.header .top-left {}
+.header .top-center {}
+.header .top-center .pfp {margin:15px;}
+.header .top-center .title {font-size : 2.5em;}
+.header .top-center .subtitle {font-size : 1.5em;}
+
+.header .top-right {
+    display: inline-table;
+    width: 100%;
+    vertical-align: middle;
+}
+
+.header .top-right p {
+    float: right;
+    text-align: right;
+    width: 90%;
+}
+
+
+/*
+ * **************************************************************** CONTENT
+*/
+
+.content {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+.content .middle-left {}
+.content .middle-center {}
+.content .middle-right {}
+
+
+/*
+ * **************************************************************** FOOTER
+*/
+
+.footer {}
+.footer .bottom-left {}
+.footer .bottom-center {}
+.footer .bottom-right {}
