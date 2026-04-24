@@ -1,5 +1,6 @@
-
 body {
+    background: var(--bg-color);
+    color: var(--text-color);
     font-family: "proxima-nova", sans-serif;
     text-align: center;
     font-size: 100%;
