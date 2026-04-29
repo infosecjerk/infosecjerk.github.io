@@ -1,7 +1,5 @@
 
-.post {
-	border: 1px solid red;
-}
+.post {}
 .post .title {}
 .post .date {}
 .post .body {}
