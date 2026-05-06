@@ -2,12 +2,13 @@
 :root {
 
     --primary-bg-color: #f6f8fb;
+    --primary-bg-grey: #eeeeee;
+    --primary-bg-lt: #f6f8fb;
     --primary-text-color: #111827;
+    --title-text-color: #1565C0;
     --muted-text-color: #6b7280;
-
     --card-bg-color: #ffffff;
     --card-text-color: #111827;
-
     --common-border: #e5e7eb;
 
     --critical: #ef5351;
@@ -15,6 +16,7 @@
     --medium: #ffd600;
     --low: #2bb6f6;
     --info: #1565C0;
+    --action: #8c63cc;
 
     --common-shadow: 0 1px 2px rgba(0,0,0,0.04);
     --common-shadow-hover: 0 6px 18px rgba(0,0,0,0.08);
@@ -32,6 +34,15 @@ body {
     font-weight: 100;
 }
 
+
+pre {
+    border: 1px solid var(--common-border);
+    border-radius: var(--common-radius);
+    max-height: 200px;
+    overflow: scroll;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
 
 /*
  * ****************************************************** WRAPPER LAYOUT
@@ -123,7 +134,25 @@ body {
 */
 
 .post {}
-.post .title {}
+
+h1.post-title {
+    font-size: 1.5rem;
+    text-align: left;
+    color: var(--title-text-color);
+    padding-top: 15px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+}
+
+h3.post-date {
+    font-size: 1rem;
+    text-align: left;
+    color: var(--muted-text-color);
+    padding-top: 5px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+}
+
 .post .date {}
 .post .body {}
 
@@ -228,6 +257,132 @@ h4 {
 
 .card-body {}
 
+
+/*
+ * ****************************************************** CVE
+*/
+
+.cve-row {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 15px;
+    text-align: left;
+}
+
+h2.cve-title {
+    color: var(--title-text-color);
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+h4.cve-vuln {
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+}
+
+.cve-description {
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+}
+
+.cve-action {
+    border: 1px solid var(--action);
+    border-radius: var(--common-radius);
+
+    padding: 15px;
+
+    background-image: url("../img/icons/action.png");
+    background-size: 50px;
+    background-repeat: no-repeat;
+    background-position: 15px center;
+    padding-left: 90px;
+
+
+}
+
+.cve-date {
+
+    background-image: url("../img/icons/calendar.png");
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: 0 -2px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding-left: 25px;
+
+}
+
+.cve-status {
+    background: var(--primary-bg-lt);
+    padding: 7px;
+    border-radius: var(--common-radius);
+
+}
+
+table.cve-vendor-table {
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+table.cve-vendor-table td.cve-vendor-label {
+    font-size: 85%;
+    font-weight: bold;
+    border-bottom: 1px solid var(--common-border);
+}
+
+table.cve-vendor-table td.cve-vendor-name {
+    padding-bottom: 25px;
+}
+
+table.cve-vendor-table td.cve-product-label {
+    font-size: 85%;
+    font-weight: bold;
+    border-bottom: 1px solid var(--common-border);
+}
+
+table.cve-vendor-table td.cve-product-name {
+    padding-bottom: 25px;
+}
+
+
+table.cve-epss-table {
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+table.cve-epss-table td.cve-epss-label {
+    font-size: 85%;
+    font-weight: bold;
+    border-bottom: 1px solid var(--common-border);
+}
+
+table.cve-epss-table td.cve-epss-value {
+    padding-bottom: 25px;
+}
+
+table.cve-epss-table td.cve-percentile-label {
+    font-size: 85%;
+    font-weight: bold;
+    border-bottom: 1px solid var(--common-border);
+}
+
+table.cve-epss-table td.cve-percentile-name {
+    padding-bottom: 25px;
+}
+
+
+.cvss_metrics {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.cvss_metrics .v31 {}
+.cvss_metrics .v30 {}
+.cvss_metrics .v40 {}
+.cvss_metrics .v2 {}
 
 /*
  * ****************************************************** KPI & STATISTICS
