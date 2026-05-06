@@ -7,16 +7,12 @@ tags:
 <div class="post">
     <div class="row report-row">
         <div class="col-md-12 report-col-12">
-            <div class='title'>
-                <h1 class="display-4">
-                    CISA KEVC :: 2026-05-01
-                </h1>
-            </div>
-            <div class='date'>
-                <p class="display-8">
-                    Report Window: 2026-05-01 to 2026-4-24
-                </p>
-            </div>
+            <h1 class='post-title'>
+                CISA KEVC :: 2026-05-01
+            </h1>
+            <h3 class='post-date'>
+                Report Window: 2026-05-01 to 2026-4-24
+            </h3>
         </div>
     </div>
     <div class="lead"></div>
@@ -174,21 +170,27 @@ tags:
             <div class="row report-row">
                 <!-- CVE CONTENT -->
                 <div class="col-md-9 report-col-9">
-                    <div class="row" id="CVE-2024-1708">
+                    <div class="row cve-row" id="CVE-2024-1708">
                         <div class="col-md-9">
                             <div class="cve-post">
                                 <h2 class="cve-title">CVE-2024-1708</h2>
                                 <h4 class="cve-vuln display-10">ConnectWise ScreenConnect Path Traversal Vulnerability</h4>
-                                <h6 class="cve-date">2026-04-28</h6>
-                                <h6>Description</h6>
-                                <p class="cve-description">ConnectWise ScreenConnect contains a path traversal vulnerability which could allow an attacker to execute remote code or directly impact confidential data and critical systems.</p>
-                                <h6>Required Action</h6>
-                                <p class="cve-action">Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.</p><p class="cve-description">
-                                    <b>Status:</b> 
-                Analyzed
-                                </p><h6>cvssMetricV31</h6>
-                                <pre>
-                    [
+                                <h6 class="cve-date">Date Added: 2026-04-28</h6>
+
+
+                                <div class="cve-description">
+                                    <h6>Description</h6>
+                                    <p class="cve-description-p">ConnectWise ScreenConnect contains a path traversal vulnerability which could allow an attacker to execute remote code or directly impact confidential data and critical systems.</p>
+                                </div>
+
+
+                                <div class="cve-action">
+                                    <h6>Required Action</h6>
+                                    <p class="cve-action-p">Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.</p>
+                                </div><div class="cvss_metrics"><div class="v31">
+                                        <h6>cvssMetricV31</h6>
+                                        <pre>
+                        [
   {
     "cvssData": {
       "attackComplexity": "LOW",
@@ -230,35 +232,57 @@ tags:
     "type": "Primary"
   }
 ]
-                                </pre></div>
+                                        </pre>
+                                    </div></div>
                         </div>
-                        <div class="col-md-3">
-                            <p class="cve-vendor"><b>Vendor: </b> ConnectWise</p>
-                            <p class="cve-product"><b>Product: </b> ScreenConnect</p>
-                            <p class="cve-epss"><b>EPSS:</b></p>
-                            <pre>{
-  "cve": "CVE-2024-1708",
-  "date": "2026-05-03",
-  "epss": "0.848820000",
-  "percentile": "0.993520000"
-}</pre>
-                         </div>
+                        <div class="col-md-3"><div class="cve-status">
+                                <b>Status:</b>
+                Analyzed
+                            </div><table class="cve-vendor-table">
+                                <tbody>
+                                    <tr>
+                                        <td class="cve-vendor-label">Vendor:</td>
+                                        <td class="cve-vendor-name">ConnectWise</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="cve-product-label">Product:</td>
+                                        <td class="cve-product-name">ConnectWise</td>
+                                    </tr>
+                                </tbody>
+                            </table><table class="cve-epss-table">
+                                <tbody>
+                                    <tr>
+                                        <td class="cve-epss-label">EPSS:</td>
+                                        <td class="cve-epss-value">0.848820000</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="cve-percentile-label">Percentile:</td>
+                                        <td class="cve-percentile-value">0.993520000</td>
+                                    </tr>
+                                </tbody>
+                            </table></div>
                     </div>
-                    <div class="row" id="CVE-2024-57726">
+                    <div class="row cve-row" id="CVE-2024-57726">
                         <div class="col-md-9">
                             <div class="cve-post">
                                 <h2 class="cve-title">CVE-2024-57726</h2>
                                 <h4 class="cve-vuln display-10">SimpleHelp Missing Authorization Vulnerability</h4>
-                                <h6 class="cve-date">2026-04-24</h6>
-                                <h6>Description</h6>
-                                <p class="cve-description">SimpleHelp contains a missing authorization vulnerability that could allow low-privileged technicians to create API keys with excessive permissions. These API keys can be used to escalate privileges to the server admin role.</p>
-                                <h6>Required Action</h6>
-                                <p class="cve-action">Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.</p><p class="cve-description">
-                                    <b>Status:</b> 
-                Analyzed
-                                </p><h6>cvssMetricV31</h6>
-                                <pre>
-                    [
+                                <h6 class="cve-date">Date Added: 2026-04-24</h6>
+
+
+                                <div class="cve-description">
+                                    <h6>Description</h6>
+                                    <p class="cve-description-p">SimpleHelp contains a missing authorization vulnerability that could allow low-privileged technicians to create API keys with excessive permissions. These API keys can be used to escalate privileges to the server admin role.</p>
+                                </div>
+
+
+                                <div class="cve-action">
+                                    <h6>Required Action</h6>
+                                    <p class="cve-action-p">Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.</p>
+                                </div><div class="cvss_metrics"><div class="v31">
+                                        <h6>cvssMetricV31</h6>
+                                        <pre>
+                        [
   {
     "cvssData": {
       "attackComplexity": "LOW",
@@ -300,35 +324,57 @@ tags:
     "type": "Secondary"
   }
 ]
-                                </pre></div>
+                                        </pre>
+                                    </div></div>
                         </div>
-                        <div class="col-md-3">
-                            <p class="cve-vendor"><b>Vendor: </b> SimpleHelp </p>
-                            <p class="cve-product"><b>Product: </b> SimpleHelp</p>
-                            <p class="cve-epss"><b>EPSS:</b></p>
-                            <pre>{
-  "cve": "CVE-2024-57726",
-  "date": "2026-05-03",
-  "epss": "0.491610000",
-  "percentile": "0.977970000"
-}</pre>
-                         </div>
+                        <div class="col-md-3"><div class="cve-status">
+                                <b>Status:</b>
+                Analyzed
+                            </div><table class="cve-vendor-table">
+                                <tbody>
+                                    <tr>
+                                        <td class="cve-vendor-label">Vendor:</td>
+                                        <td class="cve-vendor-name">SimpleHelp </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="cve-product-label">Product:</td>
+                                        <td class="cve-product-name">SimpleHelp </td>
+                                    </tr>
+                                </tbody>
+                            </table><table class="cve-epss-table">
+                                <tbody>
+                                    <tr>
+                                        <td class="cve-epss-label">EPSS:</td>
+                                        <td class="cve-epss-value">0.491610000</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="cve-percentile-label">Percentile:</td>
+                                        <td class="cve-percentile-value">0.977970000</td>
+                                    </tr>
+                                </tbody>
+                            </table></div>
                     </div>
-                    <div class="row" id="CVE-2024-57728">
+                    <div class="row cve-row" id="CVE-2024-57728">
                         <div class="col-md-9">
                             <div class="cve-post">
                                 <h2 class="cve-title">CVE-2024-57728</h2>
                                 <h4 class="cve-vuln display-10">SimpleHelp Path Traversal Vulnerability</h4>
-                                <h6 class="cve-date">2026-04-24</h6>
-                                <h6>Description</h6>
-                                <p class="cve-description">SimpleHelp contains a path traversal vulnerability that allows admin users to upload arbitrary files anywhere on the file system by uploading a crafted zip file (i.e. zip slip). This can be exploited to execute arbitrary code on the host in the context of the SimpleHelp server user.</p>
-                                <h6>Required Action</h6>
-                                <p class="cve-action">Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.</p><p class="cve-description">
-                                    <b>Status:</b> 
-                Analyzed
-                                </p><h6>cvssMetricV31</h6>
-                                <pre>
-                    [
+                                <h6 class="cve-date">Date Added: 2026-04-24</h6>
+
+
+                                <div class="cve-description">
+                                    <h6>Description</h6>
+                                    <p class="cve-description-p">SimpleHelp contains a path traversal vulnerability that allows admin users to upload arbitrary files anywhere on the file system by uploading a crafted zip file (i.e. zip slip). This can be exploited to execute arbitrary code on the host in the context of the SimpleHelp server user.</p>
+                                </div>
+
+
+                                <div class="cve-action">
+                                    <h6>Required Action</h6>
+                                    <p class="cve-action-p">Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.</p>
+                                </div><div class="cvss_metrics"><div class="v31">
+                                        <h6>cvssMetricV31</h6>
+                                        <pre>
+                        [
   {
     "cvssData": {
       "attackComplexity": "LOW",
@@ -370,35 +416,57 @@ tags:
     "type": "Secondary"
   }
 ]
-                                </pre></div>
+                                        </pre>
+                                    </div></div>
                         </div>
-                        <div class="col-md-3">
-                            <p class="cve-vendor"><b>Vendor: </b> SimpleHelp </p>
-                            <p class="cve-product"><b>Product: </b> SimpleHelp</p>
-                            <p class="cve-epss"><b>EPSS:</b></p>
-                            <pre>{
-  "cve": "CVE-2024-57728",
-  "date": "2026-05-03",
-  "epss": "0.593270000",
-  "percentile": "0.982570000"
-}</pre>
-                         </div>
+                        <div class="col-md-3"><div class="cve-status">
+                                <b>Status:</b>
+                Analyzed
+                            </div><table class="cve-vendor-table">
+                                <tbody>
+                                    <tr>
+                                        <td class="cve-vendor-label">Vendor:</td>
+                                        <td class="cve-vendor-name">SimpleHelp </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="cve-product-label">Product:</td>
+                                        <td class="cve-product-name">SimpleHelp </td>
+                                    </tr>
+                                </tbody>
+                            </table><table class="cve-epss-table">
+                                <tbody>
+                                    <tr>
+                                        <td class="cve-epss-label">EPSS:</td>
+                                        <td class="cve-epss-value">0.593270000</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="cve-percentile-label">Percentile:</td>
+                                        <td class="cve-percentile-value">0.982570000</td>
+                                    </tr>
+                                </tbody>
+                            </table></div>
                     </div>
-                    <div class="row" id="CVE-2024-7399">
+                    <div class="row cve-row" id="CVE-2024-7399">
                         <div class="col-md-9">
                             <div class="cve-post">
                                 <h2 class="cve-title">CVE-2024-7399</h2>
                                 <h4 class="cve-vuln display-10">Samsung MagicINFO 9 Server Path Traversal Vulnerability</h4>
-                                <h6 class="cve-date">2026-04-24</h6>
-                                <h6>Description</h6>
-                                <p class="cve-description">Samsung MagicINFO 9 Server contains a path traversal vulnerability that could allow an attacker to write arbitrary files as system authority.</p>
-                                <h6>Required Action</h6>
-                                <p class="cve-action">Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.</p><p class="cve-description">
-                                    <b>Status:</b> 
-                Analyzed
-                                </p><h6>cvssMetricV31</h6>
-                                <pre>
-                    [
+                                <h6 class="cve-date">Date Added: 2026-04-24</h6>
+
+
+                                <div class="cve-description">
+                                    <h6>Description</h6>
+                                    <p class="cve-description-p">Samsung MagicINFO 9 Server contains a path traversal vulnerability that could allow an attacker to write arbitrary files as system authority.</p>
+                                </div>
+
+
+                                <div class="cve-action">
+                                    <h6>Required Action</h6>
+                                    <p class="cve-action-p">Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.</p>
+                                </div><div class="cvss_metrics"><div class="v31">
+                                        <h6>cvssMetricV31</h6>
+                                        <pre>
+                        [
   {
     "cvssData": {
       "attackComplexity": "LOW",
@@ -440,35 +508,57 @@ tags:
     "type": "Primary"
   }
 ]
-                                </pre></div>
+                                        </pre>
+                                    </div></div>
                         </div>
-                        <div class="col-md-3">
-                            <p class="cve-vendor"><b>Vendor: </b> Samsung</p>
-                            <p class="cve-product"><b>Product: </b> MagicINFO 9 Server</p>
-                            <p class="cve-epss"><b>EPSS:</b></p>
-                            <pre>{
-  "cve": "CVE-2024-7399",
-  "date": "2026-05-03",
-  "epss": "0.813000000",
-  "percentile": "0.991760000"
-}</pre>
-                         </div>
+                        <div class="col-md-3"><div class="cve-status">
+                                <b>Status:</b>
+                Analyzed
+                            </div><table class="cve-vendor-table">
+                                <tbody>
+                                    <tr>
+                                        <td class="cve-vendor-label">Vendor:</td>
+                                        <td class="cve-vendor-name">Samsung</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="cve-product-label">Product:</td>
+                                        <td class="cve-product-name">Samsung</td>
+                                    </tr>
+                                </tbody>
+                            </table><table class="cve-epss-table">
+                                <tbody>
+                                    <tr>
+                                        <td class="cve-epss-label">EPSS:</td>
+                                        <td class="cve-epss-value">0.813000000</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="cve-percentile-label">Percentile:</td>
+                                        <td class="cve-percentile-value">0.991760000</td>
+                                    </tr>
+                                </tbody>
+                            </table></div>
                     </div>
-                    <div class="row" id="CVE-2025-29635">
+                    <div class="row cve-row" id="CVE-2025-29635">
                         <div class="col-md-9">
                             <div class="cve-post">
                                 <h2 class="cve-title">CVE-2025-29635</h2>
                                 <h4 class="cve-vuln display-10">D-Link DIR-823X Command Injection Vulnerability</h4>
-                                <h6 class="cve-date">2026-04-24</h6>
-                                <h6>Description</h6>
-                                <p class="cve-description">D-Link DIR-823X contains a command injection vulnerability that allows an authorized attacker to execute arbitrary commands on remote devices by sending a POST request to /goform/set_prohibiting via the corresponding function. The impacted product could be end-of-life (EoL) and/or end-of-service (EoS). Users should discontinue product utilization.</p>
-                                <h6>Required Action</h6>
-                                <p class="cve-action">Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.</p><p class="cve-description">
-                                    <b>Status:</b> 
-                Analyzed
-                                </p><h6>cvssMetricV31</h6>
-                                <pre>
-                    [
+                                <h6 class="cve-date">Date Added: 2026-04-24</h6>
+
+
+                                <div class="cve-description">
+                                    <h6>Description</h6>
+                                    <p class="cve-description-p">D-Link DIR-823X contains a command injection vulnerability that allows an authorized attacker to execute arbitrary commands on remote devices by sending a POST request to /goform/set_prohibiting via the corresponding function. The impacted product could be end-of-life (EoL) and/or end-of-service (EoS). Users should discontinue product utilization.</p>
+                                </div>
+
+
+                                <div class="cve-action">
+                                    <h6>Required Action</h6>
+                                    <p class="cve-action-p">Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.</p>
+                                </div><div class="cvss_metrics"><div class="v31">
+                                        <h6>cvssMetricV31</h6>
+                                        <pre>
+                        [
   {
     "cvssData": {
       "attackComplexity": "LOW",
@@ -490,35 +580,57 @@ tags:
     "type": "Secondary"
   }
 ]
-                                </pre></div>
+                                        </pre>
+                                    </div></div>
                         </div>
-                        <div class="col-md-3">
-                            <p class="cve-vendor"><b>Vendor: </b> D-Link</p>
-                            <p class="cve-product"><b>Product: </b> DIR-823X</p>
-                            <p class="cve-epss"><b>EPSS:</b></p>
-                            <pre>{
-  "cve": "CVE-2025-29635",
-  "date": "2026-05-03",
-  "epss": "0.658130000",
-  "percentile": "0.985220000"
-}</pre>
-                         </div>
+                        <div class="col-md-3"><div class="cve-status">
+                                <b>Status:</b>
+                Analyzed
+                            </div><table class="cve-vendor-table">
+                                <tbody>
+                                    <tr>
+                                        <td class="cve-vendor-label">Vendor:</td>
+                                        <td class="cve-vendor-name">D-Link</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="cve-product-label">Product:</td>
+                                        <td class="cve-product-name">D-Link</td>
+                                    </tr>
+                                </tbody>
+                            </table><table class="cve-epss-table">
+                                <tbody>
+                                    <tr>
+                                        <td class="cve-epss-label">EPSS:</td>
+                                        <td class="cve-epss-value">0.658130000</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="cve-percentile-label">Percentile:</td>
+                                        <td class="cve-percentile-value">0.985220000</td>
+                                    </tr>
+                                </tbody>
+                            </table></div>
                     </div>
-                    <div class="row" id="CVE-2026-31431">
+                    <div class="row cve-row" id="CVE-2026-31431">
                         <div class="col-md-9">
                             <div class="cve-post">
                                 <h2 class="cve-title">CVE-2026-31431</h2>
                                 <h4 class="cve-vuln display-10">Linux Kernel Incorrect Resource Transfer Between Spheres Vulnerability</h4>
-                                <h6 class="cve-date">2026-05-01</h6>
-                                <h6>Description</h6>
-                                <p class="cve-description">Linux Kernel contains an incorrect resource transfer between spheres vulnerability that could allow for privilege escalation.</p>
-                                <h6>Required Action</h6>
-                                <p class="cve-action">"Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.</p><p class="cve-description">
-                                    <b>Status:</b> 
-                Undergoing Analysis
-                                </p><h6>cvssMetricV31</h6>
-                                <pre>
-                    [
+                                <h6 class="cve-date">Date Added: 2026-05-01</h6>
+
+
+                                <div class="cve-description">
+                                    <h6>Description</h6>
+                                    <p class="cve-description-p">Linux Kernel contains an incorrect resource transfer between spheres vulnerability that could allow for privilege escalation.</p>
+                                </div>
+
+
+                                <div class="cve-action">
+                                    <h6>Required Action</h6>
+                                    <p class="cve-action-p">"Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.</p>
+                                </div><div class="cvss_metrics"><div class="v31">
+                                        <h6>cvssMetricV31</h6>
+                                        <pre>
+                        [
   {
     "cvssData": {
       "attackComplexity": "LOW",
@@ -540,35 +652,57 @@ tags:
     "type": "Secondary"
   }
 ]
-                                </pre></div>
+                                        </pre>
+                                    </div></div>
                         </div>
-                        <div class="col-md-3">
-                            <p class="cve-vendor"><b>Vendor: </b> Linux</p>
-                            <p class="cve-product"><b>Product: </b> Kernel</p>
-                            <p class="cve-epss"><b>EPSS:</b></p>
-                            <pre>{
-  "cve": "CVE-2026-31431",
-  "date": "2026-05-03",
-  "epss": "0.039760000",
-  "percentile": "0.884360000"
-}</pre>
-                         </div>
+                        <div class="col-md-3"><div class="cve-status">
+                                <b>Status:</b>
+                Undergoing Analysis
+                            </div><table class="cve-vendor-table">
+                                <tbody>
+                                    <tr>
+                                        <td class="cve-vendor-label">Vendor:</td>
+                                        <td class="cve-vendor-name">Linux</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="cve-product-label">Product:</td>
+                                        <td class="cve-product-name">Linux</td>
+                                    </tr>
+                                </tbody>
+                            </table><table class="cve-epss-table">
+                                <tbody>
+                                    <tr>
+                                        <td class="cve-epss-label">EPSS:</td>
+                                        <td class="cve-epss-value">0.039760000</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="cve-percentile-label">Percentile:</td>
+                                        <td class="cve-percentile-value">0.884360000</td>
+                                    </tr>
+                                </tbody>
+                            </table></div>
                     </div>
-                    <div class="row" id="CVE-2026-32202">
+                    <div class="row cve-row" id="CVE-2026-32202">
                         <div class="col-md-9">
                             <div class="cve-post">
                                 <h2 class="cve-title">CVE-2026-32202</h2>
                                 <h4 class="cve-vuln display-10">Microsoft Windows Protection Mechanism Failure Vulnerability</h4>
-                                <h6 class="cve-date">2026-04-28</h6>
-                                <h6>Description</h6>
-                                <p class="cve-description">Microsoft Windows Shell contains a protection mechanism failure vulnerability that allows an unauthorized attacker to perform spoofing over a network.</p>
-                                <h6>Required Action</h6>
-                                <p class="cve-action">Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.</p><p class="cve-description">
-                                    <b>Status:</b> 
-                Analyzed
-                                </p><h6>cvssMetricV31</h6>
-                                <pre>
-                    [
+                                <h6 class="cve-date">Date Added: 2026-04-28</h6>
+
+
+                                <div class="cve-description">
+                                    <h6>Description</h6>
+                                    <p class="cve-description-p">Microsoft Windows Shell contains a protection mechanism failure vulnerability that allows an unauthorized attacker to perform spoofing over a network.</p>
+                                </div>
+
+
+                                <div class="cve-action">
+                                    <h6>Required Action</h6>
+                                    <p class="cve-action-p">Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.</p>
+                                </div><div class="cvss_metrics"><div class="v31">
+                                        <h6>cvssMetricV31</h6>
+                                        <pre>
+                        [
   {
     "cvssData": {
       "attackComplexity": "LOW",
@@ -590,35 +724,57 @@ tags:
     "type": "Secondary"
   }
 ]
-                                </pre></div>
+                                        </pre>
+                                    </div></div>
                         </div>
-                        <div class="col-md-3">
-                            <p class="cve-vendor"><b>Vendor: </b> Microsoft</p>
-                            <p class="cve-product"><b>Product: </b> Windows</p>
-                            <p class="cve-epss"><b>EPSS:</b></p>
-                            <pre>{
-  "cve": "CVE-2026-32202",
-  "date": "2026-05-03",
-  "epss": "0.071930000",
-  "percentile": "0.916240000"
-}</pre>
-                         </div>
+                        <div class="col-md-3"><div class="cve-status">
+                                <b>Status:</b>
+                Analyzed
+                            </div><table class="cve-vendor-table">
+                                <tbody>
+                                    <tr>
+                                        <td class="cve-vendor-label">Vendor:</td>
+                                        <td class="cve-vendor-name">Microsoft</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="cve-product-label">Product:</td>
+                                        <td class="cve-product-name">Microsoft</td>
+                                    </tr>
+                                </tbody>
+                            </table><table class="cve-epss-table">
+                                <tbody>
+                                    <tr>
+                                        <td class="cve-epss-label">EPSS:</td>
+                                        <td class="cve-epss-value">0.071930000</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="cve-percentile-label">Percentile:</td>
+                                        <td class="cve-percentile-value">0.916240000</td>
+                                    </tr>
+                                </tbody>
+                            </table></div>
                     </div>
-                    <div class="row" id="CVE-2026-41940">
+                    <div class="row cve-row" id="CVE-2026-41940">
                         <div class="col-md-9">
                             <div class="cve-post">
                                 <h2 class="cve-title">CVE-2026-41940</h2>
                                 <h4 class="cve-vuln display-10">WebPros cPanel &amp; WHM and WP2 (WordPress Squared) Missing Authentication for Critical Function Vulnerability</h4>
-                                <h6 class="cve-date">2026-04-30</h6>
-                                <h6>Description</h6>
-                                <p class="cve-description">WebPros cPanel & WHM (WebHost Manager) and WP2 (WordPress Squared) contain an authentication bypass vulnerability in the login flow that allows unauthenticated remote attackers to gain unauthorized access to the control panel.</p>
-                                <h6>Required Action</h6>
-                                <p class="cve-action">Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.</p><p class="cve-description">
-                                    <b>Status:</b> 
-                Analyzed
-                                </p><h6>cvssMetricV31</h6>
-                                <pre>
-                    [
+                                <h6 class="cve-date">Date Added: 2026-04-30</h6>
+
+
+                                <div class="cve-description">
+                                    <h6>Description</h6>
+                                    <p class="cve-description-p">WebPros cPanel & WHM (WebHost Manager) and WP2 (WordPress Squared) contain an authentication bypass vulnerability in the login flow that allows unauthenticated remote attackers to gain unauthorized access to the control panel.</p>
+                                </div>
+
+
+                                <div class="cve-action">
+                                    <h6>Required Action</h6>
+                                    <p class="cve-action-p">Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.</p>
+                                </div><div class="cvss_metrics"><div class="v31">
+                                        <h6>cvssMetricV31</h6>
+                                        <pre>
+                        [
   {
     "cvssData": {
       "attackComplexity": "LOW",
@@ -640,19 +796,35 @@ tags:
     "type": "Secondary"
   }
 ]
-                                </pre></div>
+                                        </pre>
+                                    </div></div>
                         </div>
-                        <div class="col-md-3">
-                            <p class="cve-vendor"><b>Vendor: </b> WebPros</p>
-                            <p class="cve-product"><b>Product: </b> cPanel & WHM and WP2 (WordPress Squared)</p>
-                            <p class="cve-epss"><b>EPSS:</b></p>
-                            <pre>{
-  "cve": "CVE-2026-41940",
-  "date": "2026-05-03",
-  "epss": "0.283610000",
-  "percentile": "0.965310000"
-}</pre>
-                         </div>
+                        <div class="col-md-3"><div class="cve-status">
+                                <b>Status:</b>
+                Analyzed
+                            </div><table class="cve-vendor-table">
+                                <tbody>
+                                    <tr>
+                                        <td class="cve-vendor-label">Vendor:</td>
+                                        <td class="cve-vendor-name">WebPros</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="cve-product-label">Product:</td>
+                                        <td class="cve-product-name">WebPros</td>
+                                    </tr>
+                                </tbody>
+                            </table><table class="cve-epss-table">
+                                <tbody>
+                                    <tr>
+                                        <td class="cve-epss-label">EPSS:</td>
+                                        <td class="cve-epss-value">0.283610000</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="cve-percentile-label">Percentile:</td>
+                                        <td class="cve-percentile-value">0.965310000</td>
+                                    </tr>
+                                </tbody>
+                            </table></div>
                     </div>
                 </div>
                 <!-- END CVE CONTENT -->
