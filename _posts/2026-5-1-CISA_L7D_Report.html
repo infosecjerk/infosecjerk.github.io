@@ -131,7 +131,7 @@ tags:
                                         <div class="card-body">
                                             <div class="label">CVEs (L7D)</div>
                                             <div class="value">
-        8
+        9
                                             </div>
                                         </div>
                                     </div>
@@ -155,7 +155,7 @@ tags:
                                         <div class="card-body">
                                             <div class="label">CWEs (L7D)</div>
                                             <div class="value">
-        7
+        8
                                             </div>
                                         </div>
                                     </div>
@@ -230,6 +230,7 @@ tags:
 ]
                                         </pre>
                                     </div></div></div>
+                    </div>
                         <div class="col-md-3"><div class="cve-status">
                                 <b>Status:</b>
                 Analyzed
@@ -250,11 +251,11 @@ tags:
                                     <tr>
                                         <td class="cve-epss-label">EPSS:</td>
                                     </tr><tr>
-                                        <td class="cve-epss-value">0.848820000</td>
+                                        <td class="cve-epss-value">0.839510000</td>
                                     </tr><tr>
                                         <td class="cve-percentile-label">Percentile:</td>
                                     </tr><tr>
-                                        <td class="cve-percentile-value">0.993520000</td>
+                                        <td class="cve-percentile-value">0.993090000</td>
                                     </tr>
                                 </tbody>
                             </table></div>
@@ -319,6 +320,7 @@ tags:
 ]
                                         </pre>
                                     </div></div></div>
+                    </div>
                         <div class="col-md-3"><div class="cve-status">
                                 <b>Status:</b>
                 Analyzed
@@ -408,6 +410,7 @@ tags:
 ]
                                         </pre>
                                     </div></div></div>
+                    </div>
                         <div class="col-md-3"><div class="cve-status">
                                 <b>Status:</b>
                 Analyzed
@@ -432,7 +435,7 @@ tags:
                                     </tr><tr>
                                         <td class="cve-percentile-label">Percentile:</td>
                                     </tr><tr>
-                                        <td class="cve-percentile-value">0.982570000</td>
+                                        <td class="cve-percentile-value">0.982540000</td>
                                     </tr>
                                 </tbody>
                             </table></div>
@@ -497,6 +500,7 @@ tags:
 ]
                                         </pre>
                                     </div></div></div>
+                    </div>
                         <div class="col-md-3"><div class="cve-status">
                                 <b>Status:</b>
                 Analyzed
@@ -521,7 +525,7 @@ tags:
                                     </tr><tr>
                                         <td class="cve-percentile-label">Percentile:</td>
                                     </tr><tr>
-                                        <td class="cve-percentile-value">0.991760000</td>
+                                        <td class="cve-percentile-value">0.991780000</td>
                                     </tr>
                                 </tbody>
                             </table></div>
@@ -566,6 +570,7 @@ tags:
 ]
                                         </pre>
                                     </div></div></div>
+                    </div>
                         <div class="col-md-3"><div class="cve-status">
                                 <b>Status:</b>
                 Analyzed
@@ -586,11 +591,103 @@ tags:
                                     <tr>
                                         <td class="cve-epss-label">EPSS:</td>
                                     </tr><tr>
-                                        <td class="cve-epss-value">0.658130000</td>
+                                        <td class="cve-epss-value">0.667550000</td>
                                     </tr><tr>
                                         <td class="cve-percentile-label">Percentile:</td>
                                     </tr><tr>
-                                        <td class="cve-percentile-value">0.985220000</td>
+                                        <td class="cve-percentile-value">0.985590000</td>
+                                    </tr>
+                                </tbody>
+                            </table></div>
+                    </div>
+                    <div class="row cve-row" id="CVE-2026-0300">
+                        <div class="col-md-9">
+                            <div class="cve-post">
+                                <h2 class="cve-title">CVE-2026-0300</h2>
+                                <h4 class="cve-vuln display-10">Palo Alto Networks PAN-OS Out-of-bounds Write Vulnerability</h4>
+                                <h6 class="cve-date">Date Added: 2026-05-06</h6>
+                                <div class="cve-description">
+                                    <h6>Description</h6>
+                                    <p class="cve-description-p">Palo Alto Networks PAN-OS contains an out-of-bounds write vulnerability in the User-ID Authentication Portal (aka Captive Portal) service that can allow an unauthenticated attacker to execute arbitrary code with root privileges on the PA-Series and VM-Series firewalls by sending specially crafted packets.</p>
+                                </div>
+                                <div class="cve-action">
+                                    <h6>Required Action</h6>
+                                    <p class="cve-action-p">Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.    Until the vendor releases an official fix, the following workaround should be implemented:  - Restrict User-ID Authentication Portal access to only trusted zones.  - Disable User-ID Authentication Portal if not required.</p>
+                                </div><div class="cvss_metrics"><div class="v40">
+                                        <h6>cvssMetricV40</h6>
+                                        <pre>
+                    [
+  {
+    "cvssData": {
+      "Automatable": "YES",
+      "Recovery": "USER",
+      "Safety": "NOT_DEFINED",
+      "attackComplexity": "LOW",
+      "attackRequirements": "NONE",
+      "attackVector": "NETWORK",
+      "availabilityRequirement": "NOT_DEFINED",
+      "baseScore": 9.3,
+      "baseSeverity": "CRITICAL",
+      "confidentialityRequirement": "NOT_DEFINED",
+      "exploitMaturity": "ATTACKED",
+      "integrityRequirement": "NOT_DEFINED",
+      "modifiedAttackComplexity": "NOT_DEFINED",
+      "modifiedAttackRequirements": "NOT_DEFINED",
+      "modifiedAttackVector": "NOT_DEFINED",
+      "modifiedPrivilegesRequired": "NOT_DEFINED",
+      "modifiedSubAvailabilityImpact": "NOT_DEFINED",
+      "modifiedSubConfidentialityImpact": "NOT_DEFINED",
+      "modifiedSubIntegrityImpact": "NOT_DEFINED",
+      "modifiedUserInteraction": "NOT_DEFINED",
+      "modifiedVulnAvailabilityImpact": "NOT_DEFINED",
+      "modifiedVulnConfidentialityImpact": "NOT_DEFINED",
+      "modifiedVulnIntegrityImpact": "NOT_DEFINED",
+      "privilegesRequired": "NONE",
+      "providerUrgency": "RED",
+      "subAvailabilityImpact": "NONE",
+      "subConfidentialityImpact": "LOW",
+      "subIntegrityImpact": "LOW",
+      "userInteraction": "NONE",
+      "valueDensity": "CONCENTRATED",
+      "vectorString": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:L/SI:L/SA:N/E:A/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:Y/R:U/V:C/RE:M/U:Red",
+      "version": "4.0",
+      "vulnAvailabilityImpact": "HIGH",
+      "vulnConfidentialityImpact": "HIGH",
+      "vulnIntegrityImpact": "HIGH",
+      "vulnerabilityResponseEffort": "MODERATE"
+    },
+    "source": "psirt@paloaltonetworks.com",
+    "type": "Secondary"
+  }
+]
+                                        </pre>
+                                    </div></div></div>
+                    </div>
+                        <div class="col-md-3"><div class="cve-status">
+                                <b>Status:</b>
+                Received
+                            </div><table class="cve-vendor-table">
+                                <tbody>
+                                    <tr>
+                                        <td class="cve-vendor-label">Vendor:</td>
+                                    </tr><tr>
+                                        <td class="cve-vendor-name">Palo Alto Networks</td>
+                                    </tr><tr>
+                                        <td class="cve-product-label">Product:</td>
+                                    </tr><tr>
+                                        <td class="cve-product-name">Palo Alto Networks</td>
+                                    </tr>
+                                </tbody>
+                            </table><table class="cve-epss-table">
+                                <tbody>
+                                    <tr>
+                                        <td class="cve-epss-label">EPSS:</td>
+                                    </tr><tr>
+                                        <td class="cve-epss-value"></td>
+                                    </tr><tr>
+                                        <td class="cve-percentile-label">Percentile:</td>
+                                    </tr><tr>
+                                        <td class="cve-percentile-value"></td>
                                     </tr>
                                 </tbody>
                             </table></div>
@@ -635,9 +732,10 @@ tags:
 ]
                                         </pre>
                                     </div></div></div>
+                    </div>
                         <div class="col-md-3"><div class="cve-status">
                                 <b>Status:</b>
-                Undergoing Analysis
+                Analyzed
                             </div><table class="cve-vendor-table">
                                 <tbody>
                                     <tr>
@@ -655,11 +753,11 @@ tags:
                                     <tr>
                                         <td class="cve-epss-label">EPSS:</td>
                                     </tr><tr>
-                                        <td class="cve-epss-value">0.039760000</td>
+                                        <td class="cve-epss-value">0.012280000</td>
                                     </tr><tr>
                                         <td class="cve-percentile-label">Percentile:</td>
                                     </tr><tr>
-                                        <td class="cve-percentile-value">0.884360000</td>
+                                        <td class="cve-percentile-value">0.792390000</td>
                                     </tr>
                                 </tbody>
                             </table></div>
@@ -704,6 +802,7 @@ tags:
 ]
                                         </pre>
                                     </div></div></div>
+                    </div>
                         <div class="col-md-3"><div class="cve-status">
                                 <b>Status:</b>
                 Analyzed
@@ -728,7 +827,7 @@ tags:
                                     </tr><tr>
                                         <td class="cve-percentile-label">Percentile:</td>
                                     </tr><tr>
-                                        <td class="cve-percentile-value">0.916240000</td>
+                                        <td class="cve-percentile-value">0.916280000</td>
                                     </tr>
                                 </tbody>
                             </table></div>
@@ -773,6 +872,7 @@ tags:
 ]
                                         </pre>
                                     </div></div></div>
+                    </div>
                         <div class="col-md-3"><div class="cve-status">
                                 <b>Status:</b>
                 Analyzed
@@ -793,11 +893,11 @@ tags:
                                     <tr>
                                         <td class="cve-epss-label">EPSS:</td>
                                     </tr><tr>
-                                        <td class="cve-epss-value">0.283610000</td>
+                                        <td class="cve-epss-value">0.265520000</td>
                                     </tr><tr>
                                         <td class="cve-percentile-label">Percentile:</td>
                                     </tr><tr>
-                                        <td class="cve-percentile-value">0.965310000</td>
+                                        <td class="cve-percentile-value">0.963570000</td>
                                     </tr>
                                 </tbody>
                             </table></div>
@@ -812,6 +912,7 @@ tags:
                             <thead><tr><th>Vendor</th><th>Count</th></tr></thead>
                             <tbody>
                                 <tr><td>SimpleHelp </td><td>2</td></tr>
+                                <tr><td>Palo Alto Networks</td><td>1</td></tr>
                                 <tr><td>Linux</td><td>1</td></tr>
                                 <tr><td>WebPros</td><td>1</td></tr>
                                 <tr><td>ConnectWise</td><td>1</td></tr>
@@ -829,6 +930,7 @@ tags:
                             <tbody>
                             <tr><td>2026-04-24</td><td>4</td></tr>
                             <tr><td>2026-04-28</td><td>2</td></tr>
+                            <tr><td>2026-05-06</td><td>1</td></tr>
                             <tr><td>2026-05-01</td><td>1</td></tr>
                             <tr><td>2026-04-30</td><td>1</td></tr>
                             </tbody>
