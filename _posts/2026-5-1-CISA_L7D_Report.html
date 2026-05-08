@@ -2,6 +2,7 @@
 layout: post
 title: CISA KEVC L7D - 2026 - 5 - 1
 tags:
+- CVE-2026-6973
 - CVE-2026-0300
 - CVE-2026-31431
 - CVE-2026-41940
@@ -11,6 +12,7 @@ tags:
 - CVE-2024-7399
 - CVE-2024-57728
 - CVE-2024-57726
+- CWE-20
 - CWE-787
 - CWE-669
 - CWE-306
@@ -94,7 +96,7 @@ tags:
                                         <div class="card-body">
                                             <div class="label">MEDIUM (L7D)</div>
                                             <div class="value">
-                    3
+                    4
                                             </div>
                                         </div>
                                     </div>
@@ -148,7 +150,7 @@ tags:
                                         <div class="card-body">
                                             <div class="label">CVEs (L7D)</div>
                                             <div class="value">
-        9
+        10
                                             </div>
                                         </div>
                                     </div>
@@ -172,7 +174,7 @@ tags:
                                         <div class="card-body">
                                             <div class="label">CWEs (L7D)</div>
                                             <div class="value">
-        8
+        9
                                             </div>
                                         </div>
                                     </div>
@@ -272,7 +274,7 @@ tags:
                                     </tr><tr>
                                         <td class="cve-percentile-label">Percentile:</td>
                                     </tr><tr>
-                                        <td class="cve-percentile-value">0.993090000</td>
+                                        <td class="cve-percentile-value">0.993100000</td>
                                     </tr>
                                 </tbody>
                             </table></div>
@@ -452,7 +454,7 @@ tags:
                                     </tr><tr>
                                         <td class="cve-percentile-label">Percentile:</td>
                                     </tr><tr>
-                                        <td class="cve-percentile-value">0.982540000</td>
+                                        <td class="cve-percentile-value">0.982560000</td>
                                     </tr>
                                 </tbody>
                             </table></div>
@@ -542,7 +544,7 @@ tags:
                                     </tr><tr>
                                         <td class="cve-percentile-label">Percentile:</td>
                                     </tr><tr>
-                                        <td class="cve-percentile-value">0.991780000</td>
+                                        <td class="cve-percentile-value">0.991790000</td>
                                     </tr>
                                 </tbody>
                             </table></div>
@@ -630,51 +632,29 @@ tags:
                                 <div class="cve-action">
                                     <h6>Required Action</h6>
                                     <p class="cve-action-p">Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.    Until the vendor releases an official fix, the following workaround should be implemented:  - Restrict User-ID Authentication Portal access to only trusted zones.  - Disable User-ID Authentication Portal if not required.</p>
-                                </div><div class="cvss_metrics"><div class="v40">
-                                        <h6>cvssMetricV40</h6>
+                                </div><div class="cvss_metrics"><div class="v31">
+                                        <h6>cvssMetricV31</h6>
                                         <pre>
                     [
   {
     "cvssData": {
-      "Automatable": "YES",
-      "Recovery": "USER",
-      "Safety": "NOT_DEFINED",
       "attackComplexity": "LOW",
-      "attackRequirements": "NONE",
       "attackVector": "NETWORK",
-      "availabilityRequirement": "NOT_DEFINED",
-      "baseScore": 9.3,
+      "availabilityImpact": "HIGH",
+      "baseScore": 9.8,
       "baseSeverity": "CRITICAL",
-      "confidentialityRequirement": "NOT_DEFINED",
-      "exploitMaturity": "ATTACKED",
-      "integrityRequirement": "NOT_DEFINED",
-      "modifiedAttackComplexity": "NOT_DEFINED",
-      "modifiedAttackRequirements": "NOT_DEFINED",
-      "modifiedAttackVector": "NOT_DEFINED",
-      "modifiedPrivilegesRequired": "NOT_DEFINED",
-      "modifiedSubAvailabilityImpact": "NOT_DEFINED",
-      "modifiedSubConfidentialityImpact": "NOT_DEFINED",
-      "modifiedSubIntegrityImpact": "NOT_DEFINED",
-      "modifiedUserInteraction": "NOT_DEFINED",
-      "modifiedVulnAvailabilityImpact": "NOT_DEFINED",
-      "modifiedVulnConfidentialityImpact": "NOT_DEFINED",
-      "modifiedVulnIntegrityImpact": "NOT_DEFINED",
+      "confidentialityImpact": "HIGH",
+      "integrityImpact": "HIGH",
       "privilegesRequired": "NONE",
-      "providerUrgency": "RED",
-      "subAvailabilityImpact": "NONE",
-      "subConfidentialityImpact": "LOW",
-      "subIntegrityImpact": "LOW",
+      "scope": "UNCHANGED",
       "userInteraction": "NONE",
-      "valueDensity": "CONCENTRATED",
-      "vectorString": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:L/SI:L/SA:N/E:A/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:Y/R:U/V:C/RE:M/U:Red",
-      "version": "4.0",
-      "vulnAvailabilityImpact": "HIGH",
-      "vulnConfidentialityImpact": "HIGH",
-      "vulnIntegrityImpact": "HIGH",
-      "vulnerabilityResponseEffort": "MODERATE"
+      "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "version": "3.1"
     },
-    "source": "psirt@paloaltonetworks.com",
-    "type": "Secondary"
+    "exploitabilityScore": 3.9,
+    "impactScore": 5.9,
+    "source": "nvd@nist.gov",
+    "type": "Primary"
   }
 ]
                                         </pre>
@@ -682,7 +662,7 @@ tags:
                         </div>
                         <div class="col-md-3"><div class="cve-status">
                                 <b>Status:</b>
-                Received
+                Analyzed
                             </div><table class="cve-vendor-table">
                                 <tbody>
                                     <tr>
@@ -700,11 +680,11 @@ tags:
                                     <tr>
                                         <td class="cve-epss-label">EPSS:</td>
                                     </tr><tr>
-                                        <td class="cve-epss-value"></td>
+                                        <td class="cve-epss-value">0.148970000</td>
                                     </tr><tr>
                                         <td class="cve-percentile-label">Percentile:</td>
                                     </tr><tr>
-                                        <td class="cve-percentile-value"></td>
+                                        <td class="cve-percentile-value">0.945690000</td>
                                     </tr>
                                 </tbody>
                             </table></div>
@@ -752,7 +732,7 @@ tags:
                         </div>
                         <div class="col-md-3"><div class="cve-status">
                                 <b>Status:</b>
-                Analyzed
+                Modified
                             </div><table class="cve-vendor-table">
                                 <tbody>
                                     <tr>
@@ -770,11 +750,11 @@ tags:
                                     <tr>
                                         <td class="cve-epss-label">EPSS:</td>
                                     </tr><tr>
-                                        <td class="cve-epss-value">0.012280000</td>
+                                        <td class="cve-epss-value">0.039120000</td>
                                     </tr><tr>
                                         <td class="cve-percentile-label">Percentile:</td>
                                     </tr><tr>
-                                        <td class="cve-percentile-value">0.792390000</td>
+                                        <td class="cve-percentile-value">0.883590000</td>
                                     </tr>
                                 </tbody>
                             </table></div>
@@ -844,7 +824,7 @@ tags:
                                     </tr><tr>
                                         <td class="cve-percentile-label">Percentile:</td>
                                     </tr><tr>
-                                        <td class="cve-percentile-value">0.916280000</td>
+                                        <td class="cve-percentile-value">0.916390000</td>
                                     </tr>
                                 </tbody>
                             </table></div>
@@ -910,11 +890,81 @@ tags:
                                     <tr>
                                         <td class="cve-epss-label">EPSS:</td>
                                     </tr><tr>
-                                        <td class="cve-epss-value">0.265520000</td>
+                                        <td class="cve-epss-value">0.642840000</td>
                                     </tr><tr>
                                         <td class="cve-percentile-label">Percentile:</td>
                                     </tr><tr>
-                                        <td class="cve-percentile-value">0.963570000</td>
+                                        <td class="cve-percentile-value">0.984580000</td>
+                                    </tr>
+                                </tbody>
+                            </table></div>
+                    </div>
+                    <div class="row cve-row" id="CVE-2026-6973">
+                        <div class="col-md-9">
+                            <div class="cve-post">
+                                <h2 class="cve-title">CVE-2026-6973</h2>
+                                <h4 class="cve-vuln">Ivanti Endpoint Manager Mobile (EPMM) Improper Input Validation Vulnerability</h4>
+                                <h6 class="cve-date">Date Added: 2026-05-07</h6>
+                                <div class="cve-description">
+                                    <h6>Description</h6>
+                                    <p class="cve-description-p">Ivanti Endpoint Manager Mobile (EPMM) contains an improper input validation vulnerability that allows a remotely authenticated user with administrative access to achieve remote code execution.</p>
+                                </div>
+                                <div class="cve-action">
+                                    <h6>Required Action</h6>
+                                    <p class="cve-action-p">Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.</p>
+                                </div><div class="cvss_metrics"><div class="v31">
+                                        <h6>cvssMetricV31</h6>
+                                        <pre>
+                    [
+  {
+    "cvssData": {
+      "attackComplexity": "LOW",
+      "attackVector": "NETWORK",
+      "availabilityImpact": "HIGH",
+      "baseScore": 7.2,
+      "baseSeverity": "HIGH",
+      "confidentialityImpact": "HIGH",
+      "integrityImpact": "HIGH",
+      "privilegesRequired": "HIGH",
+      "scope": "UNCHANGED",
+      "userInteraction": "NONE",
+      "vectorString": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
+      "version": "3.1"
+    },
+    "exploitabilityScore": 1.2,
+    "impactScore": 5.9,
+    "source": "3c1d8aa1-5a33-4ea4-8992-aadd6440af75",
+    "type": "Secondary"
+  }
+]
+                                        </pre>
+                                    </div></div></div>
+                        </div>
+                        <div class="col-md-3"><div class="cve-status">
+                                <b>Status:</b>
+                Analyzed
+                            </div><table class="cve-vendor-table">
+                                <tbody>
+                                    <tr>
+                                        <td class="cve-vendor-label">Vendor:</td>
+                                    </tr><tr>
+                                        <td class="cve-vendor-name">Ivanti</td>
+                                    </tr><tr>
+                                        <td class="cve-product-label">Product:</td>
+                                    </tr><tr>
+                                        <td class="cve-product-name">Ivanti</td>
+                                    </tr>
+                                </tbody>
+                            </table><table class="cve-epss-table">
+                                <tbody>
+                                    <tr>
+                                        <td class="cve-epss-label">EPSS:</td>
+                                    </tr><tr>
+                                        <td class="cve-epss-value"></td>
+                                    </tr><tr>
+                                        <td class="cve-percentile-label">Percentile:</td>
+                                    </tr><tr>
+                                        <td class="cve-percentile-value"></td>
                                     </tr>
                                 </tbody>
                             </table></div>
@@ -929,6 +979,7 @@ tags:
                             <thead><tr><th>Vendor</th><th>Count</th></tr></thead>
                             <tbody>
                                 <tr><td>SimpleHelp </td><td>2</td></tr>
+                                <tr><td>Ivanti</td><td>1</td></tr>
                                 <tr><td>Palo Alto Networks</td><td>1</td></tr>
                                 <tr><td>Linux</td><td>1</td></tr>
                                 <tr><td>WebPros</td><td>1</td></tr>
@@ -945,11 +996,12 @@ tags:
                         <table class="table table-hover">
                             <thead><tr><th>Date Added</th><th>Count</th></tr></thead>
                             <tbody>
-                            <tr><td>2026-04-24</td><td>4</td></tr>
-                            <tr><td>2026-04-28</td><td>2</td></tr>
-                            <tr><td>2026-05-06</td><td>1</td></tr>
-                            <tr><td>2026-05-01</td><td>1</td></tr>
-                            <tr><td>2026-04-30</td><td>1</td></tr>
+                                <tr><td>2026-04-24</td><td>4</td></tr>
+                                <tr><td>2026-04-28</td><td>2</td></tr>
+                                <tr><td>2026-05-07</td><td>1</td></tr>
+                                <tr><td>2026-05-06</td><td>1</td></tr>
+                                <tr><td>2026-05-01</td><td>1</td></tr>
+                                <tr><td>2026-04-30</td><td>1</td></tr>
                             </tbody>
                         </table>
                     </div>
