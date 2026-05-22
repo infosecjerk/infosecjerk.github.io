@@ -2,6 +2,18 @@
 layout: post
 title: CISA KEVC L7D - 2026 - 3 - 2
 tags:
+- CVE-2025-34291
+- CVE-2026-34926
+- CVE-2008-4250
+- CVE-2009-1537
+- CVE-2009-3459
+- CVE-2010-0249
+- CVE-2010-0806
+- CVE-2026-41091
+- CVE-2026-45498
+- CVE-2026-42897
+- CVE-2026-20182
+- CVE-2026-42208
 - CVE-2026-6973
 - CVE-2026-0300
 - CVE-2026-31431
@@ -65,6 +77,17 @@ tags:
 - CVE-2022-20775
 - CVE-2026-20127
 - CVE-2026-25108
+- CWE-346
+- CWE-23
+- CWE-94
+- nan
+- CWE-119
+- CWE-416
+- CWE-399
+- CWE-59
+- CWE-79
+- CWE-287
+- CWE-89
 - CWE-20
 - CWE-787
 - CWE-669
@@ -77,17 +100,10 @@ tags:
 - CWE-1220
 - CWE-648
 - CWE-200
-- CWE-287
-- CWE-79
 - CWE-257
-- CWE-23
-- CWE-94
 - CWE-426
-- CWE-59
 - CWE-502
 - CWE-125
-- CWE-416
-- CWE-89
 - CWE-1321
 - CWE-284
 - CWE-494
@@ -96,7 +112,6 @@ tags:
 - CWE-95
 - CWE-667
 - CWE-120
-- CWE-119
 - CWE-209
 - CWE-913
 - CWE-918
@@ -141,7 +156,7 @@ tags:
                                         <div class="card-body">
                                             <div class="label">CRITICAL (L7D)</div>
                                             <div class="value">
-                    4
+                    6
                                             </div>
                                         </div>
                                     </div>
@@ -161,7 +176,7 @@ tags:
                                         <div class="card-body">
                                             <div class="label">HIGH (L7D)</div>
                                             <div class="value">
-                    9
+                    12
                                             </div>
                                         </div>
                                     </div>
@@ -181,7 +196,7 @@ tags:
                                         <div class="card-body">
                                             <div class="label">MEDIUM (L7D)</div>
                                             <div class="value">
-                    12
+                    10
                                             </div>
                                         </div>
                                     </div>
@@ -235,7 +250,7 @@ tags:
                                         <div class="card-body">
                                             <div class="label">CVEs (L7D)</div>
                                             <div class="value">
-        63
+        75
                                             </div>
                                         </div>
                                     </div>
@@ -259,7 +274,7 @@ tags:
                                         <div class="card-body">
                                             <div class="label">CWEs (L7D)</div>
                                             <div class="value">
-        41
+        44
                                             </div>
                                         </div>
                                     </div>
@@ -274,6 +289,76 @@ tags:
             <div class="row report-row">
                 <!-- CVE CONTENT -->
                 <div class="col-md-9 report-col-9">
+                    <div class="row cve-row" id="CVE-2008-4250">
+                        <div class="col-md-9">
+                            <div class="cve-post">
+                                <h2 class="cve-title">CVE-2008-4250</h2>
+                                <h4 class="cve-vuln">Microsoft Windows Buffer Overflow Vulnerability</h4>
+                                <h6 class="cve-date">Date Added: 2026-05-20</h6>
+                                <div class="cve-description">
+                                    <h6>Description</h6>
+                                    <p class="cve-description-p">Microsoft Windows contains a buffer overflow vulnerability in the Windows Server Service that allows remote attackers to execute arbitrary code via a crafted RPC request that triggers an overflow during path canonicalization.</p>
+                                </div>
+                                <div class="cve-action">
+                                    <h6>Required Action</h6>
+                                    <p class="cve-action-p">Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.</p>
+                                </div><div class="cvss_metrics"><div class="v31">
+                                        <h6>cvssMetricV31</h6>
+                                        <pre>
+                    [
+  {
+    "cvssData": {
+      "attackComplexity": "LOW",
+      "attackVector": "NETWORK",
+      "availabilityImpact": "HIGH",
+      "baseScore": 9.8,
+      "baseSeverity": "CRITICAL",
+      "confidentialityImpact": "HIGH",
+      "integrityImpact": "HIGH",
+      "privilegesRequired": "NONE",
+      "scope": "UNCHANGED",
+      "userInteraction": "NONE",
+      "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "version": "3.1"
+    },
+    "exploitabilityScore": 3.9,
+    "impactScore": 5.9,
+    "source": "134c704f-9b21-4f2e-91b3-4a467353bcc0",
+    "type": "Secondary"
+  }
+]
+                                        </pre>
+                                    </div></div></div>
+                        </div>
+                        <div class="col-md-3"><div class="cve-status">
+                                <b>Status:</b>
+                Analyzed
+                            </div><table class="cve-vendor-table">
+                                <tbody>
+                                    <tr>
+                                        <td class="cve-vendor-label">Vendor:</td>
+                                    </tr><tr>
+                                        <td class="cve-vendor-name">Microsoft</td>
+                                    </tr><tr>
+                                        <td class="cve-product-label">Product:</td>
+                                    </tr><tr>
+                                        <td class="cve-product-name">Microsoft</td>
+                                    </tr>
+                                </tbody>
+                            </table><table class="cve-epss-table">
+                                <tbody>
+                                    <tr>
+                                        <td class="cve-epss-label">EPSS:</td>
+                                    </tr><tr>
+                                        <td class="cve-epss-value">0.925260000</td>
+                                    </tr><tr>
+                                        <td class="cve-percentile-label">Percentile:</td>
+                                    </tr><tr>
+                                        <td class="cve-percentile-value">0.997470000</td>
+                                    </tr>
+                                </tbody>
+                            </table></div>
+                    </div>
                     <div class="row cve-row" id="CVE-2009-0238">
                         <div class="col-md-9">
                             <div class="cve-post">
@@ -335,11 +420,311 @@ tags:
                                     <tr>
                                         <td class="cve-epss-label">EPSS:</td>
                                     </tr><tr>
-                                        <td class="cve-epss-value">0.749130000</td>
+                                        <td class="cve-epss-value">0.728600000</td>
                                     </tr><tr>
                                         <td class="cve-percentile-label">Percentile:</td>
                                     </tr><tr>
-                                        <td class="cve-percentile-value">0.988840000</td>
+                                        <td class="cve-percentile-value">0.987960000</td>
+                                    </tr>
+                                </tbody>
+                            </table></div>
+                    </div>
+                    <div class="row cve-row" id="CVE-2009-1537">
+                        <div class="col-md-9">
+                            <div class="cve-post">
+                                <h2 class="cve-title">CVE-2009-1537</h2>
+                                <h4 class="cve-vuln">Microsoft DirectX NULL Byte Overwrite Vulnerability</h4>
+                                <h6 class="cve-date">Date Added: 2026-05-20</h6>
+                                <div class="cve-description">
+                                    <h6>Description</h6>
+                                    <p class="cve-description-p">Microsoft DirectX contains a NULL byte overwrite vulnerability in the QuickTime Movie Parser Filter in quartz.dll in DirectShow which could allow remote attackers to execute arbitrary code via a crafted QuickTime media file.</p>
+                                </div>
+                                <div class="cve-action">
+                                    <h6>Required Action</h6>
+                                    <p class="cve-action-p">Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.</p>
+                                </div><div class="cvss_metrics"><div class="v31">
+                                        <h6>cvssMetricV31</h6>
+                                        <pre>
+                    [
+  {
+    "cvssData": {
+      "attackComplexity": "LOW",
+      "attackVector": "NETWORK",
+      "availabilityImpact": "HIGH",
+      "baseScore": 8.8,
+      "baseSeverity": "HIGH",
+      "confidentialityImpact": "HIGH",
+      "integrityImpact": "HIGH",
+      "privilegesRequired": "NONE",
+      "scope": "UNCHANGED",
+      "userInteraction": "REQUIRED",
+      "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "version": "3.1"
+    },
+    "exploitabilityScore": 2.8,
+    "impactScore": 5.9,
+    "source": "134c704f-9b21-4f2e-91b3-4a467353bcc0",
+    "type": "Secondary"
+  }
+]
+                                        </pre>
+                                    </div></div></div>
+                        </div>
+                        <div class="col-md-3"><div class="cve-status">
+                                <b>Status:</b>
+                Analyzed
+                            </div><table class="cve-vendor-table">
+                                <tbody>
+                                    <tr>
+                                        <td class="cve-vendor-label">Vendor:</td>
+                                    </tr><tr>
+                                        <td class="cve-vendor-name">Microsoft</td>
+                                    </tr><tr>
+                                        <td class="cve-product-label">Product:</td>
+                                    </tr><tr>
+                                        <td class="cve-product-name">Microsoft</td>
+                                    </tr>
+                                </tbody>
+                            </table><table class="cve-epss-table">
+                                <tbody>
+                                    <tr>
+                                        <td class="cve-epss-label">EPSS:</td>
+                                    </tr><tr>
+                                        <td class="cve-epss-value">0.554900000</td>
+                                    </tr><tr>
+                                        <td class="cve-percentile-label">Percentile:</td>
+                                    </tr><tr>
+                                        <td class="cve-percentile-value">0.981080000</td>
+                                    </tr>
+                                </tbody>
+                            </table></div>
+                    </div>
+                    <div class="row cve-row" id="CVE-2009-3459">
+                        <div class="col-md-9">
+                            <div class="cve-post">
+                                <h2 class="cve-title">CVE-2009-3459</h2>
+                                <h4 class="cve-vuln">Adobe Acrobat and Reader Heap-Based Buffer Overflow Vulnerability</h4>
+                                <h6 class="cve-date">Date Added: 2026-05-20</h6>
+                                <div class="cve-description">
+                                    <h6>Description</h6>
+                                    <p class="cve-description-p">Adobe Acrobat and Reader contain a heap-based buffer overflow vulnerability which could allow remote attackers to execute arbitrary code via a crafted PDF file that triggers memory corruption.</p>
+                                </div>
+                                <div class="cve-action">
+                                    <h6>Required Action</h6>
+                                    <p class="cve-action-p">Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.</p>
+                                </div><div class="cvss_metrics"><div class="v31">
+                                        <h6>cvssMetricV31</h6>
+                                        <pre>
+                    [
+  {
+    "cvssData": {
+      "attackComplexity": "LOW",
+      "attackVector": "NETWORK",
+      "availabilityImpact": "HIGH",
+      "baseScore": 8.8,
+      "baseSeverity": "HIGH",
+      "confidentialityImpact": "HIGH",
+      "integrityImpact": "HIGH",
+      "privilegesRequired": "NONE",
+      "scope": "UNCHANGED",
+      "userInteraction": "REQUIRED",
+      "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "version": "3.1"
+    },
+    "exploitabilityScore": 2.8,
+    "impactScore": 5.9,
+    "source": "134c704f-9b21-4f2e-91b3-4a467353bcc0",
+    "type": "Secondary"
+  }
+]
+                                        </pre>
+                                    </div></div></div>
+                        </div>
+                        <div class="col-md-3"><div class="cve-status">
+                                <b>Status:</b>
+                Analyzed
+                            </div><table class="cve-vendor-table">
+                                <tbody>
+                                    <tr>
+                                        <td class="cve-vendor-label">Vendor:</td>
+                                    </tr><tr>
+                                        <td class="cve-vendor-name">Adobe</td>
+                                    </tr><tr>
+                                        <td class="cve-product-label">Product:</td>
+                                    </tr><tr>
+                                        <td class="cve-product-name">Adobe</td>
+                                    </tr>
+                                </tbody>
+                            </table><table class="cve-epss-table">
+                                <tbody>
+                                    <tr>
+                                        <td class="cve-epss-label">EPSS:</td>
+                                    </tr><tr>
+                                        <td class="cve-epss-value">0.910180000</td>
+                                    </tr><tr>
+                                        <td class="cve-percentile-label">Percentile:</td>
+                                    </tr><tr>
+                                        <td class="cve-percentile-value">0.996490000</td>
+                                    </tr>
+                                </tbody>
+                            </table></div>
+                    </div>
+                    <div class="row cve-row" id="CVE-2010-0249">
+                        <div class="col-md-9">
+                            <div class="cve-post">
+                                <h2 class="cve-title">CVE-2010-0249</h2>
+                                <h4 class="cve-vuln">Microsoft Internet Explorer Use-After-Free Vulnerability</h4>
+                                <h6 class="cve-date">Date Added: 2026-05-20</h6>
+                                <div class="cve-description">
+                                    <h6>Description</h6>
+                                    <p class="cve-description-p">Microsoft Internet Explorer contains an use-after-free vulnerability that could allow remote attackers to execute arbitrary code by accessing a pointer associated with a deleted object. The impacted product could be end-of-life (EoL) and/or end-of-service (EoS). Users should discontinue product utilization.</p>
+                                </div>
+                                <div class="cve-action">
+                                    <h6>Required Action</h6>
+                                    <p class="cve-action-p">Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.</p>
+                                </div><div class="cvss_metrics"><div class="v31">
+                                        <h6>cvssMetricV31</h6>
+                                        <pre>
+                    [
+  {
+    "cvssData": {
+      "attackComplexity": "LOW",
+      "attackVector": "NETWORK",
+      "availabilityImpact": "HIGH",
+      "baseScore": 8.8,
+      "baseSeverity": "HIGH",
+      "confidentialityImpact": "HIGH",
+      "integrityImpact": "HIGH",
+      "privilegesRequired": "NONE",
+      "scope": "UNCHANGED",
+      "userInteraction": "REQUIRED",
+      "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "version": "3.1"
+    },
+    "exploitabilityScore": 2.8,
+    "impactScore": 5.9,
+    "source": "nvd@nist.gov",
+    "type": "Primary"
+  },
+  {
+    "cvssData": {
+      "attackComplexity": "LOW",
+      "attackVector": "NETWORK",
+      "availabilityImpact": "HIGH",
+      "baseScore": 8.8,
+      "baseSeverity": "HIGH",
+      "confidentialityImpact": "HIGH",
+      "integrityImpact": "HIGH",
+      "privilegesRequired": "NONE",
+      "scope": "UNCHANGED",
+      "userInteraction": "REQUIRED",
+      "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "version": "3.1"
+    },
+    "exploitabilityScore": 2.8,
+    "impactScore": 5.9,
+    "source": "134c704f-9b21-4f2e-91b3-4a467353bcc0",
+    "type": "Secondary"
+  }
+]
+                                        </pre>
+                                    </div></div></div>
+                        </div>
+                        <div class="col-md-3"><div class="cve-status">
+                                <b>Status:</b>
+                Analyzed
+                            </div><table class="cve-vendor-table">
+                                <tbody>
+                                    <tr>
+                                        <td class="cve-vendor-label">Vendor:</td>
+                                    </tr><tr>
+                                        <td class="cve-vendor-name">Microsoft</td>
+                                    </tr><tr>
+                                        <td class="cve-product-label">Product:</td>
+                                    </tr><tr>
+                                        <td class="cve-product-name">Microsoft</td>
+                                    </tr>
+                                </tbody>
+                            </table><table class="cve-epss-table">
+                                <tbody>
+                                    <tr>
+                                        <td class="cve-epss-label">EPSS:</td>
+                                    </tr><tr>
+                                        <td class="cve-epss-value">0.886770000</td>
+                                    </tr><tr>
+                                        <td class="cve-percentile-label">Percentile:</td>
+                                    </tr><tr>
+                                        <td class="cve-percentile-value">0.995230000</td>
+                                    </tr>
+                                </tbody>
+                            </table></div>
+                    </div>
+                    <div class="row cve-row" id="CVE-2010-0806">
+                        <div class="col-md-9">
+                            <div class="cve-post">
+                                <h2 class="cve-title">CVE-2010-0806</h2>
+                                <h4 class="cve-vuln">Microsoft Internet Explorer Use-After-Free Vulnerability</h4>
+                                <h6 class="cve-date">Date Added: 2026-05-20</h6>
+                                <div class="cve-description">
+                                    <h6>Description</h6>
+                                    <p class="cve-description-p">Microsoft Internet Explorer contains an use-after-free vulnerability that could allow remote attackers to execute arbitrary code via vectors involving access to an invalid pointer after the deletion of an object. The impacted product could be end-of-life (EoL) and/or end-of-service (EoS). Users should discontinue product utilization.</p>
+                                </div>
+                                <div class="cve-action">
+                                    <h6>Required Action</h6>
+                                    <p class="cve-action-p">Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.</p>
+                                </div><div class="cvss_metrics"><div class="v31">
+                                        <h6>cvssMetricV31</h6>
+                                        <pre>
+                    [
+  {
+    "cvssData": {
+      "attackComplexity": "LOW",
+      "attackVector": "NETWORK",
+      "availabilityImpact": "HIGH",
+      "baseScore": 8.8,
+      "baseSeverity": "HIGH",
+      "confidentialityImpact": "HIGH",
+      "integrityImpact": "HIGH",
+      "privilegesRequired": "NONE",
+      "scope": "UNCHANGED",
+      "userInteraction": "REQUIRED",
+      "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "version": "3.1"
+    },
+    "exploitabilityScore": 2.8,
+    "impactScore": 5.9,
+    "source": "134c704f-9b21-4f2e-91b3-4a467353bcc0",
+    "type": "Secondary"
+  }
+]
+                                        </pre>
+                                    </div></div></div>
+                        </div>
+                        <div class="col-md-3"><div class="cve-status">
+                                <b>Status:</b>
+                Analyzed
+                            </div><table class="cve-vendor-table">
+                                <tbody>
+                                    <tr>
+                                        <td class="cve-vendor-label">Vendor:</td>
+                                    </tr><tr>
+                                        <td class="cve-vendor-name">Microsoft</td>
+                                    </tr><tr>
+                                        <td class="cve-product-label">Product:</td>
+                                    </tr><tr>
+                                        <td class="cve-product-name">Microsoft</td>
+                                    </tr>
+                                </tbody>
+                            </table><table class="cve-epss-table">
+                                <tbody>
+                                    <tr>
+                                        <td class="cve-epss-label">EPSS:</td>
+                                    </tr><tr>
+                                        <td class="cve-epss-value">0.872530000</td>
+                                    </tr><tr>
+                                        <td class="cve-percentile-label">Percentile:</td>
+                                    </tr><tr>
+                                        <td class="cve-percentile-value">0.994620000</td>
                                     </tr>
                                 </tbody>
                             </table></div>
@@ -405,11 +790,11 @@ tags:
                                     <tr>
                                         <td class="cve-epss-label">EPSS:</td>
                                     </tr><tr>
-                                        <td class="cve-epss-value">0.046390000</td>
+                                        <td class="cve-epss-value">0.040150000</td>
                                     </tr><tr>
                                         <td class="cve-percentile-label">Percentile:</td>
                                     </tr><tr>
-                                        <td class="cve-percentile-value">0.893500000</td>
+                                        <td class="cve-percentile-value">0.885850000</td>
                                     </tr>
                                 </tbody>
                             </table></div>
@@ -499,7 +884,7 @@ tags:
                                     </tr><tr>
                                         <td class="cve-percentile-label">Percentile:</td>
                                     </tr><tr>
-                                        <td class="cve-percentile-value">0.999300000</td>
+                                        <td class="cve-percentile-value">0.999290000</td>
                                     </tr>
                                 </tbody>
                             </table></div>
@@ -585,11 +970,11 @@ tags:
                                     <tr>
                                         <td class="cve-epss-label">EPSS:</td>
                                     </tr><tr>
-                                        <td class="cve-epss-value">0.762100000</td>
+                                        <td class="cve-epss-value">0.758630000</td>
                                     </tr><tr>
                                         <td class="cve-percentile-label">Percentile:</td>
                                     </tr><tr>
-                                        <td class="cve-percentile-value">0.989420000</td>
+                                        <td class="cve-percentile-value">0.989320000</td>
                                     </tr>
                                 </tbody>
                             </table></div>
@@ -679,7 +1064,7 @@ tags:
                                     </tr><tr>
                                         <td class="cve-percentile-label">Percentile:</td>
                                     </tr><tr>
-                                        <td class="cve-percentile-value">0.998670000</td>
+                                        <td class="cve-percentile-value">0.998690000</td>
                                     </tr>
                                 </tbody>
                             </table></div>
@@ -769,7 +1154,7 @@ tags:
                                     </tr><tr>
                                         <td class="cve-percentile-label">Percentile:</td>
                                     </tr><tr>
-                                        <td class="cve-percentile-value">0.952220000</td>
+                                        <td class="cve-percentile-value">0.952760000</td>
                                     </tr>
                                 </tbody>
                             </table></div>
@@ -859,7 +1244,7 @@ tags:
                                     </tr><tr>
                                         <td class="cve-percentile-label">Percentile:</td>
                                     </tr><tr>
-                                        <td class="cve-percentile-value">0.755560000</td>
+                                        <td class="cve-percentile-value">0.756940000</td>
                                     </tr>
                                 </tbody>
                             </table></div>
@@ -945,11 +1330,11 @@ tags:
                                     <tr>
                                         <td class="cve-epss-label">EPSS:</td>
                                     </tr><tr>
-                                        <td class="cve-epss-value">0.004190000</td>
+                                        <td class="cve-epss-value">0.002590000</td>
                                     </tr><tr>
                                         <td class="cve-percentile-label">Percentile:</td>
                                     </tr><tr>
-                                        <td class="cve-percentile-value">0.619100000</td>
+                                        <td class="cve-percentile-value">0.492870000</td>
                                     </tr>
                                 </tbody>
                             </table></div>
@@ -1015,11 +1400,11 @@ tags:
                                     <tr>
                                         <td class="cve-epss-label">EPSS:</td>
                                     </tr><tr>
-                                        <td class="cve-epss-value">0.293490000</td>
+                                        <td class="cve-epss-value">0.323290000</td>
                                     </tr><tr>
                                         <td class="cve-percentile-label">Percentile:</td>
                                     </tr><tr>
-                                        <td class="cve-percentile-value">0.966270000</td>
+                                        <td class="cve-percentile-value">0.969080000</td>
                                     </tr>
                                 </tbody>
                             </table></div>
@@ -1085,11 +1470,11 @@ tags:
                                     <tr>
                                         <td class="cve-epss-label">EPSS:</td>
                                     </tr><tr>
-                                        <td class="cve-epss-value">0.869570000</td>
+                                        <td class="cve-epss-value">0.867980000</td>
                                     </tr><tr>
                                         <td class="cve-percentile-label">Percentile:</td>
                                     </tr><tr>
-                                        <td class="cve-percentile-value">0.994390000</td>
+                                        <td class="cve-percentile-value">0.994360000</td>
                                     </tr>
                                 </tbody>
                             </table></div>
@@ -1175,11 +1560,11 @@ tags:
                                     <tr>
                                         <td class="cve-epss-label">EPSS:</td>
                                     </tr><tr>
-                                        <td class="cve-epss-value">0.079550000</td>
+                                        <td class="cve-epss-value">0.112010000</td>
                                     </tr><tr>
                                         <td class="cve-percentile-label">Percentile:</td>
                                     </tr><tr>
-                                        <td class="cve-percentile-value">0.920980000</td>
+                                        <td class="cve-percentile-value">0.935960000</td>
                                     </tr>
                                 </tbody>
                             </table></div>
@@ -1269,7 +1654,7 @@ tags:
                                     </tr><tr>
                                         <td class="cve-percentile-label">Percentile:</td>
                                     </tr><tr>
-                                        <td class="cve-percentile-value">0.440780000</td>
+                                        <td class="cve-percentile-value">0.441870000</td>
                                     </tr>
                                 </tbody>
                             </table></div>
@@ -1355,11 +1740,11 @@ tags:
                                     <tr>
                                         <td class="cve-epss-label">EPSS:</td>
                                     </tr><tr>
-                                        <td class="cve-epss-value">0.000200000</td>
+                                        <td class="cve-epss-value">0.000290000</td>
                                     </tr><tr>
                                         <td class="cve-percentile-label">Percentile:</td>
                                     </tr><tr>
-                                        <td class="cve-percentile-value">0.055290000</td>
+                                        <td class="cve-percentile-value">0.086640000</td>
                                     </tr>
                                 </tbody>
                             </table></div>
@@ -1445,11 +1830,11 @@ tags:
                                     <tr>
                                         <td class="cve-epss-label">EPSS:</td>
                                     </tr><tr>
-                                        <td class="cve-epss-value">0.839510000</td>
+                                        <td class="cve-epss-value">0.854370000</td>
                                     </tr><tr>
                                         <td class="cve-percentile-label">Percentile:</td>
                                     </tr><tr>
-                                        <td class="cve-percentile-value">0.993100000</td>
+                                        <td class="cve-percentile-value">0.993770000</td>
                                     </tr>
                                 </tbody>
                             </table></div>
@@ -1535,11 +1920,11 @@ tags:
                                     <tr>
                                         <td class="cve-epss-label">EPSS:</td>
                                     </tr><tr>
-                                        <td class="cve-epss-value">0.913550000</td>
+                                        <td class="cve-epss-value">0.916810000</td>
                                     </tr><tr>
                                         <td class="cve-percentile-label">Percentile:</td>
                                     </tr><tr>
-                                        <td class="cve-percentile-value">0.996660000</td>
+                                        <td class="cve-percentile-value">0.996900000</td>
                                     </tr>
                                 </tbody>
                             </table></div>
@@ -1625,11 +2010,11 @@ tags:
                                     <tr>
                                         <td class="cve-epss-label">EPSS:</td>
                                     </tr><tr>
-                                        <td class="cve-epss-value">0.491610000</td>
+                                        <td class="cve-epss-value">0.426770000</td>
                                     </tr><tr>
                                         <td class="cve-percentile-label">Percentile:</td>
                                     </tr><tr>
-                                        <td class="cve-percentile-value">0.977970000</td>
+                                        <td class="cve-percentile-value">0.975230000</td>
                                     </tr>
                                 </tbody>
                             </table></div>
@@ -1715,11 +2100,11 @@ tags:
                                     <tr>
                                         <td class="cve-epss-label">EPSS:</td>
                                     </tr><tr>
-                                        <td class="cve-epss-value">0.593270000</td>
+                                        <td class="cve-epss-value">0.524260000</td>
                                     </tr><tr>
                                         <td class="cve-percentile-label">Percentile:</td>
                                     </tr><tr>
-                                        <td class="cve-percentile-value">0.982560000</td>
+                                        <td class="cve-percentile-value">0.979700000</td>
                                     </tr>
                                 </tbody>
                             </table></div>
@@ -1805,11 +2190,11 @@ tags:
                                     <tr>
                                         <td class="cve-epss-label">EPSS:</td>
                                     </tr><tr>
-                                        <td class="cve-epss-value">0.813000000</td>
+                                        <td class="cve-epss-value">0.729290000</td>
                                     </tr><tr>
                                         <td class="cve-percentile-label">Percentile:</td>
                                     </tr><tr>
-                                        <td class="cve-percentile-value">0.991790000</td>
+                                        <td class="cve-percentile-value">0.988010000</td>
                                     </tr>
                                 </tbody>
                             </table></div>
@@ -1895,11 +2280,11 @@ tags:
                                     <tr>
                                         <td class="cve-epss-label">EPSS:</td>
                                     </tr><tr>
-                                        <td class="cve-epss-value">0.265630000</td>
+                                        <td class="cve-epss-value">0.267490000</td>
                                     </tr><tr>
                                         <td class="cve-percentile-label">Percentile:</td>
                                     </tr><tr>
-                                        <td class="cve-percentile-value">0.963630000</td>
+                                        <td class="cve-percentile-value">0.964170000</td>
                                     </tr>
                                 </tbody>
                             </table></div>
@@ -1965,11 +2350,11 @@ tags:
                                     <tr>
                                         <td class="cve-epss-label">EPSS:</td>
                                     </tr><tr>
-                                        <td class="cve-epss-value">0.037680000</td>
+                                        <td class="cve-epss-value">0.047670000</td>
                                     </tr><tr>
                                         <td class="cve-percentile-label">Percentile:</td>
                                     </tr><tr>
-                                        <td class="cve-percentile-value">0.881070000</td>
+                                        <td class="cve-percentile-value">0.895660000</td>
                                     </tr>
                                 </tbody>
                             </table></div>
@@ -2035,11 +2420,11 @@ tags:
                                     <tr>
                                         <td class="cve-epss-label">EPSS:</td>
                                     </tr><tr>
-                                        <td class="cve-epss-value">0.667550000</td>
+                                        <td class="cve-epss-value">0.199490000</td>
                                     </tr><tr>
                                         <td class="cve-percentile-label">Percentile:</td>
                                     </tr><tr>
-                                        <td class="cve-percentile-value">0.985590000</td>
+                                        <td class="cve-percentile-value">0.955540000</td>
                                     </tr>
                                 </tbody>
                             </table></div>
@@ -2105,11 +2490,11 @@ tags:
                                     <tr>
                                         <td class="cve-epss-label">EPSS:</td>
                                     </tr><tr>
-                                        <td class="cve-epss-value">0.001710000</td>
+                                        <td class="cve-epss-value">0.001970000</td>
                                     </tr><tr>
                                         <td class="cve-percentile-label">Percentile:</td>
                                     </tr><tr>
-                                        <td class="cve-percentile-value">0.379550000</td>
+                                        <td class="cve-percentile-value">0.414730000</td>
                                     </tr>
                                 </tbody>
                             </table></div>
@@ -2195,11 +2580,11 @@ tags:
                                     <tr>
                                         <td class="cve-epss-label">EPSS:</td>
                                     </tr><tr>
-                                        <td class="cve-epss-value">0.926470000</td>
+                                        <td class="cve-epss-value">0.928970000</td>
                                     </tr><tr>
                                         <td class="cve-percentile-label">Percentile:</td>
                                     </tr><tr>
-                                        <td class="cve-percentile-value">0.997530000</td>
+                                        <td class="cve-percentile-value">0.997760000</td>
                                     </tr>
                                 </tbody>
                             </table></div>
@@ -2265,11 +2650,81 @@ tags:
                                     <tr>
                                         <td class="cve-epss-label">EPSS:</td>
                                     </tr><tr>
-                                        <td class="cve-epss-value">0.465020000</td>
+                                        <td class="cve-epss-value">0.350560000</td>
                                     </tr><tr>
                                         <td class="cve-percentile-label">Percentile:</td>
                                     </tr><tr>
-                                        <td class="cve-percentile-value">0.976780000</td>
+                                        <td class="cve-percentile-value">0.970960000</td>
+                                    </tr>
+                                </tbody>
+                            </table></div>
+                    </div>
+                    <div class="row cve-row" id="CVE-2025-34291">
+                        <div class="col-md-9">
+                            <div class="cve-post">
+                                <h2 class="cve-title">CVE-2025-34291</h2>
+                                <h4 class="cve-vuln">Langflow Origin Validation Error Vulnerability</h4>
+                                <h6 class="cve-date">Date Added: 2026-05-21</h6>
+                                <div class="cve-description">
+                                    <h6>Description</h6>
+                                    <p class="cve-description-p">Langflow contains an origin validation error vulnerability in which an overly permissive CORS configuration combined with a refresh token cookie configured as SameSite=None allows a malicious webpage to perform cross-origin requests that include credentials and successfully call the refresh endpoint. This could allow the attacker to execute arbitrary code and achieve full system compromise via obtained tokens that permit access to authenticated endpoints.</p>
+                                </div>
+                                <div class="cve-action">
+                                    <h6>Required Action</h6>
+                                    <p class="cve-action-p">Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.</p>
+                                </div><div class="cvss_metrics"><div class="v31">
+                                        <h6>cvssMetricV31</h6>
+                                        <pre>
+                    [
+  {
+    "cvssData": {
+      "attackComplexity": "LOW",
+      "attackVector": "NETWORK",
+      "availabilityImpact": "HIGH",
+      "baseScore": 8.8,
+      "baseSeverity": "HIGH",
+      "confidentialityImpact": "HIGH",
+      "integrityImpact": "HIGH",
+      "privilegesRequired": "LOW",
+      "scope": "UNCHANGED",
+      "userInteraction": "NONE",
+      "vectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "version": "3.1"
+    },
+    "exploitabilityScore": 2.8,
+    "impactScore": 5.9,
+    "source": "nvd@nist.gov",
+    "type": "Primary"
+  }
+]
+                                        </pre>
+                                    </div></div></div>
+                        </div>
+                        <div class="col-md-3"><div class="cve-status">
+                                <b>Status:</b>
+                Modified
+                            </div><table class="cve-vendor-table">
+                                <tbody>
+                                    <tr>
+                                        <td class="cve-vendor-label">Vendor:</td>
+                                    </tr><tr>
+                                        <td class="cve-vendor-name">Langflow</td>
+                                    </tr><tr>
+                                        <td class="cve-product-label">Product:</td>
+                                    </tr><tr>
+                                        <td class="cve-product-name">Langflow</td>
+                                    </tr>
+                                </tbody>
+                            </table><table class="cve-epss-table">
+                                <tbody>
+                                    <tr>
+                                        <td class="cve-epss-label">EPSS:</td>
+                                    </tr><tr>
+                                        <td class="cve-epss-value">0.312000000</td>
+                                    </tr><tr>
+                                        <td class="cve-percentile-label">Percentile:</td>
+                                    </tr><tr>
+                                        <td class="cve-percentile-value">0.968300000</td>
                                     </tr>
                                 </tbody>
                             </table></div>
@@ -2359,7 +2814,7 @@ tags:
                                     </tr><tr>
                                         <td class="cve-percentile-label">Percentile:</td>
                                     </tr><tr>
-                                        <td class="cve-percentile-value">0.536050000</td>
+                                        <td class="cve-percentile-value">0.537340000</td>
                                     </tr>
                                 </tbody>
                             </table></div>
@@ -2449,7 +2904,7 @@ tags:
                                     </tr><tr>
                                         <td class="cve-percentile-label">Percentile:</td>
                                     </tr><tr>
-                                        <td class="cve-percentile-value">0.499340000</td>
+                                        <td class="cve-percentile-value">0.500400000</td>
                                     </tr>
                                 </tbody>
                             </table></div>
@@ -2515,11 +2970,11 @@ tags:
                                     <tr>
                                         <td class="cve-epss-label">EPSS:</td>
                                     </tr><tr>
-                                        <td class="cve-epss-value">0.250060000</td>
+                                        <td class="cve-epss-value">0.269230000</td>
                                     </tr><tr>
                                         <td class="cve-percentile-label">Percentile:</td>
                                     </tr><tr>
-                                        <td class="cve-percentile-value">0.962040000</td>
+                                        <td class="cve-percentile-value">0.964360000</td>
                                     </tr>
                                 </tbody>
                             </table></div>
@@ -2585,11 +3040,11 @@ tags:
                                     <tr>
                                         <td class="cve-epss-label">EPSS:</td>
                                     </tr><tr>
-                                        <td class="cve-epss-value">0.187570000</td>
+                                        <td class="cve-epss-value">0.150100000</td>
                                     </tr><tr>
                                         <td class="cve-percentile-label">Percentile:</td>
                                     </tr><tr>
-                                        <td class="cve-percentile-value">0.953250000</td>
+                                        <td class="cve-percentile-value">0.946570000</td>
                                     </tr>
                                 </tbody>
                             </table></div>
@@ -2655,11 +3110,11 @@ tags:
                                     <tr>
                                         <td class="cve-epss-label">EPSS:</td>
                                     </tr><tr>
-                                        <td class="cve-epss-value">0.074520000</td>
+                                        <td class="cve-epss-value">0.067810000</td>
                                     </tr><tr>
                                         <td class="cve-percentile-label">Percentile:</td>
                                     </tr><tr>
-                                        <td class="cve-percentile-value">0.918040000</td>
+                                        <td class="cve-percentile-value">0.914170000</td>
                                     </tr>
                                 </tbody>
                             </table></div>
@@ -2725,11 +3180,11 @@ tags:
                                     <tr>
                                         <td class="cve-epss-label">EPSS:</td>
                                     </tr><tr>
-                                        <td class="cve-epss-value">0.588190000</td>
+                                        <td class="cve-epss-value">0.343420000</td>
                                     </tr><tr>
                                         <td class="cve-percentile-label">Percentile:</td>
                                     </tr><tr>
-                                        <td class="cve-percentile-value">0.982350000</td>
+                                        <td class="cve-percentile-value">0.970550000</td>
                                     </tr>
                                 </tbody>
                             </table></div>
@@ -2795,11 +3250,11 @@ tags:
                                     <tr>
                                         <td class="cve-epss-label">EPSS:</td>
                                     </tr><tr>
-                                        <td class="cve-epss-value">0.297160000</td>
+                                        <td class="cve-epss-value">0.228990000</td>
                                     </tr><tr>
                                         <td class="cve-percentile-label">Percentile:</td>
                                     </tr><tr>
-                                        <td class="cve-percentile-value">0.966550000</td>
+                                        <td class="cve-percentile-value">0.959730000</td>
                                     </tr>
                                 </tbody>
                             </table></div>
@@ -2885,11 +3340,11 @@ tags:
                                     <tr>
                                         <td class="cve-epss-label">EPSS:</td>
                                     </tr><tr>
-                                        <td class="cve-epss-value">0.091480000</td>
+                                        <td class="cve-epss-value">0.108990000</td>
                                     </tr><tr>
                                         <td class="cve-percentile-label">Percentile:</td>
                                     </tr><tr>
-                                        <td class="cve-percentile-value">0.927210000</td>
+                                        <td class="cve-percentile-value">0.934820000</td>
                                     </tr>
                                 </tbody>
                             </table></div>
@@ -2975,11 +3430,11 @@ tags:
                                     <tr>
                                         <td class="cve-epss-label">EPSS:</td>
                                     </tr><tr>
-                                        <td class="cve-epss-value">0.802600000</td>
+                                        <td class="cve-epss-value">0.657590000</td>
                                     </tr><tr>
                                         <td class="cve-percentile-label">Percentile:</td>
                                     </tr><tr>
-                                        <td class="cve-percentile-value">0.991320000</td>
+                                        <td class="cve-percentile-value">0.985260000</td>
                                     </tr>
                                 </tbody>
                             </table></div>
@@ -2996,7 +3451,7 @@ tags:
                                 </div>
                                 <div class="cve-action">
                                     <h6>Required Action</h6>
-                                    <p class="cve-action-p">Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.    Until the vendor releases an official fix, the following workaround should be implemented:  - Restrict User-ID Authentication Portal access to only trusted zones.  - Disable User-ID Authentication Portal if not required.</p>
+                                    <p class="cve-action-p">Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable. Until the vendor releases an official fix, the following workaround should be implemented:  - Restrict User-ID Authentication Portal access to only trusted zones.  - Disable User-ID Authentication Portal if not required. 5/13/2026: Palo Alto has released a variety of patches. If these are relevant to your environment, please apply the designated patch.</p>
                                 </div><div class="cvss_metrics"><div class="v31">
                                         <h6>cvssMetricV31</h6>
                                         <pre>
@@ -3045,11 +3500,11 @@ tags:
                                     <tr>
                                         <td class="cve-epss-label">EPSS:</td>
                                     </tr><tr>
-                                        <td class="cve-epss-value">0.148970000</td>
+                                        <td class="cve-epss-value">0.043530000</td>
                                     </tr><tr>
                                         <td class="cve-percentile-label">Percentile:</td>
                                     </tr><tr>
-                                        <td class="cve-percentile-value">0.945690000</td>
+                                        <td class="cve-percentile-value">0.890530000</td>
                                     </tr>
                                 </tbody>
                             </table></div>
@@ -3115,11 +3570,11 @@ tags:
                                     <tr>
                                         <td class="cve-epss-label">EPSS:</td>
                                     </tr><tr>
-                                        <td class="cve-epss-value">0.708320000</td>
+                                        <td class="cve-epss-value">0.659110000</td>
                                     </tr><tr>
                                         <td class="cve-percentile-label">Percentile:</td>
                                     </tr><tr>
-                                        <td class="cve-percentile-value">0.987170000</td>
+                                        <td class="cve-percentile-value">0.985310000</td>
                                     </tr>
                                 </tbody>
                             </table></div>
@@ -3205,11 +3660,11 @@ tags:
                                     <tr>
                                         <td class="cve-epss-label">EPSS:</td>
                                     </tr><tr>
-                                        <td class="cve-epss-value">0.558750000</td>
+                                        <td class="cve-epss-value">0.589210000</td>
                                     </tr><tr>
                                         <td class="cve-percentile-label">Percentile:</td>
                                     </tr><tr>
-                                        <td class="cve-percentile-value">0.981120000</td>
+                                        <td class="cve-percentile-value">0.982470000</td>
                                     </tr>
                                 </tbody>
                             </table></div>
@@ -3295,11 +3750,11 @@ tags:
                                     <tr>
                                         <td class="cve-epss-label">EPSS:</td>
                                     </tr><tr>
-                                        <td class="cve-epss-value">0.011220000</td>
+                                        <td class="cve-epss-value">0.013150000</td>
                                     </tr><tr>
                                         <td class="cve-percentile-label">Percentile:</td>
                                     </tr><tr>
-                                        <td class="cve-percentile-value">0.783730000</td>
+                                        <td class="cve-percentile-value">0.800710000</td>
                                     </tr>
                                 </tbody>
                             </table></div>
@@ -3385,11 +3840,11 @@ tags:
                                     <tr>
                                         <td class="cve-epss-label">EPSS:</td>
                                     </tr><tr>
-                                        <td class="cve-epss-value">0.547970000</td>
+                                        <td class="cve-epss-value">0.442950000</td>
                                     </tr><tr>
                                         <td class="cve-percentile-label">Percentile:</td>
                                     </tr><tr>
-                                        <td class="cve-percentile-value">0.980540000</td>
+                                        <td class="cve-percentile-value">0.976080000</td>
                                     </tr>
                                 </tbody>
                             </table></div>
@@ -3455,11 +3910,11 @@ tags:
                                     <tr>
                                         <td class="cve-epss-label">EPSS:</td>
                                     </tr><tr>
-                                        <td class="cve-epss-value">0.000440000</td>
+                                        <td class="cve-epss-value">0.000690000</td>
                                     </tr><tr>
                                         <td class="cve-percentile-label">Percentile:</td>
                                     </tr><tr>
-                                        <td class="cve-percentile-value">0.135190000</td>
+                                        <td class="cve-percentile-value">0.211060000</td>
                                     </tr>
                                 </tbody>
                             </table></div>
@@ -3525,11 +3980,11 @@ tags:
                                     <tr>
                                         <td class="cve-epss-label">EPSS:</td>
                                     </tr><tr>
-                                        <td class="cve-epss-value">0.013430000</td>
+                                        <td class="cve-epss-value">0.011390000</td>
                                     </tr><tr>
                                         <td class="cve-percentile-label">Percentile:</td>
                                     </tr><tr>
-                                        <td class="cve-percentile-value">0.801530000</td>
+                                        <td class="cve-percentile-value">0.786480000</td>
                                     </tr>
                                 </tbody>
                             </table></div>
@@ -3615,11 +4070,81 @@ tags:
                                     <tr>
                                         <td class="cve-epss-label">EPSS:</td>
                                     </tr><tr>
-                                        <td class="cve-epss-value">0.012720000</td>
+                                        <td class="cve-epss-value">0.018900000</td>
                                     </tr><tr>
                                         <td class="cve-percentile-label">Percentile:</td>
                                     </tr><tr>
-                                        <td class="cve-percentile-value">0.796440000</td>
+                                        <td class="cve-percentile-value">0.834250000</td>
+                                    </tr>
+                                </tbody>
+                            </table></div>
+                    </div>
+                    <div class="row cve-row" id="CVE-2026-20182">
+                        <div class="col-md-9">
+                            <div class="cve-post">
+                                <h2 class="cve-title">CVE-2026-20182</h2>
+                                <h4 class="cve-vuln">Cisco Catalyst SD-WAN Controller Authentication Bypass Vulnerability</h4>
+                                <h6 class="cve-date">Date Added: 2026-05-14</h6>
+                                <div class="cve-description">
+                                    <h6>Description</h6>
+                                    <p class="cve-description-p">Cisco Catalyst SD-WAN Controller & Manager contain an authentication bypass vulnerability that allows an unauthenticated, remote attacker to bypass authentication and obtain administrative privileges on an affected system.</p>
+                                </div>
+                                <div class="cve-action">
+                                    <h6>Required Action</h6>
+                                    <p class="cve-action-p">Please adhere to CISA’s guidelines to assess exposure and mitigate risks associated with Cisco SD-WAN devices as outlined in CISA’s Emergency Directive 26-03 (URL listed below in Notes) and CISA’s Hunt & Hardening Guidance for Cisco SD-WAN Devices (URL listed below in Notes). Adhere to the applicable BOD 22-01 guidance for cloud services or discontinue use of the product if mitigations are not available.</p>
+                                </div><div class="cvss_metrics"><div class="v31">
+                                        <h6>cvssMetricV31</h6>
+                                        <pre>
+                    [
+  {
+    "cvssData": {
+      "attackComplexity": "LOW",
+      "attackVector": "NETWORK",
+      "availabilityImpact": "HIGH",
+      "baseScore": 10.0,
+      "baseSeverity": "CRITICAL",
+      "confidentialityImpact": "HIGH",
+      "integrityImpact": "HIGH",
+      "privilegesRequired": "NONE",
+      "scope": "CHANGED",
+      "userInteraction": "NONE",
+      "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
+      "version": "3.1"
+    },
+    "exploitabilityScore": 3.9,
+    "impactScore": 6.0,
+    "source": "psirt@cisco.com",
+    "type": "Secondary"
+  }
+]
+                                        </pre>
+                                    </div></div></div>
+                        </div>
+                        <div class="col-md-3"><div class="cve-status">
+                                <b>Status:</b>
+                Analyzed
+                            </div><table class="cve-vendor-table">
+                                <tbody>
+                                    <tr>
+                                        <td class="cve-vendor-label">Vendor:</td>
+                                    </tr><tr>
+                                        <td class="cve-vendor-name">Cisco</td>
+                                    </tr><tr>
+                                        <td class="cve-product-label">Product:</td>
+                                    </tr><tr>
+                                        <td class="cve-product-name">Cisco</td>
+                                    </tr>
+                                </tbody>
+                            </table><table class="cve-epss-table">
+                                <tbody>
+                                    <tr>
+                                        <td class="cve-epss-label">EPSS:</td>
+                                    </tr><tr>
+                                        <td class="cve-epss-value">0.773240000</td>
+                                    </tr><tr>
+                                        <td class="cve-percentile-label">Percentile:</td>
+                                    </tr><tr>
+                                        <td class="cve-percentile-value">0.989980000</td>
                                     </tr>
                                 </tbody>
                             </table></div>
@@ -3685,11 +4210,11 @@ tags:
                                     <tr>
                                         <td class="cve-epss-label">EPSS:</td>
                                     </tr><tr>
-                                        <td class="cve-epss-value">0.048770000</td>
+                                        <td class="cve-epss-value">0.056160000</td>
                                     </tr><tr>
                                         <td class="cve-percentile-label">Percentile:</td>
                                     </tr><tr>
-                                        <td class="cve-percentile-value">0.896250000</td>
+                                        <td class="cve-percentile-value">0.904290000</td>
                                     </tr>
                                 </tbody>
                             </table></div>
@@ -3755,11 +4280,11 @@ tags:
                                     <tr>
                                         <td class="cve-epss-label">EPSS:</td>
                                     </tr><tr>
-                                        <td class="cve-epss-value">0.001960000</td>
+                                        <td class="cve-epss-value">0.002130000</td>
                                     </tr><tr>
                                         <td class="cve-percentile-label">Percentile:</td>
                                     </tr><tr>
-                                        <td class="cve-percentile-value">0.412070000</td>
+                                        <td class="cve-percentile-value">0.436820000</td>
                                     </tr>
                                 </tbody>
                             </table></div>
@@ -3829,7 +4354,7 @@ tags:
                                     </tr><tr>
                                         <td class="cve-percentile-label">Percentile:</td>
                                     </tr><tr>
-                                        <td class="cve-percentile-value">0.983820000</td>
+                                        <td class="cve-percentile-value">0.983880000</td>
                                     </tr>
                                 </tbody>
                             </table></div>
@@ -3899,7 +4424,7 @@ tags:
                                     </tr><tr>
                                         <td class="cve-percentile-label">Percentile:</td>
                                     </tr><tr>
-                                        <td class="cve-percentile-value">0.841460000</td>
+                                        <td class="cve-percentile-value">0.842490000</td>
                                     </tr>
                                 </tbody>
                             </table></div>
@@ -3969,7 +4494,7 @@ tags:
                                     </tr><tr>
                                         <td class="cve-percentile-label">Percentile:</td>
                                     </tr><tr>
-                                        <td class="cve-percentile-value">0.923390000</td>
+                                        <td class="cve-percentile-value">0.923950000</td>
                                     </tr>
                                 </tbody>
                             </table></div>
@@ -4035,11 +4560,11 @@ tags:
                                     <tr>
                                         <td class="cve-epss-label">EPSS:</td>
                                     </tr><tr>
-                                        <td class="cve-epss-value">0.706110000</td>
+                                        <td class="cve-epss-value">0.893670000</td>
                                     </tr><tr>
                                         <td class="cve-percentile-label">Percentile:</td>
                                     </tr><tr>
-                                        <td class="cve-percentile-value">0.987130000</td>
+                                        <td class="cve-percentile-value">0.995550000</td>
                                     </tr>
                                 </tbody>
                             </table></div>
@@ -4087,7 +4612,7 @@ tags:
                         </div>
                         <div class="col-md-3"><div class="cve-status">
                                 <b>Status:</b>
-                Modified
+                Analyzed
                             </div><table class="cve-vendor-table">
                                 <tbody>
                                     <tr>
@@ -4105,11 +4630,11 @@ tags:
                                     <tr>
                                         <td class="cve-epss-label">EPSS:</td>
                                     </tr><tr>
-                                        <td class="cve-epss-value">0.039120000</td>
+                                        <td class="cve-epss-value">0.024210000</td>
                                     </tr><tr>
                                         <td class="cve-percentile-label">Percentile:</td>
                                     </tr><tr>
-                                        <td class="cve-percentile-value">0.883590000</td>
+                                        <td class="cve-percentile-value">0.853130000</td>
                                     </tr>
                                 </tbody>
                             </table></div>
@@ -4175,11 +4700,11 @@ tags:
                                     <tr>
                                         <td class="cve-epss-label">EPSS:</td>
                                     </tr><tr>
-                                        <td class="cve-epss-value">0.068710000</td>
+                                        <td class="cve-epss-value">0.094390000</td>
                                     </tr><tr>
                                         <td class="cve-percentile-label">Percentile:</td>
                                     </tr><tr>
-                                        <td class="cve-percentile-value">0.914360000</td>
+                                        <td class="cve-percentile-value">0.929060000</td>
                                     </tr>
                                 </tbody>
                             </table></div>
@@ -4245,11 +4770,11 @@ tags:
                                     <tr>
                                         <td class="cve-epss-label">EPSS:</td>
                                     </tr><tr>
-                                        <td class="cve-epss-value">0.071930000</td>
+                                        <td class="cve-epss-value">0.129650000</td>
                                     </tr><tr>
                                         <td class="cve-percentile-label">Percentile:</td>
                                     </tr><tr>
-                                        <td class="cve-percentile-value">0.916390000</td>
+                                        <td class="cve-percentile-value">0.941590000</td>
                                     </tr>
                                 </tbody>
                             </table></div>
@@ -4297,7 +4822,7 @@ tags:
                         </div>
                         <div class="col-md-3"><div class="cve-status">
                                 <b>Status:</b>
-                Analyzed
+                Modified
                             </div><table class="cve-vendor-table">
                                 <tbody>
                                     <tr>
@@ -4315,11 +4840,11 @@ tags:
                                     <tr>
                                         <td class="cve-epss-label">EPSS:</td>
                                     </tr><tr>
-                                        <td class="cve-epss-value">0.412430000</td>
+                                        <td class="cve-epss-value">0.232430000</td>
                                     </tr><tr>
                                         <td class="cve-percentile-label">Percentile:</td>
                                     </tr><tr>
-                                        <td class="cve-percentile-value">0.974170000</td>
+                                        <td class="cve-percentile-value">0.960200000</td>
                                     </tr>
                                 </tbody>
                             </table></div>
@@ -4385,11 +4910,11 @@ tags:
                                     <tr>
                                         <td class="cve-epss-label">EPSS:</td>
                                     </tr><tr>
-                                        <td class="cve-epss-value">0.168270000</td>
+                                        <td class="cve-epss-value">0.334930000</td>
                                     </tr><tr>
                                         <td class="cve-percentile-label">Percentile:</td>
                                     </tr><tr>
-                                        <td class="cve-percentile-value">0.949850000</td>
+                                        <td class="cve-percentile-value">0.969950000</td>
                                     </tr>
                                 </tbody>
                             </table></div>
@@ -4455,11 +4980,11 @@ tags:
                                     <tr>
                                         <td class="cve-epss-label">EPSS:</td>
                                     </tr><tr>
-                                        <td class="cve-epss-value">0.048520000</td>
+                                        <td class="cve-epss-value">0.081160000</td>
                                     </tr><tr>
                                         <td class="cve-percentile-label">Percentile:</td>
                                     </tr><tr>
-                                        <td class="cve-percentile-value">0.895960000</td>
+                                        <td class="cve-percentile-value">0.922560000</td>
                                     </tr>
                                 </tbody>
                             </table></div>
@@ -4525,11 +5050,11 @@ tags:
                                     <tr>
                                         <td class="cve-epss-label">EPSS:</td>
                                     </tr><tr>
-                                        <td class="cve-epss-value">0.666710000</td>
+                                        <td class="cve-epss-value">0.724970000</td>
                                     </tr><tr>
                                         <td class="cve-percentile-label">Percentile:</td>
                                     </tr><tr>
-                                        <td class="cve-percentile-value">0.985560000</td>
+                                        <td class="cve-percentile-value">0.987870000</td>
                                     </tr>
                                 </tbody>
                             </table></div>
@@ -4595,11 +5120,81 @@ tags:
                                     <tr>
                                         <td class="cve-epss-label">EPSS:</td>
                                     </tr><tr>
-                                        <td class="cve-epss-value">0.098960000</td>
+                                        <td class="cve-epss-value">0.103910000</td>
                                     </tr><tr>
                                         <td class="cve-percentile-label">Percentile:</td>
                                     </tr><tr>
-                                        <td class="cve-percentile-value">0.930450000</td>
+                                        <td class="cve-percentile-value">0.933010000</td>
+                                    </tr>
+                                </tbody>
+                            </table></div>
+                    </div>
+                    <div class="row cve-row" id="CVE-2026-34926">
+                        <div class="col-md-9">
+                            <div class="cve-post">
+                                <h2 class="cve-title">CVE-2026-34926</h2>
+                                <h4 class="cve-vuln">Trend Micro Apex One (On-Premise) Directory Traversal Vulnerability</h4>
+                                <h6 class="cve-date">Date Added: 2026-05-21</h6>
+                                <div class="cve-description">
+                                    <h6>Description</h6>
+                                    <p class="cve-description-p">Trend Micro Apex One (on-premise) contains a directory traversal vulnerability that could allow a pre-authenticated local attacker to modify a key table on the server to inject malicious code to deploy to agents on affected installations.</p>
+                                </div>
+                                <div class="cve-action">
+                                    <h6>Required Action</h6>
+                                    <p class="cve-action-p">Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.</p>
+                                </div><div class="cvss_metrics"><div class="v31">
+                                        <h6>cvssMetricV31</h6>
+                                        <pre>
+                    [
+  {
+    "cvssData": {
+      "attackComplexity": "HIGH",
+      "attackVector": "LOCAL",
+      "availabilityImpact": "LOW",
+      "baseScore": 6.7,
+      "baseSeverity": "MEDIUM",
+      "confidentialityImpact": "HIGH",
+      "integrityImpact": "LOW",
+      "privilegesRequired": "HIGH",
+      "scope": "CHANGED",
+      "userInteraction": "NONE",
+      "vectorString": "CVSS:3.1/AV:L/AC:H/PR:H/UI:N/S:C/C:H/I:L/A:L",
+      "version": "3.1"
+    },
+    "exploitabilityScore": 0.8,
+    "impactScore": 5.3,
+    "source": "security@trendmicro.com",
+    "type": "Secondary"
+  }
+]
+                                        </pre>
+                                    </div></div></div>
+                        </div>
+                        <div class="col-md-3"><div class="cve-status">
+                                <b>Status:</b>
+                Undergoing Analysis
+                            </div><table class="cve-vendor-table">
+                                <tbody>
+                                    <tr>
+                                        <td class="cve-vendor-label">Vendor:</td>
+                                    </tr><tr>
+                                        <td class="cve-vendor-name">Trend Micro</td>
+                                    </tr><tr>
+                                        <td class="cve-product-label">Product:</td>
+                                    </tr><tr>
+                                        <td class="cve-product-name">Trend Micro</td>
+                                    </tr>
+                                </tbody>
+                            </table><table class="cve-epss-table">
+                                <tbody>
+                                    <tr>
+                                        <td class="cve-epss-label">EPSS:</td>
+                                    </tr><tr>
+                                        <td class="cve-epss-value">0.002530000</td>
+                                    </tr><tr>
+                                        <td class="cve-percentile-label">Percentile:</td>
+                                    </tr><tr>
+                                        <td class="cve-percentile-value">0.486950000</td>
                                     </tr>
                                 </tbody>
                             </table></div>
@@ -4665,11 +5260,11 @@ tags:
                                     <tr>
                                         <td class="cve-epss-label">EPSS:</td>
                                     </tr><tr>
-                                        <td class="cve-epss-value">0.027470000</td>
+                                        <td class="cve-epss-value">0.025040000</td>
                                     </tr><tr>
                                         <td class="cve-percentile-label">Percentile:</td>
                                     </tr><tr>
-                                        <td class="cve-percentile-value">0.860740000</td>
+                                        <td class="cve-percentile-value">0.855360000</td>
                                     </tr>
                                 </tbody>
                             </table></div>
@@ -4739,7 +5334,7 @@ tags:
                                     </tr><tr>
                                         <td class="cve-percentile-label">Percentile:</td>
                                     </tr><tr>
-                                        <td class="cve-percentile-value">0.975190000</td>
+                                        <td class="cve-percentile-value">0.975500000</td>
                                     </tr>
                                 </tbody>
                             </table></div>
@@ -4825,11 +5420,11 @@ tags:
                                     <tr>
                                         <td class="cve-epss-label">EPSS:</td>
                                     </tr><tr>
-                                        <td class="cve-epss-value">0.003930000</td>
+                                        <td class="cve-epss-value">0.004540000</td>
                                     </tr><tr>
                                         <td class="cve-percentile-label">Percentile:</td>
                                     </tr><tr>
-                                        <td class="cve-percentile-value">0.603010000</td>
+                                        <td class="cve-percentile-value">0.640140000</td>
                                     </tr>
                                 </tbody>
                             </table></div>
@@ -4915,11 +5510,11 @@ tags:
                                     <tr>
                                         <td class="cve-epss-label">EPSS:</td>
                                     </tr><tr>
-                                        <td class="cve-epss-value">0.006880000</td>
+                                        <td class="cve-epss-value">0.032410000</td>
                                     </tr><tr>
                                         <td class="cve-percentile-label">Percentile:</td>
                                     </tr><tr>
-                                        <td class="cve-percentile-value">0.718440000</td>
+                                        <td class="cve-percentile-value">0.872690000</td>
                                     </tr>
                                 </tbody>
                             </table></div>
@@ -4985,11 +5580,81 @@ tags:
                                     <tr>
                                         <td class="cve-epss-label">EPSS:</td>
                                     </tr><tr>
-                                        <td class="cve-epss-value">0.787120000</td>
+                                        <td class="cve-epss-value">0.821740000</td>
                                     </tr><tr>
                                         <td class="cve-percentile-label">Percentile:</td>
                                     </tr><tr>
-                                        <td class="cve-percentile-value">0.990590000</td>
+                                        <td class="cve-percentile-value">0.992320000</td>
+                                    </tr>
+                                </tbody>
+                            </table></div>
+                    </div>
+                    <div class="row cve-row" id="CVE-2026-41091">
+                        <div class="col-md-9">
+                            <div class="cve-post">
+                                <h2 class="cve-title">CVE-2026-41091</h2>
+                                <h4 class="cve-vuln">Microsoft Defender Link Following Vulnerability</h4>
+                                <h6 class="cve-date">Date Added: 2026-05-20</h6>
+                                <div class="cve-description">
+                                    <h6>Description</h6>
+                                    <p class="cve-description-p">Microsoft Defender contains a link following vulnerability that allows an authorized attacker to elevate privileges locally.</p>
+                                </div>
+                                <div class="cve-action">
+                                    <h6>Required Action</h6>
+                                    <p class="cve-action-p">Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.</p>
+                                </div><div class="cvss_metrics"><div class="v31">
+                                        <h6>cvssMetricV31</h6>
+                                        <pre>
+                    [
+  {
+    "cvssData": {
+      "attackComplexity": "LOW",
+      "attackVector": "LOCAL",
+      "availabilityImpact": "HIGH",
+      "baseScore": 7.8,
+      "baseSeverity": "HIGH",
+      "confidentialityImpact": "HIGH",
+      "integrityImpact": "HIGH",
+      "privilegesRequired": "LOW",
+      "scope": "UNCHANGED",
+      "userInteraction": "NONE",
+      "vectorString": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "version": "3.1"
+    },
+    "exploitabilityScore": 1.8,
+    "impactScore": 5.9,
+    "source": "secure@microsoft.com",
+    "type": "Secondary"
+  }
+]
+                                        </pre>
+                                    </div></div></div>
+                        </div>
+                        <div class="col-md-3"><div class="cve-status">
+                                <b>Status:</b>
+                Analyzed
+                            </div><table class="cve-vendor-table">
+                                <tbody>
+                                    <tr>
+                                        <td class="cve-vendor-label">Vendor:</td>
+                                    </tr><tr>
+                                        <td class="cve-vendor-name">Microsoft</td>
+                                    </tr><tr>
+                                        <td class="cve-product-label">Product:</td>
+                                    </tr><tr>
+                                        <td class="cve-product-name">Microsoft</td>
+                                    </tr>
+                                </tbody>
+                            </table><table class="cve-epss-table">
+                                <tbody>
+                                    <tr>
+                                        <td class="cve-epss-label">EPSS:</td>
+                                    </tr><tr>
+                                        <td class="cve-epss-value">0.065510000</td>
+                                    </tr><tr>
+                                        <td class="cve-percentile-label">Percentile:</td>
+                                    </tr><tr>
+                                        <td class="cve-percentile-value">0.912470000</td>
                                     </tr>
                                 </tbody>
                             </table></div>
@@ -5055,11 +5720,261 @@ tags:
                                     <tr>
                                         <td class="cve-epss-label">EPSS:</td>
                                     </tr><tr>
-                                        <td class="cve-epss-value">0.642840000</td>
+                                        <td class="cve-epss-value">0.843710000</td>
                                     </tr><tr>
                                         <td class="cve-percentile-label">Percentile:</td>
                                     </tr><tr>
-                                        <td class="cve-percentile-value">0.984580000</td>
+                                        <td class="cve-percentile-value">0.993330000</td>
+                                    </tr>
+                                </tbody>
+                            </table></div>
+                    </div>
+                    <div class="row cve-row" id="CVE-2026-42208">
+                        <div class="col-md-9">
+                            <div class="cve-post">
+                                <h2 class="cve-title">CVE-2026-42208</h2>
+                                <h4 class="cve-vuln">BerriAI LiteLLM SQL Injection Vulnerability</h4>
+                                <h6 class="cve-date">Date Added: 2026-05-08</h6>
+                                <div class="cve-description">
+                                    <h6>Description</h6>
+                                    <p class="cve-description-p">BerriAI LiteLLM contains a SQL injection vulnerability that allows an attacker to read data from the proxy's database and potentially modify it, leading to unauthorized access to the proxy and the credentials it manages.</p>
+                                </div>
+                                <div class="cve-action">
+                                    <h6>Required Action</h6>
+                                    <p class="cve-action-p">Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.</p>
+                                </div><div class="cvss_metrics"><div class="v31">
+                                        <h6>cvssMetricV31</h6>
+                                        <pre>
+                    [
+  {
+    "cvssData": {
+      "attackComplexity": "LOW",
+      "attackVector": "NETWORK",
+      "availabilityImpact": "HIGH",
+      "baseScore": 9.8,
+      "baseSeverity": "CRITICAL",
+      "confidentialityImpact": "HIGH",
+      "integrityImpact": "HIGH",
+      "privilegesRequired": "NONE",
+      "scope": "UNCHANGED",
+      "userInteraction": "NONE",
+      "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "version": "3.1"
+    },
+    "exploitabilityScore": 3.9,
+    "impactScore": 5.9,
+    "source": "nvd@nist.gov",
+    "type": "Primary"
+  }
+]
+                                        </pre>
+                                    </div></div></div>
+                        </div>
+                        <div class="col-md-3"><div class="cve-status">
+                                <b>Status:</b>
+                Analyzed
+                            </div><table class="cve-vendor-table">
+                                <tbody>
+                                    <tr>
+                                        <td class="cve-vendor-label">Vendor:</td>
+                                    </tr><tr>
+                                        <td class="cve-vendor-name">BerriAI</td>
+                                    </tr><tr>
+                                        <td class="cve-product-label">Product:</td>
+                                    </tr><tr>
+                                        <td class="cve-product-name">BerriAI</td>
+                                    </tr>
+                                </tbody>
+                            </table><table class="cve-epss-table">
+                                <tbody>
+                                    <tr>
+                                        <td class="cve-epss-label">EPSS:</td>
+                                    </tr><tr>
+                                        <td class="cve-epss-value">0.542620000</td>
+                                    </tr><tr>
+                                        <td class="cve-percentile-label">Percentile:</td>
+                                    </tr><tr>
+                                        <td class="cve-percentile-value">0.980570000</td>
+                                    </tr>
+                                </tbody>
+                            </table></div>
+                    </div>
+                    <div class="row cve-row" id="CVE-2026-42897">
+                        <div class="col-md-9">
+                            <div class="cve-post">
+                                <h2 class="cve-title">CVE-2026-42897</h2>
+                                <h4 class="cve-vuln">Microsoft Exchange Server Cross-Site Scripting Vulnerability</h4>
+                                <h6 class="cve-date">Date Added: 2026-05-15</h6>
+                                <div class="cve-description">
+                                    <h6>Description</h6>
+                                    <p class="cve-description-p">Microsoft Exchange Server contains a cross-site scripting vulnerability during web page generation in Outlook Web Access and when certain interaction conditions are met, arbitrary JavaScript can be executed in the browser context.</p>
+                                </div>
+                                <div class="cve-action">
+                                    <h6>Required Action</h6>
+                                    <p class="cve-action-p">Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.</p>
+                                </div><div class="cvss_metrics"><div class="v31">
+                                        <h6>cvssMetricV31</h6>
+                                        <pre>
+                    [
+  {
+    "cvssData": {
+      "attackComplexity": "LOW",
+      "attackVector": "NETWORK",
+      "availabilityImpact": "NONE",
+      "baseScore": 8.1,
+      "baseSeverity": "HIGH",
+      "confidentialityImpact": "HIGH",
+      "integrityImpact": "HIGH",
+      "privilegesRequired": "NONE",
+      "scope": "UNCHANGED",
+      "userInteraction": "REQUIRED",
+      "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:N",
+      "version": "3.1"
+    },
+    "exploitabilityScore": 2.8,
+    "impactScore": 5.2,
+    "source": "secure@microsoft.com",
+    "type": "Secondary"
+  },
+  {
+    "cvssData": {
+      "attackComplexity": "LOW",
+      "attackVector": "NETWORK",
+      "availabilityImpact": "NONE",
+      "baseScore": 6.1,
+      "baseSeverity": "MEDIUM",
+      "confidentialityImpact": "LOW",
+      "integrityImpact": "LOW",
+      "privilegesRequired": "NONE",
+      "scope": "CHANGED",
+      "userInteraction": "REQUIRED",
+      "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+      "version": "3.1"
+    },
+    "exploitabilityScore": 2.8,
+    "impactScore": 2.7,
+    "source": "nvd@nist.gov",
+    "type": "Primary"
+  }
+]
+                                        </pre>
+                                    </div></div></div>
+                        </div>
+                        <div class="col-md-3"><div class="cve-status">
+                                <b>Status:</b>
+                Analyzed
+                            </div><table class="cve-vendor-table">
+                                <tbody>
+                                    <tr>
+                                        <td class="cve-vendor-label">Vendor:</td>
+                                    </tr><tr>
+                                        <td class="cve-vendor-name">Microsoft</td>
+                                    </tr><tr>
+                                        <td class="cve-product-label">Product:</td>
+                                    </tr><tr>
+                                        <td class="cve-product-name">Microsoft</td>
+                                    </tr>
+                                </tbody>
+                            </table><table class="cve-epss-table">
+                                <tbody>
+                                    <tr>
+                                        <td class="cve-epss-label">EPSS:</td>
+                                    </tr><tr>
+                                        <td class="cve-epss-value">0.062880000</td>
+                                    </tr><tr>
+                                        <td class="cve-percentile-label">Percentile:</td>
+                                    </tr><tr>
+                                        <td class="cve-percentile-value">0.910450000</td>
+                                    </tr>
+                                </tbody>
+                            </table></div>
+                    </div>
+                    <div class="row cve-row" id="CVE-2026-45498">
+                        <div class="col-md-9">
+                            <div class="cve-post">
+                                <h2 class="cve-title">CVE-2026-45498</h2>
+                                <h4 class="cve-vuln">Microsoft Defender Denial of Service Vulnerability</h4>
+                                <h6 class="cve-date">Date Added: 2026-05-20</h6>
+                                <div class="cve-description">
+                                    <h6>Description</h6>
+                                    <p class="cve-description-p">Microsoft Defender contains an unspecified vulnerability that allows for denial of service.</p>
+                                </div>
+                                <div class="cve-action">
+                                    <h6>Required Action</h6>
+                                    <p class="cve-action-p">Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.</p>
+                                </div><div class="cvss_metrics"><div class="v31">
+                                        <h6>cvssMetricV31</h6>
+                                        <pre>
+                    [
+  {
+    "cvssData": {
+      "attackComplexity": "LOW",
+      "attackVector": "LOCAL",
+      "availabilityImpact": "LOW",
+      "baseScore": 4.0,
+      "baseSeverity": "MEDIUM",
+      "confidentialityImpact": "NONE",
+      "integrityImpact": "NONE",
+      "privilegesRequired": "NONE",
+      "scope": "UNCHANGED",
+      "userInteraction": "NONE",
+      "vectorString": "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+      "version": "3.1"
+    },
+    "exploitabilityScore": 2.5,
+    "impactScore": 1.4,
+    "source": "secure@microsoft.com",
+    "type": "Secondary"
+  },
+  {
+    "cvssData": {
+      "attackComplexity": "LOW",
+      "attackVector": "NETWORK",
+      "availabilityImpact": "HIGH",
+      "baseScore": 7.5,
+      "baseSeverity": "HIGH",
+      "confidentialityImpact": "NONE",
+      "integrityImpact": "NONE",
+      "privilegesRequired": "NONE",
+      "scope": "UNCHANGED",
+      "userInteraction": "NONE",
+      "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "version": "3.1"
+    },
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6,
+    "source": "nvd@nist.gov",
+    "type": "Primary"
+  }
+]
+                                        </pre>
+                                    </div></div></div>
+                        </div>
+                        <div class="col-md-3"><div class="cve-status">
+                                <b>Status:</b>
+                Analyzed
+                            </div><table class="cve-vendor-table">
+                                <tbody>
+                                    <tr>
+                                        <td class="cve-vendor-label">Vendor:</td>
+                                    </tr><tr>
+                                        <td class="cve-vendor-name">Microsoft</td>
+                                    </tr><tr>
+                                        <td class="cve-product-label">Product:</td>
+                                    </tr><tr>
+                                        <td class="cve-product-name">Microsoft</td>
+                                    </tr>
+                                </tbody>
+                            </table><table class="cve-epss-table">
+                                <tbody>
+                                    <tr>
+                                        <td class="cve-epss-label">EPSS:</td>
+                                    </tr><tr>
+                                        <td class="cve-epss-value">0.027720000</td>
+                                    </tr><tr>
+                                        <td class="cve-percentile-label">Percentile:</td>
+                                    </tr><tr>
+                                        <td class="cve-percentile-value">0.862170000</td>
                                     </tr>
                                 </tbody>
                             </table></div>
@@ -5125,11 +6040,11 @@ tags:
                                     <tr>
                                         <td class="cve-epss-label">EPSS:</td>
                                     </tr><tr>
-                                        <td class="cve-epss-value">0.008680000</td>
+                                        <td class="cve-epss-value">0.005030000</td>
                                     </tr><tr>
                                         <td class="cve-percentile-label">Percentile:</td>
                                     </tr><tr>
-                                        <td class="cve-percentile-value">0.752800000</td>
+                                        <td class="cve-percentile-value">0.663410000</td>
                                     </tr>
                                 </tbody>
                             </table></div>
@@ -5195,11 +6110,11 @@ tags:
                                     <tr>
                                         <td class="cve-epss-label">EPSS:</td>
                                     </tr><tr>
-                                        <td class="cve-epss-value"></td>
+                                        <td class="cve-epss-value">0.049070000</td>
                                     </tr><tr>
                                         <td class="cve-percentile-label">Percentile:</td>
                                     </tr><tr>
-                                        <td class="cve-percentile-value"></td>
+                                        <td class="cve-percentile-value">0.897100000</td>
                                     </tr>
                                 </tbody>
                             </table></div>
@@ -5213,15 +6128,18 @@ tags:
                         <table class="table table-hover">
                             <thead><tr><th>Vendor</th><th>Count</th></tr></thead>
                             <tbody>
-                                <tr><td>Microsoft</td><td>9</td></tr>
-                                <tr><td>Cisco</td><td>6</td></tr>
+                                <tr><td>Microsoft</td><td>16</td></tr>
+                                <tr><td>Cisco</td><td>7</td></tr>
                                 <tr><td>Apple</td><td>6</td></tr>
+                                <tr><td>Adobe</td><td>3</td></tr>
                                 <tr><td>Ivanti</td><td>3</td></tr>
                                 <tr><td>Google</td><td>3</td></tr>
+                                <tr><td>Langflow</td><td>2</td></tr>
                                 <tr><td>SimpleHelp </td><td>2</td></tr>
                                 <tr><td>Synacor</td><td>2</td></tr>
-                                <tr><td>Adobe</td><td>2</td></tr>
                                 <tr><td>Fortinet</td><td>2</td></tr>
+                                <tr><td>Trend Micro</td><td>1</td></tr>
+                                <tr><td>BerriAI</td><td>1</td></tr>
                                 <tr><td>Palo Alto Networks</td><td>1</td></tr>
                                 <tr><td>Linux</td><td>1</td></tr>
                                 <tr><td>WebPros</td><td>1</td></tr>
@@ -5238,7 +6156,6 @@ tags:
                                 <tr><td>Citrix</td><td>1</td></tr>
                                 <tr><td>F5</td><td>1</td></tr>
                                 <tr><td>Aquasecurity</td><td>1</td></tr>
-                                <tr><td>Langflow</td><td>1</td></tr>
                                 <tr><td>Craft CMS</td><td>1</td></tr>
                                 <tr><td>Laravel</td><td>1</td></tr>
                                 <tr><td>Wing FTP Server</td><td>1</td></tr>
@@ -5260,17 +6177,22 @@ tags:
                             <thead><tr><th>Date Added</th><th>Count</th></tr></thead>
                             <tbody>
                                 <tr><td>2026-04-20</td><td>8</td></tr>
+                                <tr><td>2026-05-20</td><td>7</td></tr>
                                 <tr><td>2026-04-13</td><td>7</td></tr>
                                 <tr><td>2026-03-20</td><td>5</td></tr>
                                 <tr><td>2026-03-05</td><td>5</td></tr>
                                 <tr><td>2026-04-24</td><td>4</td></tr>
                                 <tr><td>2026-03-09</td><td>3</td></tr>
+                                <tr><td>2026-05-21</td><td>2</td></tr>
                                 <tr><td>2026-04-28</td><td>2</td></tr>
                                 <tr><td>2026-04-14</td><td>2</td></tr>
                                 <tr><td>2026-03-18</td><td>2</td></tr>
                                 <tr><td>2026-03-13</td><td>2</td></tr>
                                 <tr><td>2026-03-03</td><td>2</td></tr>
                                 <tr><td>2026-02-25</td><td>2</td></tr>
+                                <tr><td>2026-05-15</td><td>1</td></tr>
+                                <tr><td>2026-05-14</td><td>1</td></tr>
+                                <tr><td>2026-05-08</td><td>1</td></tr>
                                 <tr><td>2026-05-07</td><td>1</td></tr>
                                 <tr><td>2026-05-06</td><td>1</td></tr>
                                 <tr><td>2026-05-01</td><td>1</td></tr>
