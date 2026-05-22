@@ -1,6 +1,6 @@
 ---
 layout: post
-title: CISA KEVC L7D - 2026 - 4 - 23
+title: CISA KEVC L7D - 2026 - 4 - 16
 tags:
 - CVE-2026-6973
 - CVE-2026-0300
@@ -23,6 +23,15 @@ tags:
 - CVE-2025-32975
 - CVE-2024-27199
 - CVE-2026-34197
+- CVE-2009-0238
+- CVE-2026-32201
+- CVE-2012-1854
+- CVE-2025-60710
+- CVE-2023-21529
+- CVE-2023-36424
+- CVE-2020-9715
+- CVE-2026-21643
+- CVE-2026-34621
 - CWE-20
 - CWE-787
 - CWE-669
@@ -40,16 +49,23 @@ tags:
 - CWE-257
 - CWE-23
 - CWE-94
+- CWE-426
+- CWE-59
+- CWE-502
+- CWE-125
+- CWE-416
+- CWE-89
+- CWE-1321
 ---
 
 <div class="post">
     <div class="row report-row">
         <div class="col-md-12 report-col-12">
             <h1 class='post-title'>
-                CISA KEVC :: 2026-04-23
+                CISA KEVC :: 2026-04-16
             </h1>
             <h3 class='post-date'>
-                Report Window: 2026-04-23 to 2026-4-16
+                Report Window: 2026-04-16 to 2026-4-9
             </h3>
         </div>
     </div>
@@ -87,7 +103,7 @@ tags:
                                         <div class="card-body">
                                             <div class="label">HIGH (Today)</div>
                                             <div class="value">
-                    1
+                    0
                                             </div>
                                         </div>
                                     </div>
@@ -95,7 +111,7 @@ tags:
                                         <div class="card-body">
                                             <div class="label">HIGH (L7D)</div>
                                             <div class="value">
-                    4
+                    6
                                             </div>
                                         </div>
                                     </div>
@@ -107,7 +123,7 @@ tags:
                                         <div class="card-body">
                                             <div class="label">MEDIUM (Today)</div>
                                             <div class="value">
-                    0
+                    1
                                             </div>
                                         </div>
                                     </div>
@@ -115,7 +131,7 @@ tags:
                                         <div class="card-body">
                                             <div class="label">MEDIUM (L7D)</div>
                                             <div class="value">
-                    6
+                    7
                                             </div>
                                         </div>
                                     </div>
@@ -169,7 +185,7 @@ tags:
                                         <div class="card-body">
                                             <div class="label">CVEs (L7D)</div>
                                             <div class="value">
-        21
+        30
                                             </div>
                                         </div>
                                     </div>
@@ -181,7 +197,7 @@ tags:
                                         <div class="card-body">
                                             <div class="label">CWEs (Today)</div>
                                             <div class="value">
-        1
+        2
                                             </div>
                                         </div>
                                     </div>
@@ -193,7 +209,7 @@ tags:
                                         <div class="card-body">
                                             <div class="label">CWEs (L7D)</div>
                                             <div class="value">
-        17
+        24
                                             </div>
                                         </div>
                                     </div>
@@ -208,6 +224,306 @@ tags:
             <div class="row report-row">
                 <!-- CVE CONTENT -->
                 <div class="col-md-9 report-col-9">
+                    <div class="row cve-row" id="CVE-2009-0238">
+                        <div class="col-md-9">
+                            <div class="cve-post">
+                                <h2 class="cve-title">CVE-2009-0238</h2>
+                                <h4 class="cve-vuln">Microsoft Office Remote Code Execution</h4>
+                                <h6 class="cve-date">Date Added: 2026-04-14</h6>
+                                <div class="cve-description">
+                                    <h6>Description</h6>
+                                    <p class="cve-description-p">Microsoft Office Excel contains a remote code execution vulnerability that could allow an attacker to take complete control of an affected system if a user opens a specially crafted Excel file that includes a malformed object.</p>
+                                </div>
+                                <div class="cve-action">
+                                    <h6>Required Action</h6>
+                                    <p class="cve-action-p">Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.</p>
+                                </div><div class="cvss_metrics"><div class="v31">
+                                        <h6>cvssMetricV31</h6>
+                                        <pre>
+                    [
+  {
+    "cvssData": {
+      "attackComplexity": "LOW",
+      "attackVector": "NETWORK",
+      "availabilityImpact": "HIGH",
+      "baseScore": 8.8,
+      "baseSeverity": "HIGH",
+      "confidentialityImpact": "HIGH",
+      "integrityImpact": "HIGH",
+      "privilegesRequired": "NONE",
+      "scope": "UNCHANGED",
+      "userInteraction": "REQUIRED",
+      "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "version": "3.1"
+    },
+    "exploitabilityScore": 2.8,
+    "impactScore": 5.9,
+    "source": "134c704f-9b21-4f2e-91b3-4a467353bcc0",
+    "type": "Secondary"
+  }
+]
+                                        </pre>
+                                    </div></div></div>
+                        </div>
+                        <div class="col-md-3"><div class="cve-status">
+                                <b>Status:</b>
+                Analyzed
+                            </div><table class="cve-vendor-table">
+                                <tbody>
+                                    <tr>
+                                        <td class="cve-vendor-label">Vendor:</td>
+                                    </tr><tr>
+                                        <td class="cve-vendor-name">Microsoft</td>
+                                    </tr><tr>
+                                        <td class="cve-product-label">Product:</td>
+                                    </tr><tr>
+                                        <td class="cve-product-name">Microsoft</td>
+                                    </tr>
+                                </tbody>
+                            </table><table class="cve-epss-table">
+                                <tbody>
+                                    <tr>
+                                        <td class="cve-epss-label">EPSS:</td>
+                                    </tr><tr>
+                                        <td class="cve-epss-value">0.749130000</td>
+                                    </tr><tr>
+                                        <td class="cve-percentile-label">Percentile:</td>
+                                    </tr><tr>
+                                        <td class="cve-percentile-value">0.988840000</td>
+                                    </tr>
+                                </tbody>
+                            </table></div>
+                    </div>
+                    <div class="row cve-row" id="CVE-2012-1854">
+                        <div class="col-md-9">
+                            <div class="cve-post">
+                                <h2 class="cve-title">CVE-2012-1854</h2>
+                                <h4 class="cve-vuln">Microsoft Visual Basic for Applications Insecure Library Loading Vulnerability</h4>
+                                <h6 class="cve-date">Date Added: 2026-04-13</h6>
+                                <div class="cve-description">
+                                    <h6>Description</h6>
+                                    <p class="cve-description-p">Microsoft Visual Basic for Applications (VBA) contains an insecure library loading vulnerability that could allow for remote code execution.</p>
+                                </div>
+                                <div class="cve-action">
+                                    <h6>Required Action</h6>
+                                    <p class="cve-action-p">Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.</p>
+                                </div><div class="cvss_metrics"><div class="v31">
+                                        <h6>cvssMetricV31</h6>
+                                        <pre>
+                    [
+  {
+    "cvssData": {
+      "attackComplexity": "LOW",
+      "attackVector": "LOCAL",
+      "availabilityImpact": "HIGH",
+      "baseScore": 7.8,
+      "baseSeverity": "HIGH",
+      "confidentialityImpact": "HIGH",
+      "integrityImpact": "HIGH",
+      "privilegesRequired": "NONE",
+      "scope": "UNCHANGED",
+      "userInteraction": "REQUIRED",
+      "vectorString": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "version": "3.1"
+    },
+    "exploitabilityScore": 1.8,
+    "impactScore": 5.9,
+    "source": "134c704f-9b21-4f2e-91b3-4a467353bcc0",
+    "type": "Secondary"
+  }
+]
+                                        </pre>
+                                    </div></div></div>
+                        </div>
+                        <div class="col-md-3"><div class="cve-status">
+                                <b>Status:</b>
+                Analyzed
+                            </div><table class="cve-vendor-table">
+                                <tbody>
+                                    <tr>
+                                        <td class="cve-vendor-label">Vendor:</td>
+                                    </tr><tr>
+                                        <td class="cve-vendor-name">Microsoft</td>
+                                    </tr><tr>
+                                        <td class="cve-product-label">Product:</td>
+                                    </tr><tr>
+                                        <td class="cve-product-name">Microsoft</td>
+                                    </tr>
+                                </tbody>
+                            </table><table class="cve-epss-table">
+                                <tbody>
+                                    <tr>
+                                        <td class="cve-epss-label">EPSS:</td>
+                                    </tr><tr>
+                                        <td class="cve-epss-value">0.046390000</td>
+                                    </tr><tr>
+                                        <td class="cve-percentile-label">Percentile:</td>
+                                    </tr><tr>
+                                        <td class="cve-percentile-value">0.893500000</td>
+                                    </tr>
+                                </tbody>
+                            </table></div>
+                    </div>
+                    <div class="row cve-row" id="CVE-2020-9715">
+                        <div class="col-md-9">
+                            <div class="cve-post">
+                                <h2 class="cve-title">CVE-2020-9715</h2>
+                                <h4 class="cve-vuln">Adobe Acrobat Use-After-Free Vulnerability</h4>
+                                <h6 class="cve-date">Date Added: 2026-04-13</h6>
+                                <div class="cve-description">
+                                    <h6>Description</h6>
+                                    <p class="cve-description-p">Adobe Acrobat contains a use-after-free vulnerability that allows for code execution</p>
+                                </div>
+                                <div class="cve-action">
+                                    <h6>Required Action</h6>
+                                    <p class="cve-action-p">Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.</p>
+                                </div><div class="cvss_metrics"><div class="v31">
+                                        <h6>cvssMetricV31</h6>
+                                        <pre>
+                    [
+  {
+    "cvssData": {
+      "attackComplexity": "LOW",
+      "attackVector": "LOCAL",
+      "availabilityImpact": "HIGH",
+      "baseScore": 7.8,
+      "baseSeverity": "HIGH",
+      "confidentialityImpact": "HIGH",
+      "integrityImpact": "HIGH",
+      "privilegesRequired": "NONE",
+      "scope": "UNCHANGED",
+      "userInteraction": "REQUIRED",
+      "vectorString": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "version": "3.1"
+    },
+    "exploitabilityScore": 1.8,
+    "impactScore": 5.9,
+    "source": "nvd@nist.gov",
+    "type": "Primary"
+  },
+  {
+    "cvssData": {
+      "attackComplexity": "LOW",
+      "attackVector": "LOCAL",
+      "availabilityImpact": "HIGH",
+      "baseScore": 7.8,
+      "baseSeverity": "HIGH",
+      "confidentialityImpact": "HIGH",
+      "integrityImpact": "HIGH",
+      "privilegesRequired": "NONE",
+      "scope": "UNCHANGED",
+      "userInteraction": "REQUIRED",
+      "vectorString": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "version": "3.1"
+    },
+    "exploitabilityScore": 1.8,
+    "impactScore": 5.9,
+    "source": "134c704f-9b21-4f2e-91b3-4a467353bcc0",
+    "type": "Secondary"
+  }
+]
+                                        </pre>
+                                    </div></div></div>
+                        </div>
+                        <div class="col-md-3"><div class="cve-status">
+                                <b>Status:</b>
+                Analyzed
+                            </div><table class="cve-vendor-table">
+                                <tbody>
+                                    <tr>
+                                        <td class="cve-vendor-label">Vendor:</td>
+                                    </tr><tr>
+                                        <td class="cve-vendor-name">Adobe</td>
+                                    </tr><tr>
+                                        <td class="cve-product-label">Product:</td>
+                                    </tr><tr>
+                                        <td class="cve-product-name">Adobe</td>
+                                    </tr>
+                                </tbody>
+                            </table><table class="cve-epss-table">
+                                <tbody>
+                                    <tr>
+                                        <td class="cve-epss-label">EPSS:</td>
+                                    </tr><tr>
+                                        <td class="cve-epss-value">0.762100000</td>
+                                    </tr><tr>
+                                        <td class="cve-percentile-label">Percentile:</td>
+                                    </tr><tr>
+                                        <td class="cve-percentile-value">0.989420000</td>
+                                    </tr>
+                                </tbody>
+                            </table></div>
+                    </div>
+                    <div class="row cve-row" id="CVE-2023-21529">
+                        <div class="col-md-9">
+                            <div class="cve-post">
+                                <h2 class="cve-title">CVE-2023-21529</h2>
+                                <h4 class="cve-vuln">Microsoft Exchange Server Deserialization of Untrusted Data Vulnerability</h4>
+                                <h6 class="cve-date">Date Added: 2026-04-13</h6>
+                                <div class="cve-description">
+                                    <h6>Description</h6>
+                                    <p class="cve-description-p">Microsoft Exchange Server contains a deserialization of untrusted data that allows an authenticated attacker to achieve remote code execution.</p>
+                                </div>
+                                <div class="cve-action">
+                                    <h6>Required Action</h6>
+                                    <p class="cve-action-p">Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.</p>
+                                </div><div class="cvss_metrics"><div class="v31">
+                                        <h6>cvssMetricV31</h6>
+                                        <pre>
+                    [
+  {
+    "cvssData": {
+      "attackComplexity": "LOW",
+      "attackVector": "NETWORK",
+      "availabilityImpact": "HIGH",
+      "baseScore": 8.8,
+      "baseSeverity": "HIGH",
+      "confidentialityImpact": "HIGH",
+      "integrityImpact": "HIGH",
+      "privilegesRequired": "LOW",
+      "scope": "UNCHANGED",
+      "userInteraction": "NONE",
+      "vectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "version": "3.1"
+    },
+    "exploitabilityScore": 2.8,
+    "impactScore": 5.9,
+    "source": "secure@microsoft.com",
+    "type": "Secondary"
+  }
+]
+                                        </pre>
+                                    </div></div></div>
+                        </div>
+                        <div class="col-md-3"><div class="cve-status">
+                                <b>Status:</b>
+                Analyzed
+                            </div><table class="cve-vendor-table">
+                                <tbody>
+                                    <tr>
+                                        <td class="cve-vendor-label">Vendor:</td>
+                                    </tr><tr>
+                                        <td class="cve-vendor-name">Microsoft</td>
+                                    </tr><tr>
+                                        <td class="cve-product-label">Product:</td>
+                                    </tr><tr>
+                                        <td class="cve-product-name">Microsoft</td>
+                                    </tr>
+                                </tbody>
+                            </table><table class="cve-epss-table">
+                                <tbody>
+                                    <tr>
+                                        <td class="cve-epss-label">EPSS:</td>
+                                    </tr><tr>
+                                        <td class="cve-epss-value">0.293490000</td>
+                                    </tr><tr>
+                                        <td class="cve-percentile-label">Percentile:</td>
+                                    </tr><tr>
+                                        <td class="cve-percentile-value">0.966270000</td>
+                                    </tr>
+                                </tbody>
+                            </table></div>
+                    </div>
                     <div class="row cve-row" id="CVE-2023-27351">
                         <div class="col-md-9">
                             <div class="cve-post">
@@ -274,6 +590,96 @@ tags:
                                         <td class="cve-percentile-label">Percentile:</td>
                                     </tr><tr>
                                         <td class="cve-percentile-value">0.994390000</td>
+                                    </tr>
+                                </tbody>
+                            </table></div>
+                    </div>
+                    <div class="row cve-row" id="CVE-2023-36424">
+                        <div class="col-md-9">
+                            <div class="cve-post">
+                                <h2 class="cve-title">CVE-2023-36424</h2>
+                                <h4 class="cve-vuln">Microsoft Windows Out-of-Bounds Read Vulnerability</h4>
+                                <h6 class="cve-date">Date Added: 2026-04-13</h6>
+                                <div class="cve-description">
+                                    <h6>Description</h6>
+                                    <p class="cve-description-p">Microsoft Windows Common Log File System Driver contains an out-of-bounds read vulnerability that could allow a threat actor for privileges escalation</p>
+                                </div>
+                                <div class="cve-action">
+                                    <h6>Required Action</h6>
+                                    <p class="cve-action-p">Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.</p>
+                                </div><div class="cvss_metrics"><div class="v31">
+                                        <h6>cvssMetricV31</h6>
+                                        <pre>
+                    [
+  {
+    "cvssData": {
+      "attackComplexity": "LOW",
+      "attackVector": "LOCAL",
+      "availabilityImpact": "HIGH",
+      "baseScore": 7.8,
+      "baseSeverity": "HIGH",
+      "confidentialityImpact": "HIGH",
+      "integrityImpact": "HIGH",
+      "privilegesRequired": "LOW",
+      "scope": "UNCHANGED",
+      "userInteraction": "NONE",
+      "vectorString": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "version": "3.1"
+    },
+    "exploitabilityScore": 1.8,
+    "impactScore": 5.9,
+    "source": "secure@microsoft.com",
+    "type": "Secondary"
+  },
+  {
+    "cvssData": {
+      "attackComplexity": "LOW",
+      "attackVector": "LOCAL",
+      "availabilityImpact": "HIGH",
+      "baseScore": 7.8,
+      "baseSeverity": "HIGH",
+      "confidentialityImpact": "HIGH",
+      "integrityImpact": "HIGH",
+      "privilegesRequired": "LOW",
+      "scope": "UNCHANGED",
+      "userInteraction": "NONE",
+      "vectorString": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "version": "3.1"
+    },
+    "exploitabilityScore": 1.8,
+    "impactScore": 5.9,
+    "source": "nvd@nist.gov",
+    "type": "Primary"
+  }
+]
+                                        </pre>
+                                    </div></div></div>
+                        </div>
+                        <div class="col-md-3"><div class="cve-status">
+                                <b>Status:</b>
+                Analyzed
+                            </div><table class="cve-vendor-table">
+                                <tbody>
+                                    <tr>
+                                        <td class="cve-vendor-label">Vendor:</td>
+                                    </tr><tr>
+                                        <td class="cve-vendor-name">Microsoft</td>
+                                    </tr><tr>
+                                        <td class="cve-product-label">Product:</td>
+                                    </tr><tr>
+                                        <td class="cve-product-name">Microsoft</td>
+                                    </tr>
+                                </tbody>
+                            </table><table class="cve-epss-table">
+                                <tbody>
+                                    <tr>
+                                        <td class="cve-epss-label">EPSS:</td>
+                                    </tr><tr>
+                                        <td class="cve-epss-value">0.079550000</td>
+                                    </tr><tr>
+                                        <td class="cve-percentile-label">Percentile:</td>
+                                    </tr><tr>
+                                        <td class="cve-percentile-value">0.920980000</td>
                                     </tr>
                                 </tbody>
                             </table></div>
@@ -1008,6 +1414,76 @@ tags:
                                 </tbody>
                             </table></div>
                     </div>
+                    <div class="row cve-row" id="CVE-2025-60710">
+                        <div class="col-md-9">
+                            <div class="cve-post">
+                                <h2 class="cve-title">CVE-2025-60710</h2>
+                                <h4 class="cve-vuln">Microsoft Windows Link Following Vulnerability</h4>
+                                <h6 class="cve-date">Date Added: 2026-04-13</h6>
+                                <div class="cve-description">
+                                    <h6>Description</h6>
+                                    <p class="cve-description-p">Microsoft Windows contains a link following vulnerability that allows for privilege escalation</p>
+                                </div>
+                                <div class="cve-action">
+                                    <h6>Required Action</h6>
+                                    <p class="cve-action-p">Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.</p>
+                                </div><div class="cvss_metrics"><div class="v31">
+                                        <h6>cvssMetricV31</h6>
+                                        <pre>
+                    [
+  {
+    "cvssData": {
+      "attackComplexity": "LOW",
+      "attackVector": "LOCAL",
+      "availabilityImpact": "HIGH",
+      "baseScore": 7.8,
+      "baseSeverity": "HIGH",
+      "confidentialityImpact": "HIGH",
+      "integrityImpact": "HIGH",
+      "privilegesRequired": "LOW",
+      "scope": "UNCHANGED",
+      "userInteraction": "NONE",
+      "vectorString": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "version": "3.1"
+    },
+    "exploitabilityScore": 1.8,
+    "impactScore": 5.9,
+    "source": "secure@microsoft.com",
+    "type": "Secondary"
+  }
+]
+                                        </pre>
+                                    </div></div></div>
+                        </div>
+                        <div class="col-md-3"><div class="cve-status">
+                                <b>Status:</b>
+                Analyzed
+                            </div><table class="cve-vendor-table">
+                                <tbody>
+                                    <tr>
+                                        <td class="cve-vendor-label">Vendor:</td>
+                                    </tr><tr>
+                                        <td class="cve-vendor-name">Microsoft</td>
+                                    </tr><tr>
+                                        <td class="cve-product-label">Product:</td>
+                                    </tr><tr>
+                                        <td class="cve-product-name">Microsoft</td>
+                                    </tr>
+                                </tbody>
+                            </table><table class="cve-epss-table">
+                                <tbody>
+                                    <tr>
+                                        <td class="cve-epss-label">EPSS:</td>
+                                    </tr><tr>
+                                        <td class="cve-epss-value">0.297160000</td>
+                                    </tr><tr>
+                                        <td class="cve-percentile-label">Percentile:</td>
+                                    </tr><tr>
+                                        <td class="cve-percentile-value">0.966550000</td>
+                                    </tr>
+                                </tbody>
+                            </table></div>
+                    </div>
                     <div class="row cve-row" id="CVE-2026-0300">
                         <div class="col-md-9">
                             <div class="cve-post">
@@ -1328,6 +1804,76 @@ tags:
                                 </tbody>
                             </table></div>
                     </div>
+                    <div class="row cve-row" id="CVE-2026-21643">
+                        <div class="col-md-9">
+                            <div class="cve-post">
+                                <h2 class="cve-title">CVE-2026-21643</h2>
+                                <h4 class="cve-vuln">Fortinet FortiClient EMS SQL Injection Vulnerability</h4>
+                                <h6 class="cve-date">Date Added: 2026-04-13</h6>
+                                <div class="cve-description">
+                                    <h6>Description</h6>
+                                    <p class="cve-description-p">Fortinet FortiClient EMS contains a SQL injection vulnerability that may allow an unauthenticated attacker to execute unauthorized code or commands via specifically crafted HTTP requests.</p>
+                                </div>
+                                <div class="cve-action">
+                                    <h6>Required Action</h6>
+                                    <p class="cve-action-p">Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.</p>
+                                </div><div class="cvss_metrics"><div class="v31">
+                                        <h6>cvssMetricV31</h6>
+                                        <pre>
+                    [
+  {
+    "cvssData": {
+      "attackComplexity": "LOW",
+      "attackVector": "NETWORK",
+      "availabilityImpact": "HIGH",
+      "baseScore": 9.8,
+      "baseSeverity": "CRITICAL",
+      "confidentialityImpact": "HIGH",
+      "integrityImpact": "HIGH",
+      "privilegesRequired": "NONE",
+      "scope": "UNCHANGED",
+      "userInteraction": "NONE",
+      "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "version": "3.1"
+    },
+    "exploitabilityScore": 3.9,
+    "impactScore": 5.9,
+    "source": "psirt@fortinet.com",
+    "type": "Secondary"
+  }
+]
+                                        </pre>
+                                    </div></div></div>
+                        </div>
+                        <div class="col-md-3"><div class="cve-status">
+                                <b>Status:</b>
+                Analyzed
+                            </div><table class="cve-vendor-table">
+                                <tbody>
+                                    <tr>
+                                        <td class="cve-vendor-label">Vendor:</td>
+                                    </tr><tr>
+                                        <td class="cve-vendor-name">Fortinet</td>
+                                    </tr><tr>
+                                        <td class="cve-product-label">Product:</td>
+                                    </tr><tr>
+                                        <td class="cve-product-name">Fortinet</td>
+                                    </tr>
+                                </tbody>
+                            </table><table class="cve-epss-table">
+                                <tbody>
+                                    <tr>
+                                        <td class="cve-epss-label">EPSS:</td>
+                                    </tr><tr>
+                                        <td class="cve-epss-value">0.625160000</td>
+                                    </tr><tr>
+                                        <td class="cve-percentile-label">Percentile:</td>
+                                    </tr><tr>
+                                        <td class="cve-percentile-value">0.983820000</td>
+                                    </tr>
+                                </tbody>
+                            </table></div>
+                    </div>
                     <div class="row cve-row" id="CVE-2026-31431">
                         <div class="col-md-9">
                             <div class="cve-post">
@@ -1394,6 +1940,76 @@ tags:
                                         <td class="cve-percentile-label">Percentile:</td>
                                     </tr><tr>
                                         <td class="cve-percentile-value">0.883590000</td>
+                                    </tr>
+                                </tbody>
+                            </table></div>
+                    </div>
+                    <div class="row cve-row" id="CVE-2026-32201">
+                        <div class="col-md-9">
+                            <div class="cve-post">
+                                <h2 class="cve-title">CVE-2026-32201</h2>
+                                <h4 class="cve-vuln">Microsoft SharePoint Server Improper Input Validation Vulnerability</h4>
+                                <h6 class="cve-date">Date Added: 2026-04-14</h6>
+                                <div class="cve-description">
+                                    <h6>Description</h6>
+                                    <p class="cve-description-p">Microsoft SharePoint Server contains an improper input validation vulnerability that allows an unauthorized attacker to perform spoofing over a network.</p>
+                                </div>
+                                <div class="cve-action">
+                                    <h6>Required Action</h6>
+                                    <p class="cve-action-p">Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.</p>
+                                </div><div class="cvss_metrics"><div class="v31">
+                                        <h6>cvssMetricV31</h6>
+                                        <pre>
+                    [
+  {
+    "cvssData": {
+      "attackComplexity": "LOW",
+      "attackVector": "NETWORK",
+      "availabilityImpact": "NONE",
+      "baseScore": 6.5,
+      "baseSeverity": "MEDIUM",
+      "confidentialityImpact": "LOW",
+      "integrityImpact": "LOW",
+      "privilegesRequired": "NONE",
+      "scope": "UNCHANGED",
+      "userInteraction": "NONE",
+      "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N",
+      "version": "3.1"
+    },
+    "exploitabilityScore": 3.9,
+    "impactScore": 2.5,
+    "source": "secure@microsoft.com",
+    "type": "Primary"
+  }
+]
+                                        </pre>
+                                    </div></div></div>
+                        </div>
+                        <div class="col-md-3"><div class="cve-status">
+                                <b>Status:</b>
+                Undergoing Analysis
+                            </div><table class="cve-vendor-table">
+                                <tbody>
+                                    <tr>
+                                        <td class="cve-vendor-label">Vendor:</td>
+                                    </tr><tr>
+                                        <td class="cve-vendor-name">Microsoft</td>
+                                    </tr><tr>
+                                        <td class="cve-product-label">Product:</td>
+                                    </tr><tr>
+                                        <td class="cve-product-name">Microsoft</td>
+                                    </tr>
+                                </tbody>
+                            </table><table class="cve-epss-table">
+                                <tbody>
+                                    <tr>
+                                        <td class="cve-epss-label">EPSS:</td>
+                                    </tr><tr>
+                                        <td class="cve-epss-value">0.068710000</td>
+                                    </tr><tr>
+                                        <td class="cve-percentile-label">Percentile:</td>
+                                    </tr><tr>
+                                        <td class="cve-percentile-value">0.914360000</td>
                                     </tr>
                                 </tbody>
                             </table></div>
@@ -1604,6 +2220,76 @@ tags:
                                         <td class="cve-percentile-label">Percentile:</td>
                                     </tr><tr>
                                         <td class="cve-percentile-value">0.985560000</td>
+                                    </tr>
+                                </tbody>
+                            </table></div>
+                    </div>
+                    <div class="row cve-row" id="CVE-2026-34621">
+                        <div class="col-md-9">
+                            <div class="cve-post">
+                                <h2 class="cve-title">CVE-2026-34621</h2>
+                                <h4 class="cve-vuln">Adobe Acrobat and Reader Prototype Pollution Vulnerability</h4>
+                                <h6 class="cve-date">Date Added: 2026-04-13</h6>
+                                <div class="cve-description">
+                                    <h6>Description</h6>
+                                    <p class="cve-description-p">Adobe Acrobat and Reader contain a prototype pollution vulnerability that allows for arbitrary code execution.</p>
+                                </div>
+                                <div class="cve-action">
+                                    <h6>Required Action</h6>
+                                    <p class="cve-action-p">Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.</p>
+                                </div><div class="cvss_metrics"><div class="v31">
+                                        <h6>cvssMetricV31</h6>
+                                        <pre>
+                    [
+  {
+    "cvssData": {
+      "attackComplexity": "LOW",
+      "attackVector": "LOCAL",
+      "availabilityImpact": "HIGH",
+      "baseScore": 8.6,
+      "baseSeverity": "HIGH",
+      "confidentialityImpact": "HIGH",
+      "integrityImpact": "HIGH",
+      "privilegesRequired": "NONE",
+      "scope": "CHANGED",
+      "userInteraction": "REQUIRED",
+      "vectorString": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H",
+      "version": "3.1"
+    },
+    "exploitabilityScore": 1.8,
+    "impactScore": 6.0,
+    "source": "psirt@adobe.com",
+    "type": "Secondary"
+  }
+]
+                                        </pre>
+                                    </div></div></div>
+                        </div>
+                        <div class="col-md-3"><div class="cve-status">
+                                <b>Status:</b>
+                Analyzed
+                            </div><table class="cve-vendor-table">
+                                <tbody>
+                                    <tr>
+                                        <td class="cve-vendor-label">Vendor:</td>
+                                    </tr><tr>
+                                        <td class="cve-vendor-name">Adobe</td>
+                                    </tr><tr>
+                                        <td class="cve-product-label">Product:</td>
+                                    </tr><tr>
+                                        <td class="cve-product-name">Adobe</td>
+                                    </tr>
+                                </tbody>
+                            </table><table class="cve-epss-table">
+                                <tbody>
+                                    <tr>
+                                        <td class="cve-epss-label">EPSS:</td>
+                                    </tr><tr>
+                                        <td class="cve-epss-value">0.098960000</td>
+                                    </tr><tr>
+                                        <td class="cve-percentile-label">Percentile:</td>
+                                    </tr><tr>
+                                        <td class="cve-percentile-value">0.930450000</td>
                                     </tr>
                                 </tbody>
                             </table></div>
@@ -1827,9 +2513,10 @@ tags:
                         <table class="table table-hover">
                             <thead><tr><th>Vendor</th><th>Count</th></tr></thead>
                             <tbody>
+                                <tr><td>Microsoft</td><td>8</td></tr>
                                 <tr><td>Cisco</td><td>3</td></tr>
-                                <tr><td>Microsoft</td><td>2</td></tr>
                                 <tr><td>SimpleHelp </td><td>2</td></tr>
+                                <tr><td>Adobe</td><td>2</td></tr>
                                 <tr><td>Ivanti</td><td>1</td></tr>
                                 <tr><td>Palo Alto Networks</td><td>1</td></tr>
                                 <tr><td>Linux</td><td>1</td></tr>
@@ -1844,6 +2531,7 @@ tags:
                                 <tr><td>Quest</td><td>1</td></tr>
                                 <tr><td>JetBrains</td><td>1</td></tr>
                                 <tr><td>Apache</td><td>1</td></tr>
+                                <tr><td>Fortinet</td><td>1</td></tr>
                             </tbody>
                         </table>
                     </div>
@@ -1854,8 +2542,10 @@ tags:
                             <thead><tr><th>Date Added</th><th>Count</th></tr></thead>
                             <tbody>
                                 <tr><td>2026-04-20</td><td>8</td></tr>
+                                <tr><td>2026-04-13</td><td>7</td></tr>
                                 <tr><td>2026-04-24</td><td>4</td></tr>
                                 <tr><td>2026-04-28</td><td>2</td></tr>
+                                <tr><td>2026-04-14</td><td>2</td></tr>
                                 <tr><td>2026-05-07</td><td>1</td></tr>
                                 <tr><td>2026-05-06</td><td>1</td></tr>
                                 <tr><td>2026-05-01</td><td>1</td></tr>
