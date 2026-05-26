@@ -1,6 +1,6 @@
 ---
 layout: post
-title: CISA KEVC L7D - 2026 - 5 - 7
+title: CISA KEVC L7D - 2026 - 5 - 22
 tags:
 - CVE-2026-9082
 - CVE-2025-34291
@@ -13,12 +13,6 @@ tags:
 - CVE-2026-41091
 - CVE-2026-45498
 - CVE-2026-42897
-- CVE-2026-20182
-- CVE-2026-42208
-- CVE-2026-6973
-- CVE-2026-0300
-- CVE-2026-31431
-- CVE-2026-41940
 - CWE-89
 - CWE-346
 - CWE-23
@@ -29,21 +23,16 @@ tags:
 - CWE-399
 - CWE-59
 - CWE-79
-- CWE-287
-- CWE-20
-- CWE-787
-- CWE-669
-- CWE-306
 ---
 
 <div class="post">
     <div class="row report-row">
         <div class="col-md-12 report-col-12">
             <h1 class='post-title'>
-                CISA KEVC :: 2026-05-07
+                CISA KEVC :: 2026-05-22
             </h1>
             <h3 class='post-date'>
-                Report Window: 2026-05-07 to 2026-4-30
+                Report Window: 2026-05-22 to 2026-5-15
             </h3>
         </div>
     </div>
@@ -89,7 +78,7 @@ tags:
                                         <div class="card-body">
                                             <div class="label">HIGH (L7D)</div>
                                             <div class="value">
-                    5
+                    3
                                             </div>
                                         </div>
                                     </div>
@@ -109,7 +98,7 @@ tags:
                                         <div class="card-body">
                                             <div class="label">MEDIUM (L7D)</div>
                                             <div class="value">
-                    2
+                    1
                                             </div>
                                         </div>
                                     </div>
@@ -163,7 +152,7 @@ tags:
                                         <div class="card-body">
                                             <div class="label">CVEs (L7D)</div>
                                             <div class="value">
-        17
+        11
                                             </div>
                                         </div>
                                     </div>
@@ -187,7 +176,7 @@ tags:
                                         <div class="card-body">
                                             <div class="label">CWEs (L7D)</div>
                                             <div class="value">
-        15
+        10
                                             </div>
                                         </div>
                                     </div>
@@ -642,216 +631,6 @@ tags:
                                 </tbody>
                             </table></div>
                     </div>
-                    <div class="row cve-row" id="CVE-2026-0300">
-                        <div class="col-md-9">
-                            <div class="cve-post">
-                                <h2 class="cve-title">CVE-2026-0300</h2>
-                                <h4 class="cve-vuln">Palo Alto Networks PAN-OS Out-of-bounds Write Vulnerability</h4>
-                                <h6 class="cve-date">Date Added: 2026-05-06</h6>
-                                <div class="cve-description">
-                                    <h6>Description</h6>
-                                    <p class="cve-description-p">Palo Alto Networks PAN-OS contains an out-of-bounds write vulnerability in the User-ID Authentication Portal (aka Captive Portal) service that can allow an unauthenticated attacker to execute arbitrary code with root privileges on the PA-Series and VM-Series firewalls by sending specially crafted packets.</p>
-                                </div>
-                                <div class="cve-action">
-                                    <h6>Required Action</h6>
-                                    <p class="cve-action-p">Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable. Until the vendor releases an official fix, the following workaround should be implemented:  - Restrict User-ID Authentication Portal access to only trusted zones.  - Disable User-ID Authentication Portal if not required. 5/13/2026: Palo Alto has released a variety of patches. If these are relevant to your environment, please apply the designated patch.</p>
-                                </div><div class="cvss_metrics"><div class="v31">
-                                        <h6>cvssMetricV31</h6>
-                                        <pre>
-                    [
-  {
-    "cvssData": {
-      "attackComplexity": "LOW",
-      "attackVector": "NETWORK",
-      "availabilityImpact": "HIGH",
-      "baseScore": 9.8,
-      "baseSeverity": "CRITICAL",
-      "confidentialityImpact": "HIGH",
-      "integrityImpact": "HIGH",
-      "privilegesRequired": "NONE",
-      "scope": "UNCHANGED",
-      "userInteraction": "NONE",
-      "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
-      "version": "3.1"
-    },
-    "exploitabilityScore": 3.9,
-    "impactScore": 5.9,
-    "source": "nvd@nist.gov",
-    "type": "Primary"
-  }
-]
-                                        </pre>
-                                    </div></div></div>
-                        </div>
-                        <div class="col-md-3"><div class="cve-status">
-                                <b>Status:</b>
-                Analyzed
-                            </div><table class="cve-vendor-table">
-                                <tbody>
-                                    <tr>
-                                        <td class="cve-vendor-label">Vendor:</td>
-                                    </tr><tr>
-                                        <td class="cve-vendor-name">Palo Alto Networks</td>
-                                    </tr><tr>
-                                        <td class="cve-product-label">Product:</td>
-                                    </tr><tr>
-                                        <td class="cve-product-name">Palo Alto Networks</td>
-                                    </tr>
-                                </tbody>
-                            </table><table class="cve-epss-table">
-                                <tbody>
-                                    <tr>
-                                        <td class="cve-epss-label">EPSS:</td>
-                                    </tr><tr>
-                                        <td class="cve-epss-value">0.043530000</td>
-                                    </tr><tr>
-                                        <td class="cve-percentile-label">Percentile:</td>
-                                    </tr><tr>
-                                        <td class="cve-percentile-value">0.890640000</td>
-                                    </tr>
-                                </tbody>
-                            </table></div>
-                    </div>
-                    <div class="row cve-row" id="CVE-2026-20182">
-                        <div class="col-md-9">
-                            <div class="cve-post">
-                                <h2 class="cve-title">CVE-2026-20182</h2>
-                                <h4 class="cve-vuln">Cisco Catalyst SD-WAN Controller Authentication Bypass Vulnerability</h4>
-                                <h6 class="cve-date">Date Added: 2026-05-14</h6>
-                                <div class="cve-description">
-                                    <h6>Description</h6>
-                                    <p class="cve-description-p">Cisco Catalyst SD-WAN Controller & Manager contain an authentication bypass vulnerability that allows an unauthenticated, remote attacker to bypass authentication and obtain administrative privileges on an affected system.</p>
-                                </div>
-                                <div class="cve-action">
-                                    <h6>Required Action</h6>
-                                    <p class="cve-action-p">Please adhere to CISA’s guidelines to assess exposure and mitigate risks associated with Cisco SD-WAN devices as outlined in CISA’s Emergency Directive 26-03 (URL listed below in Notes) and CISA’s Hunt & Hardening Guidance for Cisco SD-WAN Devices (URL listed below in Notes). Adhere to the applicable BOD 22-01 guidance for cloud services or discontinue use of the product if mitigations are not available.</p>
-                                </div><div class="cvss_metrics"><div class="v31">
-                                        <h6>cvssMetricV31</h6>
-                                        <pre>
-                    [
-  {
-    "cvssData": {
-      "attackComplexity": "LOW",
-      "attackVector": "NETWORK",
-      "availabilityImpact": "HIGH",
-      "baseScore": 10.0,
-      "baseSeverity": "CRITICAL",
-      "confidentialityImpact": "HIGH",
-      "integrityImpact": "HIGH",
-      "privilegesRequired": "NONE",
-      "scope": "CHANGED",
-      "userInteraction": "NONE",
-      "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
-      "version": "3.1"
-    },
-    "exploitabilityScore": 3.9,
-    "impactScore": 6.0,
-    "source": "psirt@cisco.com",
-    "type": "Secondary"
-  }
-]
-                                        </pre>
-                                    </div></div></div>
-                        </div>
-                        <div class="col-md-3"><div class="cve-status">
-                                <b>Status:</b>
-                Analyzed
-                            </div><table class="cve-vendor-table">
-                                <tbody>
-                                    <tr>
-                                        <td class="cve-vendor-label">Vendor:</td>
-                                    </tr><tr>
-                                        <td class="cve-vendor-name">Cisco</td>
-                                    </tr><tr>
-                                        <td class="cve-product-label">Product:</td>
-                                    </tr><tr>
-                                        <td class="cve-product-name">Cisco</td>
-                                    </tr>
-                                </tbody>
-                            </table><table class="cve-epss-table">
-                                <tbody>
-                                    <tr>
-                                        <td class="cve-epss-label">EPSS:</td>
-                                    </tr><tr>
-                                        <td class="cve-epss-value">0.773240000</td>
-                                    </tr><tr>
-                                        <td class="cve-percentile-label">Percentile:</td>
-                                    </tr><tr>
-                                        <td class="cve-percentile-value">0.990000000</td>
-                                    </tr>
-                                </tbody>
-                            </table></div>
-                    </div>
-                    <div class="row cve-row" id="CVE-2026-31431">
-                        <div class="col-md-9">
-                            <div class="cve-post">
-                                <h2 class="cve-title">CVE-2026-31431</h2>
-                                <h4 class="cve-vuln">Linux Kernel Incorrect Resource Transfer Between Spheres Vulnerability</h4>
-                                <h6 class="cve-date">Date Added: 2026-05-01</h6>
-                                <div class="cve-description">
-                                    <h6>Description</h6>
-                                    <p class="cve-description-p">Linux Kernel contains an incorrect resource transfer between spheres vulnerability that could allow for privilege escalation.</p>
-                                </div>
-                                <div class="cve-action">
-                                    <h6>Required Action</h6>
-                                    <p class="cve-action-p">"Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.</p>
-                                </div><div class="cvss_metrics"><div class="v31">
-                                        <h6>cvssMetricV31</h6>
-                                        <pre>
-                    [
-  {
-    "cvssData": {
-      "attackComplexity": "LOW",
-      "attackVector": "LOCAL",
-      "availabilityImpact": "HIGH",
-      "baseScore": 7.8,
-      "baseSeverity": "HIGH",
-      "confidentialityImpact": "HIGH",
-      "integrityImpact": "HIGH",
-      "privilegesRequired": "LOW",
-      "scope": "UNCHANGED",
-      "userInteraction": "NONE",
-      "vectorString": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
-      "version": "3.1"
-    },
-    "exploitabilityScore": 1.8,
-    "impactScore": 5.9,
-    "source": "416baaa9-dc9f-4396-8d5f-8c081fb06d67",
-    "type": "Secondary"
-  }
-]
-                                        </pre>
-                                    </div></div></div>
-                        </div>
-                        <div class="col-md-3"><div class="cve-status">
-                                <b>Status:</b>
-                Analyzed
-                            </div><table class="cve-vendor-table">
-                                <tbody>
-                                    <tr>
-                                        <td class="cve-vendor-label">Vendor:</td>
-                                    </tr><tr>
-                                        <td class="cve-vendor-name">Linux</td>
-                                    </tr><tr>
-                                        <td class="cve-product-label">Product:</td>
-                                    </tr><tr>
-                                        <td class="cve-product-name">Linux</td>
-                                    </tr>
-                                </tbody>
-                            </table><table class="cve-epss-table">
-                                <tbody>
-                                    <tr>
-                                        <td class="cve-epss-label">EPSS:</td>
-                                    </tr><tr>
-                                        <td class="cve-epss-value">0.025930000</td>
-                                    </tr><tr>
-                                        <td class="cve-percentile-label">Percentile:</td>
-                                    </tr><tr>
-                                        <td class="cve-percentile-value">0.857930000</td>
-                                    </tr>
-                                </tbody>
-                            </table></div>
-                    </div>
                     <div class="row cve-row" id="CVE-2026-34926">
                         <div class="col-md-9">
                             <div class="cve-post">
@@ -988,146 +767,6 @@ tags:
                                         <td class="cve-percentile-label">Percentile:</td>
                                     </tr><tr>
                                         <td class="cve-percentile-value">0.892910000</td>
-                                    </tr>
-                                </tbody>
-                            </table></div>
-                    </div>
-                    <div class="row cve-row" id="CVE-2026-41940">
-                        <div class="col-md-9">
-                            <div class="cve-post">
-                                <h2 class="cve-title">CVE-2026-41940</h2>
-                                <h4 class="cve-vuln">WebPros cPanel &amp; WHM and WP2 (WordPress Squared) Missing Authentication for Critical Function Vulnerability</h4>
-                                <h6 class="cve-date">Date Added: 2026-04-30</h6>
-                                <div class="cve-description">
-                                    <h6>Description</h6>
-                                    <p class="cve-description-p">WebPros cPanel & WHM (WebHost Manager) and WP2 (WordPress Squared) contain an authentication bypass vulnerability in the login flow that allows unauthenticated remote attackers to gain unauthorized access to the control panel.</p>
-                                </div>
-                                <div class="cve-action">
-                                    <h6>Required Action</h6>
-                                    <p class="cve-action-p">Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.</p>
-                                </div><div class="cvss_metrics"><div class="v31">
-                                        <h6>cvssMetricV31</h6>
-                                        <pre>
-                    [
-  {
-    "cvssData": {
-      "attackComplexity": "LOW",
-      "attackVector": "NETWORK",
-      "availabilityImpact": "HIGH",
-      "baseScore": 9.8,
-      "baseSeverity": "CRITICAL",
-      "confidentialityImpact": "HIGH",
-      "integrityImpact": "HIGH",
-      "privilegesRequired": "NONE",
-      "scope": "UNCHANGED",
-      "userInteraction": "NONE",
-      "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
-      "version": "3.1"
-    },
-    "exploitabilityScore": 3.9,
-    "impactScore": 5.9,
-    "source": "disclosure@vulncheck.com",
-    "type": "Secondary"
-  }
-]
-                                        </pre>
-                                    </div></div></div>
-                        </div>
-                        <div class="col-md-3"><div class="cve-status">
-                                <b>Status:</b>
-                Analyzed
-                            </div><table class="cve-vendor-table">
-                                <tbody>
-                                    <tr>
-                                        <td class="cve-vendor-label">Vendor:</td>
-                                    </tr><tr>
-                                        <td class="cve-vendor-name">WebPros</td>
-                                    </tr><tr>
-                                        <td class="cve-product-label">Product:</td>
-                                    </tr><tr>
-                                        <td class="cve-product-name">WebPros</td>
-                                    </tr>
-                                </tbody>
-                            </table><table class="cve-epss-table">
-                                <tbody>
-                                    <tr>
-                                        <td class="cve-epss-label">EPSS:</td>
-                                    </tr><tr>
-                                        <td class="cve-epss-value">0.850080000</td>
-                                    </tr><tr>
-                                        <td class="cve-percentile-label">Percentile:</td>
-                                    </tr><tr>
-                                        <td class="cve-percentile-value">0.993630000</td>
-                                    </tr>
-                                </tbody>
-                            </table></div>
-                    </div>
-                    <div class="row cve-row" id="CVE-2026-42208">
-                        <div class="col-md-9">
-                            <div class="cve-post">
-                                <h2 class="cve-title">CVE-2026-42208</h2>
-                                <h4 class="cve-vuln">BerriAI LiteLLM SQL Injection Vulnerability</h4>
-                                <h6 class="cve-date">Date Added: 2026-05-08</h6>
-                                <div class="cve-description">
-                                    <h6>Description</h6>
-                                    <p class="cve-description-p">BerriAI LiteLLM contains a SQL injection vulnerability that allows an attacker to read data from the proxy's database and potentially modify it, leading to unauthorized access to the proxy and the credentials it manages.</p>
-                                </div>
-                                <div class="cve-action">
-                                    <h6>Required Action</h6>
-                                    <p class="cve-action-p">Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.</p>
-                                </div><div class="cvss_metrics"><div class="v31">
-                                        <h6>cvssMetricV31</h6>
-                                        <pre>
-                    [
-  {
-    "cvssData": {
-      "attackComplexity": "LOW",
-      "attackVector": "NETWORK",
-      "availabilityImpact": "HIGH",
-      "baseScore": 9.8,
-      "baseSeverity": "CRITICAL",
-      "confidentialityImpact": "HIGH",
-      "integrityImpact": "HIGH",
-      "privilegesRequired": "NONE",
-      "scope": "UNCHANGED",
-      "userInteraction": "NONE",
-      "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
-      "version": "3.1"
-    },
-    "exploitabilityScore": 3.9,
-    "impactScore": 5.9,
-    "source": "nvd@nist.gov",
-    "type": "Primary"
-  }
-]
-                                        </pre>
-                                    </div></div></div>
-                        </div>
-                        <div class="col-md-3"><div class="cve-status">
-                                <b>Status:</b>
-                Analyzed
-                            </div><table class="cve-vendor-table">
-                                <tbody>
-                                    <tr>
-                                        <td class="cve-vendor-label">Vendor:</td>
-                                    </tr><tr>
-                                        <td class="cve-vendor-name">BerriAI</td>
-                                    </tr><tr>
-                                        <td class="cve-product-label">Product:</td>
-                                    </tr><tr>
-                                        <td class="cve-product-name">BerriAI</td>
-                                    </tr>
-                                </tbody>
-                            </table><table class="cve-epss-table">
-                                <tbody>
-                                    <tr>
-                                        <td class="cve-epss-label">EPSS:</td>
-                                    </tr><tr>
-                                        <td class="cve-epss-value">0.542620000</td>
-                                    </tr><tr>
-                                        <td class="cve-percentile-label">Percentile:</td>
-                                    </tr><tr>
-                                        <td class="cve-percentile-value">0.980590000</td>
                                     </tr>
                                 </tbody>
                             </table></div>
@@ -1312,76 +951,6 @@ tags:
                                 </tbody>
                             </table></div>
                     </div>
-                    <div class="row cve-row" id="CVE-2026-6973">
-                        <div class="col-md-9">
-                            <div class="cve-post">
-                                <h2 class="cve-title">CVE-2026-6973</h2>
-                                <h4 class="cve-vuln">Ivanti Endpoint Manager Mobile (EPMM) Improper Input Validation Vulnerability</h4>
-                                <h6 class="cve-date">Date Added: 2026-05-07</h6>
-                                <div class="cve-description">
-                                    <h6>Description</h6>
-                                    <p class="cve-description-p">Ivanti Endpoint Manager Mobile (EPMM) contains an improper input validation vulnerability that allows a remotely authenticated user with administrative access to achieve remote code execution.</p>
-                                </div>
-                                <div class="cve-action">
-                                    <h6>Required Action</h6>
-                                    <p class="cve-action-p">Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.</p>
-                                </div><div class="cvss_metrics"><div class="v31">
-                                        <h6>cvssMetricV31</h6>
-                                        <pre>
-                    [
-  {
-    "cvssData": {
-      "attackComplexity": "LOW",
-      "attackVector": "NETWORK",
-      "availabilityImpact": "HIGH",
-      "baseScore": 7.2,
-      "baseSeverity": "HIGH",
-      "confidentialityImpact": "HIGH",
-      "integrityImpact": "HIGH",
-      "privilegesRequired": "HIGH",
-      "scope": "UNCHANGED",
-      "userInteraction": "NONE",
-      "vectorString": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
-      "version": "3.1"
-    },
-    "exploitabilityScore": 1.2,
-    "impactScore": 5.9,
-    "source": "3c1d8aa1-5a33-4ea4-8992-aadd6440af75",
-    "type": "Secondary"
-  }
-]
-                                        </pre>
-                                    </div></div></div>
-                        </div>
-                        <div class="col-md-3"><div class="cve-status">
-                                <b>Status:</b>
-                Analyzed
-                            </div><table class="cve-vendor-table">
-                                <tbody>
-                                    <tr>
-                                        <td class="cve-vendor-label">Vendor:</td>
-                                    </tr><tr>
-                                        <td class="cve-vendor-name">Ivanti</td>
-                                    </tr><tr>
-                                        <td class="cve-product-label">Product:</td>
-                                    </tr><tr>
-                                        <td class="cve-product-name">Ivanti</td>
-                                    </tr>
-                                </tbody>
-                            </table><table class="cve-epss-table">
-                                <tbody>
-                                    <tr>
-                                        <td class="cve-epss-label">EPSS:</td>
-                                    </tr><tr>
-                                        <td class="cve-epss-value">0.049070000</td>
-                                    </tr><tr>
-                                        <td class="cve-percentile-label">Percentile:</td>
-                                    </tr><tr>
-                                        <td class="cve-percentile-value">0.897200000</td>
-                                    </tr>
-                                </tbody>
-                            </table></div>
-                    </div>
                     <div class="row cve-row" id="CVE-2026-9082">
                         <div class="col-md-9">
                             <div class="cve-post">
@@ -1466,12 +1035,6 @@ tags:
                                 <tr><td>Langflow</td><td>1</td></tr>
                                 <tr><td>Trend Micro</td><td>1</td></tr>
                                 <tr><td>Adobe</td><td>1</td></tr>
-                                <tr><td>Cisco</td><td>1</td></tr>
-                                <tr><td>BerriAI</td><td>1</td></tr>
-                                <tr><td>Ivanti</td><td>1</td></tr>
-                                <tr><td>Palo Alto Networks</td><td>1</td></tr>
-                                <tr><td>Linux</td><td>1</td></tr>
-                                <tr><td>WebPros</td><td>1</td></tr>
                             </tbody>
                         </table>
                     </div>
@@ -1485,12 +1048,6 @@ tags:
                                 <tr><td>2026-05-21</td><td>2</td></tr>
                                 <tr><td>2026-05-22</td><td>1</td></tr>
                                 <tr><td>2026-05-15</td><td>1</td></tr>
-                                <tr><td>2026-05-14</td><td>1</td></tr>
-                                <tr><td>2026-05-08</td><td>1</td></tr>
-                                <tr><td>2026-05-07</td><td>1</td></tr>
-                                <tr><td>2026-05-06</td><td>1</td></tr>
-                                <tr><td>2026-05-01</td><td>1</td></tr>
-                                <tr><td>2026-04-30</td><td>1</td></tr>
                             </tbody>
                         </table>
                     </div>
