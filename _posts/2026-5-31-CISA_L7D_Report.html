@@ -2,6 +2,7 @@
 layout: post
 title: CISA KEVC L7D - 2026 - 5 - 31
 tags:
+- CVE-2026-45247
 - CVE-2022-0492
 - CVE-2025-48595
 - CVE-2024-21182
@@ -10,6 +11,7 @@ tags:
 - CVE-2026-45321
 - CVE-2026-8398
 - CVE-2026-48172
+- CWE-502
 - CWE-287
 - CWE-862
 - CWE-190
@@ -146,7 +148,7 @@ tags:
                                         <div class="card-body">
                                             <div class="label">CVEs (L7D)</div>
                                             <div class="value">
-        8
+        9
                                             </div>
                                         </div>
                                     </div>
@@ -170,7 +172,7 @@ tags:
                                         <div class="card-body">
                                             <div class="label">CWEs (L7D)</div>
                                             <div class="value">
-        7
+        8
                                             </div>
                                         </div>
                                     </div>
@@ -485,6 +487,76 @@ tags:
                                 </tbody>
                             </table></div>
                     </div>
+                    <div class="row cve-row" id="CVE-2026-45247">
+                        <div class="col-md-9">
+                            <div class="cve-post">
+                                <h2 class="cve-title">CVE-2026-45247</h2>
+                                <h4 class="cve-vuln">Mirasvit Full Page Cache Warmer Deserialization of Untrusted Data Vulnerability</h4>
+                                <h6 class="cve-date">Date Added: 2026-06-03</h6>
+                                <div class="cve-description">
+                                    <h6>Description</h6>
+                                    <p class="cve-description-p">Mirasvit Full Page Cache Warmer contains a deserialization of untrusted data vulnerability that could allow unauthenticated attackers to achieve remote code execution by supplying a crafted serialized PHP object in the CacheWarmer cookie.</p>
+                                </div>
+                                <div class="cve-action">
+                                    <h6>Required Action</h6>
+                                    <p class="cve-action-p">Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.</p>
+                                </div><div class="cvss_metrics"><div class="v31">
+                                        <h6>cvssMetricV31</h6>
+                                        <pre>
+                    [
+  {
+    "cvssData": {
+      "attackComplexity": "LOW",
+      "attackVector": "NETWORK",
+      "availabilityImpact": "HIGH",
+      "baseScore": 9.8,
+      "baseSeverity": "CRITICAL",
+      "confidentialityImpact": "HIGH",
+      "integrityImpact": "HIGH",
+      "privilegesRequired": "NONE",
+      "scope": "UNCHANGED",
+      "userInteraction": "NONE",
+      "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "version": "3.1"
+    },
+    "exploitabilityScore": 3.9,
+    "impactScore": 5.9,
+    "source": "disclosure@vulncheck.com",
+    "type": "Primary"
+  }
+]
+                                        </pre>
+                                    </div></div></div>
+                        </div>
+                        <div class="col-md-3"><div class="cve-status">
+                                <b>Status:</b>
+                Deferred
+                            </div><table class="cve-vendor-table">
+                                <tbody>
+                                    <tr>
+                                        <td class="cve-vendor-label">Vendor:</td>
+                                    </tr><tr>
+                                        <td class="cve-vendor-name">Mirasvit</td>
+                                    </tr><tr>
+                                        <td class="cve-product-label">Product:</td>
+                                    </tr><tr>
+                                        <td class="cve-product-name">Mirasvit</td>
+                                    </tr>
+                                </tbody>
+                            </table><table class="cve-epss-table">
+                                <tbody>
+                                    <tr>
+                                        <td class="cve-epss-label">EPSS:</td>
+                                    </tr><tr>
+                                        <td class="cve-epss-value">0.001370000</td>
+                                    </tr><tr>
+                                        <td class="cve-percentile-label">Percentile:</td>
+                                    </tr><tr>
+                                        <td class="cve-percentile-value">0.332870000</td>
+                                    </tr>
+                                </tbody>
+                            </table></div>
+                    </div>
                     <div class="row cve-row" id="CVE-2026-45321">
                         <div class="col-md-9">
                             <div class="cve-post">
@@ -774,6 +846,7 @@ tags:
                         <table class="table table-hover">
                             <thead><tr><th>Vendor</th><th>Count</th></tr></thead>
                             <tbody>
+                                <tr><td>Mirasvit</td><td>1</td></tr>
                                 <tr><td>Linux</td><td>1</td></tr>
                                 <tr><td>Android</td><td>1</td></tr>
                                 <tr><td>Oracle</td><td>1</td></tr>
@@ -793,6 +866,7 @@ tags:
                             <tbody>
                                 <tr><td>2026-05-27</td><td>3</td></tr>
                                 <tr><td>2026-06-02</td><td>2</td></tr>
+                                <tr><td>2026-06-03</td><td>1</td></tr>
                                 <tr><td>2026-06-01</td><td>1</td></tr>
                                 <tr><td>2026-05-29</td><td>1</td></tr>
                                 <tr><td>2026-05-26</td><td>1</td></tr>

@@ -1,40 +1,32 @@
 ---
 layout: post
-title: CISA KEVC L7D - 2026 - 5 - 21
+title: CISA KEVC L7D - 2026 - 6 - 3
 tags:
-- CVE-2026-9082
-- CVE-2025-34291
-- CVE-2026-34926
-- CVE-2008-4250
-- CVE-2009-1537
-- CVE-2009-3459
-- CVE-2010-0249
-- CVE-2010-0806
-- CVE-2026-41091
-- CVE-2026-45498
-- CVE-2026-42897
-- CVE-2026-20182
-- CWE-89
-- CWE-346
-- CWE-23
-- CWE-94
-- nan
-- CWE-119
-- CWE-416
-- CWE-399
-- CWE-59
-- CWE-79
+- CVE-2026-45247
+- CVE-2022-0492
+- CVE-2025-48595
+- CVE-2024-21182
+- CVE-2026-0257
+- CVE-2026-48027
+- CVE-2026-45321
+- CVE-2026-8398
+- CWE-502
 - CWE-287
+- CWE-862
+- CWE-190
+- nan
+- CWE-565
+- CWE-506
 ---
 
 <div class="post">
     <div class="row report-row">
         <div class="col-md-12 report-col-12">
             <h1 class='post-title'>
-                CISA KEVC :: 2026-05-21
+                CISA KEVC :: 2026-06-03
             </h1>
             <h3 class='post-date'>
-                Report Window: 2026-05-21 to 2026-5-14
+                Report Window: 2026-06-03 to 2026-5-27
             </h3>
         </div>
     </div>
@@ -60,7 +52,7 @@ tags:
                                         <div class="card-body">
                                             <div class="label">CRITICAL (L7D)</div>
                                             <div class="value">
-                    1
+                    0
                                             </div>
                                         </div>
                                     </div>
@@ -80,7 +72,7 @@ tags:
                                         <div class="card-body">
                                             <div class="label">HIGH (L7D)</div>
                                             <div class="value">
-                    4
+                    1
                                             </div>
                                         </div>
                                     </div>
@@ -100,7 +92,7 @@ tags:
                                         <div class="card-body">
                                             <div class="label">MEDIUM (L7D)</div>
                                             <div class="value">
-                    1
+                    0
                                             </div>
                                         </div>
                                     </div>
@@ -112,7 +104,7 @@ tags:
                                         <div class="card-body">
                                             <div class="label">LOW (Today)</div>
                                             <div class="value">
-                    2
+                    1
                                             </div>
                                         </div>
                                     </div>
@@ -120,7 +112,7 @@ tags:
                                         <div class="card-body">
                                             <div class="label">LOW (L7D)</div>
                                             <div class="value">
-                    2
+                    1
                                             </div>
                                         </div>
                                     </div>
@@ -142,7 +134,7 @@ tags:
                                         <div class="card-body">
                                             <div class="label">CVEs (Today)</div>
                                             <div class="value">
-        2
+        1
                                             </div>
                                         </div>
                                     </div>
@@ -154,7 +146,7 @@ tags:
                                         <div class="card-body">
                                             <div class="label">CVEs (L7D)</div>
                                             <div class="value">
-        12
+        8
                                             </div>
                                         </div>
                                     </div>
@@ -166,7 +158,7 @@ tags:
                                         <div class="card-body">
                                             <div class="label">CWEs (Today)</div>
                                             <div class="value">
-        2
+        1
                                             </div>
                                         </div>
                                     </div>
@@ -178,7 +170,7 @@ tags:
                                         <div class="card-body">
                                             <div class="label">CWEs (L7D)</div>
                                             <div class="value">
-        11
+        7
                                             </div>
                                         </div>
                                     </div>
@@ -193,595 +185,15 @@ tags:
             <div class="row report-row">
                 <!-- CVE CONTENT -->
                 <div class="col-md-9 report-col-9">
-                    <div class="row cve-row" id="CVE-2008-4250">
+                    <div class="row cve-row" id="CVE-2022-0492">
                         <div class="col-md-9">
                             <div class="cve-post">
-                                <h2 class="cve-title">CVE-2008-4250</h2>
-                                <h4 class="cve-vuln">Microsoft Windows Buffer Overflow Vulnerability</h4>
-                                <h6 class="cve-date">Date Added: 2026-05-20</h6>
+                                <h2 class="cve-title">CVE-2022-0492</h2>
+                                <h4 class="cve-vuln">Linux Kernel Improper Authentication Vulnerability</h4>
+                                <h6 class="cve-date">Date Added: 2026-06-02</h6>
                                 <div class="cve-description">
                                     <h6>Description</h6>
-                                    <p class="cve-description-p">Microsoft Windows contains a buffer overflow vulnerability in the Windows Server Service that allows remote attackers to execute arbitrary code via a crafted RPC request that triggers an overflow during path canonicalization.</p>
-                                </div>
-                                <div class="cve-action">
-                                    <h6>Required Action</h6>
-                                    <p class="cve-action-p">Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.</p>
-                                </div><div class="cvss_metrics"><div class="v31">
-                                        <h6>cvssMetricV31</h6>
-                                        <pre>
-                    [
-  {
-    "cvssData": {
-      "attackComplexity": "LOW",
-      "attackVector": "NETWORK",
-      "availabilityImpact": "HIGH",
-      "baseScore": 9.8,
-      "baseSeverity": "CRITICAL",
-      "confidentialityImpact": "HIGH",
-      "integrityImpact": "HIGH",
-      "privilegesRequired": "NONE",
-      "scope": "UNCHANGED",
-      "userInteraction": "NONE",
-      "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
-      "version": "3.1"
-    },
-    "exploitabilityScore": 3.9,
-    "impactScore": 5.9,
-    "source": "134c704f-9b21-4f2e-91b3-4a467353bcc0",
-    "type": "Secondary"
-  }
-]
-                                        </pre>
-                                    </div></div></div>
-                        </div>
-                        <div class="col-md-3"><div class="cve-status">
-                                <b>Status:</b>
-                Analyzed
-                            </div><table class="cve-vendor-table">
-                                <tbody>
-                                    <tr>
-                                        <td class="cve-vendor-label">Vendor:</td>
-                                    </tr><tr>
-                                        <td class="cve-vendor-name">Microsoft</td>
-                                    </tr><tr>
-                                        <td class="cve-product-label">Product:</td>
-                                    </tr><tr>
-                                        <td class="cve-product-name">Microsoft</td>
-                                    </tr>
-                                </tbody>
-                            </table><table class="cve-epss-table">
-                                <tbody>
-                                    <tr>
-                                        <td class="cve-epss-label">EPSS:</td>
-                                    </tr><tr>
-                                        <td class="cve-epss-value">0.920780000</td>
-                                    </tr><tr>
-                                        <td class="cve-percentile-label">Percentile:</td>
-                                    </tr><tr>
-                                        <td class="cve-percentile-value">0.997180000</td>
-                                    </tr>
-                                </tbody>
-                            </table></div>
-                    </div>
-                    <div class="row cve-row" id="CVE-2009-1537">
-                        <div class="col-md-9">
-                            <div class="cve-post">
-                                <h2 class="cve-title">CVE-2009-1537</h2>
-                                <h4 class="cve-vuln">Microsoft DirectX NULL Byte Overwrite Vulnerability</h4>
-                                <h6 class="cve-date">Date Added: 2026-05-20</h6>
-                                <div class="cve-description">
-                                    <h6>Description</h6>
-                                    <p class="cve-description-p">Microsoft DirectX contains a NULL byte overwrite vulnerability in the QuickTime Movie Parser Filter in quartz.dll in DirectShow which could allow remote attackers to execute arbitrary code via a crafted QuickTime media file.</p>
-                                </div>
-                                <div class="cve-action">
-                                    <h6>Required Action</h6>
-                                    <p class="cve-action-p">Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.</p>
-                                </div><div class="cvss_metrics"><div class="v31">
-                                        <h6>cvssMetricV31</h6>
-                                        <pre>
-                    [
-  {
-    "cvssData": {
-      "attackComplexity": "LOW",
-      "attackVector": "NETWORK",
-      "availabilityImpact": "HIGH",
-      "baseScore": 8.8,
-      "baseSeverity": "HIGH",
-      "confidentialityImpact": "HIGH",
-      "integrityImpact": "HIGH",
-      "privilegesRequired": "NONE",
-      "scope": "UNCHANGED",
-      "userInteraction": "REQUIRED",
-      "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
-      "version": "3.1"
-    },
-    "exploitabilityScore": 2.8,
-    "impactScore": 5.9,
-    "source": "134c704f-9b21-4f2e-91b3-4a467353bcc0",
-    "type": "Secondary"
-  }
-]
-                                        </pre>
-                                    </div></div></div>
-                        </div>
-                        <div class="col-md-3"><div class="cve-status">
-                                <b>Status:</b>
-                Analyzed
-                            </div><table class="cve-vendor-table">
-                                <tbody>
-                                    <tr>
-                                        <td class="cve-vendor-label">Vendor:</td>
-                                    </tr><tr>
-                                        <td class="cve-vendor-name">Microsoft</td>
-                                    </tr><tr>
-                                        <td class="cve-product-label">Product:</td>
-                                    </tr><tr>
-                                        <td class="cve-product-name">Microsoft</td>
-                                    </tr>
-                                </tbody>
-                            </table><table class="cve-epss-table">
-                                <tbody>
-                                    <tr>
-                                        <td class="cve-epss-label">EPSS:</td>
-                                    </tr><tr>
-                                        <td class="cve-epss-value">0.530160000</td>
-                                    </tr><tr>
-                                        <td class="cve-percentile-label">Percentile:</td>
-                                    </tr><tr>
-                                        <td class="cve-percentile-value">0.979960000</td>
-                                    </tr>
-                                </tbody>
-                            </table></div>
-                    </div>
-                    <div class="row cve-row" id="CVE-2009-3459">
-                        <div class="col-md-9">
-                            <div class="cve-post">
-                                <h2 class="cve-title">CVE-2009-3459</h2>
-                                <h4 class="cve-vuln">Adobe Acrobat and Reader Heap-Based Buffer Overflow Vulnerability</h4>
-                                <h6 class="cve-date">Date Added: 2026-05-20</h6>
-                                <div class="cve-description">
-                                    <h6>Description</h6>
-                                    <p class="cve-description-p">Adobe Acrobat and Reader contain a heap-based buffer overflow vulnerability which could allow remote attackers to execute arbitrary code via a crafted PDF file that triggers memory corruption.</p>
-                                </div>
-                                <div class="cve-action">
-                                    <h6>Required Action</h6>
-                                    <p class="cve-action-p">Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.</p>
-                                </div><div class="cvss_metrics"><div class="v31">
-                                        <h6>cvssMetricV31</h6>
-                                        <pre>
-                    [
-  {
-    "cvssData": {
-      "attackComplexity": "LOW",
-      "attackVector": "NETWORK",
-      "availabilityImpact": "HIGH",
-      "baseScore": 8.8,
-      "baseSeverity": "HIGH",
-      "confidentialityImpact": "HIGH",
-      "integrityImpact": "HIGH",
-      "privilegesRequired": "NONE",
-      "scope": "UNCHANGED",
-      "userInteraction": "REQUIRED",
-      "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
-      "version": "3.1"
-    },
-    "exploitabilityScore": 2.8,
-    "impactScore": 5.9,
-    "source": "134c704f-9b21-4f2e-91b3-4a467353bcc0",
-    "type": "Secondary"
-  }
-]
-                                        </pre>
-                                    </div></div></div>
-                        </div>
-                        <div class="col-md-3"><div class="cve-status">
-                                <b>Status:</b>
-                Analyzed
-                            </div><table class="cve-vendor-table">
-                                <tbody>
-                                    <tr>
-                                        <td class="cve-vendor-label">Vendor:</td>
-                                    </tr><tr>
-                                        <td class="cve-vendor-name">Adobe</td>
-                                    </tr><tr>
-                                        <td class="cve-product-label">Product:</td>
-                                    </tr><tr>
-                                        <td class="cve-product-name">Adobe</td>
-                                    </tr>
-                                </tbody>
-                            </table><table class="cve-epss-table">
-                                <tbody>
-                                    <tr>
-                                        <td class="cve-epss-label">EPSS:</td>
-                                    </tr><tr>
-                                        <td class="cve-epss-value">0.880730000</td>
-                                    </tr><tr>
-                                        <td class="cve-percentile-label">Percentile:</td>
-                                    </tr><tr>
-                                        <td class="cve-percentile-value">0.994990000</td>
-                                    </tr>
-                                </tbody>
-                            </table></div>
-                    </div>
-                    <div class="row cve-row" id="CVE-2010-0249">
-                        <div class="col-md-9">
-                            <div class="cve-post">
-                                <h2 class="cve-title">CVE-2010-0249</h2>
-                                <h4 class="cve-vuln">Microsoft Internet Explorer Use-After-Free Vulnerability</h4>
-                                <h6 class="cve-date">Date Added: 2026-05-20</h6>
-                                <div class="cve-description">
-                                    <h6>Description</h6>
-                                    <p class="cve-description-p">Microsoft Internet Explorer contains an use-after-free vulnerability that could allow remote attackers to execute arbitrary code by accessing a pointer associated with a deleted object. The impacted product could be end-of-life (EoL) and/or end-of-service (EoS). Users should discontinue product utilization.</p>
-                                </div>
-                                <div class="cve-action">
-                                    <h6>Required Action</h6>
-                                    <p class="cve-action-p">Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.</p>
-                                </div><div class="cvss_metrics"><div class="v31">
-                                        <h6>cvssMetricV31</h6>
-                                        <pre>
-                    [
-  {
-    "cvssData": {
-      "attackComplexity": "LOW",
-      "attackVector": "NETWORK",
-      "availabilityImpact": "HIGH",
-      "baseScore": 8.8,
-      "baseSeverity": "HIGH",
-      "confidentialityImpact": "HIGH",
-      "integrityImpact": "HIGH",
-      "privilegesRequired": "NONE",
-      "scope": "UNCHANGED",
-      "userInteraction": "REQUIRED",
-      "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
-      "version": "3.1"
-    },
-    "exploitabilityScore": 2.8,
-    "impactScore": 5.9,
-    "source": "nvd@nist.gov",
-    "type": "Primary"
-  },
-  {
-    "cvssData": {
-      "attackComplexity": "LOW",
-      "attackVector": "NETWORK",
-      "availabilityImpact": "HIGH",
-      "baseScore": 8.8,
-      "baseSeverity": "HIGH",
-      "confidentialityImpact": "HIGH",
-      "integrityImpact": "HIGH",
-      "privilegesRequired": "NONE",
-      "scope": "UNCHANGED",
-      "userInteraction": "REQUIRED",
-      "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
-      "version": "3.1"
-    },
-    "exploitabilityScore": 2.8,
-    "impactScore": 5.9,
-    "source": "134c704f-9b21-4f2e-91b3-4a467353bcc0",
-    "type": "Secondary"
-  }
-]
-                                        </pre>
-                                    </div></div></div>
-                        </div>
-                        <div class="col-md-3"><div class="cve-status">
-                                <b>Status:</b>
-                Analyzed
-                            </div><table class="cve-vendor-table">
-                                <tbody>
-                                    <tr>
-                                        <td class="cve-vendor-label">Vendor:</td>
-                                    </tr><tr>
-                                        <td class="cve-vendor-name">Microsoft</td>
-                                    </tr><tr>
-                                        <td class="cve-product-label">Product:</td>
-                                    </tr><tr>
-                                        <td class="cve-product-name">Microsoft</td>
-                                    </tr>
-                                </tbody>
-                            </table><table class="cve-epss-table">
-                                <tbody>
-                                    <tr>
-                                        <td class="cve-epss-label">EPSS:</td>
-                                    </tr><tr>
-                                        <td class="cve-epss-value">0.886770000</td>
-                                    </tr><tr>
-                                        <td class="cve-percentile-label">Percentile:</td>
-                                    </tr><tr>
-                                        <td class="cve-percentile-value">0.995240000</td>
-                                    </tr>
-                                </tbody>
-                            </table></div>
-                    </div>
-                    <div class="row cve-row" id="CVE-2010-0806">
-                        <div class="col-md-9">
-                            <div class="cve-post">
-                                <h2 class="cve-title">CVE-2010-0806</h2>
-                                <h4 class="cve-vuln">Microsoft Internet Explorer Use-After-Free Vulnerability</h4>
-                                <h6 class="cve-date">Date Added: 2026-05-20</h6>
-                                <div class="cve-description">
-                                    <h6>Description</h6>
-                                    <p class="cve-description-p">Microsoft Internet Explorer contains an use-after-free vulnerability that could allow remote attackers to execute arbitrary code via vectors involving access to an invalid pointer after the deletion of an object. The impacted product could be end-of-life (EoL) and/or end-of-service (EoS). Users should discontinue product utilization.</p>
-                                </div>
-                                <div class="cve-action">
-                                    <h6>Required Action</h6>
-                                    <p class="cve-action-p">Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.</p>
-                                </div><div class="cvss_metrics"><div class="v31">
-                                        <h6>cvssMetricV31</h6>
-                                        <pre>
-                    [
-  {
-    "cvssData": {
-      "attackComplexity": "LOW",
-      "attackVector": "NETWORK",
-      "availabilityImpact": "HIGH",
-      "baseScore": 8.8,
-      "baseSeverity": "HIGH",
-      "confidentialityImpact": "HIGH",
-      "integrityImpact": "HIGH",
-      "privilegesRequired": "NONE",
-      "scope": "UNCHANGED",
-      "userInteraction": "REQUIRED",
-      "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
-      "version": "3.1"
-    },
-    "exploitabilityScore": 2.8,
-    "impactScore": 5.9,
-    "source": "134c704f-9b21-4f2e-91b3-4a467353bcc0",
-    "type": "Secondary"
-  }
-]
-                                        </pre>
-                                    </div></div></div>
-                        </div>
-                        <div class="col-md-3"><div class="cve-status">
-                                <b>Status:</b>
-                Analyzed
-                            </div><table class="cve-vendor-table">
-                                <tbody>
-                                    <tr>
-                                        <td class="cve-vendor-label">Vendor:</td>
-                                    </tr><tr>
-                                        <td class="cve-vendor-name">Microsoft</td>
-                                    </tr><tr>
-                                        <td class="cve-product-label">Product:</td>
-                                    </tr><tr>
-                                        <td class="cve-product-name">Microsoft</td>
-                                    </tr>
-                                </tbody>
-                            </table><table class="cve-epss-table">
-                                <tbody>
-                                    <tr>
-                                        <td class="cve-epss-label">EPSS:</td>
-                                    </tr><tr>
-                                        <td class="cve-epss-value">0.872530000</td>
-                                    </tr><tr>
-                                        <td class="cve-percentile-label">Percentile:</td>
-                                    </tr><tr>
-                                        <td class="cve-percentile-value">0.994640000</td>
-                                    </tr>
-                                </tbody>
-                            </table></div>
-                    </div>
-                    <div class="row cve-row" id="CVE-2025-34291">
-                        <div class="col-md-9">
-                            <div class="cve-post">
-                                <h2 class="cve-title">CVE-2025-34291</h2>
-                                <h4 class="cve-vuln">Langflow Origin Validation Error Vulnerability</h4>
-                                <h6 class="cve-date">Date Added: 2026-05-21</h6>
-                                <div class="cve-description">
-                                    <h6>Description</h6>
-                                    <p class="cve-description-p">Langflow contains an origin validation error vulnerability in which an overly permissive CORS configuration combined with a refresh token cookie configured as SameSite=None allows a malicious webpage to perform cross-origin requests that include credentials and successfully call the refresh endpoint. This could allow the attacker to execute arbitrary code and achieve full system compromise via obtained tokens that permit access to authenticated endpoints.</p>
-                                </div>
-                                <div class="cve-action">
-                                    <h6>Required Action</h6>
-                                    <p class="cve-action-p">Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.</p>
-                                </div><div class="cvss_metrics"><div class="v31">
-                                        <h6>cvssMetricV31</h6>
-                                        <pre>
-                    [
-  {
-    "cvssData": {
-      "attackComplexity": "LOW",
-      "attackVector": "NETWORK",
-      "availabilityImpact": "HIGH",
-      "baseScore": 8.8,
-      "baseSeverity": "HIGH",
-      "confidentialityImpact": "HIGH",
-      "integrityImpact": "HIGH",
-      "privilegesRequired": "LOW",
-      "scope": "UNCHANGED",
-      "userInteraction": "NONE",
-      "vectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
-      "version": "3.1"
-    },
-    "exploitabilityScore": 2.8,
-    "impactScore": 5.9,
-    "source": "nvd@nist.gov",
-    "type": "Primary"
-  }
-]
-                                        </pre>
-                                    </div></div></div>
-                        </div>
-                        <div class="col-md-3"><div class="cve-status">
-                                <b>Status:</b>
-                Modified
-                            </div><table class="cve-vendor-table">
-                                <tbody>
-                                    <tr>
-                                        <td class="cve-vendor-label">Vendor:</td>
-                                    </tr><tr>
-                                        <td class="cve-vendor-name">Langflow</td>
-                                    </tr><tr>
-                                        <td class="cve-product-label">Product:</td>
-                                    </tr><tr>
-                                        <td class="cve-product-name">Langflow</td>
-                                    </tr>
-                                </tbody>
-                            </table><table class="cve-epss-table">
-                                <tbody>
-                                    <tr>
-                                        <td class="cve-epss-label">EPSS:</td>
-                                    </tr><tr>
-                                        <td class="cve-epss-value">0.318540000</td>
-                                    </tr><tr>
-                                        <td class="cve-percentile-label">Percentile:</td>
-                                    </tr><tr>
-                                        <td class="cve-percentile-value">0.968810000</td>
-                                    </tr>
-                                </tbody>
-                            </table></div>
-                    </div>
-                    <div class="row cve-row" id="CVE-2026-20182">
-                        <div class="col-md-9">
-                            <div class="cve-post">
-                                <h2 class="cve-title">CVE-2026-20182</h2>
-                                <h4 class="cve-vuln">Cisco Catalyst SD-WAN Controller Authentication Bypass Vulnerability</h4>
-                                <h6 class="cve-date">Date Added: 2026-05-14</h6>
-                                <div class="cve-description">
-                                    <h6>Description</h6>
-                                    <p class="cve-description-p">Cisco Catalyst SD-WAN Controller & Manager contain an authentication bypass vulnerability that allows an unauthenticated, remote attacker to bypass authentication and obtain administrative privileges on an affected system.</p>
-                                </div>
-                                <div class="cve-action">
-                                    <h6>Required Action</h6>
-                                    <p class="cve-action-p">Please adhere to CISA’s guidelines to assess exposure and mitigate risks associated with Cisco SD-WAN devices as outlined in CISA’s Emergency Directive 26-03 (URL listed below in Notes) and CISA’s Hunt & Hardening Guidance for Cisco SD-WAN Devices (URL listed below in Notes). Adhere to the applicable BOD 22-01 guidance for cloud services or discontinue use of the product if mitigations are not available.</p>
-                                </div><div class="cvss_metrics"><div class="v31">
-                                        <h6>cvssMetricV31</h6>
-                                        <pre>
-                    [
-  {
-    "cvssData": {
-      "attackComplexity": "LOW",
-      "attackVector": "NETWORK",
-      "availabilityImpact": "HIGH",
-      "baseScore": 10.0,
-      "baseSeverity": "CRITICAL",
-      "confidentialityImpact": "HIGH",
-      "integrityImpact": "HIGH",
-      "privilegesRequired": "NONE",
-      "scope": "CHANGED",
-      "userInteraction": "NONE",
-      "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
-      "version": "3.1"
-    },
-    "exploitabilityScore": 3.9,
-    "impactScore": 6.0,
-    "source": "psirt@cisco.com",
-    "type": "Secondary"
-  }
-]
-                                        </pre>
-                                    </div></div></div>
-                        </div>
-                        <div class="col-md-3"><div class="cve-status">
-                                <b>Status:</b>
-                Analyzed
-                            </div><table class="cve-vendor-table">
-                                <tbody>
-                                    <tr>
-                                        <td class="cve-vendor-label">Vendor:</td>
-                                    </tr><tr>
-                                        <td class="cve-vendor-name">Cisco</td>
-                                    </tr><tr>
-                                        <td class="cve-product-label">Product:</td>
-                                    </tr><tr>
-                                        <td class="cve-product-name">Cisco</td>
-                                    </tr>
-                                </tbody>
-                            </table><table class="cve-epss-table">
-                                <tbody>
-                                    <tr>
-                                        <td class="cve-epss-label">EPSS:</td>
-                                    </tr><tr>
-                                        <td class="cve-epss-value">0.773240000</td>
-                                    </tr><tr>
-                                        <td class="cve-percentile-label">Percentile:</td>
-                                    </tr><tr>
-                                        <td class="cve-percentile-value">0.990000000</td>
-                                    </tr>
-                                </tbody>
-                            </table></div>
-                    </div>
-                    <div class="row cve-row" id="CVE-2026-34926">
-                        <div class="col-md-9">
-                            <div class="cve-post">
-                                <h2 class="cve-title">CVE-2026-34926</h2>
-                                <h4 class="cve-vuln">Trend Micro Apex One (On-Premise) Directory Traversal Vulnerability</h4>
-                                <h6 class="cve-date">Date Added: 2026-05-21</h6>
-                                <div class="cve-description">
-                                    <h6>Description</h6>
-                                    <p class="cve-description-p">Trend Micro Apex One (on-premise) contains a directory traversal vulnerability that could allow a pre-authenticated local attacker to modify a key table on the server to inject malicious code to deploy to agents on affected installations.</p>
-                                </div>
-                                <div class="cve-action">
-                                    <h6>Required Action</h6>
-                                    <p class="cve-action-p">Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.</p>
-                                </div><div class="cvss_metrics"><div class="v31">
-                                        <h6>cvssMetricV31</h6>
-                                        <pre>
-                    [
-  {
-    "cvssData": {
-      "attackComplexity": "HIGH",
-      "attackVector": "LOCAL",
-      "availabilityImpact": "LOW",
-      "baseScore": 6.7,
-      "baseSeverity": "MEDIUM",
-      "confidentialityImpact": "HIGH",
-      "integrityImpact": "LOW",
-      "privilegesRequired": "HIGH",
-      "scope": "CHANGED",
-      "userInteraction": "NONE",
-      "vectorString": "CVSS:3.1/AV:L/AC:H/PR:H/UI:N/S:C/C:H/I:L/A:L",
-      "version": "3.1"
-    },
-    "exploitabilityScore": 0.8,
-    "impactScore": 5.3,
-    "source": "security@trendmicro.com",
-    "type": "Secondary"
-  }
-]
-                                        </pre>
-                                    </div></div></div>
-                        </div>
-                        <div class="col-md-3"><div class="cve-status">
-                                <b>Status:</b>
-                Undergoing Analysis
-                            </div><table class="cve-vendor-table">
-                                <tbody>
-                                    <tr>
-                                        <td class="cve-vendor-label">Vendor:</td>
-                                    </tr><tr>
-                                        <td class="cve-vendor-name">Trend Micro</td>
-                                    </tr><tr>
-                                        <td class="cve-product-label">Product:</td>
-                                    </tr><tr>
-                                        <td class="cve-product-name">Trend Micro</td>
-                                    </tr>
-                                </tbody>
-                            </table><table class="cve-epss-table">
-                                <tbody>
-                                    <tr>
-                                        <td class="cve-epss-label">EPSS:</td>
-                                    </tr><tr>
-                                        <td class="cve-epss-value">0.001930000</td>
-                                    </tr><tr>
-                                        <td class="cve-percentile-label">Percentile:</td>
-                                    </tr><tr>
-                                        <td class="cve-percentile-value">0.408700000</td>
-                                    </tr>
-                                </tbody>
-                            </table></div>
-                    </div>
-                    <div class="row cve-row" id="CVE-2026-41091">
-                        <div class="col-md-9">
-                            <div class="cve-post">
-                                <h2 class="cve-title">CVE-2026-41091</h2>
-                                <h4 class="cve-vuln">Microsoft Defender Link Following Vulnerability</h4>
-                                <h6 class="cve-date">Date Added: 2026-05-20</h6>
-                                <div class="cve-description">
-                                    <h6>Description</h6>
-                                    <p class="cve-description-p">Microsoft Defender contains a link following vulnerability that allows an authorized attacker to elevate privileges locally.</p>
+                                    <p class="cve-description-p">Linux Kernel contains an improper authentication vulnerability which could allow for privilege escalation via the cgroups v1 release_agent feature.</p>
                                 </div>
                                 <div class="cve-action">
                                     <h6>Required Action</h6>
@@ -807,7 +219,27 @@ tags:
     },
     "exploitabilityScore": 1.8,
     "impactScore": 5.9,
-    "source": "secure@microsoft.com",
+    "source": "nvd@nist.gov",
+    "type": "Primary"
+  },
+  {
+    "cvssData": {
+      "attackComplexity": "LOW",
+      "attackVector": "LOCAL",
+      "availabilityImpact": "HIGH",
+      "baseScore": 7.8,
+      "baseSeverity": "HIGH",
+      "confidentialityImpact": "HIGH",
+      "integrityImpact": "HIGH",
+      "privilegesRequired": "LOW",
+      "scope": "UNCHANGED",
+      "userInteraction": "NONE",
+      "vectorString": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "version": "3.1"
+    },
+    "exploitabilityScore": 1.8,
+    "impactScore": 5.9,
+    "source": "134c704f-9b21-4f2e-91b3-4a467353bcc0",
     "type": "Secondary"
   }
 ]
@@ -816,17 +248,17 @@ tags:
                         </div>
                         <div class="col-md-3"><div class="cve-status">
                                 <b>Status:</b>
-                Analyzed
+                Modified
                             </div><table class="cve-vendor-table">
                                 <tbody>
                                     <tr>
                                         <td class="cve-vendor-label">Vendor:</td>
                                     </tr><tr>
-                                        <td class="cve-vendor-name">Microsoft</td>
+                                        <td class="cve-vendor-name">Linux</td>
                                     </tr><tr>
                                         <td class="cve-product-label">Product:</td>
                                     </tr><tr>
-                                        <td class="cve-product-name">Microsoft</td>
+                                        <td class="cve-product-name">Linux</td>
                                     </tr>
                                 </tbody>
                             </table><table class="cve-epss-table">
@@ -834,24 +266,24 @@ tags:
                                     <tr>
                                         <td class="cve-epss-label">EPSS:</td>
                                     </tr><tr>
-                                        <td class="cve-epss-value">0.045270000</td>
+                                        <td class="cve-epss-value">0.052380000</td>
                                     </tr><tr>
                                         <td class="cve-percentile-label">Percentile:</td>
                                     </tr><tr>
-                                        <td class="cve-percentile-value">0.892910000</td>
+                                        <td class="cve-percentile-value">0.901280000</td>
                                     </tr>
                                 </tbody>
                             </table></div>
                     </div>
-                    <div class="row cve-row" id="CVE-2026-42897">
+                    <div class="row cve-row" id="CVE-2024-21182">
                         <div class="col-md-9">
                             <div class="cve-post">
-                                <h2 class="cve-title">CVE-2026-42897</h2>
-                                <h4 class="cve-vuln">Microsoft Exchange Server Cross-Site Scripting Vulnerability</h4>
-                                <h6 class="cve-date">Date Added: 2026-05-15</h6>
+                                <h2 class="cve-title">CVE-2024-21182</h2>
+                                <h4 class="cve-vuln">Oracle WebLogic Server Unspecified Vulnerability</h4>
+                                <h6 class="cve-date">Date Added: 2026-06-01</h6>
                                 <div class="cve-description">
                                     <h6>Description</h6>
-                                    <p class="cve-description-p">Microsoft Exchange Server contains a cross-site scripting vulnerability during web page generation in Outlook Web Access and when certain interaction conditions are met, arbitrary JavaScript can be executed in the browser context.</p>
+                                    <p class="cve-description-p">Oracle WebLogic contains an unspecified vulnerability that could allow an unauthenticated attacker with network access via T3, IIOP to compromise Oracle WebLogic Server. Successful attacks of this vulnerability can result in unauthorized access to critical data or complete access to all Oracle WebLogic Server accessible data.</p>
                                 </div>
                                 <div class="cve-action">
                                     <h6>Required Action</h6>
@@ -865,40 +297,20 @@ tags:
       "attackComplexity": "LOW",
       "attackVector": "NETWORK",
       "availabilityImpact": "NONE",
-      "baseScore": 8.1,
+      "baseScore": 7.5,
       "baseSeverity": "HIGH",
       "confidentialityImpact": "HIGH",
-      "integrityImpact": "HIGH",
+      "integrityImpact": "NONE",
       "privilegesRequired": "NONE",
       "scope": "UNCHANGED",
-      "userInteraction": "REQUIRED",
-      "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:N",
+      "userInteraction": "NONE",
+      "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
       "version": "3.1"
     },
-    "exploitabilityScore": 2.8,
-    "impactScore": 5.2,
-    "source": "secure@microsoft.com",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6,
+    "source": "secalert_us@oracle.com",
     "type": "Secondary"
-  },
-  {
-    "cvssData": {
-      "attackComplexity": "LOW",
-      "attackVector": "NETWORK",
-      "availabilityImpact": "NONE",
-      "baseScore": 6.1,
-      "baseSeverity": "MEDIUM",
-      "confidentialityImpact": "LOW",
-      "integrityImpact": "LOW",
-      "privilegesRequired": "NONE",
-      "scope": "CHANGED",
-      "userInteraction": "REQUIRED",
-      "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
-      "version": "3.1"
-    },
-    "exploitabilityScore": 2.8,
-    "impactScore": 2.7,
-    "source": "nvd@nist.gov",
-    "type": "Primary"
   }
 ]
                                         </pre>
@@ -912,11 +324,11 @@ tags:
                                     <tr>
                                         <td class="cve-vendor-label">Vendor:</td>
                                     </tr><tr>
-                                        <td class="cve-vendor-name">Microsoft</td>
+                                        <td class="cve-vendor-name">Oracle</td>
                                     </tr><tr>
                                         <td class="cve-product-label">Product:</td>
                                     </tr><tr>
-                                        <td class="cve-product-name">Microsoft</td>
+                                        <td class="cve-product-name">Oracle</td>
                                     </tr>
                                 </tbody>
                             </table><table class="cve-epss-table">
@@ -924,24 +336,24 @@ tags:
                                     <tr>
                                         <td class="cve-epss-label">EPSS:</td>
                                     </tr><tr>
-                                        <td class="cve-epss-value">0.084050000</td>
+                                        <td class="cve-epss-value">0.896490000</td>
                                     </tr><tr>
                                         <td class="cve-percentile-label">Percentile:</td>
                                     </tr><tr>
-                                        <td class="cve-percentile-value">0.924240000</td>
+                                        <td class="cve-percentile-value">0.995800000</td>
                                     </tr>
                                 </tbody>
                             </table></div>
                     </div>
-                    <div class="row cve-row" id="CVE-2026-45498">
+                    <div class="row cve-row" id="CVE-2025-48595">
                         <div class="col-md-9">
                             <div class="cve-post">
-                                <h2 class="cve-title">CVE-2026-45498</h2>
-                                <h4 class="cve-vuln">Microsoft Defender Denial of Service Vulnerability</h4>
-                                <h6 class="cve-date">Date Added: 2026-05-20</h6>
+                                <h2 class="cve-title">CVE-2025-48595</h2>
+                                <h4 class="cve-vuln">Android Framework Integer Overflow Vulnerability</h4>
+                                <h6 class="cve-date">Date Added: 2026-06-02</h6>
                                 <div class="cve-description">
                                     <h6>Description</h6>
-                                    <p class="cve-description-p">Microsoft Defender contains an unspecified vulnerability that allows for denial of service.</p>
+                                    <p class="cve-description-p">Android Framework contains an integer overflow vulnerability that allows for code execution that could allow for local privilege escalation.</p>
                                 </div>
                                 <div class="cve-action">
                                     <h6>Required Action</h6>
@@ -954,39 +366,89 @@ tags:
     "cvssData": {
       "attackComplexity": "LOW",
       "attackVector": "LOCAL",
-      "availabilityImpact": "LOW",
-      "baseScore": 4.0,
-      "baseSeverity": "MEDIUM",
-      "confidentialityImpact": "NONE",
-      "integrityImpact": "NONE",
+      "availabilityImpact": "HIGH",
+      "baseScore": 8.4,
+      "baseSeverity": "HIGH",
+      "confidentialityImpact": "HIGH",
+      "integrityImpact": "HIGH",
       "privilegesRequired": "NONE",
       "scope": "UNCHANGED",
       "userInteraction": "NONE",
-      "vectorString": "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+      "vectorString": "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
       "version": "3.1"
     },
     "exploitabilityScore": 2.5,
-    "impactScore": 1.4,
-    "source": "secure@microsoft.com",
+    "impactScore": 5.9,
+    "source": "134c704f-9b21-4f2e-91b3-4a467353bcc0",
     "type": "Secondary"
-  },
+  }
+]
+                                        </pre>
+                                    </div></div></div>
+                        </div>
+                        <div class="col-md-3"><div class="cve-status">
+                                <b>Status:</b>
+                Undergoing Analysis
+                            </div><table class="cve-vendor-table">
+                                <tbody>
+                                    <tr>
+                                        <td class="cve-vendor-label">Vendor:</td>
+                                    </tr><tr>
+                                        <td class="cve-vendor-name">Android</td>
+                                    </tr><tr>
+                                        <td class="cve-product-label">Product:</td>
+                                    </tr><tr>
+                                        <td class="cve-product-name">Android</td>
+                                    </tr>
+                                </tbody>
+                            </table><table class="cve-epss-table">
+                                <tbody>
+                                    <tr>
+                                        <td class="cve-epss-label">EPSS:</td>
+                                    </tr><tr>
+                                        <td class="cve-epss-value">0.000060000</td>
+                                    </tr><tr>
+                                        <td class="cve-percentile-label">Percentile:</td>
+                                    </tr><tr>
+                                        <td class="cve-percentile-value">0.003470000</td>
+                                    </tr>
+                                </tbody>
+                            </table></div>
+                    </div>
+                    <div class="row cve-row" id="CVE-2026-0257">
+                        <div class="col-md-9">
+                            <div class="cve-post">
+                                <h2 class="cve-title">CVE-2026-0257</h2>
+                                <h4 class="cve-vuln">Palo Alto Networks PAN-OS Authentication Bypass Vulnerability</h4>
+                                <h6 class="cve-date">Date Added: 2026-05-29</h6>
+                                <div class="cve-description">
+                                    <h6>Description</h6>
+                                    <p class="cve-description-p">Palo Alto Networks PAN-OS contains an authentication bypass vulnerability that allows attackers to bypass security restrictions and establish an unauthorized VPN connection.</p>
+                                </div>
+                                <div class="cve-action">
+                                    <h6>Required Action</h6>
+                                    <p class="cve-action-p">Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.</p>
+                                </div><div class="cvss_metrics"><div class="v31">
+                                        <h6>cvssMetricV31</h6>
+                                        <pre>
+                    [
   {
     "cvssData": {
       "attackComplexity": "LOW",
       "attackVector": "NETWORK",
-      "availabilityImpact": "HIGH",
-      "baseScore": 7.5,
-      "baseSeverity": "HIGH",
-      "confidentialityImpact": "NONE",
-      "integrityImpact": "NONE",
+      "availabilityImpact": "NONE",
+      "baseScore": 9.1,
+      "baseSeverity": "CRITICAL",
+      "confidentialityImpact": "HIGH",
+      "integrityImpact": "HIGH",
       "privilegesRequired": "NONE",
       "scope": "UNCHANGED",
       "userInteraction": "NONE",
-      "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N",
       "version": "3.1"
     },
     "exploitabilityScore": 3.9,
-    "impactScore": 3.6,
+    "impactScore": 5.2,
     "source": "nvd@nist.gov",
     "type": "Primary"
   }
@@ -1002,11 +464,11 @@ tags:
                                     <tr>
                                         <td class="cve-vendor-label">Vendor:</td>
                                     </tr><tr>
-                                        <td class="cve-vendor-name">Microsoft</td>
+                                        <td class="cve-vendor-name">Palo Alto Networks</td>
                                     </tr><tr>
                                         <td class="cve-product-label">Product:</td>
                                     </tr><tr>
-                                        <td class="cve-product-name">Microsoft</td>
+                                        <td class="cve-product-name">Palo Alto Networks</td>
                                     </tr>
                                 </tbody>
                             </table><table class="cve-epss-table">
@@ -1014,24 +476,24 @@ tags:
                                     <tr>
                                         <td class="cve-epss-label">EPSS:</td>
                                     </tr><tr>
-                                        <td class="cve-epss-value">0.032110000</td>
+                                        <td class="cve-epss-value">0.363440000</td>
                                     </tr><tr>
                                         <td class="cve-percentile-label">Percentile:</td>
                                     </tr><tr>
-                                        <td class="cve-percentile-value">0.872000000</td>
+                                        <td class="cve-percentile-value">0.971970000</td>
                                     </tr>
                                 </tbody>
                             </table></div>
                     </div>
-                    <div class="row cve-row" id="CVE-2026-9082">
+                    <div class="row cve-row" id="CVE-2026-45247">
                         <div class="col-md-9">
                             <div class="cve-post">
-                                <h2 class="cve-title">CVE-2026-9082</h2>
-                                <h4 class="cve-vuln">Drupal Core SQL Injection Vulnerability</h4>
-                                <h6 class="cve-date">Date Added: 2026-05-22</h6>
+                                <h2 class="cve-title">CVE-2026-45247</h2>
+                                <h4 class="cve-vuln">Mirasvit Full Page Cache Warmer Deserialization of Untrusted Data Vulnerability</h4>
+                                <h6 class="cve-date">Date Added: 2026-06-03</h6>
                                 <div class="cve-description">
                                     <h6>Description</h6>
-                                    <p class="cve-description-p">Drupal Core contains a SQL injection vulnerability that could allow for privilege escalation and remote code execution via specially crafted requests sent with the database abstraction API.</p>
+                                    <p class="cve-description-p">Mirasvit Full Page Cache Warmer contains a deserialization of untrusted data vulnerability that could allow unauthenticated attackers to achieve remote code execution by supplying a crafted serialized PHP object in the CacheWarmer cookie.</p>
                                 </div>
                                 <div class="cve-action">
                                     <h6>Required Action</h6>
@@ -1044,21 +506,21 @@ tags:
     "cvssData": {
       "attackComplexity": "LOW",
       "attackVector": "NETWORK",
-      "availabilityImpact": "NONE",
-      "baseScore": 6.5,
-      "baseSeverity": "MEDIUM",
-      "confidentialityImpact": "LOW",
-      "integrityImpact": "LOW",
+      "availabilityImpact": "HIGH",
+      "baseScore": 9.8,
+      "baseSeverity": "CRITICAL",
+      "confidentialityImpact": "HIGH",
+      "integrityImpact": "HIGH",
       "privilegesRequired": "NONE",
       "scope": "UNCHANGED",
       "userInteraction": "NONE",
-      "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N",
+      "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
       "version": "3.1"
     },
     "exploitabilityScore": 3.9,
-    "impactScore": 2.5,
-    "source": "134c704f-9b21-4f2e-91b3-4a467353bcc0",
-    "type": "Secondary"
+    "impactScore": 5.9,
+    "source": "disclosure@vulncheck.com",
+    "type": "Primary"
   }
 ]
                                         </pre>
@@ -1072,11 +534,11 @@ tags:
                                     <tr>
                                         <td class="cve-vendor-label">Vendor:</td>
                                     </tr><tr>
-                                        <td class="cve-vendor-name">Drupal</td>
+                                        <td class="cve-vendor-name">Mirasvit</td>
                                     </tr><tr>
                                         <td class="cve-product-label">Product:</td>
                                     </tr><tr>
-                                        <td class="cve-product-name">Drupal</td>
+                                        <td class="cve-product-name">Mirasvit</td>
                                     </tr>
                                 </tbody>
                             </table><table class="cve-epss-table">
@@ -1084,11 +546,221 @@ tags:
                                     <tr>
                                         <td class="cve-epss-label">EPSS:</td>
                                     </tr><tr>
-                                        <td class="cve-epss-value">0.125710000</td>
+                                        <td class="cve-epss-value">0.001370000</td>
                                     </tr><tr>
                                         <td class="cve-percentile-label">Percentile:</td>
                                     </tr><tr>
-                                        <td class="cve-percentile-value">0.940410000</td>
+                                        <td class="cve-percentile-value">0.332870000</td>
+                                    </tr>
+                                </tbody>
+                            </table></div>
+                    </div>
+                    <div class="row cve-row" id="CVE-2026-45321">
+                        <div class="col-md-9">
+                            <div class="cve-post">
+                                <h2 class="cve-title">CVE-2026-45321</h2>
+                                <h4 class="cve-vuln">TanStack Unspecified Vulnerability</h4>
+                                <h6 class="cve-date">Date Added: 2026-05-27</h6>
+                                <div class="cve-description">
+                                    <h6>Description</h6>
+                                    <p class="cve-description-p">TanStack contains an unspecified vulnerability that allowed malicious versions of the product to be published to the npm registry to publish credential-stealing malware under a trusted identity.</p>
+                                </div>
+                                <div class="cve-action">
+                                    <h6>Required Action</h6>
+                                    <p class="cve-action-p">Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.</p>
+                                </div><div class="cvss_metrics"><div class="v31">
+                                        <h6>cvssMetricV31</h6>
+                                        <pre>
+                    [
+  {
+    "cvssData": {
+      "attackComplexity": "LOW",
+      "attackVector": "NETWORK",
+      "availabilityImpact": "HIGH",
+      "baseScore": 9.6,
+      "baseSeverity": "CRITICAL",
+      "confidentialityImpact": "HIGH",
+      "integrityImpact": "HIGH",
+      "privilegesRequired": "NONE",
+      "scope": "CHANGED",
+      "userInteraction": "REQUIRED",
+      "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H",
+      "version": "3.1"
+    },
+    "exploitabilityScore": 2.8,
+    "impactScore": 6.0,
+    "source": "security-advisories@github.com",
+    "type": "Secondary"
+  }
+]
+                                        </pre>
+                                    </div></div></div>
+                        </div>
+                        <div class="col-md-3"><div class="cve-status">
+                                <b>Status:</b>
+                Analyzed
+                            </div><table class="cve-vendor-table">
+                                <tbody>
+                                    <tr>
+                                        <td class="cve-vendor-label">Vendor:</td>
+                                    </tr><tr>
+                                        <td class="cve-vendor-name">TanStack</td>
+                                    </tr><tr>
+                                        <td class="cve-product-label">Product:</td>
+                                    </tr><tr>
+                                        <td class="cve-product-name">TanStack</td>
+                                    </tr>
+                                </tbody>
+                            </table><table class="cve-epss-table">
+                                <tbody>
+                                    <tr>
+                                        <td class="cve-epss-label">EPSS:</td>
+                                    </tr><tr>
+                                        <td class="cve-epss-value">0.170510000</td>
+                                    </tr><tr>
+                                        <td class="cve-percentile-label">Percentile:</td>
+                                    </tr><tr>
+                                        <td class="cve-percentile-value">0.951100000</td>
+                                    </tr>
+                                </tbody>
+                            </table></div>
+                    </div>
+                    <div class="row cve-row" id="CVE-2026-48027">
+                        <div class="col-md-9">
+                            <div class="cve-post">
+                                <h2 class="cve-title">CVE-2026-48027</h2>
+                                <h4 class="cve-vuln">Nx Console Embedded Malicious Code Vulnerability</h4>
+                                <h6 class="cve-date">Date Added: 2026-05-27</h6>
+                                <div class="cve-description">
+                                    <h6>Description</h6>
+                                    <p class="cve-description-p">Nx Console contains an embedded malicious code vulnerability that allowed a malicious version of Nx Console to be published. The compromised extension fetched an obfuscated payload that could harvested credentials from multiple sources on disk and in memory.</p>
+                                </div>
+                                <div class="cve-action">
+                                    <h6>Required Action</h6>
+                                    <p class="cve-action-p">Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.</p>
+                                </div><div class="cvss_metrics"><div class="v31">
+                                        <h6>cvssMetricV31</h6>
+                                        <pre>
+                    [
+  {
+    "cvssData": {
+      "attackComplexity": "LOW",
+      "attackVector": "NETWORK",
+      "availabilityImpact": "HIGH",
+      "baseScore": 9.8,
+      "baseSeverity": "CRITICAL",
+      "confidentialityImpact": "HIGH",
+      "integrityImpact": "HIGH",
+      "privilegesRequired": "NONE",
+      "scope": "UNCHANGED",
+      "userInteraction": "NONE",
+      "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "version": "3.1"
+    },
+    "exploitabilityScore": 3.9,
+    "impactScore": 5.9,
+    "source": "nvd@nist.gov",
+    "type": "Primary"
+  }
+]
+                                        </pre>
+                                    </div></div></div>
+                        </div>
+                        <div class="col-md-3"><div class="cve-status">
+                                <b>Status:</b>
+                Analyzed
+                            </div><table class="cve-vendor-table">
+                                <tbody>
+                                    <tr>
+                                        <td class="cve-vendor-label">Vendor:</td>
+                                    </tr><tr>
+                                        <td class="cve-vendor-name">Nx</td>
+                                    </tr><tr>
+                                        <td class="cve-product-label">Product:</td>
+                                    </tr><tr>
+                                        <td class="cve-product-name">Nx</td>
+                                    </tr>
+                                </tbody>
+                            </table><table class="cve-epss-table">
+                                <tbody>
+                                    <tr>
+                                        <td class="cve-epss-label">EPSS:</td>
+                                    </tr><tr>
+                                        <td class="cve-epss-value">0.320650000</td>
+                                    </tr><tr>
+                                        <td class="cve-percentile-label">Percentile:</td>
+                                    </tr><tr>
+                                        <td class="cve-percentile-value">0.969130000</td>
+                                    </tr>
+                                </tbody>
+                            </table></div>
+                    </div>
+                    <div class="row cve-row" id="CVE-2026-8398">
+                        <div class="col-md-9">
+                            <div class="cve-post">
+                                <h2 class="cve-title">CVE-2026-8398</h2>
+                                <h4 class="cve-vuln">Daemon Tools Lite Embedded Malicious Code Vulnerability</h4>
+                                <h6 class="cve-date">Date Added: 2026-05-27</h6>
+                                <div class="cve-description">
+                                    <h6>Description</h6>
+                                    <p class="cve-description-p">Daemon Tools contains an unspecified vulnerability that has a high impact on confidentiality, integrity, and availability.</p>
+                                </div>
+                                <div class="cve-action">
+                                    <h6>Required Action</h6>
+                                    <p class="cve-action-p">Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.</p>
+                                </div><div class="cvss_metrics"><div class="v31">
+                                        <h6>cvssMetricV31</h6>
+                                        <pre>
+                    [
+  {
+    "cvssData": {
+      "attackComplexity": "LOW",
+      "attackVector": "NETWORK",
+      "availabilityImpact": "HIGH",
+      "baseScore": 9.8,
+      "baseSeverity": "CRITICAL",
+      "confidentialityImpact": "HIGH",
+      "integrityImpact": "HIGH",
+      "privilegesRequired": "NONE",
+      "scope": "UNCHANGED",
+      "userInteraction": "NONE",
+      "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "version": "3.1"
+    },
+    "exploitabilityScore": 3.9,
+    "impactScore": 5.9,
+    "source": "vulnerability@kaspersky.com",
+    "type": "Secondary"
+  }
+]
+                                        </pre>
+                                    </div></div></div>
+                        </div>
+                        <div class="col-md-3"><div class="cve-status">
+                                <b>Status:</b>
+                Analyzed
+                            </div><table class="cve-vendor-table">
+                                <tbody>
+                                    <tr>
+                                        <td class="cve-vendor-label">Vendor:</td>
+                                    </tr><tr>
+                                        <td class="cve-vendor-name">Daemon</td>
+                                    </tr><tr>
+                                        <td class="cve-product-label">Product:</td>
+                                    </tr><tr>
+                                        <td class="cve-product-name">Daemon</td>
+                                    </tr>
+                                </tbody>
+                            </table><table class="cve-epss-table">
+                                <tbody>
+                                    <tr>
+                                        <td class="cve-epss-label">EPSS:</td>
+                                    </tr><tr>
+                                        <td class="cve-epss-value">0.154830000</td>
+                                    </tr><tr>
+                                        <td class="cve-percentile-label">Percentile:</td>
+                                    </tr><tr>
+                                        <td class="cve-percentile-value">0.947850000</td>
                                     </tr>
                                 </tbody>
                             </table></div>
@@ -1102,12 +774,14 @@ tags:
                         <table class="table table-hover">
                             <thead><tr><th>Vendor</th><th>Count</th></tr></thead>
                             <tbody>
-                                <tr><td>Microsoft</td><td>7</td></tr>
-                                <tr><td>Drupal</td><td>1</td></tr>
-                                <tr><td>Langflow</td><td>1</td></tr>
-                                <tr><td>Trend Micro</td><td>1</td></tr>
-                                <tr><td>Adobe</td><td>1</td></tr>
-                                <tr><td>Cisco</td><td>1</td></tr>
+                                <tr><td>Mirasvit</td><td>1</td></tr>
+                                <tr><td>Linux</td><td>1</td></tr>
+                                <tr><td>Android</td><td>1</td></tr>
+                                <tr><td>Oracle</td><td>1</td></tr>
+                                <tr><td>Palo Alto Networks</td><td>1</td></tr>
+                                <tr><td>Nx</td><td>1</td></tr>
+                                <tr><td>TanStack</td><td>1</td></tr>
+                                <tr><td>Daemon</td><td>1</td></tr>
                             </tbody>
                         </table>
                     </div>
@@ -1117,11 +791,11 @@ tags:
                         <table class="table table-hover">
                             <thead><tr><th>Date Added</th><th>Count</th></tr></thead>
                             <tbody>
-                                <tr><td>2026-05-20</td><td>7</td></tr>
-                                <tr><td>2026-05-21</td><td>2</td></tr>
-                                <tr><td>2026-05-22</td><td>1</td></tr>
-                                <tr><td>2026-05-15</td><td>1</td></tr>
-                                <tr><td>2026-05-14</td><td>1</td></tr>
+                                <tr><td>2026-05-27</td><td>3</td></tr>
+                                <tr><td>2026-06-02</td><td>2</td></tr>
+                                <tr><td>2026-06-03</td><td>1</td></tr>
+                                <tr><td>2026-06-01</td><td>1</td></tr>
+                                <tr><td>2026-05-29</td><td>1</td></tr>
                             </tbody>
                         </table>
                     </div>
