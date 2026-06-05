@@ -2,11 +2,13 @@
 layout: post
 title: CISA KEVC L7D - 2026 - 6 - 5
 tags:
+- CVE-2026-28318
 - CVE-2026-45247
 - CVE-2022-0492
 - CVE-2025-48595
 - CVE-2024-21182
 - CVE-2026-0257
+- CWE-400
 - CWE-502
 - CWE-287
 - CWE-862
@@ -100,7 +102,7 @@ tags:
                                         <div class="card-body">
                                             <div class="label">LOW (Today)</div>
                                             <div class="value">
-                    0
+                    1
                                             </div>
                                         </div>
                                     </div>
@@ -108,7 +110,7 @@ tags:
                                         <div class="card-body">
                                             <div class="label">LOW (L7D)</div>
                                             <div class="value">
-                    0
+                    1
                                             </div>
                                         </div>
                                     </div>
@@ -130,7 +132,7 @@ tags:
                                         <div class="card-body">
                                             <div class="label">CVEs (Today)</div>
                                             <div class="value">
-        0
+        1
                                             </div>
                                         </div>
                                     </div>
@@ -142,7 +144,7 @@ tags:
                                         <div class="card-body">
                                             <div class="label">CVEs (L7D)</div>
                                             <div class="value">
-        5
+        6
                                             </div>
                                         </div>
                                     </div>
@@ -154,7 +156,7 @@ tags:
                                         <div class="card-body">
                                             <div class="label">CWEs (Today)</div>
                                             <div class="value">
-        0
+        1
                                             </div>
                                         </div>
                                     </div>
@@ -166,7 +168,7 @@ tags:
                                         <div class="card-body">
                                             <div class="label">CWEs (L7D)</div>
                                             <div class="value">
-        6
+        7
                                             </div>
                                         </div>
                                     </div>
@@ -481,6 +483,76 @@ tags:
                                 </tbody>
                             </table></div>
                     </div>
+                    <div class="row cve-row" id="CVE-2026-28318">
+                        <div class="col-md-9">
+                            <div class="cve-post">
+                                <h2 class="cve-title">CVE-2026-28318</h2>
+                                <h4 class="cve-vuln">SolarWinds Serv-U Uncontrolled Resource Consumption Vulnerability</h4>
+                                <h6 class="cve-date">Date Added: 2026-06-05</h6>
+                                <div class="cve-description">
+                                    <h6>Description</h6>
+                                    <p class="cve-description-p">SolarWinds Serv-U contains an uncontrolled resource consumption vulnerability that allows specially crafted POST requests using the Content-Encoding: deflate header to crash the Serv-U service without authentication.</p>
+                                </div>
+                                <div class="cve-action">
+                                    <h6>Required Action</h6>
+                                    <p class="cve-action-p">Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.</p>
+                                </div><div class="cvss_metrics"><div class="v31">
+                                        <h6>cvssMetricV31</h6>
+                                        <pre>
+                    [
+  {
+    "cvssData": {
+      "attackComplexity": "LOW",
+      "attackVector": "NETWORK",
+      "availabilityImpact": "HIGH",
+      "baseScore": 7.5,
+      "baseSeverity": "HIGH",
+      "confidentialityImpact": "NONE",
+      "integrityImpact": "NONE",
+      "privilegesRequired": "NONE",
+      "scope": "UNCHANGED",
+      "userInteraction": "NONE",
+      "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "version": "3.1"
+    },
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6,
+    "source": "psirt@solarwinds.com",
+    "type": "Secondary"
+  }
+]
+                                        </pre>
+                                    </div></div></div>
+                        </div>
+                        <div class="col-md-3"><div class="cve-status">
+                                <b>Status:</b>
+                Analyzed
+                            </div><table class="cve-vendor-table">
+                                <tbody>
+                                    <tr>
+                                        <td class="cve-vendor-label">Vendor:</td>
+                                    </tr><tr>
+                                        <td class="cve-vendor-name">SolarWinds</td>
+                                    </tr><tr>
+                                        <td class="cve-product-label">Product:</td>
+                                    </tr><tr>
+                                        <td class="cve-product-name">SolarWinds</td>
+                                    </tr>
+                                </tbody>
+                            </table><table class="cve-epss-table">
+                                <tbody>
+                                    <tr>
+                                        <td class="cve-epss-label">EPSS:</td>
+                                    </tr><tr>
+                                        <td class="cve-epss-value">0.000620000</td>
+                                    </tr><tr>
+                                        <td class="cve-percentile-label">Percentile:</td>
+                                    </tr><tr>
+                                        <td class="cve-percentile-value">0.196500000</td>
+                                    </tr>
+                                </tbody>
+                            </table></div>
+                    </div>
                     <div class="row cve-row" id="CVE-2026-45247">
                         <div class="col-md-9">
                             <div class="cve-post">
@@ -560,6 +632,7 @@ tags:
                         <table class="table table-hover">
                             <thead><tr><th>Vendor</th><th>Count</th></tr></thead>
                             <tbody>
+                                <tr><td>SolarWinds</td><td>1</td></tr>
                                 <tr><td>Mirasvit</td><td>1</td></tr>
                                 <tr><td>Linux</td><td>1</td></tr>
                                 <tr><td>Android</td><td>1</td></tr>
@@ -575,6 +648,7 @@ tags:
                             <thead><tr><th>Date Added</th><th>Count</th></tr></thead>
                             <tbody>
                                 <tr><td>2026-06-02</td><td>2</td></tr>
+                                <tr><td>2026-06-05</td><td>1</td></tr>
                                 <tr><td>2026-06-03</td><td>1</td></tr>
                                 <tr><td>2026-06-01</td><td>1</td></tr>
                                 <tr><td>2026-05-29</td><td>1</td></tr>
