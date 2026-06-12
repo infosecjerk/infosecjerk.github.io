@@ -2,6 +2,7 @@
 layout: post
 title: CISA KEVC L7D - 2026 - 6 - 12
 tags:
+- CVE-2026-35273
 - CVE-2026-10520
 - CVE-2026-11645
 - CVE-2026-7473
@@ -9,6 +10,7 @@ tags:
 - CVE-2026-42271
 - CVE-2026-50751
 - CVE-2026-28318
+- CWE-306
 - CWE-78
 - CWE-787
 - CWE-125
@@ -104,7 +106,7 @@ tags:
                                         <div class="card-body">
                                             <div class="label">LOW (Today)</div>
                                             <div class="value">
-                    0
+                    1
                                             </div>
                                         </div>
                                     </div>
@@ -112,7 +114,7 @@ tags:
                                         <div class="card-body">
                                             <div class="label">LOW (L7D)</div>
                                             <div class="value">
-                    7
+                    8
                                             </div>
                                         </div>
                                     </div>
@@ -134,7 +136,7 @@ tags:
                                         <div class="card-body">
                                             <div class="label">CVEs (Today)</div>
                                             <div class="value">
-        0
+        1
                                             </div>
                                         </div>
                                     </div>
@@ -146,7 +148,7 @@ tags:
                                         <div class="card-body">
                                             <div class="label">CVEs (L7D)</div>
                                             <div class="value">
-        7
+        8
                                             </div>
                                         </div>
                                     </div>
@@ -158,7 +160,7 @@ tags:
                                         <div class="card-body">
                                             <div class="label">CWEs (Today)</div>
                                             <div class="value">
-        0
+        1
                                             </div>
                                         </div>
                                     </div>
@@ -170,7 +172,7 @@ tags:
                                         <div class="card-body">
                                             <div class="label">CWEs (L7D)</div>
                                             <div class="value">
-        8
+        9
                                             </div>
                                         </div>
                                     </div>
@@ -465,6 +467,76 @@ tags:
                                 </tbody>
                             </table></div>
                     </div>
+                    <div class="row cve-row" id="CVE-2026-35273">
+                        <div class="col-md-9">
+                            <div class="cve-post">
+                                <h2 class="cve-title">CVE-2026-35273</h2>
+                                <h4 class="cve-vuln">Oracle PeopleSoft Enterprise PeopleTools Missing Authentication for Critical Function Vulnerability</h4>
+                                <h6 class="cve-date">Date Added: 2026-06-12</h6>
+                                <div class="cve-description">
+                                    <h6>Description</h6>
+                                    <p class="cve-description-p">Oracle PeopleSoft Enterprise PeopleTools contains a missing authentication for critical function vulnerability which could allow an unauthenticated attacker to obtain takeover of PeopleSoft Enterprise PeopleTools.</p>
+                                </div>
+                                <div class="cve-action">
+                                    <h6>Required Action</h6>
+                                    <p class="cve-action-p">Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.</p>
+                                </div><div class="cvss_metrics"><div class="v31">
+                                        <h6>cvssMetricV31</h6>
+                                        <pre>
+                    [
+  {
+    "cvssData": {
+      "attackComplexity": "LOW",
+      "attackVector": "NETWORK",
+      "availabilityImpact": "HIGH",
+      "baseScore": 9.8,
+      "baseSeverity": "CRITICAL",
+      "confidentialityImpact": "HIGH",
+      "integrityImpact": "HIGH",
+      "privilegesRequired": "NONE",
+      "scope": "UNCHANGED",
+      "userInteraction": "NONE",
+      "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "version": "3.1"
+    },
+    "exploitabilityScore": 3.9,
+    "impactScore": 5.9,
+    "source": "secalert_us@oracle.com",
+    "type": "Secondary"
+  }
+]
+                                        </pre>
+                                    </div></div></div>
+                        </div>
+                        <div class="col-md-3"><div class="cve-status">
+                                <b>Status:</b>
+                Undergoing Analysis
+                            </div><table class="cve-vendor-table">
+                                <tbody>
+                                    <tr>
+                                        <td class="cve-vendor-label">Vendor:</td>
+                                    </tr><tr>
+                                        <td class="cve-vendor-name">Oracle</td>
+                                    </tr><tr>
+                                        <td class="cve-product-label">Product:</td>
+                                    </tr><tr>
+                                        <td class="cve-product-name">Oracle</td>
+                                    </tr>
+                                </tbody>
+                            </table><table class="cve-epss-table">
+                                <tbody>
+                                    <tr>
+                                        <td class="cve-epss-label">EPSS:</td>
+                                    </tr><tr>
+                                        <td class="cve-epss-value">0.000240000</td>
+                                    </tr><tr>
+                                        <td class="cve-percentile-label">Percentile:</td>
+                                    </tr><tr>
+                                        <td class="cve-percentile-value">0.072520000</td>
+                                    </tr>
+                                </tbody>
+                            </table></div>
+                    </div>
                     <div class="row cve-row" id="CVE-2026-42271">
                         <div class="col-md-9">
                             <div class="cve-post">
@@ -684,6 +756,7 @@ tags:
                         <table class="table table-hover">
                             <thead><tr><th>Vendor</th><th>Count</th></tr></thead>
                             <tbody>
+                                <tr><td>Oracle</td><td>1</td></tr>
                                 <tr><td>Ivanti</td><td>1</td></tr>
                                 <tr><td>Google</td><td>1</td></tr>
                                 <tr><td>Arista</td><td>1</td></tr>
@@ -702,6 +775,7 @@ tags:
                             <tbody>
                                 <tr><td>2026-06-09</td><td>3</td></tr>
                                 <tr><td>2026-06-08</td><td>2</td></tr>
+                                <tr><td>2026-06-12</td><td>1</td></tr>
                                 <tr><td>2026-06-11</td><td>1</td></tr>
                                 <tr><td>2026-06-05</td><td>1</td></tr>
                             </tbody>
