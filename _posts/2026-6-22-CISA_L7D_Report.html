@@ -1,0 +1,518 @@
+---
+layout: post
+title: CISA KEVC L7D - 2026 - 6 - 22
+tags:
+- CVE-2026-20253
+- CVE-2026-48907
+- CVE-2026-54420
+- CVE-2026-20262
+- CWE-306
+- CWE-284
+- CWE-61
+- CWE-22
+---
+
+<div class="post">
+    <div class="row report-row">
+        <div class="col-md-12 report-col-12">
+            <h1 class='post-title'>
+                CISA KEVC :: 2026-06-22
+            </h1>
+            <h3 class='post-date'>
+                Report Window: 2026-06-22 to 2026-6-15
+            </h3>
+        </div>
+    </div>
+    <div class="lead"></div>
+    <div id='body'>
+        <div class="container main"> 
+            <!-- TOP SUMMARY -->
+            <div class="row report-row">
+                <div class="col-md-12 report-col-12">
+                    <div class="container kpi-row">
+                        <div class="row card-row"> 
+                            <div class="col-md-3 card-col-3">
+                                <div class="card card-critical">
+                                    <div class="cve-critical">
+                                        <div class="card-body">
+                                            <div class="label">CRITICAL (Today)</div>
+                                            <div class="value">
+                    0
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="cve-critical-l7d">
+                                        <div class="card-body">
+                                            <div class="label">CRITICAL (L7D)</div>
+                                            <div class="value">
+                    0
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 card-col-3">
+                                <div class="card card-high">
+                                    <div class="cve-high">
+                                        <div class="card-body">
+                                            <div class="label">HIGH (Today)</div>
+                                            <div class="value">
+                    0
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="cve-high-l7d">
+                                        <div class="card-body">
+                                            <div class="label">HIGH (L7D)</div>
+                                            <div class="value">
+                    0
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 card-col-3">
+                                <div class="card card-medium">
+                                    <div class="cve-medium">
+                                        <div class="card-body">
+                                            <div class="label">MEDIUM (Today)</div>
+                                            <div class="value">
+                    0
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="cve-medium-l7d">
+                                        <div class="card-body">
+                                            <div class="label">MEDIUM (L7D)</div>
+                                            <div class="value">
+                    0
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 card-col-3">
+                                <div class="card card-low">
+                                    <div class="cve-low">
+                                        <div class="card-body">
+                                            <div class="label">LOW (Today)</div>
+                                            <div class="value">
+                    0
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="cve-low-l7d">
+                                        <div class="card-body">
+                                            <div class="label">LOW (L7D)</div>
+                                            <div class="value">
+                    3
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- END TOP SUMMARY -->
+            <!-- BEGIN 2nd SUMMARY -->
+            <div class="row report-row">
+                <div class="col-md-12 report-col-12">
+                    <div class="container kpi-row">
+                        <div class="row card-row"> 
+                            <div class="col-md-3 card-col-3">
+                                <div class="card card-cve">
+                                    <div class="cve-today">
+                                        <div class="card-body">
+                                            <div class="label">CVEs (Today)</div>
+                                            <div class="value">
+        0
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 card-col-3">
+                                <div class="card card-cve">
+                                    <div class="cve-l7d">
+                                        <div class="card-body">
+                                            <div class="label">CVEs (L7D)</div>
+                                            <div class="value">
+        4
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 card-col-3">
+                                <div class="card card-cwe">
+                                    <div class="cwe-today">
+                                        <div class="card-body">
+                                            <div class="label">CWEs (Today)</div>
+                                            <div class="value">
+        0
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 card-col-3">
+                                <div class="card card-cwe">
+                                    <div class="cwe-l7d">
+                                        <div class="card-body">
+                                            <div class="label">CWEs (L7D)</div>
+                                            <div class="value">
+        4
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- END 2nd SUMMARY -->
+            <!-- LAYOUT -->
+            <div class="row report-row">
+                <!-- CVE CONTENT -->
+                <div class="col-md-9 report-col-9">
+                    <div class="row cve-row" id="CVE-2026-20253">
+                        <div class="col-md-9">
+                            <div class="cve-post">
+                                <h2 class="cve-title">CVE-2026-20253</h2>
+                                <h4 class="cve-vuln">Splunk Enterprise Missing Authentication for Critical Function Vulnerability</h4>
+                                <h6 class="cve-date">Date Added: 2026-06-18</h6>
+                                <div class="cve-description">
+                                    <h6>Description</h6>
+                                    <p class="cve-description-p">Splunk Enterprise contains a missing authentication for critical function vulnerability which could allow an unauthenticated user to create or truncate arbitrary files through a PostgreSQL sidecar service endpoint.</p>
+                                </div>
+                                <div class="cve-action">
+                                    <h6>Required Action</h6>
+                                    <p class="cve-action-p">Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.</p>
+                                </div><div class="cvss_metrics"><div class="v31">
+                                        <h6>cvssMetricV31</h6>
+                                        <pre>
+                    [
+  {
+    "cvssData": {
+      "attackComplexity": "LOW",
+      "attackVector": "NETWORK",
+      "availabilityImpact": "HIGH",
+      "baseScore": 9.8,
+      "baseSeverity": "CRITICAL",
+      "confidentialityImpact": "HIGH",
+      "integrityImpact": "HIGH",
+      "privilegesRequired": "NONE",
+      "scope": "UNCHANGED",
+      "userInteraction": "NONE",
+      "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "version": "3.1"
+    },
+    "exploitabilityScore": 3.9,
+    "impactScore": 5.9,
+    "source": "psirt@cisco.com",
+    "type": "Secondary"
+  }
+]
+                                        </pre>
+                                    </div></div></div>
+                        </div>
+                        <div class="col-md-3"><div class="cve-status">
+                                <b>Status:</b>
+                Modified
+                            </div><table class="cve-vendor-table">
+                                <tbody>
+                                    <tr>
+                                        <td class="cve-vendor-label">Vendor:</td>
+                                    </tr><tr>
+                                        <td class="cve-vendor-name">Splunk</td>
+                                    </tr><tr>
+                                        <td class="cve-product-label">Product:</td>
+                                    </tr><tr>
+                                        <td class="cve-product-name">Splunk</td>
+                                    </tr>
+                                </tbody>
+                            </table><table class="cve-epss-table">
+                                <tbody>
+                                    <tr>
+                                        <td class="cve-epss-label">EPSS:</td>
+                                    </tr><tr>
+                                        <td class="cve-epss-value">0.017310000</td>
+                                    </tr><tr>
+                                        <td class="cve-percentile-label">Percentile:</td>
+                                    </tr><tr>
+                                        <td class="cve-percentile-value">0.746620000</td>
+                                    </tr>
+                                </tbody>
+                            </table></div>
+                    </div>
+                    <div class="row cve-row" id="CVE-2026-20262">
+                        <div class="col-md-9">
+                            <div class="cve-post">
+                                <h2 class="cve-title">CVE-2026-20262</h2>
+                                <h4 class="cve-vuln">Cisco Catalyst SD-WAN Manager Directory or Path Traversal Vulnerability</h4>
+                                <h6 class="cve-date">Date Added: 2026-06-15</h6>
+                                <div class="cve-description">
+                                    <h6>Description</h6>
+                                    <p class="cve-description-p">Cisco Catalyst SD-WAN Manager contains a directory or path traversal vulnerability that could allow an authenticated, remote attacker to create a file or overwrite any file on the filesystem of an affected system.</p>
+                                </div>
+                                <div class="cve-action">
+                                    <h6>Required Action</h6>
+                                    <p class="cve-action-p">Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.</p>
+                                </div><div class="cvss_metrics"><div class="v31">
+                                        <h6>cvssMetricV31</h6>
+                                        <pre>
+                    [
+  {
+    "cvssData": {
+      "attackComplexity": "LOW",
+      "attackVector": "NETWORK",
+      "availabilityImpact": "NONE",
+      "baseScore": 6.5,
+      "baseSeverity": "MEDIUM",
+      "confidentialityImpact": "NONE",
+      "integrityImpact": "HIGH",
+      "privilegesRequired": "LOW",
+      "scope": "UNCHANGED",
+      "userInteraction": "NONE",
+      "vectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:N",
+      "version": "3.1"
+    },
+    "exploitabilityScore": 2.8,
+    "impactScore": 3.6,
+    "source": "psirt@cisco.com",
+    "type": "Secondary"
+  }
+]
+                                        </pre>
+                                    </div></div></div>
+                        </div>
+                        <div class="col-md-3"><div class="cve-status">
+                                <b>Status:</b>
+                Awaiting Analysis
+                            </div><table class="cve-vendor-table">
+                                <tbody>
+                                    <tr>
+                                        <td class="cve-vendor-label">Vendor:</td>
+                                    </tr><tr>
+                                        <td class="cve-vendor-name">Cisco</td>
+                                    </tr><tr>
+                                        <td class="cve-product-label">Product:</td>
+                                    </tr><tr>
+                                        <td class="cve-product-name">Cisco</td>
+                                    </tr>
+                                </tbody>
+                            </table><table class="cve-epss-table">
+                                <tbody>
+                                    <tr>
+                                        <td class="cve-epss-label">EPSS:</td>
+                                    </tr><tr>
+                                        <td class="cve-epss-value"></td>
+                                    </tr><tr>
+                                        <td class="cve-percentile-label">Percentile:</td>
+                                    </tr><tr>
+                                        <td class="cve-percentile-value"></td>
+                                    </tr>
+                                </tbody>
+                            </table></div>
+                    </div>
+                    <div class="row cve-row" id="CVE-2026-48907">
+                        <div class="col-md-9">
+                            <div class="cve-post">
+                                <h2 class="cve-title">CVE-2026-48907</h2>
+                                <h4 class="cve-vuln">Widget Factory Joomla Content Editor Improper Access Control Vulnerability</h4>
+                                <h6 class="cve-date">Date Added: 2026-06-16</h6>
+                                <div class="cve-description">
+                                    <h6>Description</h6>
+                                    <p class="cve-description-p">Widget Factory Joomla Content Editor contains an improper access control vulnerability which could allow for upload and execution of PHP code via the creation of new editor profiles for unauthenticated users. </p>
+                                </div>
+                                <div class="cve-action">
+                                    <h6>Required Action</h6>
+                                    <p class="cve-action-p">Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.</p>
+                                </div><div class="cvss_metrics"><div class="v40">
+                                        <h6>cvssMetricV40</h6>
+                                        <pre>
+                    [
+  {
+    "cvssData": {
+      "Automatable": "YES",
+      "Recovery": "NOT_DEFINED",
+      "Safety": "NOT_DEFINED",
+      "attackComplexity": "LOW",
+      "attackRequirements": "NONE",
+      "attackVector": "NETWORK",
+      "availabilityRequirement": "NOT_DEFINED",
+      "baseScore": 10.0,
+      "baseSeverity": "CRITICAL",
+      "confidentialityRequirement": "NOT_DEFINED",
+      "exploitMaturity": "ATTACKED",
+      "integrityRequirement": "NOT_DEFINED",
+      "modifiedAttackComplexity": "NOT_DEFINED",
+      "modifiedAttackRequirements": "NOT_DEFINED",
+      "modifiedAttackVector": "NOT_DEFINED",
+      "modifiedPrivilegesRequired": "NOT_DEFINED",
+      "modifiedSubAvailabilityImpact": "NOT_DEFINED",
+      "modifiedSubConfidentialityImpact": "NOT_DEFINED",
+      "modifiedSubIntegrityImpact": "NOT_DEFINED",
+      "modifiedUserInteraction": "NOT_DEFINED",
+      "modifiedVulnAvailabilityImpact": "NOT_DEFINED",
+      "modifiedVulnConfidentialityImpact": "NOT_DEFINED",
+      "modifiedVulnIntegrityImpact": "NOT_DEFINED",
+      "privilegesRequired": "NONE",
+      "providerUrgency": "RED",
+      "subAvailabilityImpact": "HIGH",
+      "subConfidentialityImpact": "HIGH",
+      "subIntegrityImpact": "HIGH",
+      "userInteraction": "NONE",
+      "valueDensity": "NOT_DEFINED",
+      "vectorString": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H/E:A/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:Y/R:X/V:X/RE:X/U:Red",
+      "version": "4.0",
+      "vulnAvailabilityImpact": "HIGH",
+      "vulnConfidentialityImpact": "HIGH",
+      "vulnIntegrityImpact": "HIGH",
+      "vulnerabilityResponseEffort": "NOT_DEFINED"
+    },
+    "source": "security@joomla.org",
+    "type": "Secondary"
+  }
+]
+                                        </pre>
+                                    </div></div></div>
+                        </div>
+                        <div class="col-md-3"><div class="cve-status">
+                                <b>Status:</b>
+                Awaiting Analysis
+                            </div><table class="cve-vendor-table">
+                                <tbody>
+                                    <tr>
+                                        <td class="cve-vendor-label">Vendor:</td>
+                                    </tr><tr>
+                                        <td class="cve-vendor-name">Widget Factory</td>
+                                    </tr><tr>
+                                        <td class="cve-product-label">Product:</td>
+                                    </tr><tr>
+                                        <td class="cve-product-name">Widget Factory</td>
+                                    </tr>
+                                </tbody>
+                            </table><table class="cve-epss-table">
+                                <tbody>
+                                    <tr>
+                                        <td class="cve-epss-label">EPSS:</td>
+                                    </tr><tr>
+                                        <td class="cve-epss-value">0.008360000</td>
+                                    </tr><tr>
+                                        <td class="cve-percentile-label">Percentile:</td>
+                                    </tr><tr>
+                                        <td class="cve-percentile-value">0.528160000</td>
+                                    </tr>
+                                </tbody>
+                            </table></div>
+                    </div>
+                    <div class="row cve-row" id="CVE-2026-54420">
+                        <div class="col-md-9">
+                            <div class="cve-post">
+                                <h2 class="cve-title">CVE-2026-54420</h2>
+                                <h4 class="cve-vuln">LiteSpeed cPanel Plugin UNIX Symbolic Link (Symlink) Following Vulnerability</h4>
+                                <h6 class="cve-date">Date Added: 2026-06-15</h6>
+                                <div class="cve-description">
+                                    <h6>Description</h6>
+                                    <p class="cve-description-p">LiteSpeed cPanel plugin contains a UNIX symbolic link (Symlink) following vulnerability that could allow a user with FTP or web shell access on a shared hosting server running CloudLinux/CageFS.</p>
+                                </div>
+                                <div class="cve-action">
+                                    <h6>Required Action</h6>
+                                    <p class="cve-action-p">Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.</p>
+                                </div><div class="cvss_metrics"><div class="v31">
+                                        <h6>cvssMetricV31</h6>
+                                        <pre>
+                    [
+  {
+    "cvssData": {
+      "attackComplexity": "HIGH",
+      "attackVector": "NETWORK",
+      "availabilityImpact": "HIGH",
+      "baseScore": 8.5,
+      "baseSeverity": "HIGH",
+      "confidentialityImpact": "HIGH",
+      "integrityImpact": "HIGH",
+      "privilegesRequired": "LOW",
+      "scope": "CHANGED",
+      "userInteraction": "NONE",
+      "vectorString": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:C/C:H/I:H/A:H",
+      "version": "3.1"
+    },
+    "exploitabilityScore": 1.8,
+    "impactScore": 6.0,
+    "source": "cve@mitre.org",
+    "type": "Secondary"
+  }
+]
+                                        </pre>
+                                    </div></div></div>
+                        </div>
+                        <div class="col-md-3"><div class="cve-status">
+                                <b>Status:</b>
+                Modified
+                            </div><table class="cve-vendor-table">
+                                <tbody>
+                                    <tr>
+                                        <td class="cve-vendor-label">Vendor:</td>
+                                    </tr><tr>
+                                        <td class="cve-vendor-name">LiteSpeed</td>
+                                    </tr><tr>
+                                        <td class="cve-product-label">Product:</td>
+                                    </tr><tr>
+                                        <td class="cve-product-name">LiteSpeed</td>
+                                    </tr>
+                                </tbody>
+                            </table><table class="cve-epss-table">
+                                <tbody>
+                                    <tr>
+                                        <td class="cve-epss-label">EPSS:</td>
+                                    </tr><tr>
+                                        <td class="cve-epss-value">0.003480000</td>
+                                    </tr><tr>
+                                        <td class="cve-percentile-label">Percentile:</td>
+                                    </tr><tr>
+                                        <td class="cve-percentile-value">0.264640000</td>
+                                    </tr>
+                                </tbody>
+                            </table></div>
+                    </div>
+                </div>
+                <!-- END CVE CONTENT -->
+                <!-- SIDEBAR CONTENT -->
+                <div class="col-md-3 report-col-3"><!-- BY VENDOR -->
+                    <div class=" sidebar-table">
+                        <div class="label">By Vendor</div>
+                        <table class="table table-hover">
+                            <thead><tr><th>Vendor</th><th>Count</th></tr></thead>
+                            <tbody>
+                                <tr><td>Splunk</td><td>1</td></tr>
+                                <tr><td>Widget Factory</td><td>1</td></tr>
+                                <tr><td>LiteSpeed</td><td>1</td></tr>
+                                <tr><td>Cisco</td><td>1</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- END BY VENDOR --><!-- BY DATE ADDED -->
+                    <div class=" sidebar-table">
+                        <div class="label">By Date Added</div>
+                        <table class="table table-hover">
+                            <thead><tr><th>Date Added</th><th>Count</th></tr></thead>
+                            <tbody>
+                                <tr><td>2026-06-15</td><td>2</td></tr>
+                                <tr><td>2026-06-18</td><td>1</td></tr>
+                                <tr><td>2026-06-16</td><td>1</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- END BY DATE ADDED -->
+                </div>
+                <!-- END SIDEBAR CONTENT -->
+            </div>
+           <!-- END LAYOUT -->
+        </div>
+    </div>
+</div>
