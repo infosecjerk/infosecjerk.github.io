@@ -2,12 +2,13 @@
 layout: post
 title: CISA KEVC L7D - 2026 - 7 - 1
 tags:
+- CVE-2026-45659
 - CVE-2026-48558
 - CVE-2026-12569
 - CVE-2026-20230
+- CWE-502
 - CWE-347
 - CWE-20
-- CWE-502
 - CWE-918
 ---
 
@@ -96,7 +97,7 @@ tags:
                                         <div class="card-body">
                                             <div class="label">LOW (Today)</div>
                                             <div class="value">
-                    0
+                    1
                                             </div>
                                         </div>
                                     </div>
@@ -104,7 +105,7 @@ tags:
                                         <div class="card-body">
                                             <div class="label">LOW (L7D)</div>
                                             <div class="value">
-                    3
+                    4
                                             </div>
                                         </div>
                                     </div>
@@ -126,7 +127,7 @@ tags:
                                         <div class="card-body">
                                             <div class="label">CVEs (Today)</div>
                                             <div class="value">
-        0
+        1
                                             </div>
                                         </div>
                                     </div>
@@ -138,7 +139,7 @@ tags:
                                         <div class="card-body">
                                             <div class="label">CVEs (L7D)</div>
                                             <div class="value">
-        3
+        4
                                             </div>
                                         </div>
                                     </div>
@@ -150,7 +151,7 @@ tags:
                                         <div class="card-body">
                                             <div class="label">CWEs (Today)</div>
                                             <div class="value">
-        0
+        1
                                             </div>
                                         </div>
                                     </div>
@@ -339,6 +340,76 @@ tags:
                                 </tbody>
                             </table></div>
                     </div>
+                    <div class="row cve-row" id="CVE-2026-45659">
+                        <div class="col-md-9">
+                            <div class="cve-post">
+                                <h2 class="cve-title">CVE-2026-45659</h2>
+                                <h4 class="cve-vuln">Microsoft SharePoint Server Deserialization of Untrusted Data Vulnerability</h4>
+                                <h6 class="cve-date">Date Added: 2026-07-01</h6>
+                                <div class="cve-description">
+                                    <h6>Description</h6>
+                                    <p class="cve-description-p">Microsoft SharePoint Server contains a deserialization of untrusted data vulnerability which allows an authorized attacker to execute code over a network.</p>
+                                </div>
+                                <div class="cve-action">
+                                    <h6>Required Action</h6>
+                                    <p class="cve-action-p">Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.</p>
+                                </div><div class="cvss_metrics"><div class="v31">
+                                        <h6>cvssMetricV31</h6>
+                                        <pre>
+                    [
+  {
+    "cvssData": {
+      "attackComplexity": "LOW",
+      "attackVector": "NETWORK",
+      "availabilityImpact": "HIGH",
+      "baseScore": 8.8,
+      "baseSeverity": "HIGH",
+      "confidentialityImpact": "HIGH",
+      "integrityImpact": "HIGH",
+      "privilegesRequired": "LOW",
+      "scope": "UNCHANGED",
+      "userInteraction": "NONE",
+      "vectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "version": "3.1"
+    },
+    "exploitabilityScore": 2.8,
+    "impactScore": 5.9,
+    "source": "secure@microsoft.com",
+    "type": "Secondary"
+  }
+]
+                                        </pre>
+                                    </div></div></div>
+                        </div>
+                        <div class="col-md-3"><div class="cve-status">
+                                <b>Status:</b>
+                Modified
+                            </div><table class="cve-vendor-table">
+                                <tbody>
+                                    <tr>
+                                        <td class="cve-vendor-label">Vendor:</td>
+                                    </tr><tr>
+                                        <td class="cve-vendor-name">Microsoft</td>
+                                    </tr><tr>
+                                        <td class="cve-product-label">Product:</td>
+                                    </tr><tr>
+                                        <td class="cve-product-name">Microsoft</td>
+                                    </tr>
+                                </tbody>
+                            </table><table class="cve-epss-table">
+                                <tbody>
+                                    <tr>
+                                        <td class="cve-epss-label">EPSS:</td>
+                                    </tr><tr>
+                                        <td class="cve-epss-value">0.027810000</td>
+                                    </tr><tr>
+                                        <td class="cve-percentile-label">Percentile:</td>
+                                    </tr><tr>
+                                        <td class="cve-percentile-value">0.846100000</td>
+                                    </tr>
+                                </tbody>
+                            </table></div>
+                    </div>
                     <div class="row cve-row" id="CVE-2026-48558">
                         <div class="col-md-9">
                             <div class="cve-post">
@@ -418,6 +489,7 @@ tags:
                         <table class="table table-hover">
                             <thead><tr><th>Vendor</th><th>Count</th></tr></thead>
                             <tbody>
+                                <tr><td>Microsoft</td><td>1</td></tr>
                                 <tr><td>SimpleHelp </td><td>1</td></tr>
                                 <tr><td>PTC</td><td>1</td></tr>
                                 <tr><td>Cisco</td><td>1</td></tr>
@@ -431,6 +503,7 @@ tags:
                             <thead><tr><th>Date Added</th><th>Count</th></tr></thead>
                             <tbody>
                                 <tr><td>2026-06-25</td><td>2</td></tr>
+                                <tr><td>2026-07-01</td><td>1</td></tr>
                                 <tr><td>2026-06-29</td><td>1</td></tr>
                             </tbody>
                         </table>
