@@ -5,10 +5,12 @@ tags:
 - CVE-2026-48908
 - CVE-2026-55255
 - CVE-2026-56290
+- CVE-2026-48282
 - CVE-2026-45659
 - CWE-434
 - CWE-639
 - CWE-284
+- CWE-22
 - CWE-502
 ---
 
@@ -97,7 +99,7 @@ tags:
                                         <div class="card-body">
                                             <div class="label">LOW (Today)</div>
                                             <div class="value">
-                    3
+                    4
                                             </div>
                                         </div>
                                     </div>
@@ -105,7 +107,7 @@ tags:
                                         <div class="card-body">
                                             <div class="label">LOW (L7D)</div>
                                             <div class="value">
-                    4
+                    5
                                             </div>
                                         </div>
                                     </div>
@@ -127,7 +129,7 @@ tags:
                                         <div class="card-body">
                                             <div class="label">CVEs (Today)</div>
                                             <div class="value">
-        3
+        4
                                             </div>
                                         </div>
                                     </div>
@@ -139,7 +141,7 @@ tags:
                                         <div class="card-body">
                                             <div class="label">CVEs (L7D)</div>
                                             <div class="value">
-        4
+        5
                                             </div>
                                         </div>
                                     </div>
@@ -151,7 +153,7 @@ tags:
                                         <div class="card-body">
                                             <div class="label">CWEs (Today)</div>
                                             <div class="value">
-        3
+        4
                                             </div>
                                         </div>
                                     </div>
@@ -163,7 +165,7 @@ tags:
                                         <div class="card-body">
                                             <div class="label">CWEs (L7D)</div>
                                             <div class="value">
-        4
+        5
                                             </div>
                                         </div>
                                     </div>
@@ -244,6 +246,76 @@ tags:
                                         <td class="cve-percentile-label">Percentile:</td>
                                     </tr><tr>
                                         <td class="cve-percentile-value">0.846100000</td>
+                                    </tr>
+                                </tbody>
+                            </table></div>
+                    </div>
+                    <div class="row cve-row" id="CVE-2026-48282">
+                        <div class="col-md-9">
+                            <div class="cve-post">
+                                <h2 class="cve-title">CVE-2026-48282</h2>
+                                <h4 class="cve-vuln">Adobe ColdFusion Path Traversal Vulnerability</h4>
+                                <h6 class="cve-date">Date Added: 2026-07-07</h6>
+                                <div class="cve-description">
+                                    <h6>Description</h6>
+                                    <p class="cve-description-p">Adobe ColdFusion contains a path traversal vulnerability that could lead to arbitrary code execution in the context of the current user.</p>
+                                </div>
+                                <div class="cve-action">
+                                    <h6>Required Action</h6>
+                                    <p class="cve-action-p">Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.</p>
+                                </div><div class="cvss_metrics"><div class="v31">
+                                        <h6>cvssMetricV31</h6>
+                                        <pre>
+                    [
+  {
+    "cvssData": {
+      "attackComplexity": "LOW",
+      "attackVector": "NETWORK",
+      "availabilityImpact": "HIGH",
+      "baseScore": 10.0,
+      "baseSeverity": "CRITICAL",
+      "confidentialityImpact": "HIGH",
+      "integrityImpact": "HIGH",
+      "privilegesRequired": "NONE",
+      "scope": "CHANGED",
+      "userInteraction": "NONE",
+      "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
+      "version": "3.1"
+    },
+    "exploitabilityScore": 3.9,
+    "impactScore": 6.0,
+    "source": "psirt@adobe.com",
+    "type": "Secondary"
+  }
+]
+                                        </pre>
+                                    </div></div></div>
+                        </div>
+                        <div class="col-md-3"><div class="cve-status">
+                                <b>Status:</b>
+                Modified
+                            </div><table class="cve-vendor-table">
+                                <tbody>
+                                    <tr>
+                                        <td class="cve-vendor-label">Vendor:</td>
+                                    </tr><tr>
+                                        <td class="cve-vendor-name">Adobe</td>
+                                    </tr><tr>
+                                        <td class="cve-product-label">Product:</td>
+                                    </tr><tr>
+                                        <td class="cve-product-name">Adobe</td>
+                                    </tr>
+                                </tbody>
+                            </table><table class="cve-epss-table">
+                                <tbody>
+                                    <tr>
+                                        <td class="cve-epss-label">EPSS:</td>
+                                    </tr><tr>
+                                        <td class="cve-epss-value">0.010210000</td>
+                                    </tr><tr>
+                                        <td class="cve-percentile-label">Percentile:</td>
+                                    </tr><tr>
+                                        <td class="cve-percentile-value">0.592390000</td>
                                     </tr>
                                 </tbody>
                             </table></div>
@@ -470,6 +542,7 @@ tags:
                                 <tr><td>JoomShaper</td><td>1</td></tr>
                                 <tr><td>Langflow</td><td>1</td></tr>
                                 <tr><td>Joomlack</td><td>1</td></tr>
+                                <tr><td>Adobe</td><td>1</td></tr>
                                 <tr><td>Microsoft</td><td>1</td></tr>
                             </tbody>
                         </table>
@@ -480,7 +553,7 @@ tags:
                         <table class="table table-hover">
                             <thead><tr><th>Date Added</th><th>Count</th></tr></thead>
                             <tbody>
-                                <tr><td>2026-07-07</td><td>3</td></tr>
+                                <tr><td>2026-07-07</td><td>4</td></tr>
                                 <tr><td>2026-07-01</td><td>1</td></tr>
                             </tbody>
                         </table>
