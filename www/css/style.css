@@ -885,6 +885,49 @@ table.isj-badge-matrix thead th {
 .isj-count-medium   { border-color: var(--medium); color: var(--primary-text-color); }
 .isj-count-low      { border-color: var(--low); color: var(--primary-text-color); }
 
+/*
+ * ****************************************************** 2ND SUMMARY :: DOT LINK LISTS
+*/
+
+.isj-dot-link-list {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 8px;
+    margin-bottom: 0;
+    text-align: left;
+}
+
+.isj-dot-link-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 4px 0;
+}
+
+.isj-dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.isj-dot-critical { background-color: var(--critical); }
+.isj-dot-high     { background-color: var(--high); }
+.isj-dot-medium   { background-color: var(--medium); }
+.isj-dot-low      { background-color: var(--low); }
+.isj-dot-unscored { background-color: var(--unscored); }
+
+.isj-dot-link {
+    color: var(--info);
+    text-decoration: underline;
+    font-size: 0.9rem;
+}
+
+.isj-dot-link:hover {
+    color: var(--title-text-color);
+}
+
 .isj-badge-matrix-legend {
     text-align: right;
     font-size: 0.8rem;
@@ -917,6 +960,7 @@ table.cve-cvss-table-4col th {
     font-size: 0.7rem;
     text-transform: uppercase;
     color: var(--muted-text-color);
+    border-bottom: none;
 }
 
 table.cve-cvss-table-4col th:nth-child(3) {
