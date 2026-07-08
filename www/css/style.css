@@ -880,10 +880,10 @@ table.isj-badge-matrix thead th {
     background: var(--card-bg-color);
 }
 
-.isj-count-critical { border-color: var(--critical); color: var(--critical); }
-.isj-count-high     { border-color: var(--high); color: var(--high); }
-.isj-count-medium   { border-color: var(--medium); color: #b58e00; }
-.isj-count-low      { border-color: var(--low); color: var(--low); }
+.isj-count-critical { border-color: var(--critical); color: var(--primary-text-color); }
+.isj-count-high     { border-color: var(--high); color: var(--primary-text-color); }
+.isj-count-medium   { border-color: var(--medium); color: var(--primary-text-color); }
+.isj-count-low      { border-color: var(--low); color: var(--primary-text-color); }
 
 .isj-badge-matrix-legend {
     text-align: right;
