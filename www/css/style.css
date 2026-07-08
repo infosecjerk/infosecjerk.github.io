@@ -663,6 +663,7 @@ table.cve-epss-table td.cve-percentile-name {
 .isj-section-title {
     color: var(--title-text-color);
     font-weight: 700;
+    font-size: 56px;
 }
 
 .isj-section-subtitle {
@@ -720,31 +721,17 @@ h4.cwe-vuln {
     background: #ffffff;
 }
 
-.cwe-alt-terms-list {
-    list-style: none;
-    padding-left: 0;
-    margin-top: 10px;
-}
-
-.cwe-alt-term-item {
-    background: var(--card-bg-color);
-    border: 1px solid var(--common-border);
-    border-radius: var(--common-radius);
-    padding: 10px 15px;
-    margin-bottom: 8px;
-}
-
 .cwe-alt-term-name {
-    display: block;
     font-weight: 700;
     color: var(--title-text-color);
 }
 
-.cwe-alt-term-desc {
-    display: block;
-    color: var(--muted-text-color);
-    font-size: 0.9rem;
-    margin-top: 3px;
+table.cwe-alt-terms-table td {
+    border-bottom: 1px solid var(--common-border);
+}
+
+table.cwe-alt-terms-table tbody tr:last-child td {
+    border-bottom: none;
 }
 
 .cwe-likelihood {
@@ -876,6 +863,28 @@ table.isj-badge-matrix thead th {
     color: var(--common-border);
 }
 
+.isj-count-zero {
+    font-weight: 400;
+    color: var(--muted-text-color);
+}
+
+.isj-count-circle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    border: 2px solid;
+    font-weight: 700;
+    background: var(--card-bg-color);
+}
+
+.isj-count-critical { border-color: var(--critical); color: var(--critical); }
+.isj-count-high     { border-color: var(--high); color: var(--high); }
+.isj-count-medium   { border-color: var(--medium); color: #b58e00; }
+.isj-count-low      { border-color: var(--low); color: var(--low); }
+
 .isj-badge-matrix-legend {
     text-align: right;
     font-size: 0.8rem;
@@ -894,6 +903,28 @@ table.isj-badge-matrix thead th {
 
 table.cve-cvss-table th {
     width: 35%;
+}
+
+table.cve-cvss-table-4col th,
+table.cve-cvss-table-4col td {
+    padding: 5px 8px;
+    font-size: 0.85rem;
+}
+
+table.cve-cvss-table-4col th {
+    width: auto;
+    white-space: nowrap;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    color: var(--muted-text-color);
+}
+
+table.cve-cvss-table-4col th:nth-child(3) {
+    border-left: 2px solid var(--common-border);
+}
+
+table.cve-cvss-table-4col td:nth-child(4) {
+    border-left: none;
 }
 
 .cve-cvss-vector {
