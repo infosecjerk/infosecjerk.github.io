@@ -1,0 +1,1440 @@
+---
+layout: post
+title: CISA KEVC L7D - 2026 - 7 - 8
+tags:
+- CVE-2026-48908
+- CVE-2026-55255
+- CVE-2026-56290
+- CVE-2026-48282
+- CVE-2026-45659
+- CWE-434
+- CWE-639
+- CWE-284
+- CWE-22
+- CWE-502
+---
+
+<div class="post">
+    <div class="row report-row">
+        <div class="col-md-12 report-col-12">
+            <h1 class='post-title'>
+                CISA KEVC :: 2026-07-08
+            </h1>
+            <h3 class='post-date'>
+                Report Window: 2026-07-08 to 2026-7-1
+            </h3>
+        </div>
+    </div>
+    <div class="lead"></div>
+    <div id='body'>
+        <div class="container main"> 
+            <!-- TOP SUMMARY -->
+            <div class="row report-row">
+                <div class="col-md-12 report-col-12">
+                    <div class="container kpi-row">
+                        <div class="row card-row"> 
+                            <div class="col-md-3 card-col-3">
+                                <div class="card card-critical">
+                                    <div class="cve-critical">
+                                        <div class="card-body">
+                                            <div class="label">CRITICAL (Today)</div>
+                                            <div class="value">
+                    0
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="cve-critical-l7d">
+                                        <div class="card-body">
+                                            <div class="label">CRITICAL (L7D)</div>
+                                            <div class="value">
+                    0
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 card-col-3">
+                                <div class="card card-high">
+                                    <div class="cve-high">
+                                        <div class="card-body">
+                                            <div class="label">HIGH (Today)</div>
+                                            <div class="value">
+                    0
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="cve-high-l7d">
+                                        <div class="card-body">
+                                            <div class="label">HIGH (L7D)</div>
+                                            <div class="value">
+                    0
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 card-col-3">
+                                <div class="card card-medium">
+                                    <div class="cve-medium">
+                                        <div class="card-body">
+                                            <div class="label">MEDIUM (Today)</div>
+                                            <div class="value">
+                    0
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="cve-medium-l7d">
+                                        <div class="card-body">
+                                            <div class="label">MEDIUM (L7D)</div>
+                                            <div class="value">
+                    0
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 card-col-3">
+                                <div class="card card-low">
+                                    <div class="cve-low">
+                                        <div class="card-body">
+                                            <div class="label">LOW (Today)</div>
+                                            <div class="value">
+                    0
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="cve-low-l7d">
+                                        <div class="card-body">
+                                            <div class="label">LOW (L7D)</div>
+                                            <div class="value">
+                    5
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- END TOP SUMMARY -->
+            <!-- BEGIN 2nd SUMMARY -->
+            <div class="row report-row">
+                <div class="col-md-12 report-col-12">
+                    <div class="container kpi-row">
+                        <div class="row card-row"> 
+                            <div class="col-md-3 card-col-3">
+                                <div class="card card-cve">
+                                    <div class="cve-today">
+                                        <div class="card-body">
+                                            <div class="label">CVEs (Today)</div>
+                                            <div class="value">
+        0
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 card-col-3">
+                                <div class="card card-cve">
+                                    <div class="cve-l7d">
+                                        <div class="card-body">
+                                            <div class="label">CVEs (L7D)</div>
+                                            <div class="value">
+        5
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 card-col-3">
+                                <div class="card card-cwe">
+                                    <div class="cwe-today">
+                                        <div class="card-body">
+                                            <div class="label">CWEs (Today)</div>
+                                            <div class="value">
+        0
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 card-col-3">
+                                <div class="card card-cwe">
+                                    <div class="cwe-l7d">
+                                        <div class="card-body">
+                                            <div class="label">CWEs (L7D)</div>
+                                            <div class="value">
+        5
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- END 2nd SUMMARY -->
+            <!-- LAYOUT -->
+            <div class="row report-row">
+                <div class="col-md-9 report-col-9">
+                <!-- CVE CONTENT -->
+                    <div class="row cve-row" id="CVE-2026-45659">
+                        <div class="col-md-9">
+                            <div class="cve-post">
+                                <h2 class="cve-title">CVE-2026-45659</h2>
+                                <h4 class="cve-vuln">Microsoft SharePoint Server Deserialization of Untrusted Data Vulnerability</h4>
+                                <div class="isj-badge-row">
+                                    <span class="isj-badge isj-badge-low">
+                                        <span class="isj-badge-source">EPSS</span>
+                                        <span class="isj-badge-severity">LOW</span>
+                                        <span class="isj-badge-score">0.03</span>
+                                    </span>
+                                    <span class="isj-badge isj-badge-high">
+                                        <span class="isj-badge-source">CVSS v3.1</span>
+                                        <span class="isj-badge-severity">HIGH</span>
+                                        <span class="isj-badge-score">8.80</span>
+                                    </span>
+                                </div>
+                                <h6 class="cve-date">Date Added: 2026-07-01</h6>
+                                <div class="cve-description">
+                                    <h6>Description</h6>
+                                    <p class="cve-description-p">Microsoft SharePoint Server contains a deserialization of untrusted data vulnerability which allows an authorized attacker to execute code over a network.</p>
+                                </div>
+                                <div class="cve-action">
+                                    <h6>Required Action</h6>
+                                    <p class="cve-action-p">Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.</p>
+                                </div><div class="cvss_metrics"><div class="v31">
+                                        <h6>cvssMetricV31</h6>
+                                        <pre>
+                    [
+  {
+    "cvssData": {
+      "attackComplexity": "LOW",
+      "attackVector": "NETWORK",
+      "availabilityImpact": "HIGH",
+      "baseScore": 8.8,
+      "baseSeverity": "HIGH",
+      "confidentialityImpact": "HIGH",
+      "integrityImpact": "HIGH",
+      "privilegesRequired": "LOW",
+      "scope": "UNCHANGED",
+      "userInteraction": "NONE",
+      "vectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "version": "3.1"
+    },
+    "exploitabilityScore": 2.8,
+    "impactScore": 5.9,
+    "source": "secure@microsoft.com",
+    "type": "Secondary"
+  }
+]
+                                        </pre>
+                                    </div></div></div>
+                        </div>
+                        <div class="col-md-3"><div class="cve-status">
+                                <b>Status:</b>
+                Modified
+                            </div><table class="cve-vendor-table">
+                                <tbody>
+                                    <tr>
+                                        <td class="cve-vendor-label">Vendor:</td>
+                                    </tr><tr>
+                                        <td class="cve-vendor-name">Microsoft</td>
+                                    </tr><tr>
+                                        <td class="cve-product-label">Product:</td>
+                                    </tr><tr>
+                                        <td class="cve-product-name">Microsoft</td>
+                                    </tr>
+                                </tbody>
+                            </table><table class="cve-epss-table">
+                                <tbody>
+                                    <tr>
+                                        <td class="cve-epss-label">EPSS:</td>
+                                    </tr><tr>
+                                        <td class="cve-epss-value">0.027810000</td>
+                                    </tr><tr>
+                                        <td class="cve-percentile-label">Percentile:</td>
+                                    </tr><tr>
+                                        <td class="cve-percentile-value">0.846100000</td>
+                                    </tr>
+                                </tbody>
+                            </table></div>
+                    </div>
+                    <div class="row cve-row" id="CVE-2026-48282">
+                        <div class="col-md-9">
+                            <div class="cve-post">
+                                <h2 class="cve-title">CVE-2026-48282</h2>
+                                <h4 class="cve-vuln">Adobe ColdFusion Path Traversal Vulnerability</h4>
+                                <div class="isj-badge-row">
+                                    <span class="isj-badge isj-badge-low">
+                                        <span class="isj-badge-source">EPSS</span>
+                                        <span class="isj-badge-severity">LOW</span>
+                                        <span class="isj-badge-score">0.01</span>
+                                    </span>
+                                    <span class="isj-badge isj-badge-critical">
+                                        <span class="isj-badge-source">CVSS v3.1</span>
+                                        <span class="isj-badge-severity">CRITICAL</span>
+                                        <span class="isj-badge-score">10.00</span>
+                                    </span>
+                                </div>
+                                <h6 class="cve-date">Date Added: 2026-07-07</h6>
+                                <div class="cve-description">
+                                    <h6>Description</h6>
+                                    <p class="cve-description-p">Adobe ColdFusion contains a path traversal vulnerability that could lead to arbitrary code execution in the context of the current user.</p>
+                                </div>
+                                <div class="cve-action">
+                                    <h6>Required Action</h6>
+                                    <p class="cve-action-p">Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.</p>
+                                </div><div class="cvss_metrics"><div class="v31">
+                                        <h6>cvssMetricV31</h6>
+                                        <pre>
+                    [
+  {
+    "cvssData": {
+      "attackComplexity": "LOW",
+      "attackVector": "NETWORK",
+      "availabilityImpact": "HIGH",
+      "baseScore": 10.0,
+      "baseSeverity": "CRITICAL",
+      "confidentialityImpact": "HIGH",
+      "integrityImpact": "HIGH",
+      "privilegesRequired": "NONE",
+      "scope": "CHANGED",
+      "userInteraction": "NONE",
+      "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
+      "version": "3.1"
+    },
+    "exploitabilityScore": 3.9,
+    "impactScore": 6.0,
+    "source": "psirt@adobe.com",
+    "type": "Secondary"
+  }
+]
+                                        </pre>
+                                    </div></div></div>
+                        </div>
+                        <div class="col-md-3"><div class="cve-status">
+                                <b>Status:</b>
+                Modified
+                            </div><table class="cve-vendor-table">
+                                <tbody>
+                                    <tr>
+                                        <td class="cve-vendor-label">Vendor:</td>
+                                    </tr><tr>
+                                        <td class="cve-vendor-name">Adobe</td>
+                                    </tr><tr>
+                                        <td class="cve-product-label">Product:</td>
+                                    </tr><tr>
+                                        <td class="cve-product-name">Adobe</td>
+                                    </tr>
+                                </tbody>
+                            </table><table class="cve-epss-table">
+                                <tbody>
+                                    <tr>
+                                        <td class="cve-epss-label">EPSS:</td>
+                                    </tr><tr>
+                                        <td class="cve-epss-value">0.010210000</td>
+                                    </tr><tr>
+                                        <td class="cve-percentile-label">Percentile:</td>
+                                    </tr><tr>
+                                        <td class="cve-percentile-value">0.592390000</td>
+                                    </tr>
+                                </tbody>
+                            </table></div>
+                    </div>
+                    <div class="row cve-row" id="CVE-2026-48908">
+                        <div class="col-md-9">
+                            <div class="cve-post">
+                                <h2 class="cve-title">CVE-2026-48908</h2>
+                                <h4 class="cve-vuln">JoomShaper SP Page Builder Unrestricted Upload of File with Dangerous Type Vulnerability</h4>
+                                <div class="isj-badge-row">
+                                    <span class="isj-badge isj-badge-low">
+                                        <span class="isj-badge-source">EPSS</span>
+                                        <span class="isj-badge-severity">LOW</span>
+                                        <span class="isj-badge-score">0.01</span>
+                                    </span>
+                                    <span class="isj-badge isj-badge-critical">
+                                        <span class="isj-badge-source">CVSS v4.0</span>
+                                        <span class="isj-badge-severity">CRITICAL</span>
+                                        <span class="isj-badge-score">10.00</span>
+                                    </span>
+                                    <span class="isj-badge isj-badge-critical">
+                                        <span class="isj-badge-source">CVSS v3.1</span>
+                                        <span class="isj-badge-severity">CRITICAL</span>
+                                        <span class="isj-badge-score">9.80</span>
+                                    </span>
+                                </div>
+                                <h6 class="cve-date">Date Added: 2026-07-07</h6>
+                                <div class="cve-description">
+                                    <h6>Description</h6>
+                                    <p class="cve-description-p">JoomShaper SP Page Builder contains an unrestricted upload of file with dangerous type vulnerability that allows unauthenticated users to upload arbitrary files, ultimately resulting in the upload and execution of PHP code.</p>
+                                </div>
+                                <div class="cve-action">
+                                    <h6>Required Action</h6>
+                                    <p class="cve-action-p">Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.</p>
+                                </div><div class="cvss_metrics"><div class="v31">
+                                        <h6>cvssMetricV31</h6>
+                                        <pre>
+                    [
+  {
+    "cvssData": {
+      "attackComplexity": "LOW",
+      "attackVector": "NETWORK",
+      "availabilityImpact": "HIGH",
+      "baseScore": 9.8,
+      "baseSeverity": "CRITICAL",
+      "confidentialityImpact": "HIGH",
+      "integrityImpact": "HIGH",
+      "privilegesRequired": "NONE",
+      "scope": "UNCHANGED",
+      "userInteraction": "NONE",
+      "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "version": "3.1"
+    },
+    "exploitabilityScore": 3.9,
+    "impactScore": 5.9,
+    "source": "nvd@nist.gov",
+    "type": "Primary"
+  }
+]
+                                        </pre>
+                                    </div></div></div>
+                        </div>
+                        <div class="col-md-3"><div class="cve-status">
+                                <b>Status:</b>
+                Modified
+                            </div><table class="cve-vendor-table">
+                                <tbody>
+                                    <tr>
+                                        <td class="cve-vendor-label">Vendor:</td>
+                                    </tr><tr>
+                                        <td class="cve-vendor-name">JoomShaper</td>
+                                    </tr><tr>
+                                        <td class="cve-product-label">Product:</td>
+                                    </tr><tr>
+                                        <td class="cve-product-name">JoomShaper</td>
+                                    </tr>
+                                </tbody>
+                            </table><table class="cve-epss-table">
+                                <tbody>
+                                    <tr>
+                                        <td class="cve-epss-label">EPSS:</td>
+                                    </tr><tr>
+                                        <td class="cve-epss-value">0.008030000</td>
+                                    </tr><tr>
+                                        <td class="cve-percentile-label">Percentile:</td>
+                                    </tr><tr>
+                                        <td class="cve-percentile-value">0.522740000</td>
+                                    </tr>
+                                </tbody>
+                            </table></div>
+                    </div>
+                    <div class="row cve-row" id="CVE-2026-55255">
+                        <div class="col-md-9">
+                            <div class="cve-post">
+                                <h2 class="cve-title">CVE-2026-55255</h2>
+                                <h4 class="cve-vuln">Langflow Authorization Bypass Through User-Controlled Key Vulnerability</h4>
+                                <div class="isj-badge-row">
+                                    <span class="isj-badge isj-badge-low">
+                                        <span class="isj-badge-source">EPSS</span>
+                                        <span class="isj-badge-severity">LOW</span>
+                                        <span class="isj-badge-score">0.00</span>
+                                    </span>
+                                    <span class="isj-badge isj-badge-critical">
+                                        <span class="isj-badge-source">CVSS v3.1</span>
+                                        <span class="isj-badge-severity">CRITICAL</span>
+                                        <span class="isj-badge-score">9.90</span>
+                                    </span>
+                                </div>
+                                <h6 class="cve-date">Date Added: 2026-07-07</h6>
+                                <div class="cve-description">
+                                    <h6>Description</h6>
+                                    <p class="cve-description-p">Langflow contains an authorization bypass through user-controlled key vulnerability which allows an authenticated attacker to execute any flow belonging to another user by specifying the victim's flow ID in the request.</p>
+                                </div>
+                                <div class="cve-action">
+                                    <h6>Required Action</h6>
+                                    <p class="cve-action-p">Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.</p>
+                                </div><div class="cvss_metrics"><div class="v31">
+                                        <h6>cvssMetricV31</h6>
+                                        <pre>
+                    [
+  {
+    "cvssData": {
+      "attackComplexity": "LOW",
+      "attackVector": "NETWORK",
+      "availabilityImpact": "LOW",
+      "baseScore": 9.9,
+      "baseSeverity": "CRITICAL",
+      "confidentialityImpact": "HIGH",
+      "integrityImpact": "HIGH",
+      "privilegesRequired": "LOW",
+      "scope": "CHANGED",
+      "userInteraction": "NONE",
+      "vectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:L",
+      "version": "3.1"
+    },
+    "exploitabilityScore": 3.1,
+    "impactScore": 6.0,
+    "source": "security-advisories@github.com",
+    "type": "Secondary"
+  }
+]
+                                        </pre>
+                                    </div></div></div>
+                        </div>
+                        <div class="col-md-3"><div class="cve-status">
+                                <b>Status:</b>
+                Analyzed
+                            </div><table class="cve-vendor-table">
+                                <tbody>
+                                    <tr>
+                                        <td class="cve-vendor-label">Vendor:</td>
+                                    </tr><tr>
+                                        <td class="cve-vendor-name">Langflow</td>
+                                    </tr><tr>
+                                        <td class="cve-product-label">Product:</td>
+                                    </tr><tr>
+                                        <td class="cve-product-name">Langflow</td>
+                                    </tr>
+                                </tbody>
+                            </table><table class="cve-epss-table">
+                                <tbody>
+                                    <tr>
+                                        <td class="cve-epss-label">EPSS:</td>
+                                    </tr><tr>
+                                        <td class="cve-epss-value">0.002330000</td>
+                                    </tr><tr>
+                                        <td class="cve-percentile-label">Percentile:</td>
+                                    </tr><tr>
+                                        <td class="cve-percentile-value">0.141480000</td>
+                                    </tr>
+                                </tbody>
+                            </table></div>
+                    </div>
+                    <div class="row cve-row" id="CVE-2026-56290">
+                        <div class="col-md-9">
+                            <div class="cve-post">
+                                <h2 class="cve-title">CVE-2026-56290</h2>
+                                <h4 class="cve-vuln">Joomlack Page Builder Improper Access Control Vulnerability</h4>
+                                <div class="isj-badge-row">
+                                    <span class="isj-badge isj-badge-low">
+                                        <span class="isj-badge-source">EPSS</span>
+                                        <span class="isj-badge-severity">LOW</span>
+                                        <span class="isj-badge-score">0.00</span>
+                                    </span>
+                                    <span class="isj-badge isj-badge-critical">
+                                        <span class="isj-badge-source">CVSS v4.0</span>
+                                        <span class="isj-badge-severity">CRITICAL</span>
+                                        <span class="isj-badge-score">10.00</span>
+                                    </span>
+                                    <span class="isj-badge isj-badge-critical">
+                                        <span class="isj-badge-source">CVSS v3.1</span>
+                                        <span class="isj-badge-severity">CRITICAL</span>
+                                        <span class="isj-badge-score">9.80</span>
+                                    </span>
+                                </div>
+                                <h6 class="cve-date">Date Added: 2026-07-07</h6>
+                                <div class="cve-description">
+                                    <h6>Description</h6>
+                                    <p class="cve-description-p">Joomlack Page Builder contains an improper access control vulnerability that could allow for remote code execution via unauthenticated arbitrary file upload.</p>
+                                </div>
+                                <div class="cve-action">
+                                    <h6>Required Action</h6>
+                                    <p class="cve-action-p">Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.</p>
+                                </div><div class="cvss_metrics"><div class="v31">
+                                        <h6>cvssMetricV31</h6>
+                                        <pre>
+                    [
+  {
+    "cvssData": {
+      "attackComplexity": "LOW",
+      "attackVector": "NETWORK",
+      "availabilityImpact": "HIGH",
+      "baseScore": 9.8,
+      "baseSeverity": "CRITICAL",
+      "confidentialityImpact": "HIGH",
+      "integrityImpact": "HIGH",
+      "privilegesRequired": "NONE",
+      "scope": "UNCHANGED",
+      "userInteraction": "NONE",
+      "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "version": "3.1"
+    },
+    "exploitabilityScore": 3.9,
+    "impactScore": 5.9,
+    "source": "nvd@nist.gov",
+    "type": "Primary"
+  }
+]
+                                        </pre>
+                                    </div></div></div>
+                        </div>
+                        <div class="col-md-3"><div class="cve-status">
+                                <b>Status:</b>
+                Modified
+                            </div><table class="cve-vendor-table">
+                                <tbody>
+                                    <tr>
+                                        <td class="cve-vendor-label">Vendor:</td>
+                                    </tr><tr>
+                                        <td class="cve-vendor-name">Joomlack</td>
+                                    </tr><tr>
+                                        <td class="cve-product-label">Product:</td>
+                                    </tr><tr>
+                                        <td class="cve-product-name">Joomlack</td>
+                                    </tr>
+                                </tbody>
+                            </table><table class="cve-epss-table">
+                                <tbody>
+                                    <tr>
+                                        <td class="cve-epss-label">EPSS:</td>
+                                    </tr><tr>
+                                        <td class="cve-epss-value">0.003560000</td>
+                                    </tr><tr>
+                                        <td class="cve-percentile-label">Percentile:</td>
+                                    </tr><tr>
+                                        <td class="cve-percentile-value">0.276260000</td>
+                                    </tr>
+                                </tbody>
+                            </table></div>
+                    </div>
+                <!-- END CVE CONTENT -->
+                <!-- CWE CONTENT -->
+                    <div class="row cwe-row" id="CWE-22">
+                        <div class="col-md-9">
+                            <div class="cwe-post">
+                                <h2 class="cwe-title">CWE-22</h2>
+                                <h4 class="cwe-vuln">Improper Limitation of a Pathname to a Restricted Directory (&#39;Path Traversal&#39;)</h4>
+                                <h6 class="cwe-status">Status: Stable</h6>
+                                <div class="cwe-description">
+                                    <h6>Description</h6>
+                                    <p class="cwe-description-p">The product uses external input to construct a pathname that is intended to identify a file or directory that is located underneath a restricted parent directory, but the product does not properly neutralize special elements within the pathname that can cause the pathname to resolve to a location that is outside of the restricted directory.</p>
+                                </div>
+                                <div class="cwe-diagram-wrapper">
+                                    <h6>Diagram</h6>
+                                    <img src="/data/images/CWE-22-Diagram.png" class="cwe-diagram" width="600" style="vertical-align:middle;margin:auto" />
+                                </div>
+                                <div class="cwe-alt-terms">
+                                    <h6>Alternate Terms</h6>
+                                    <ul>
+                                        <li><b>Path traversal</b>: &#34;Path traversal&#34; is preferred over &#34;directory traversal,&#34; but both terms are attack-focused.</li>
+                                        <li><b>Directory traversal</b>: </li>
+                                        <li><b>Path transversal</b>: an alternate phrasing of &#34;path traversal&#34;</li>
+                                    </ul>
+                                </div>
+                                <div class="cwe-platforms">
+                                    <h6>Applicable Platforms</h6>
+                                    <pre>[
+  {
+    "Class": "Not Language-Specific",
+    "Prevalence": "Undetermined",
+    "Type": "Language"
+  },
+  {
+    "Name": "AI/ML",
+    "Prevalence": "Often",
+    "Type": "Technology"
+  }
+]</pre>
+                                </div>
+                                <div class="cwe-consequences">
+                                    <h6>Common Consequences</h6>
+                                    <pre>[
+  {
+    "Impact": [
+      "Execute Unauthorized Code or Commands"
+    ],
+    "Note": "The attacker may be able to create or overwrite critical files that are used to execute code, such as programs or libraries.",
+    "Scope": [
+      "Integrity",
+      "Confidentiality",
+      "Availability"
+    ]
+  },
+  {
+    "Impact": [
+      "Modify Files or Directories"
+    ],
+    "Note": "The attacker may be able to overwrite or create critical files, such as programs, libraries, or important data. If the targeted file is used for a security mechanism, then the attacker may be able to bypass that mechanism. For example, appending a new account at the end of a password file may allow an attacker to bypass authentication.",
+    "Scope": [
+      "Integrity"
+    ]
+  },
+  {
+    "Impact": [
+      "Read Files or Directories"
+    ],
+    "Note": "The attacker may be able read the contents of unexpected files and expose sensitive data. If the targeted file is used for a security mechanism, then the attacker may be able to bypass that mechanism. For example, by reading a password file, the attacker could conduct brute force password guessing attacks in order to break into an account on the system.",
+    "Scope": [
+      "Confidentiality"
+    ]
+  },
+  {
+    "Impact": [
+      "DoS: Crash, Exit, or Restart"
+    ],
+    "Note": "The attacker may be able to overwrite, delete, or corrupt unexpected critical files such as programs, libraries, or important data. This may prevent the product from working at all and in the case of protection mechanisms such as authentication, it has the potential to lock out product users.",
+    "Scope": [
+      "Availability"
+    ]
+  }
+]</pre>
+                                </div>
+                                <div class="cwe-mitigations">
+                                    <h6>Potential Mitigations</h6>
+                                    <pre>[
+  {
+    "Description": "\n\nAssume all input is malicious. Use an \"accept known good\" input validation strategy, i.e., use a list of acceptable inputs that strictly conform to specifications. Reject any input that does not strictly conform to specifications, or transform it into something that does.\n\n\nWhen performing input validation, consider all potentially relevant properties, including length, type of input, the full range of acceptable values, missing or extra inputs, syntax, consistency across related fields, and conformance to business rules. As an example of business rule logic, \"boat\" may be syntactically valid because it only contains alphanumeric characters, but it is not valid if the input is only expected to contain colors such as \"red\" or \"blue.\"\n\n\nDo not rely exclusively on looking for malicious or malformed inputs. This is likely to miss at least one undesirable input, especially if the code\u0027s environment changes. This can give attackers enough room to bypass the intended validation. However, denylists can be useful for detecting potential attacks or determining which inputs are so malformed that they should be rejected outright.\n\n\nWhen validating filenames, use stringent allowlists that limit the character set to be used. If feasible, only allow a single \".\" character in the filename to avoid weaknesses such as CWE-23, and exclude directory separators such as \"/\" to avoid CWE-36. Use a list of allowable file extensions, which will help to avoid CWE-434.\n\n\nDo not rely exclusively on a filtering mechanism that removes potentially dangerous characters. This is equivalent to a denylist, which may be incomplete (CWE-184). For example, filtering \"/\" is insufficient protection if the filesystem also supports the use of \"\\\" as a directory separator. Another possible error could occur when the filtering is applied in a way that still produces dangerous data (CWE-182). For example, if \"../\" sequences are removed from the \".../...//\" string in a sequential fashion, two instances of \"../\" would be removed from the original string, but the remaining characters would still form the \"../\" string.\n",
+    "MitigationID": "MIT-5.1",
+    "Phase": [
+      "Implementation"
+    ],
+    "Strategy": "Input Validation"
+  },
+  {
+    "Description": "For any security checks that are performed on the client side, ensure that these checks are duplicated on the server side, in order to avoid CWE-602. Attackers can bypass the client-side checks by modifying values after the checks have been performed, or by changing the client to remove the client-side checks entirely. Then, these modified values would be submitted to the server.",
+    "MitigationID": "MIT-15",
+    "Phase": [
+      "Architecture and Design"
+    ]
+  },
+  {
+    "Description": "\n\nInputs should be decoded and canonicalized to the application\u0027s current internal representation before being validated (CWE-180). Make sure that the application does not decode the same input twice (CWE-174). Such errors could be used to bypass allowlist validation schemes by introducing dangerous inputs after they have been checked.\n\n\nUse a built-in path canonicalization function (such as realpath() in C) that produces the canonical version of the pathname, which effectively removes \"..\" sequences and symbolic links (CWE-23, CWE-59). This includes:\n\n\n  - realpath() in C\n\n  - getCanonicalPath() in Java\n\n  - GetFullPath() in ASP.NET\n\n  - realpath() or abs_path() in Perl\n\n  - realpath() in PHP\n\n",
+    "MitigationID": "MIT-20.1",
+    "Phase": [
+      "Implementation"
+    ],
+    "Strategy": "Input Validation"
+  },
+  {
+    "Description": "Use a vetted library or framework that does not allow this weakness to occur or provides constructs that make this weakness easier to avoid [REF-1482].",
+    "MitigationID": "MIT-4",
+    "Phase": [
+      "Architecture and Design"
+    ],
+    "Strategy": "Libraries or Frameworks"
+  },
+  {
+    "Description": "Use an application firewall that can detect attacks against this weakness. It can be beneficial in cases in which the code cannot be fixed (because it is controlled by a third party), as an emergency prevention measure while more comprehensive software assurance measures are applied, or to provide defense in depth [REF-1481].",
+    "Effectiveness": "Moderate",
+    "EffectivenessNotes": "An application firewall might not cover all possible input vectors. In addition, attack techniques might be available to bypass the protection mechanism, such as using malformed inputs that can still be processed by the component that receives those inputs. Depending on functionality, an application firewall might inadvertently reject or modify legitimate requests. Finally, some manual effort may be required for customization.",
+    "MitigationID": "MIT-29",
+    "Phase": [
+      "Operation"
+    ],
+    "Strategy": "Firewall"
+  },
+  {
+    "Description": "Run your code using the lowest privileges that are required to accomplish the necessary tasks [REF-76]. If possible, create isolated accounts with limited privileges that are only used for a single task. That way, a successful attack will not immediately give the attacker access to the rest of the software or its environment. For example, database applications rarely need to run as the database administrator, especially in day-to-day operations.",
+    "MitigationID": "MIT-17",
+    "Phase": [
+      "Architecture and Design",
+      "Operation"
+    ],
+    "Strategy": "Environment Hardening"
+  },
+  {
+    "Description": "\n\nWhen the set of acceptable objects, such as filenames or URLs, is limited or known, create a mapping from a set of fixed input values (such as numeric IDs) to the actual filenames or URLs, and reject all other inputs.\n\n\nFor example, ID 1 could map to \"inbox.txt\" and ID 2 could map to \"profile.txt\". Features such as the ESAPI AccessReferenceMap [REF-185] provide this capability.\n",
+    "MitigationID": "MIT-21.1",
+    "Phase": [
+      "Architecture and Design"
+    ],
+    "Strategy": "Enforcement by Conversion"
+  },
+  {
+    "Description": "\n\nRun the code in a \"jail\" or similar sandbox environment that enforces strict boundaries between the process and the operating system. This may effectively restrict which files can be accessed in a particular directory or which commands can be executed by the software.\n\n\nOS-level examples include the Unix chroot jail, AppArmor, and SELinux. In general, managed code may provide some protection. For example, java.io.FilePermission in the Java SecurityManager allows the software to specify restrictions on file operations.\n\n\nThis may not be a feasible solution, and it only limits the impact to the operating system; the rest of the application may still be subject to compromise.\n\n\nBe careful to avoid CWE-243 and other weaknesses related to jails.\n",
+    "Effectiveness": "Limited",
+    "EffectivenessNotes": "The effectiveness of this mitigation depends on the prevention capabilities of the specific sandbox or jail being used and might only help to reduce the scope of an attack, such as restricting the attacker to certain system calls or limiting the portion of the file system that can be accessed.",
+    "MitigationID": "MIT-22",
+    "Phase": [
+      "Architecture and Design",
+      "Operation"
+    ],
+    "Strategy": "Sandbox or Jail"
+  },
+  {
+    "Description": "\n\nStore library, include, and utility files outside of the web document root, if possible. Otherwise, store them in a separate directory and use the web server\u0027s access control capabilities to prevent attackers from directly requesting them. One common practice is to define a fixed constant in each calling program, then check for the existence of the constant in the library/include file; if the constant does not exist, then the file was directly requested, and it can exit immediately.\n\n\nThis significantly reduces the chance of an attacker being able to bypass any protection mechanisms that are in the base program but not in the include files. It will also reduce the attack surface.\n",
+    "MitigationID": "MIT-34",
+    "Phase": [
+      "Architecture and Design",
+      "Operation"
+    ],
+    "Strategy": "Attack Surface Reduction"
+  },
+  {
+    "Description": "\n\nEnsure that error messages only contain minimal details that are useful to the intended audience and no one else. The messages need to strike the balance between being too cryptic (which can confuse users) or being too detailed (which may reveal more than intended). The messages should not reveal the methods that were used to determine the error. Attackers can use detailed information to refine or optimize their original attack, thereby increasing their chances of success.\n\n\nIf errors must be captured in some detail, record them in log messages, but consider what could occur if the log messages can be viewed by attackers. Highly sensitive information such as passwords should never be saved to log files.\n\n\nAvoid inconsistent messaging that might accidentally tip off an attacker about internal state, such as whether a user account exists or not.\n\n\nIn the context of path traversal, error messages which disclose path information can help attackers craft the appropriate attack strings to move through the file system hierarchy.\n",
+    "MitigationID": "MIT-39",
+    "Phase": [
+      "Implementation"
+    ]
+  },
+  {
+    "Description": "When using PHP, configure the application so that it does not use register_globals. During implementation, develop the application so that it does not rely on this feature, but be wary of implementing a register_globals emulation that is subject to weaknesses such as CWE-95, CWE-621, and similar issues.",
+    "MitigationID": "MIT-16",
+    "Phase": [
+      "Operation",
+      "Implementation"
+    ],
+    "Strategy": "Environment Hardening"
+  }
+]</pre>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="cwe-likelihood">
+                                <b>Exploit Likelihood:</b> High
+                            </div>
+                            <div class="cwe-abstraction">
+                                <b>Abstraction:</b> Base
+                            </div>
+                            <div class="cwe-related">
+                                <b>Related Weaknesses:</b>
+                                <pre>[
+  {
+    "CweID": "706",
+    "Nature": "ChildOf",
+    "Ordinal": "Primary",
+    "ViewID": "1000"
+  },
+  {
+    "CweID": "706",
+    "Nature": "ChildOf",
+    "Ordinal": "Primary",
+    "ViewID": "1003"
+  },
+  {
+    "CweID": "668",
+    "Nature": "CanPrecede",
+    "ViewID": "1000"
+  }
+]</pre>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row cwe-row" id="CWE-284">
+                        <div class="col-md-9">
+                            <div class="cwe-post">
+                                <h2 class="cwe-title">CWE-284</h2>
+                                <h4 class="cwe-vuln">Improper Access Control</h4>
+                                <h6 class="cwe-status">Status: Incomplete</h6>
+                                <div class="cwe-description">
+                                    <h6>Description</h6>
+                                    <p class="cwe-description-p">The product does not restrict or incorrectly restricts access to a resource from an unauthorized actor.</p>
+                                </div>
+                                <div class="cwe-alt-terms">
+                                    <h6>Alternate Terms</h6>
+                                    <ul>
+                                        <li><b>Authorization</b>: The terms &#34;access control&#34; and &#34;authorization&#34; are often used interchangeably, although many people have distinct definitions. The CWE usage of &#34;access control&#34; is intended as a general term for the various mechanisms that restrict which users can access which resources, and &#34;authorization&#34; is more narrowly defined. It is unlikely that there will be community consensus on the use of these terms.</li>
+                                    </ul>
+                                </div>
+                                <div class="cwe-platforms">
+                                    <h6>Applicable Platforms</h6>
+                                    <pre>[
+  {
+    "Class": "Not Language-Specific",
+    "Prevalence": "Often",
+    "Type": "Language"
+  },
+  {
+    "Class": "Not Technology-Specific",
+    "Prevalence": "Often",
+    "Type": "Technology"
+  },
+  {
+    "Class": "ICS/OT",
+    "Prevalence": "Often",
+    "Type": "Technology"
+  },
+  {
+    "Class": "Web Based",
+    "Prevalence": "Often",
+    "Type": "Technology"
+  }
+]</pre>
+                                </div>
+                                <div class="cwe-consequences">
+                                    <h6>Common Consequences</h6>
+                                    <pre>[
+  {
+    "Impact": [
+      "Varies by Context"
+    ],
+    "Scope": [
+      "Other"
+    ]
+  }
+]</pre>
+                                </div>
+                                <div class="cwe-mitigations">
+                                    <h6>Potential Mitigations</h6>
+                                    <pre>[
+  {
+    "Description": "Very carefully manage the setting, management, and handling of privileges. Explicitly manage trust zones in the software.",
+    "MitigationID": "MIT-1",
+    "Phase": [
+      "Architecture and Design",
+      "Operation"
+    ]
+  },
+  {
+    "Description": "\n\nCompartmentalize the system to have \"safe\" areas where trust boundaries can be unambiguously drawn. Do not allow sensitive data to go outside of the trust boundary and always be careful when interfacing with a compartment outside of the safe area.\n\n\nEnsure that appropriate compartmentalization is built into the system design, and the compartmentalization allows for and reinforces privilege separation functionality. Architects and designers should rely on the principle of least privilege to decide the appropriate time to use privileges and the time to drop privileges.\n",
+    "MitigationID": "MIT-46",
+    "Phase": [
+      "Architecture and Design"
+    ],
+    "Strategy": "Separation of Privilege"
+  }
+]</pre>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="cwe-abstraction">
+                                <b>Abstraction:</b> Pillar
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row cwe-row" id="CWE-434">
+                        <div class="col-md-9">
+                            <div class="cwe-post">
+                                <h2 class="cwe-title">CWE-434</h2>
+                                <h4 class="cwe-vuln">Unrestricted Upload of File with Dangerous Type</h4>
+                                <h6 class="cwe-status">Status: Draft</h6>
+                                <div class="cwe-description">
+                                    <h6>Description</h6>
+                                    <p class="cwe-description-p">The product allows the upload or transfer of dangerous file types that are automatically processed within its environment.</p>
+                                </div>
+                                <div class="cwe-diagram-wrapper">
+                                    <h6>Diagram</h6>
+                                    <img src="/data/images/CWE-434-Diagram.png" class="cwe-diagram" width="600" style="vertical-align:middle;margin:auto" />
+                                </div>
+                                <div class="cwe-alt-terms">
+                                    <h6>Alternate Terms</h6>
+                                    <ul>
+                                        <li><b>Unrestricted File Upload</b>: Used in vulnerability databases and elsewhere, but it is insufficiently precise. The phrase could be interpreted as the lack of restrictions on the size or number of uploaded files, which is a resource consumption issue.</li>
+                                    </ul>
+                                </div>
+                                <div class="cwe-platforms">
+                                    <h6>Applicable Platforms</h6>
+                                    <pre>[
+  {
+    "Name": "ASP.NET",
+    "Prevalence": "Sometimes",
+    "Type": "Language"
+  },
+  {
+    "Name": "PHP",
+    "Prevalence": "Often",
+    "Type": "Language"
+  },
+  {
+    "Class": "Not Language-Specific",
+    "Prevalence": "Undetermined",
+    "Type": "Language"
+  },
+  {
+    "Name": "Web Server",
+    "Prevalence": "Sometimes",
+    "Type": "Technology"
+  },
+  {
+    "Name": "AI/ML",
+    "Prevalence": "Undetermined",
+    "Type": "Technology"
+  }
+]</pre>
+                                </div>
+                                <div class="cwe-consequences">
+                                    <h6>Common Consequences</h6>
+                                    <pre>[
+  {
+    "Impact": [
+      "Execute Unauthorized Code or Commands"
+    ],
+    "Note": "Arbitrary code execution is possible if an uploaded file is interpreted and executed as code by the recipient. This is especially true for web-server extensions such as .asp and .php because these file types are often treated as automatically executable, even when file system permissions do not specify execution. For example, in Unix environments, programs typically cannot run unless the execute bit is set, but PHP programs may be executed by the web server without directly invoking them on the operating system.",
+    "Scope": [
+      "Integrity",
+      "Confidentiality",
+      "Availability"
+    ]
+  }
+]</pre>
+                                </div>
+                                <div class="cwe-mitigations">
+                                    <h6>Potential Mitigations</h6>
+                                    <pre>[
+  {
+    "Description": "Generate a new, unique filename for an uploaded file instead of using the user-supplied filename, so that no external input is used at all.[REF-422] [REF-423]",
+    "Phase": [
+      "Architecture and Design"
+    ]
+  },
+  {
+    "Description": "When the set of acceptable objects, such as filenames or URLs, is limited or known, create a mapping from a set of fixed input values (such as numeric IDs) to the actual filenames or URLs, and reject all other inputs.",
+    "MitigationID": "MIT-21",
+    "Phase": [
+      "Architecture and Design"
+    ],
+    "Strategy": "Enforcement by Conversion"
+  },
+  {
+    "Description": "Consider storing the uploaded files outside of the web document root entirely. Then, use other mechanisms to deliver the files dynamically. [REF-423]",
+    "Phase": [
+      "Architecture and Design"
+    ]
+  },
+  {
+    "Description": "\n\nAssume all input is malicious. Use an \"accept known good\" input validation strategy, i.e., use a list of acceptable inputs that strictly conform to specifications. Reject any input that does not strictly conform to specifications, or transform it into something that does.\n\n\nWhen performing input validation, consider all potentially relevant properties, including length, type of input, the full range of acceptable values, missing or extra inputs, syntax, consistency across related fields, and conformance to business rules. As an example of business rule logic, \"boat\" may be syntactically valid because it only contains alphanumeric characters, but it is not valid if the input is only expected to contain colors such as \"red\" or \"blue.\"\n\n\nDo not rely exclusively on looking for malicious or malformed inputs. This is likely to miss at least one undesirable input, especially if the code\u0027s environment changes. This can give attackers enough room to bypass the intended validation. However, denylists can be useful for detecting potential attacks or determining which inputs are so malformed that they should be rejected outright.\n\n\nFor example, limiting filenames to alphanumeric characters can help to restrict the introduction of unintended file extensions.\n",
+    "MitigationID": "MIT-5",
+    "Phase": [
+      "Implementation"
+    ],
+    "Strategy": "Input Validation"
+  },
+  {
+    "Description": "Define a very limited set of allowable extensions and only generate filenames that end in these extensions. Consider the possibility of XSS (CWE-79) before allowing .html or .htm file types.",
+    "Phase": [
+      "Architecture and Design"
+    ]
+  },
+  {
+    "Description": "Ensure that only one extension is used in the filename. Some web servers, including some versions of Apache, may process files based on inner extensions so that \"filename.php.gif\" is fed to the PHP interpreter.[REF-422] [REF-423]",
+    "Phase": [
+      "Implementation"
+    ],
+    "Strategy": "Input Validation"
+  },
+  {
+    "Description": "When running on a web server that supports case-insensitive filenames, perform case-insensitive evaluations of the extensions that are provided.",
+    "Phase": [
+      "Implementation"
+    ]
+  },
+  {
+    "Description": "For any security checks that are performed on the client side, ensure that these checks are duplicated on the server side, in order to avoid CWE-602. Attackers can bypass the client-side checks by modifying values after the checks have been performed, or by changing the client to remove the client-side checks entirely. Then, these modified values would be submitted to the server.",
+    "MitigationID": "MIT-15",
+    "Phase": [
+      "Architecture and Design"
+    ]
+  },
+  {
+    "Description": "Do not rely exclusively on sanity checks of file contents to ensure that the file is of the expected type and size. It may be possible for an attacker to hide code in some file segments that will still be executed by the server. For example, GIF images may contain a free-form comments field.",
+    "Phase": [
+      "Implementation"
+    ]
+  },
+  {
+    "Description": "Do not rely exclusively on the MIME content type or filename attribute when determining how to render a file. Validating the MIME content type and ensuring that it matches the extension is only a partial solution.",
+    "Phase": [
+      "Implementation"
+    ]
+  },
+  {
+    "Description": "Run your code using the lowest privileges that are required to accomplish the necessary tasks [REF-76]. If possible, create isolated accounts with limited privileges that are only used for a single task. That way, a successful attack will not immediately give the attacker access to the rest of the software or its environment. For example, database applications rarely need to run as the database administrator, especially in day-to-day operations.",
+    "MitigationID": "MIT-17",
+    "Phase": [
+      "Architecture and Design",
+      "Operation"
+    ],
+    "Strategy": "Environment Hardening"
+  },
+  {
+    "Description": "\n\nRun the code in a \"jail\" or similar sandbox environment that enforces strict boundaries between the process and the operating system. This may effectively restrict which files can be accessed in a particular directory or which commands can be executed by the software.\n\n\nOS-level examples include the Unix chroot jail, AppArmor, and SELinux. In general, managed code may provide some protection. For example, java.io.FilePermission in the Java SecurityManager allows the software to specify restrictions on file operations.\n\n\nThis may not be a feasible solution, and it only limits the impact to the operating system; the rest of the application may still be subject to compromise.\n\n\nBe careful to avoid CWE-243 and other weaknesses related to jails.\n",
+    "Effectiveness": "Limited",
+    "EffectivenessNotes": "The effectiveness of this mitigation depends on the prevention capabilities of the specific sandbox or jail being used and might only help to reduce the scope of an attack, such as restricting the attacker to certain system calls or limiting the portion of the file system that can be accessed.",
+    "MitigationID": "MIT-22",
+    "Phase": [
+      "Architecture and Design",
+      "Operation"
+    ],
+    "Strategy": "Sandbox or Jail"
+  }
+]</pre>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="cwe-likelihood">
+                                <b>Exploit Likelihood:</b> Medium
+                            </div>
+                            <div class="cwe-abstraction">
+                                <b>Abstraction:</b> Base
+                            </div>
+                            <div class="cwe-related">
+                                <b>Related Weaknesses:</b>
+                                <pre>[
+  {
+    "CweID": "669",
+    "Nature": "ChildOf",
+    "Ordinal": "Primary",
+    "ViewID": "1000"
+  },
+  {
+    "CweID": "669",
+    "Nature": "ChildOf",
+    "Ordinal": "Primary",
+    "ViewID": "1003"
+  },
+  {
+    "CweID": "351",
+    "Nature": "PeerOf",
+    "ViewID": "1000"
+  },
+  {
+    "CweID": "436",
+    "Nature": "PeerOf",
+    "ViewID": "1000"
+  },
+  {
+    "CweID": "430",
+    "Nature": "PeerOf",
+    "ViewID": "1000"
+  }
+]</pre>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row cwe-row" id="CWE-502">
+                        <div class="col-md-9">
+                            <div class="cwe-post">
+                                <h2 class="cwe-title">CWE-502</h2>
+                                <h4 class="cwe-vuln">Deserialization of Untrusted Data</h4>
+                                <h6 class="cwe-status">Status: Draft</h6>
+                                <div class="cwe-description">
+                                    <h6>Description</h6>
+                                    <p class="cwe-description-p">The product deserializes untrusted data without sufficiently ensuring that the resulting data will be valid.</p>
+                                </div>
+                                <div class="cwe-diagram-wrapper">
+                                    <h6>Diagram</h6>
+                                    <img src="/data/images/CWE-502-Diagram.png" class="cwe-diagram" width="600" style="vertical-align:middle;margin:auto" />
+                                </div>
+                                <div class="cwe-alt-terms">
+                                    <h6>Alternate Terms</h6>
+                                    <ul>
+                                        <li><b>Marshaling/Marshalling, Unmarshaling/Unmarshalling</b>: Marshaling and unmarshaling are effectively synonyms for serialization and deserialization, respectively.</li>
+                                        <li><b>Pickling, Unpickling</b>: In Python, the &#34;pickle&#34; functionality is used to perform serialization and deserialization.</li>
+                                        <li><b>PHP Object Injection</b>: Some PHP application researchers use this term when attacking unsafe use of the unserialize() function; but it is also used for CWE-915.</li>
+                                    </ul>
+                                </div>
+                                <div class="cwe-platforms">
+                                    <h6>Applicable Platforms</h6>
+                                    <pre>[
+  {
+    "Name": "Java",
+    "Prevalence": "Undetermined",
+    "Type": "Language"
+  },
+  {
+    "Name": "Ruby",
+    "Prevalence": "Undetermined",
+    "Type": "Language"
+  },
+  {
+    "Name": "PHP",
+    "Prevalence": "Undetermined",
+    "Type": "Language"
+  },
+  {
+    "Name": "Python",
+    "Prevalence": "Undetermined",
+    "Type": "Language"
+  },
+  {
+    "Name": "JavaScript",
+    "Prevalence": "Undetermined",
+    "Type": "Language"
+  },
+  {
+    "Class": "Not Technology-Specific",
+    "Prevalence": "Undetermined",
+    "Type": "Technology"
+  },
+  {
+    "Class": "ICS/OT",
+    "Prevalence": "Often",
+    "Type": "Technology"
+  },
+  {
+    "Name": "AI/ML",
+    "Prevalence": "Often",
+    "Type": "Technology"
+  }
+]</pre>
+                                </div>
+                                <div class="cwe-consequences">
+                                    <h6>Common Consequences</h6>
+                                    <pre>[
+  {
+    "Impact": [
+      "Modify Application Data",
+      "Unexpected State"
+    ],
+    "Note": "Attackers can modify unexpected objects or data that was assumed to be safe from modification. Deserialized data or code could be modified without using the provided accessor functions, or unexpected functions could be invoked.",
+    "Scope": [
+      "Integrity"
+    ]
+  },
+  {
+    "Impact": [
+      "DoS: Resource Consumption (CPU)"
+    ],
+    "Note": "If a function is making an assumption on when to terminate, based on a sentry in a string, it could easily never terminate.",
+    "Scope": [
+      "Availability"
+    ]
+  },
+  {
+    "Impact": [
+      "Varies by Context"
+    ],
+    "Note": "The consequences can vary widely, because it depends on which objects or methods are being deserialized, and how they are used. Making an assumption that the code in the deserialized object is valid is dangerous and can enable exploitation. One example is attackers using gadget chains to perform unauthorized actions, such as generating a shell.",
+    "Scope": [
+      "Other"
+    ]
+  }
+]</pre>
+                                </div>
+                                <div class="cwe-mitigations">
+                                    <h6>Potential Mitigations</h6>
+                                    <pre>[
+  {
+    "Description": "If available, use the signing/sealing features of the programming language to assure that deserialized data has not been tainted. For example, a hash-based message authentication code (HMAC) could be used to ensure that data has not been modified.",
+    "Phase": [
+      "Architecture and Design",
+      "Implementation"
+    ]
+  },
+  {
+    "Description": "When deserializing data, populate a new object rather than just deserializing. The result is that the data flows through safe input validation and that the functions are safe.",
+    "Phase": [
+      "Implementation"
+    ]
+  },
+  {
+    "Description": "Explicitly define a final object() to prevent deserialization.",
+    "Phase": [
+      "Implementation"
+    ]
+  },
+  {
+    "Description": "\n\nMake fields transient to protect them from deserialization.\n\n\nAn attempt to serialize and then deserialize a class containing transient fields will result in NULLs where the transient data should be. This is an excellent way to prevent time, environment-based, or sensitive variables from being carried over and used improperly.\n",
+    "Phase": [
+      "Architecture and Design",
+      "Implementation"
+    ]
+  },
+  {
+    "Description": "Avoid having unnecessary types or gadgets (a sequence of instances and method invocations that can self-execute during the deserialization process, often found in libraries) available that can be leveraged for malicious ends. This limits the potential for unintended or unauthorized types and gadgets to be leveraged by the attacker. Add only acceptable classes to an allowlist. Note: new gadgets are constantly being discovered, so this alone is not a sufficient mitigation.",
+    "Phase": [
+      "Implementation"
+    ]
+  },
+  {
+    "Description": "Employ cryptography of the data or code for protection. However, it\u0027s important to note that it would still be client-side security. This is risky because if the client is compromised then the security implemented on the client (the cryptography) can be bypassed.",
+    "Phase": [
+      "Architecture and Design",
+      "Implementation"
+    ]
+  },
+  {
+    "Description": "Use an application firewall that can detect attacks against this weakness. It can be beneficial in cases in which the code cannot be fixed (because it is controlled by a third party), as an emergency prevention measure while more comprehensive software assurance measures are applied, or to provide defense in depth [REF-1481].",
+    "Effectiveness": "Moderate",
+    "EffectivenessNotes": "An application firewall might not cover all possible input vectors. In addition, attack techniques might be available to bypass the protection mechanism, such as using malformed inputs that can still be processed by the component that receives those inputs. Depending on functionality, an application firewall might inadvertently reject or modify legitimate requests. Finally, some manual effort may be required for customization.",
+    "MitigationID": "MIT-29",
+    "Phase": [
+      "Operation"
+    ],
+    "Strategy": "Firewall"
+  }
+]</pre>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="cwe-likelihood">
+                                <b>Exploit Likelihood:</b> Medium
+                            </div>
+                            <div class="cwe-abstraction">
+                                <b>Abstraction:</b> Base
+                            </div>
+                            <div class="cwe-related">
+                                <b>Related Weaknesses:</b>
+                                <pre>[
+  {
+    "CweID": "913",
+    "Nature": "ChildOf",
+    "Ordinal": "Primary",
+    "ViewID": "1000"
+  },
+  {
+    "CweID": "913",
+    "Nature": "ChildOf",
+    "Ordinal": "Primary",
+    "ViewID": "1003"
+  },
+  {
+    "CweID": "915",
+    "Nature": "PeerOf",
+    "ViewID": "1000"
+  }
+]</pre>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row cwe-row" id="CWE-639">
+                        <div class="col-md-9">
+                            <div class="cwe-post">
+                                <h2 class="cwe-title">CWE-639</h2>
+                                <h4 class="cwe-vuln">Authorization Bypass Through User-Controlled Key</h4>
+                                <h6 class="cwe-status">Status: Incomplete</h6>
+                                <div class="cwe-description">
+                                    <h6>Description</h6>
+                                    <p class="cwe-description-p">The system's authorization functionality does not prevent one user from gaining access to another user's data or record by modifying the key value identifying the data.</p>
+                                </div>
+                                <div class="cwe-alt-terms">
+                                    <h6>Alternate Terms</h6>
+                                    <ul>
+                                        <li><b>Insecure Direct Object Reference / IDOR</b>: The &#34;Insecure Direct Object Reference&#34; term, as described in the OWASP Top Ten, is broader than this CWE because it also covers path traversal (CWE-22). Within the context of vulnerability theory, there is a similarity between the OWASP concept and CWE-706: Use of Incorrectly-Resolved Name or Reference.</li>
+                                        <li><b>Broken Object Level Authorization / BOLA</b>: BOLA is used in the 2019 OWASP API Security Top 10 and appears to have some overlap, but BOLA may be applicable to other weaknesses in addition to this one.</li>
+                                        <li><b>Horizontal Authorization</b>: &#34;Horizontal Authorization&#34; is used to describe situations in which two users have the same privilege level, but must be prevented from accessing each other&#39;s resources. This is fairly common when using key-based access to resources in a multi-user context.</li>
+                                    </ul>
+                                </div>
+                                <div class="cwe-platforms">
+                                    <h6>Applicable Platforms</h6>
+                                    <pre>[
+  {
+    "Class": "Not Language-Specific",
+    "Prevalence": "Undetermined",
+    "Type": "Language"
+  }
+]</pre>
+                                </div>
+                                <div class="cwe-consequences">
+                                    <h6>Common Consequences</h6>
+                                    <pre>[
+  {
+    "Impact": [
+      "Bypass Protection Mechanism"
+    ],
+    "Note": "Access control checks for specific user data or functionality can be bypassed.",
+    "Scope": [
+      "Access Control"
+    ]
+  },
+  {
+    "Impact": [
+      "Gain Privileges or Assume Identity"
+    ],
+    "Note": "Horizontal escalation of privilege is possible (one user can view/modify information of another user).",
+    "Scope": [
+      "Access Control"
+    ]
+  },
+  {
+    "Impact": [
+      "Gain Privileges or Assume Identity"
+    ],
+    "Note": "Vertical escalation of privilege is possible if the user-controlled key is actually a flag that indicates administrator status, allowing the attacker to gain administrative access.",
+    "Scope": [
+      "Access Control"
+    ]
+  }
+]</pre>
+                                </div>
+                                <div class="cwe-mitigations">
+                                    <h6>Potential Mitigations</h6>
+                                    <pre>[
+  {
+    "Description": "For each and every data access, ensure that the user has sufficient privilege to access the record that is being requested.",
+    "Phase": [
+      "Architecture and Design"
+    ]
+  },
+  {
+    "Description": "Make sure that the key that is used in the lookup of a specific user\u0027s record is not controllable externally by the user or that any tampering can be detected.",
+    "Phase": [
+      "Architecture and Design",
+      "Implementation"
+    ]
+  },
+  {
+    "Description": "Use encryption in order to make it more difficult to guess other legitimate values of the key or associate a digital signature with the key so that the server can verify that there has been no tampering.",
+    "Phase": [
+      "Architecture and Design"
+    ]
+  }
+]</pre>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="cwe-likelihood">
+                                <b>Exploit Likelihood:</b> High
+                            </div>
+                            <div class="cwe-abstraction">
+                                <b>Abstraction:</b> Base
+                            </div>
+                            <div class="cwe-related">
+                                <b>Related Weaknesses:</b>
+                                <pre>[
+  {
+    "CweID": "863",
+    "Nature": "ChildOf",
+    "Ordinal": "Primary",
+    "ViewID": "1000"
+  },
+  {
+    "CweID": "863",
+    "Nature": "ChildOf",
+    "Ordinal": "Primary",
+    "ViewID": "1003"
+  },
+  {
+    "CweID": "284",
+    "Nature": "ChildOf",
+    "Ordinal": "Primary",
+    "ViewID": "1340"
+  }
+]</pre>
+                            </div>
+                        </div>
+                    </div>
+                <!-- END CWE CONTENT -->
+                </div>
+                <!-- SIDEBAR CONTENT -->
+                <div class="col-md-3 report-col-3"><!-- BY VENDOR -->
+                    <div class=" sidebar-table">
+                        <div class="label">By Vendor</div>
+                        <table class="table table-hover">
+                            <thead><tr><th>Vendor</th><th>Count</th></tr></thead>
+                            <tbody>
+                                <tr><td>JoomShaper</td><td>1</td></tr>
+                                <tr><td>Langflow</td><td>1</td></tr>
+                                <tr><td>Joomlack</td><td>1</td></tr>
+                                <tr><td>Adobe</td><td>1</td></tr>
+                                <tr><td>Microsoft</td><td>1</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- END BY VENDOR --><!-- BY DATE ADDED -->
+                    <div class=" sidebar-table">
+                        <div class="label">By Date Added</div>
+                        <table class="table table-hover">
+                            <thead><tr><th>Date Added</th><th>Count</th></tr></thead>
+                            <tbody>
+                                <tr><td>2026-07-07</td><td>4</td></tr>
+                                <tr><td>2026-07-01</td><td>1</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- END BY DATE ADDED -->
+                </div>
+                <!-- END SIDEBAR CONTENT -->
+            </div>
+           <!-- END LAYOUT -->
+        </div>
+    </div>
+</div>
