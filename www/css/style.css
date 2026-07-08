@@ -839,23 +839,37 @@ table.isj-badge-matrix thead th {
 
 .isj-badge-matrix-corner {
     text-align: left;
+    vertical-align: bottom;
 }
 
-.isj-badge-matrix-sev {
+.isj-badge-matrix-sev-head {
+    text-align: center;
+    border-left: 2px solid var(--common-border);
+}
+
+.isj-badge-matrix-subhead {
+    font-size: 0.65rem !important;
+    font-weight: 400;
+    padding-top: 2px !important;
+    padding-bottom: 8px !important;
+}
+
+.isj-badge-matrix-subhead:nth-child(odd) {
+    border-left: 2px solid var(--common-border);
+}
+
+.isj-badge-matrix-source {
     text-align: left;
+    font-weight: 600;
 }
 
 .isj-badge-matrix-today {
     font-weight: 700;
+    border-left: 2px solid var(--common-border);
 }
 
 .isj-badge-matrix-l7d {
     color: var(--muted-text-color);
-}
-
-.isj-badge-matrix-sep {
-    color: var(--common-border);
-    margin: 0 3px;
 }
 
 .isj-badge-matrix-empty {
