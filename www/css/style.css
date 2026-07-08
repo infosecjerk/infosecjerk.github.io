@@ -642,3 +642,157 @@ table.cve-epss-table td.cve-percentile-name {
 .isj-badge-low      { background-color: var(--low); }
 .isj-badge-none     { background-color: var(--unscored); }
 .isj-badge-unscored { background-color: var(--unscored); }
+.isj-badge-undetermined { background-color: var(--unscored); }
+
+/*
+ * ****************************************************** CWE SECTION
+*/
+
+.isj-section-separator {
+    border: none;
+    border-top: 2px solid var(--common-border);
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+.isj-section-header {
+    text-align: left;
+    padding: 15px 15px 25px 15px;
+}
+
+.isj-section-title {
+    color: var(--title-text-color);
+    font-weight: 700;
+}
+
+.isj-section-subtitle {
+    color: var(--muted-text-color);
+    font-size: 0.95rem;
+    margin-top: 5px;
+}
+
+.cwe-row {
+    text-align: left;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 15px;
+    border-bottom: 1px solid var(--common-border);
+}
+
+h2.cwe-title {
+    color: var(--title-text-color);
+    padding-top: 15px;
+    padding-bottom: 5px;
+}
+
+h4.cwe-vuln {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.cwe-status {
+    background: var(--primary-bg-lt);
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: var(--common-radius);
+    margin-bottom: 10px;
+}
+
+.cwe-description,
+.cwe-diagram-wrapper,
+.cwe-alt-terms,
+.cwe-platforms,
+.cwe-consequences,
+.cwe-mitigations {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.cwe-diagram-wrapper {
+    text-align: center;
+}
+
+.cwe-diagram {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--common-border);
+    border-radius: var(--common-radius);
+    background: #ffffff;
+}
+
+.cwe-alt-terms-list {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 10px;
+}
+
+.cwe-alt-term-item {
+    background: var(--card-bg-color);
+    border: 1px solid var(--common-border);
+    border-radius: var(--common-radius);
+    padding: 10px 15px;
+    margin-bottom: 8px;
+}
+
+.cwe-alt-term-name {
+    display: block;
+    font-weight: 700;
+    color: var(--title-text-color);
+}
+
+.cwe-alt-term-desc {
+    display: block;
+    color: var(--muted-text-color);
+    font-size: 0.9rem;
+    margin-top: 3px;
+}
+
+.cwe-likelihood {
+    margin-bottom: 15px;
+}
+
+.cwe-abstraction {
+    margin-bottom: 15px;
+}
+
+.cwe-related {
+    margin-top: 15px;
+}
+
+table.cwe-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    font-size: 0.9rem;
+}
+
+table.cwe-table th {
+    text-align: left;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    color: var(--muted-text-color);
+    border-bottom: 2px solid var(--common-border);
+    padding: 8px 10px;
+}
+
+table.cwe-table td {
+    text-align: left;
+    vertical-align: top;
+    padding: 8px 10px;
+    border-bottom: 1px solid var(--common-border);
+}
+
+table.cwe-table tbody tr:hover {
+    background: var(--primary-bg-lt);
+}
+
+table.cwe-related-table td a {
+    color: var(--title-text-color);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+table.cwe-related-table td a:hover {
+    text-decoration: underline;
+}
