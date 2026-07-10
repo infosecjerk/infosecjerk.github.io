@@ -2,6 +2,8 @@
 layout: post
 title: CISA KEVC L7D - 2026 - 7 - 10
 tags:
+- CVE-2026-56291
+- CVE-2026-48939
 - CVE-2026-48908
 - CVE-2026-55255
 - CVE-2026-56290
@@ -80,19 +82,19 @@ tags:
                                         <span class="isj-count-zero">0</span>
                                     </td>
                                     <td class="isj-badge-matrix-cell isj-badge-matrix-today">
-                                        <span class="isj-count-zero">0</span>
+                                        <span class="isj-count-circle isj-count-low">2</span>
                                     </td>
                                     <td class="isj-badge-matrix-cell isj-badge-matrix-l7d">
-                                        <span class="isj-count-circle isj-count-low">4</span>
+                                        <span class="isj-count-circle isj-count-low">6</span>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td class="isj-badge-matrix-source">CVSS v4.0</td>
                                     <td class="isj-badge-matrix-cell isj-badge-matrix-today">
-                                        <span class="isj-count-zero">0</span>
+                                        <span class="isj-count-circle isj-count-critical">2</span>
                                     </td>
                                     <td class="isj-badge-matrix-cell isj-badge-matrix-l7d">
-                                        <span class="isj-count-circle isj-count-critical">2</span>
+                                        <span class="isj-count-circle isj-count-critical">4</span>
                                     </td>
                                     <td class="isj-badge-matrix-cell isj-badge-matrix-today">
                                         <span class="isj-count-zero">0</span>
@@ -116,10 +118,10 @@ tags:
                                 <tr>
                                     <td class="isj-badge-matrix-source">CVSS v3.1</td>
                                     <td class="isj-badge-matrix-cell isj-badge-matrix-today">
-                                        <span class="isj-count-zero">0</span>
+                                        <span class="isj-count-circle isj-count-critical">2</span>
                                     </td>
                                     <td class="isj-badge-matrix-cell isj-badge-matrix-l7d">
-                                        <span class="isj-count-circle isj-count-critical">4</span>
+                                        <span class="isj-count-circle isj-count-critical">6</span>
                                     </td>
                                     <td class="isj-badge-matrix-cell isj-badge-matrix-today">
                                         <span class="isj-count-zero">0</span>
@@ -212,7 +214,7 @@ tags:
                                         <div class="card-body">
                                             <div class="label">CVEs (Today)</div>
                                             <div class="value">
-        0
+        2
                                             </div>
                                         </div>
                                     </div>
@@ -224,7 +226,7 @@ tags:
                                         <div class="card-body">
                                             <div class="label">CVEs (L7D)</div>
                                             <div class="value">
-        4
+        6
                                             </div>
                                         </div>
                                     </div>
@@ -236,7 +238,7 @@ tags:
                                         <div class="card-body">
                                             <div class="label">CWEs (Today)</div>
                                             <div class="value">
-        0
+        1
                                             </div>
                                         </div>
                                     </div>
@@ -484,6 +486,117 @@ tags:
                                 </tbody>
                             </table></div>
                     </div>
+                    <div class="row cve-row" id="CVE-2026-48939">
+                        <div class="col-md-9">
+                            <div class="cve-post">
+                                <h2 class="cve-title">CVE-2026-48939</h2>
+                                <h4 class="cve-vuln">iCagenda Unrestricted Upload of File with Dangerous Type Vulnerability</h4>
+                                <div class="isj-badge-row">
+                                    <span class="isj-badge isj-badge-low">
+                                        <span class="isj-badge-source">EPSS</span>
+                                        <span class="isj-badge-severity">LOW</span>
+                                        <span class="isj-badge-score">0.01</span>
+                                    </span>
+                                    <span class="isj-badge isj-badge-critical">
+                                        <span class="isj-badge-source">CVSS v4.0</span>
+                                        <span class="isj-badge-severity">CRITICAL</span>
+                                        <span class="isj-badge-score">10.00</span>
+                                    </span>
+                                    <span class="isj-badge isj-badge-critical">
+                                        <span class="isj-badge-source">CVSS v3.1</span>
+                                        <span class="isj-badge-severity">CRITICAL</span>
+                                        <span class="isj-badge-score">9.80</span>
+                                    </span>
+                                </div>
+                                <h6 class="cve-date">Date Added: 2026-07-10</h6>
+                                <div class="cve-description">
+                                    <h6>Description</h6>
+                                    <p class="cve-description-p">iCagenda contains an unrestricted upload of file with dangerous type vulnerability that allows the upload of arbitrary files in the file attachment feature, ultimately resulting in PHP code upload and execution.</p>
+                                </div>
+                                <div class="cve-action">
+                                    <h6>Required Action</h6>
+                                    <p class="cve-action-p">Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.</p>
+                                </div><div class="cvss_metrics">
+                                    <div class="cve-cvss-block">
+                                        <h6>CVSS v3.1</h6>
+                                        <table class="cwe-table cve-cvss-table cve-cvss-table-4col">
+                                            <tbody>
+                                                <tr>
+                                                    <th>Source</th><td>nvd@nist.gov</td>
+                                                    <th>Type</th><td>Primary</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Base Score</th><td>9.8</td>
+                                                    <th>Base Severity</th><td><span class="isj-badge isj-badge-critical">CRITICAL</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Attack Vector</th><td>NETWORK</td>
+                                                    <th>Attack Complexity</th><td>LOW</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Privileges Req.</th><td>NONE</td>
+                                                    <th>User Interaction</th><td>NONE</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Scope</th><td>UNCHANGED</td>
+                                                    <th>Confidentiality</th><td>HIGH</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Integrity</th><td>HIGH</td>
+                                                    <th>Availability</th><td>HIGH</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Exploitability</th><td>3.9</td>
+                                                    <th>Impact Score</th><td>5.9</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Vector</th>
+                                                    <td class="cve-cvss-vector" colspan="3">CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div></div></div>
+                        </div>
+                        <div class="col-md-3"><div class="cve-status">
+                                <b>Status:</b>
+                Modified
+                            </div><table class="cve-vendor-table">
+                                <tbody>
+                                    <tr>
+                                        <td class="cve-vendor-label">Vendor:</td>
+                                    </tr><tr>
+                                        <td class="cve-vendor-name">iCagenda</td>
+                                    </tr><tr>
+                                        <td class="cve-product-label">Product:</td>
+                                    </tr><tr>
+                                        <td class="cve-product-name">iCagenda</td>
+                                    </tr>
+                                </tbody>
+                            </table><table class="cve-epss-table">
+                                <tbody>
+                                    <tr>
+                                        <td class="cve-epss-label">EPSS:</td>
+                                    </tr><tr>
+                                        <td class="cve-epss-value">0.005640000</td>
+                                    </tr><tr>
+                                        <td class="cve-percentile-label">Percentile:</td>
+                                    </tr><tr>
+                                        <td class="cve-percentile-value">0.428830000</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <table class="isj-xref-table">
+                                <tbody>
+                                    <tr>
+                                        <td class="isj-xref-label">Related CWEs:</td>
+                                    </tr><tr>
+                                        <td class="isj-xref-links">
+                                            <a href="#CWE-434" class="isj-xref-link">CWE-434</a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table></div>
+                    </div>
                     <div class="row cve-row" id="CVE-2026-55255">
                         <div class="col-md-9">
                             <div class="cve-post">
@@ -696,6 +809,117 @@ tags:
                                     </tr><tr>
                                         <td class="isj-xref-links">
                                             <a href="#CWE-284" class="isj-xref-link">CWE-284</a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table></div>
+                    </div>
+                    <div class="row cve-row" id="CVE-2026-56291">
+                        <div class="col-md-9">
+                            <div class="cve-post">
+                                <h2 class="cve-title">CVE-2026-56291</h2>
+                                <h4 class="cve-vuln">Balbooa Forms Unrestricted Upload of File with Dangerous Type Vulnerability</h4>
+                                <div class="isj-badge-row">
+                                    <span class="isj-badge isj-badge-low">
+                                        <span class="isj-badge-source">EPSS</span>
+                                        <span class="isj-badge-severity">LOW</span>
+                                        <span class="isj-badge-score">0.00</span>
+                                    </span>
+                                    <span class="isj-badge isj-badge-critical">
+                                        <span class="isj-badge-source">CVSS v4.0</span>
+                                        <span class="isj-badge-severity">CRITICAL</span>
+                                        <span class="isj-badge-score">10.00</span>
+                                    </span>
+                                    <span class="isj-badge isj-badge-critical">
+                                        <span class="isj-badge-source">CVSS v3.1</span>
+                                        <span class="isj-badge-severity">CRITICAL</span>
+                                        <span class="isj-badge-score">9.80</span>
+                                    </span>
+                                </div>
+                                <h6 class="cve-date">Date Added: 2026-07-10</h6>
+                                <div class="cve-description">
+                                    <h6>Description</h6>
+                                    <p class="cve-description-p">Balbooa Forms contains an unrestricted upload of file with dangerous type vulnerability that allows an unauthenticated arbitrary file upload which could allow uploading of executable files leading to full RCE.</p>
+                                </div>
+                                <div class="cve-action">
+                                    <h6>Required Action</h6>
+                                    <p class="cve-action-p">Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.</p>
+                                </div><div class="cvss_metrics">
+                                    <div class="cve-cvss-block">
+                                        <h6>CVSS v3.1</h6>
+                                        <table class="cwe-table cve-cvss-table cve-cvss-table-4col">
+                                            <tbody>
+                                                <tr>
+                                                    <th>Source</th><td>nvd@nist.gov</td>
+                                                    <th>Type</th><td>Primary</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Base Score</th><td>9.8</td>
+                                                    <th>Base Severity</th><td><span class="isj-badge isj-badge-critical">CRITICAL</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Attack Vector</th><td>NETWORK</td>
+                                                    <th>Attack Complexity</th><td>LOW</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Privileges Req.</th><td>NONE</td>
+                                                    <th>User Interaction</th><td>NONE</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Scope</th><td>UNCHANGED</td>
+                                                    <th>Confidentiality</th><td>HIGH</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Integrity</th><td>HIGH</td>
+                                                    <th>Availability</th><td>HIGH</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Exploitability</th><td>3.9</td>
+                                                    <th>Impact Score</th><td>5.9</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Vector</th>
+                                                    <td class="cve-cvss-vector" colspan="3">CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div></div></div>
+                        </div>
+                        <div class="col-md-3"><div class="cve-status">
+                                <b>Status:</b>
+                Analyzed
+                            </div><table class="cve-vendor-table">
+                                <tbody>
+                                    <tr>
+                                        <td class="cve-vendor-label">Vendor:</td>
+                                    </tr><tr>
+                                        <td class="cve-vendor-name">Balbooa</td>
+                                    </tr><tr>
+                                        <td class="cve-product-label">Product:</td>
+                                    </tr><tr>
+                                        <td class="cve-product-name">Forms</td>
+                                    </tr>
+                                </tbody>
+                            </table><table class="cve-epss-table">
+                                <tbody>
+                                    <tr>
+                                        <td class="cve-epss-label">EPSS:</td>
+                                    </tr><tr>
+                                        <td class="cve-epss-value">0.002780000</td>
+                                    </tr><tr>
+                                        <td class="cve-percentile-label">Percentile:</td>
+                                    </tr><tr>
+                                        <td class="cve-percentile-value">0.196230000</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <table class="isj-xref-table">
+                                <tbody>
+                                    <tr>
+                                        <td class="isj-xref-label">Related CWEs:</td>
+                                    </tr><tr>
+                                        <td class="isj-xref-links">
+                                            <a href="#CWE-434" class="isj-xref-link">CWE-434</a>
                                         </td>
                                     </tr>
                                 </tbody>
@@ -1262,6 +1486,8 @@ Be careful to avoid CWE-243 and other weaknesses related to jails.
                                         </tr><tr>
                                             <td class="isj-xref-links">
                                                 <a href="#CVE-2026-48908" class="isj-xref-link">CVE-2026-48908</a>
+                                                <a href="#CVE-2026-48939" class="isj-xref-link">CVE-2026-48939</a>
+                                                <a href="#CVE-2026-56291" class="isj-xref-link">CVE-2026-56291</a>
                                             </td>
                                         </tr>
                                     </tbody>
@@ -1465,6 +1691,8 @@ Be careful to avoid CWE-243 and other weaknesses related to jails.
                         <table class="table table-hover">
                             <thead><tr><th>Vendor</th><th>Count</th></tr></thead>
                             <tbody>
+                                <tr><td>Balbooa</td><td>1</td></tr>
+                                <tr><td>iCagenda</td><td>1</td></tr>
                                 <tr><td>JoomShaper</td><td>1</td></tr>
                                 <tr><td>Langflow</td><td>1</td></tr>
                                 <tr><td>Joomlack</td><td>1</td></tr>
@@ -1479,6 +1707,7 @@ Be careful to avoid CWE-243 and other weaknesses related to jails.
                             <thead><tr><th>Date Added</th><th>Count</th></tr></thead>
                             <tbody>
                                 <tr><td>2026-07-07</td><td>4</td></tr>
+                                <tr><td>2026-07-10</td><td>2</td></tr>
                             </tbody>
                         </table>
                     </div>
