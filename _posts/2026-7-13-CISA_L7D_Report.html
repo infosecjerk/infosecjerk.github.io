@@ -2,12 +2,14 @@
 layout: post
 title: CISA KEVC L7D - 2026 - 7 - 13
 tags:
+- CVE-2008-4128
 - CVE-2026-56291
 - CVE-2026-48939
 - CVE-2026-48908
 - CVE-2026-55255
 - CVE-2026-56290
 - CVE-2026-48282
+- CWE-352
 - CWE-434
 - CWE-639
 - CWE-284
@@ -82,10 +84,10 @@ tags:
                                         <span class="isj-count-zero">0</span>
                                     </td>
                                     <td class="isj-badge-matrix-cell isj-badge-matrix-today">
-                                        <span class="isj-count-zero">0</span>
+                                        <span class="isj-count-circle isj-count-low">1</span>
                                     </td>
                                     <td class="isj-badge-matrix-cell isj-badge-matrix-l7d">
-                                        <span class="isj-count-circle isj-count-low">6</span>
+                                        <span class="isj-count-circle isj-count-low">7</span>
                                     </td>
                                 </tr>
                                 <tr>
@@ -130,10 +132,10 @@ tags:
                                         <span class="isj-count-zero">0</span>
                                     </td>
                                     <td class="isj-badge-matrix-cell isj-badge-matrix-today">
-                                        <span class="isj-count-zero">0</span>
+                                        <span class="isj-count-circle isj-count-medium">1</span>
                                     </td>
                                     <td class="isj-badge-matrix-cell isj-badge-matrix-l7d">
-                                        <span class="isj-count-zero">0</span>
+                                        <span class="isj-count-circle isj-count-medium">1</span>
                                     </td>
                                     <td class="isj-badge-matrix-cell isj-badge-matrix-today">
                                         <span class="isj-count-zero">0</span>
@@ -178,10 +180,10 @@ tags:
                                         <span class="isj-count-zero">0</span>
                                     </td>
                                     <td class="isj-badge-matrix-cell isj-badge-matrix-today">
-                                        <span class="isj-count-zero">0</span>
+                                        <span class="isj-count-circle isj-count-high">1</span>
                                     </td>
                                     <td class="isj-badge-matrix-cell isj-badge-matrix-l7d">
-                                        <span class="isj-count-zero">0</span>
+                                        <span class="isj-count-circle isj-count-high">1</span>
                                     </td>
                                     <td class="isj-badge-matrix-cell isj-badge-matrix-today">
                                         <span class="isj-count-zero">0</span>
@@ -214,7 +216,7 @@ tags:
                                         <div class="card-body">
                                             <div class="label">CVEs (Today)</div>
                                             <div class="value">
-        0
+        1
                                             </div>
                                         </div>
                                     </div>
@@ -226,7 +228,7 @@ tags:
                                         <div class="card-body">
                                             <div class="label">CVEs (L7D)</div>
                                             <div class="value">
-        6
+        7
                                             </div>
                                         </div>
                                     </div>
@@ -238,7 +240,7 @@ tags:
                                         <div class="card-body">
                                             <div class="label">CWEs (Today)</div>
                                             <div class="value">
-        0
+        1
                                             </div>
                                         </div>
                                     </div>
@@ -250,7 +252,7 @@ tags:
                                         <div class="card-body">
                                             <div class="label">CWEs (L7D)</div>
                                             <div class="value">
-        4
+        5
                                             </div>
                                         </div>
                                     </div>
@@ -269,6 +271,117 @@ tags:
                     <h3 class="isj-section-title">CISA Catalog of Known Exploited Vulnerabilities</h3>
                     <p class="isj-section-subtitle">Individual vulnerabilities confirmed as actively exploited, with EPSS and CVSS scoring by source.</p>
                 </div>
+                    <div class="row cve-row" id="CVE-2008-4128">
+                        <div class="col-md-9">
+                            <div class="cve-post">
+                                <h2 class="cve-title">CVE-2008-4128</h2>
+                                <h4 class="cve-vuln">Cisco IOS Cross-Site Request Forgery Vulnerability</h4>
+                                <div class="isj-badge-row">
+                                    <span class="isj-badge isj-badge-low">
+                                        <span class="isj-badge-source">EPSS</span>
+                                        <span class="isj-badge-severity">LOW</span>
+                                        <span class="isj-badge-score">0.12</span>
+                                    </span>
+                                    <span class="isj-badge isj-badge-medium">
+                                        <span class="isj-badge-source">CVSS v3.1</span>
+                                        <span class="isj-badge-severity">MEDIUM</span>
+                                        <span class="isj-badge-score">4.30</span>
+                                    </span>
+                                    <span class="isj-badge isj-badge-high">
+                                        <span class="isj-badge-source">CVSS v2.0</span>
+                                        <span class="isj-badge-severity">HIGH</span>
+                                        <span class="isj-badge-score">9.30</span>
+                                    </span>
+                                </div>
+                                <h6 class="cve-date">Date Added: 2026-07-13</h6>
+                                <div class="cve-description">
+                                    <h6>Description</h6>
+                                    <p class="cve-description-p">Cisco IOS 12.4 contains multiple cross-site forgery vulnerabilities that allows remote attackers to execute arbitrary commands via (1) a certain "show privilege" command to the /level/15/exec/- URI, and (2) a certain "alias exec" command to the /level/15/exec/-/configure/http URI.</p>
+                                </div>
+                                <div class="cve-action">
+                                    <h6>Required Action</h6>
+                                    <p class="cve-action-p">Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.</p>
+                                </div><div class="cvss_metrics">
+                                    <div class="cve-cvss-block">
+                                        <h6>CVSS v3.1</h6>
+                                        <table class="cwe-table cve-cvss-table cve-cvss-table-4col">
+                                            <tbody>
+                                                <tr>
+                                                    <th>Source</th><td>134c704f-9b21-4f2e-91b3-4a467353bcc0</td>
+                                                    <th>Type</th><td>Secondary</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Base Score</th><td>4.3</td>
+                                                    <th>Base Severity</th><td><span class="isj-badge isj-badge-medium">MEDIUM</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Attack Vector</th><td>NETWORK</td>
+                                                    <th>Attack Complexity</th><td>LOW</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Privileges Req.</th><td>NONE</td>
+                                                    <th>User Interaction</th><td>REQUIRED</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Scope</th><td>UNCHANGED</td>
+                                                    <th>Confidentiality</th><td>LOW</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Integrity</th><td>NONE</td>
+                                                    <th>Availability</th><td>NONE</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Exploitability</th><td>2.8</td>
+                                                    <th>Impact Score</th><td>1.4</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Vector</th>
+                                                    <td class="cve-cvss-vector" colspan="3">CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:N/A:N</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div></div></div>
+                        </div>
+                        <div class="col-md-3"><div class="cve-status">
+                                <b>Status:</b>
+                Modified
+                            </div><table class="cve-vendor-table">
+                                <tbody>
+                                    <tr>
+                                        <td class="cve-vendor-label">Vendor:</td>
+                                    </tr><tr>
+                                        <td class="cve-vendor-name">Cisco</td>
+                                    </tr><tr>
+                                        <td class="cve-product-label">Product:</td>
+                                    </tr><tr>
+                                        <td class="cve-product-name">IOS</td>
+                                    </tr>
+                                </tbody>
+                            </table><table class="cve-epss-table">
+                                <tbody>
+                                    <tr>
+                                        <td class="cve-epss-label">EPSS:</td>
+                                    </tr><tr>
+                                        <td class="cve-epss-value">0.120360000</td>
+                                    </tr><tr>
+                                        <td class="cve-percentile-label">Percentile:</td>
+                                    </tr><tr>
+                                        <td class="cve-percentile-value">0.956490000</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <table class="isj-xref-table">
+                                <tbody>
+                                    <tr>
+                                        <td class="isj-xref-label">Related CWEs:</td>
+                                    </tr><tr>
+                                        <td class="isj-xref-links">
+                                            <a href="#CWE-352" class="isj-xref-link">CWE-352</a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table></div>
+                    </div>
                     <div class="row cve-row" id="CVE-2026-48282">
                         <div class="col-md-9">
                             <div class="cve-post">
@@ -1308,6 +1421,216 @@ Ensure that appropriate compartmentalization is built into the system design, an
                             </div>
                         </div>
                     </div>
+                    <div class="row cwe-row" id="CWE-352">
+                        <div class="col-md-9">
+                            <div class="cwe-post">
+                                <h2 class="cwe-title">CWE-352</h2>
+                                <h4 class="cwe-vuln">Cross-Site Request Forgery (CSRF)</h4>
+                                <h6 class="cwe-status">Status: Stable</h6>
+                                <div class="cwe-description">
+                                    <h6>Description</h6>
+                                    <p class="cwe-description-p">The web application does not, or cannot, sufficiently verify whether a request was intentionally provided by the user who sent the request, which could have originated from an unauthorized actor. </p>
+                                </div>
+                                <div class="cwe-diagram-wrapper">
+                                    <h6>Diagram</h6>
+                                    <img src="https://cwe.mitre.org/data/images/CWE-352-Diagram.png" class="cwe-diagram" width="600" style="vertical-align:middle;margin:auto" />
+                                </div>
+                                <div class="cwe-alt-terms">
+                                    <h6>Alternate Terms</h6>
+                                    <table class="cwe-table cwe-alt-terms-table">
+                                        <thead>
+                                            <tr><th>Term</th><th>Description</th></tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="cwe-alt-term-name">Session Riding</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="cwe-alt-term-name">Cross Site Reference Forgery</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="cwe-alt-term-name">XSRF</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="cwe-alt-term-name">CSRF</td>
+                                                <td></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="cwe-platforms">
+                                    <h6>Applicable Platforms</h6>
+                                    <table class="cwe-table cwe-platforms-table">
+                                        <thead>
+                                            <tr><th>Type</th><th>Name</th><th>Prevalence</th></tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Language</td>
+                                                <td>Not Language-Specific</td>
+                                                <td>Undetermined</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Technology</td>
+                                                <td>Web Based</td>
+                                                <td>Undetermined</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Technology</td>
+                                                <td>Web Server</td>
+                                                <td>Undetermined</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="cwe-consequences">
+                                    <h6>Common Consequences</h6>
+                                    <table class="cwe-table cwe-consequences-table">
+                                        <thead>
+                                            <tr><th>Scope</th><th>Impact</th><th>Note</th></tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Confidentiality, Integrity, Availability, Non-Repudiation, Access Control</td>
+                                                <td>Gain Privileges or Assume Identity, Bypass Protection Mechanism, Read Application Data, Modify Application Data, DoS: Crash, Exit, or Restart</td>
+                                                <td>The consequences will vary depending on the nature of the functionality that is vulnerable to CSRF. An attacker could trick a client into making an unintentional request to the web server via a URL, image load, XMLHttpRequest, etc., which would then be treated as an authentic request from the client - effectively performing any operations as the victim, leading to an exposure of data, unintended code execution, etc. If the victim is an administrator or privileged user, the consequences may include obtaining complete control over the web application - deleting or stealing data, uninstalling the product, or using it to launch other attacks against all of the product&#39;s users. Because the attacker has the identity of the victim, the scope of CSRF is limited only by the victim&#39;s privileges.</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="cwe-mitigations">
+                                    <h6>Potential Mitigations</h6>
+                                    <table class="cwe-table cwe-mitigations-table">
+                                        <thead>
+                                            <tr><th>Phase</th><th>Description</th></tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Architecture and Design</td>
+                                                <td>
+
+Use a vetted library or framework that does not allow this weakness to occur or provides constructs that make this weakness easier to avoid [REF-1482].
+
+
+For example, use anti-CSRF packages such as the OWASP CSRFGuard. [REF-330]
+
+
+Another example is the ESAPI Session Management control, which includes a component for CSRF. [REF-45]
+</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Implementation</td>
+                                                <td>Ensure that the application is free of cross-site scripting issues (CWE-79), because most CSRF defenses can be bypassed using attacker-controlled script.</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Architecture and Design</td>
+                                                <td>Generate a unique nonce for each form, place the nonce into the form, and verify the nonce upon receipt of the form. Be sure that the nonce is not predictable (CWE-330). [REF-332]</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Architecture and Design</td>
+                                                <td>Identify especially dangerous operations. When the user performs a dangerous operation, send a separate confirmation request to ensure that the user intended to perform that operation.</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Architecture and Design</td>
+                                                <td>
+
+Use the &#34;double-submitted cookie&#34; method as described by Felten and Zeller:
+
+
+When a user visits a site, the site should generate a pseudorandom value and set it as a cookie on the user&#39;s machine. The site should require every form submission to include this value as a form value and also as a cookie value. When a POST request is sent to the site, the request should only be considered valid if the form value and the cookie value are the same.
+
+
+Because of the same-origin policy, an attacker cannot read or modify the value stored in the cookie. To successfully submit a form on behalf of the user, the attacker would have to correctly guess the pseudorandom value. If the pseudorandom value is cryptographically strong, this will be prohibitively difficult.
+
+
+This technique requires Javascript, so it may not work for browsers that have Javascript disabled. [REF-331]
+</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Architecture and Design</td>
+                                                <td>Do not use the GET method for any request that triggers a state change.</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Implementation</td>
+                                                <td>Check the HTTP Referer header to see if the request originated from an expected page. This could break legitimate functionality, because users or proxies may have disabled sending the Referer for privacy reasons.</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="cwe-likelihood">
+                                <div class="isj-badge-label">Exploit Likelihood</div>
+                                <span class="isj-badge isj-badge-medium">Medium</span>
+                            </div>
+                            <div class="cwe-abstraction">
+                                <b>Abstraction:</b> Compound
+                            </div>
+                            <div class="cwe-referenced-by">
+                                <table class="isj-xref-table">
+                                    <tbody>
+                                        <tr>
+                                            <td class="isj-xref-label">Referenced By CVEs:</td>
+                                        </tr><tr>
+                                            <td class="isj-xref-links">
+                                                <a href="#CVE-2008-4128" class="isj-xref-link">CVE-2008-4128</a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="cwe-related">
+                                <b>Related Weaknesses:</b>
+                                <table class="cwe-table cwe-related-table">
+                                    <thead>
+                                        <tr><th>Nature</th><th>CWE</th><th>View</th></tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>ChildOf</td>
+                                            <td>CWE-345
+                                            </td>
+                                            <td>1000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>ChildOf</td>
+                                            <td>CWE-345
+                                            </td>
+                                            <td>1003</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Requires</td>
+                                            <td>CWE-346
+                                            </td>
+                                            <td>1000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Requires</td>
+                                            <td>CWE-441
+                                            </td>
+                                            <td>1000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Requires</td>
+                                            <td>CWE-642
+                                            </td>
+                                            <td>1000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Requires</td>
+                                            <td>CWE-613
+                                            </td>
+                                            <td>1000</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
                     <div class="row cwe-row" id="CWE-434">
                         <div class="col-md-9">
                             <div class="cwe-post">
@@ -1691,6 +2014,7 @@ Be careful to avoid CWE-243 and other weaknesses related to jails.
                         <table class="table table-hover">
                             <thead><tr><th>Vendor</th><th>Count</th></tr></thead>
                             <tbody>
+                                <tr><td>Cisco</td><td>1</td></tr>
                                 <tr><td>Balbooa</td><td>1</td></tr>
                                 <tr><td>iCagenda</td><td>1</td></tr>
                                 <tr><td>JoomShaper</td><td>1</td></tr>
@@ -1708,6 +2032,7 @@ Be careful to avoid CWE-243 and other weaknesses related to jails.
                             <tbody>
                                 <tr><td>2026-07-07</td><td>4</td></tr>
                                 <tr><td>2026-07-10</td><td>2</td></tr>
+                                <tr><td>2026-07-13</td><td>1</td></tr>
                             </tbody>
                         </table>
                     </div>
