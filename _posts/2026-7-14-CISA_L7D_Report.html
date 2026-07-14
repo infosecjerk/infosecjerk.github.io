@@ -4,6 +4,8 @@ title: CISA KEVC L7D - 2026 - 7 - 14
 tags:
 - CVE-2026-56155
 - CVE-2026-56164
+- CVE-2026-15409
+- CVE-2026-15410
 - CVE-2008-4128
 - CVE-2026-56291
 - CVE-2026-48939
@@ -13,6 +15,8 @@ tags:
 - CVE-2026-48282
 - CWE-1220
 - CWE-306
+- CWE-918
+- CWE-94
 - CWE-352
 - CWE-434
 - CWE-639
@@ -124,16 +128,16 @@ tags:
                                 <tr>
                                     <td class="isj-badge-matrix-source">CVSS v3.1</td>
                                     <td class="isj-badge-matrix-cell isj-badge-matrix-today">
-                                        <span class="isj-count-zero">0</span>
+                                        <span class="isj-count-circle isj-count-critical">1</span>
                                     </td>
                                     <td class="isj-badge-matrix-cell isj-badge-matrix-l7d">
-                                        <span class="isj-count-circle isj-count-critical">6</span>
+                                        <span class="isj-count-circle isj-count-critical">7</span>
                                     </td>
                                     <td class="isj-badge-matrix-cell isj-badge-matrix-today">
-                                        <span class="isj-count-circle isj-count-high">1</span>
+                                        <span class="isj-count-circle isj-count-high">2</span>
                                     </td>
                                     <td class="isj-badge-matrix-cell isj-badge-matrix-l7d">
-                                        <span class="isj-count-circle isj-count-high">1</span>
+                                        <span class="isj-count-circle isj-count-high">2</span>
                                     </td>
                                     <td class="isj-badge-matrix-cell isj-badge-matrix-today">
                                         <span class="isj-count-circle isj-count-medium">1</span>
@@ -220,7 +224,7 @@ tags:
                                         <div class="card-body">
                                             <div class="label">CVEs (Today)</div>
                                             <div class="value">
-        2
+        4
                                             </div>
                                         </div>
                                     </div>
@@ -232,7 +236,7 @@ tags:
                                         <div class="card-body">
                                             <div class="label">CVEs (L7D)</div>
                                             <div class="value">
-        9
+        11
                                             </div>
                                         </div>
                                     </div>
@@ -244,7 +248,7 @@ tags:
                                         <div class="card-body">
                                             <div class="label">CWEs (Today)</div>
                                             <div class="value">
-        2
+        4
                                             </div>
                                         </div>
                                     </div>
@@ -256,7 +260,7 @@ tags:
                                         <div class="card-body">
                                             <div class="label">CWEs (L7D)</div>
                                             <div class="value">
-        7
+        9
                                             </div>
                                         </div>
                                     </div>
@@ -381,6 +385,208 @@ tags:
                                     </tr><tr>
                                         <td class="isj-xref-links">
                                             <a href="#CWE-352" class="isj-xref-link">CWE-352</a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table></div>
+                    </div>
+                    <div class="row cve-row" id="CVE-2026-15409">
+                        <div class="col-md-9">
+                            <div class="cve-post">
+                                <h2 class="cve-title">CVE-2026-15409</h2>
+                                <h4 class="cve-vuln">SonicWall SMA1000 Appliances Server-Side Request Forgery Vulnerability</h4>
+                                <div class="isj-badge-row">
+                                    <span class="isj-badge isj-badge-critical">
+                                        <span class="isj-badge-source">CVSS v3.1</span>
+                                        <span class="isj-badge-severity">CRITICAL</span>
+                                        <span class="isj-badge-score">10.00</span>
+                                    </span>
+                                </div>
+                                <h6 class="cve-date">Date Added: 2026-07-14</h6>
+                                <div class="cve-description">
+                                    <h6>Description</h6>
+                                    <p class="cve-description-p">SonicWall SMA1000 Appliances contain a server-side request forgery vulnerability that could allow a remote unauthenticated attacker to potentially cause the appliance to make requests to unintended location.</p>
+                                </div>
+                                <div class="cve-action">
+                                    <h6>Required Action</h6>
+                                    <p class="cve-action-p">Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.</p>
+                                </div><div class="cvss_metrics">
+                                    <div class="cve-cvss-block">
+                                        <h6>CVSS v3.1</h6>
+                                        <table class="cwe-table cve-cvss-table cve-cvss-table-4col">
+                                            <tbody>
+                                                <tr>
+                                                    <th>Source</th><td>134c704f-9b21-4f2e-91b3-4a467353bcc0</td>
+                                                    <th>Type</th><td>Secondary</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Base Score</th><td>10.0</td>
+                                                    <th>Base Severity</th><td><span class="isj-badge isj-badge-critical">CRITICAL</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Attack Vector</th><td>NETWORK</td>
+                                                    <th>Attack Complexity</th><td>LOW</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Privileges Req.</th><td>NONE</td>
+                                                    <th>User Interaction</th><td>NONE</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Scope</th><td>CHANGED</td>
+                                                    <th>Confidentiality</th><td>HIGH</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Integrity</th><td>HIGH</td>
+                                                    <th>Availability</th><td>HIGH</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Exploitability</th><td>3.9</td>
+                                                    <th>Impact Score</th><td>6.0</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Vector</th>
+                                                    <td class="cve-cvss-vector" colspan="3">CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div></div></div>
+                        </div>
+                        <div class="col-md-3"><div class="cve-status">
+                                <b>Status:</b>
+                Received
+                            </div><table class="cve-vendor-table">
+                                <tbody>
+                                    <tr>
+                                        <td class="cve-vendor-label">Vendor:</td>
+                                    </tr><tr>
+                                        <td class="cve-vendor-name">SonicWall</td>
+                                    </tr><tr>
+                                        <td class="cve-product-label">Product:</td>
+                                    </tr><tr>
+                                        <td class="cve-product-name">SMA1000 Appliances</td>
+                                    </tr>
+                                </tbody>
+                            </table><table class="cve-epss-table">
+                                <tbody>
+                                    <tr>
+                                        <td class="cve-epss-label">EPSS:</td>
+                                    </tr><tr>
+                                        <td class="cve-epss-value"></td>
+                                    </tr><tr>
+                                        <td class="cve-percentile-label">Percentile:</td>
+                                    </tr><tr>
+                                        <td class="cve-percentile-value"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <table class="isj-xref-table">
+                                <tbody>
+                                    <tr>
+                                        <td class="isj-xref-label">Related CWEs:</td>
+                                    </tr><tr>
+                                        <td class="isj-xref-links">
+                                            <a href="#CWE-918" class="isj-xref-link">CWE-918</a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table></div>
+                    </div>
+                    <div class="row cve-row" id="CVE-2026-15410">
+                        <div class="col-md-9">
+                            <div class="cve-post">
+                                <h2 class="cve-title">CVE-2026-15410</h2>
+                                <h4 class="cve-vuln">SonicWall SMA1000 Appliances Code Injection Vulnerability</h4>
+                                <div class="isj-badge-row">
+                                    <span class="isj-badge isj-badge-high">
+                                        <span class="isj-badge-source">CVSS v3.1</span>
+                                        <span class="isj-badge-severity">HIGH</span>
+                                        <span class="isj-badge-score">7.20</span>
+                                    </span>
+                                </div>
+                                <h6 class="cve-date">Date Added: 2026-07-14</h6>
+                                <div class="cve-description">
+                                    <h6>Description</h6>
+                                    <p class="cve-description-p">SonicWall SMA1000 Appliances contain a code injection vulnerability which in specific conditions could potentially enable a remote authenticated attacker as administrator to execute arbitrary OS commands.</p>
+                                </div>
+                                <div class="cve-action">
+                                    <h6>Required Action</h6>
+                                    <p class="cve-action-p">Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.</p>
+                                </div><div class="cvss_metrics">
+                                    <div class="cve-cvss-block">
+                                        <h6>CVSS v3.1</h6>
+                                        <table class="cwe-table cve-cvss-table cve-cvss-table-4col">
+                                            <tbody>
+                                                <tr>
+                                                    <th>Source</th><td>134c704f-9b21-4f2e-91b3-4a467353bcc0</td>
+                                                    <th>Type</th><td>Secondary</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Base Score</th><td>7.2</td>
+                                                    <th>Base Severity</th><td><span class="isj-badge isj-badge-high">HIGH</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Attack Vector</th><td>NETWORK</td>
+                                                    <th>Attack Complexity</th><td>LOW</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Privileges Req.</th><td>HIGH</td>
+                                                    <th>User Interaction</th><td>NONE</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Scope</th><td>UNCHANGED</td>
+                                                    <th>Confidentiality</th><td>HIGH</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Integrity</th><td>HIGH</td>
+                                                    <th>Availability</th><td>HIGH</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Exploitability</th><td>1.2</td>
+                                                    <th>Impact Score</th><td>5.9</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Vector</th>
+                                                    <td class="cve-cvss-vector" colspan="3">CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div></div></div>
+                        </div>
+                        <div class="col-md-3"><div class="cve-status">
+                                <b>Status:</b>
+                Received
+                            </div><table class="cve-vendor-table">
+                                <tbody>
+                                    <tr>
+                                        <td class="cve-vendor-label">Vendor:</td>
+                                    </tr><tr>
+                                        <td class="cve-vendor-name">SonicWall</td>
+                                    </tr><tr>
+                                        <td class="cve-product-label">Product:</td>
+                                    </tr><tr>
+                                        <td class="cve-product-name">SMA1000 Appliances</td>
+                                    </tr>
+                                </tbody>
+                            </table><table class="cve-epss-table">
+                                <tbody>
+                                    <tr>
+                                        <td class="cve-epss-label">EPSS:</td>
+                                    </tr><tr>
+                                        <td class="cve-epss-value"></td>
+                                    </tr><tr>
+                                        <td class="cve-percentile-label">Percentile:</td>
+                                    </tr><tr>
+                                        <td class="cve-percentile-value"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <table class="isj-xref-table">
+                                <tbody>
+                                    <tr>
+                                        <td class="isj-xref-label">Related CWEs:</td>
+                                    </tr><tr>
+                                        <td class="isj-xref-links">
+                                            <a href="#CWE-94" class="isj-xref-link">CWE-94</a>
                                         </td>
                                     </tr>
                                 </tbody>
@@ -2475,6 +2681,332 @@ Be careful to avoid CWE-243 and other weaknesses related to jails.
                             </div>
                         </div>
                     </div>
+                    <div class="row cwe-row" id="CWE-918">
+                        <div class="col-md-9">
+                            <div class="cwe-post">
+                                <h2 class="cwe-title">CWE-918</h2>
+                                <h4 class="cwe-vuln">Server-Side Request Forgery (SSRF)</h4>
+                                <h6 class="cwe-status">Status: Incomplete</h6>
+                                <div class="cwe-description">
+                                    <h6>Description</h6>
+                                    <p class="cwe-description-p">The web server receives a URL or similar request from an upstream component and retrieves the contents of this URL, but it does not sufficiently ensure that the request is being sent to the expected destination.</p>
+                                </div>
+                                <div class="cwe-diagram-wrapper">
+                                    <h6>Diagram</h6>
+                                    <img src="https://cwe.mitre.org/data/images/CWE-918-Diagram.png" class="cwe-diagram" width="600" style="vertical-align:middle;margin:auto" />
+                                </div>
+                                <div class="cwe-alt-terms">
+                                    <h6>Alternate Terms</h6>
+                                    <table class="cwe-table cwe-alt-terms-table">
+                                        <thead>
+                                            <tr><th>Term</th><th>Description</th></tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="cwe-alt-term-name">XSPA</td>
+                                                <td>Cross Site Port Attack</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="cwe-alt-term-name">SSRF</td>
+                                                <td>Server-Side Request Forgery</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="cwe-platforms">
+                                    <h6>Applicable Platforms</h6>
+                                    <table class="cwe-table cwe-platforms-table">
+                                        <thead>
+                                            <tr><th>Type</th><th>Name</th><th>Prevalence</th></tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Language</td>
+                                                <td>Not Language-Specific</td>
+                                                <td>Undetermined</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Technology</td>
+                                                <td>Web Based</td>
+                                                <td>Undetermined</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Technology</td>
+                                                <td>AI/ML</td>
+                                                <td>Often</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Technology</td>
+                                                <td>Web Server</td>
+                                                <td>Undetermined</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="cwe-consequences">
+                                    <h6>Common Consequences</h6>
+                                    <table class="cwe-table cwe-consequences-table">
+                                        <thead>
+                                            <tr><th>Scope</th><th>Impact</th><th>Note</th></tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Confidentiality</td>
+                                                <td>Read Application Data</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Integrity</td>
+                                                <td>Execute Unauthorized Code or Commands</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Access Control</td>
+                                                <td>Bypass Protection Mechanism</td>
+                                                <td>By providing URLs to unexpected hosts or ports, attackers can make it appear that the server is sending the request, possibly bypassing access controls such as firewalls that prevent the attackers from accessing the URLs directly. The server can be used as a proxy to conduct port scanning of hosts in internal networks, use other URLs such as that can access documents on the system (using file://), or use other protocols such as gopher:// or tftp://, which may provide greater control over the contents of requests.</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="cwe-abstraction">
+                                <b>Abstraction:</b> Base
+                            </div>
+                            <div class="cwe-referenced-by">
+                                <table class="isj-xref-table">
+                                    <tbody>
+                                        <tr>
+                                            <td class="isj-xref-label">Referenced By CVEs:</td>
+                                        </tr><tr>
+                                            <td class="isj-xref-links">
+                                                <a href="#CVE-2026-15409" class="isj-xref-link">CVE-2026-15409</a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="cwe-related">
+                                <b>Related Weaknesses:</b>
+                                <table class="cwe-table cwe-related-table">
+                                    <thead>
+                                        <tr><th>Nature</th><th>CWE</th><th>View</th></tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>ChildOf</td>
+                                            <td>CWE-441
+                                            </td>
+                                            <td>1000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>ChildOf</td>
+                                            <td>CWE-610
+                                            </td>
+                                            <td>1003</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row cwe-row" id="CWE-94">
+                        <div class="col-md-9">
+                            <div class="cwe-post">
+                                <h2 class="cwe-title">CWE-94</h2>
+                                <h4 class="cwe-vuln">Improper Control of Generation of Code (&#39;Code Injection&#39;)</h4>
+                                <h6 class="cwe-status">Status: Draft</h6>
+                                <div class="cwe-description">
+                                    <h6>Description</h6>
+                                    <p class="cwe-description-p">The product constructs all or part of a code segment using externally-influenced input from an upstream component, but it does not neutralize or incorrectly neutralizes special elements that could modify the syntax or behavior of the intended code segment.</p>
+                                </div>
+                                <div class="cwe-diagram-wrapper">
+                                    <h6>Diagram</h6>
+                                    <img src="https://cwe.mitre.org/data/images/CWE-94-Diagram.png" class="cwe-diagram" width="600" style="vertical-align:middle;margin:auto" />
+                                </div>
+                                <div class="cwe-alt-terms">
+                                    <h6>Alternate Terms</h6>
+                                    <table class="cwe-table cwe-alt-terms-table">
+                                        <thead>
+                                            <tr><th>Term</th><th>Description</th></tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="cwe-alt-term-name">Code Injection</td>
+                                                <td></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="cwe-platforms">
+                                    <h6>Applicable Platforms</h6>
+                                    <table class="cwe-table cwe-platforms-table">
+                                        <thead>
+                                            <tr><th>Type</th><th>Name</th><th>Prevalence</th></tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Language</td>
+                                                <td>Interpreted</td>
+                                                <td>Sometimes</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Technology</td>
+                                                <td>AI/ML</td>
+                                                <td>Undetermined</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="cwe-consequences">
+                                    <h6>Common Consequences</h6>
+                                    <table class="cwe-table cwe-consequences-table">
+                                        <thead>
+                                            <tr><th>Scope</th><th>Impact</th><th>Note</th></tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Access Control</td>
+                                                <td>Bypass Protection Mechanism</td>
+                                                <td>In some cases, injectable code controls authentication; this may lead to a remote vulnerability.</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Access Control</td>
+                                                <td>Gain Privileges or Assume Identity</td>
+                                                <td>Injected code can access resources that the attacker is directly prevented from accessing.</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Integrity, Confidentiality, Availability</td>
+                                                <td>Execute Unauthorized Code or Commands</td>
+                                                <td>When a product allows a user&#39;s input to contain code syntax, it might be possible for an attacker to craft the code in such a way that it will alter the intended control flow of the product. As a result, code injection can often result in the execution of arbitrary code. Code injection attacks can also lead to loss of data integrity in nearly all cases, since the control-plane data injected is always incidental to data recall or writing.</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Non-Repudiation</td>
+                                                <td>Hide Activities</td>
+                                                <td>Often the actions performed by injected control code are unlogged.</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="cwe-mitigations">
+                                    <h6>Potential Mitigations</h6>
+                                    <table class="cwe-table cwe-mitigations-table">
+                                        <thead>
+                                            <tr><th>Phase</th><th>Description</th></tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Architecture and Design</td>
+                                                <td>Refactor your program so that you do not have to dynamically generate code.</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Architecture and Design</td>
+                                                <td>
+
+Run your code in a &#34;jail&#34; or similar sandbox environment that enforces strict boundaries between the process and the operating system. This may effectively restrict which code can be executed by your product.
+
+
+Examples include the Unix chroot jail and AppArmor. In general, managed code may provide some protection.
+
+
+This may not be a feasible solution, and it only limits the impact to the operating system; the rest of your application may still be subject to compromise.
+
+
+Be careful to avoid CWE-243 and other weaknesses related to jails.
+</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Implementation</td>
+                                                <td>
+
+Assume all input is malicious. Use an &#34;accept known good&#34; input validation strategy, i.e., use a list of acceptable inputs that strictly conform to specifications. Reject any input that does not strictly conform to specifications, or transform it into something that does.
+
+
+When performing input validation, consider all potentially relevant properties, including length, type of input, the full range of acceptable values, missing or extra inputs, syntax, consistency across related fields, and conformance to business rules. As an example of business rule logic, &#34;boat&#34; may be syntactically valid because it only contains alphanumeric characters, but it is not valid if the input is only expected to contain colors such as &#34;red&#34; or &#34;blue.&#34;
+
+
+Do not rely exclusively on looking for malicious or malformed inputs. This is likely to miss at least one undesirable input, especially if the code&#39;s environment changes. This can give attackers enough room to bypass the intended validation. However, denylists can be useful for detecting potential attacks or determining which inputs are so malformed that they should be rejected outright.
+
+
+To reduce the likelihood of code injection, use stringent allowlists that limit which constructs are allowed. If you are dynamically constructing code that invokes a function, then verifying that the input is alphanumeric might be insufficient. An attacker might still be able to reference a dangerous function that you did not intend to allow, such as system(), exec(), or exit().
+</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Testing</td>
+                                                <td>Use dynamic tools and techniques that interact with the product using large test suites with many diverse inputs, such as fuzz testing (fuzzing), robustness testing, and fault injection. The product&#39;s operation may slow down, but it should not become unstable, crash, or generate incorrect results.</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Operation</td>
+                                                <td>Run the code in an environment that performs automatic taint propagation and prevents any command execution that uses tainted variables, such as Perl&#39;s &#34;-T&#34; switch. This will force the program to perform validation steps that remove the taint, although you must be careful to correctly validate your inputs so that you do not accidentally mark dangerous inputs as untainted (see CWE-183 and CWE-184).</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Operation</td>
+                                                <td>Run the code in an environment that performs automatic taint propagation and prevents any command execution that uses tainted variables, such as Perl&#39;s &#34;-T&#34; switch. This will force the program to perform validation steps that remove the taint, although you must be careful to correctly validate your inputs so that you do not accidentally mark dangerous inputs as untainted (see CWE-183 and CWE-184).</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Implementation</td>
+                                                <td>
+
+For Python programs, it is frequently encouraged to use the ast.literal_eval() function instead of eval, since it is intentionally designed to avoid executing code. However, an adversary could still cause excessive memory or stack consumption via deeply nested structures [REF-1372], so the python documentation discourages use of ast.literal_eval() on untrusted data [REF-1373].
+</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="cwe-likelihood">
+                                <div class="isj-badge-label">Exploit Likelihood</div>
+                                <span class="isj-badge isj-badge-medium">Medium</span>
+                            </div>
+                            <div class="cwe-abstraction">
+                                <b>Abstraction:</b> Base
+                            </div>
+                            <div class="cwe-referenced-by">
+                                <table class="isj-xref-table">
+                                    <tbody>
+                                        <tr>
+                                            <td class="isj-xref-label">Referenced By CVEs:</td>
+                                        </tr><tr>
+                                            <td class="isj-xref-links">
+                                                <a href="#CVE-2026-15410" class="isj-xref-link">CVE-2026-15410</a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="cwe-related">
+                                <b>Related Weaknesses:</b>
+                                <table class="cwe-table cwe-related-table">
+                                    <thead>
+                                        <tr><th>Nature</th><th>CWE</th><th>View</th></tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>ChildOf</td>
+                                            <td>CWE-74
+                                            </td>
+                                            <td>1000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>ChildOf</td>
+                                            <td>CWE-74
+                                            </td>
+                                            <td>1003</td>
+                                        </tr>
+                                        <tr>
+                                            <td>ChildOf</td>
+                                            <td>CWE-913
+                                            </td>
+                                            <td>1000</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
                 <!-- END CWE CONTENT -->
                 </div>
                 <!-- SIDEBAR CONTENT -->
@@ -2485,6 +3017,7 @@ Be careful to avoid CWE-243 and other weaknesses related to jails.
                             <thead><tr><th>Vendor</th><th>Count</th></tr></thead>
                             <tbody>
                                 <tr><td>Microsoft</td><td>2</td></tr>
+                                <tr><td>SonicWall</td><td>2</td></tr>
                                 <tr><td>Cisco</td><td>1</td></tr>
                                 <tr><td>Balbooa</td><td>1</td></tr>
                                 <tr><td>iCagenda</td><td>1</td></tr>
@@ -2501,8 +3034,8 @@ Be careful to avoid CWE-243 and other weaknesses related to jails.
                         <table class="table table-hover">
                             <thead><tr><th>Date Added</th><th>Count</th></tr></thead>
                             <tbody>
+                                <tr><td>2026-07-14</td><td>4</td></tr>
                                 <tr><td>2026-07-07</td><td>4</td></tr>
-                                <tr><td>2026-07-14</td><td>2</td></tr>
                                 <tr><td>2026-07-10</td><td>2</td></tr>
                                 <tr><td>2026-07-13</td><td>1</td></tr>
                             </tbody>
