@@ -1,0 +1,781 @@
+---
+layout: post
+title: CISA KEVC L7D - 2026 - 8 - 4
+tags:
+- CVE-2026-18577
+- CVE-2026-20316
+- CWE-288
+- CWE-259
+---
+
+<div class="post">
+    <div class="row report-row">
+        <div class="col-md-12 report-col-12">
+            <h1 class='post-title'>
+                CISA KEVC :: 2026-08-04
+            </h1>
+            <h3 class='post-date'>
+                Report Window: 2026-08-04 to 2026-7-28
+            </h3>
+        </div>
+    </div>
+    <div class="lead"></div>
+    <div id='body'>
+        <div class="container main"> 
+            <!-- TOP SUMMARY -->
+            <div class="row report-row">
+                <div class="col-md-12 report-col-12">
+                    <div class="container kpi-row">
+                        <table class="isj-badge-matrix">
+                            <thead>
+                                <tr>
+                                    <th class="isj-badge-matrix-corner" rowspan="2">Scoring Source</th>
+                                    <th class="isj-badge-matrix-sev-head" colspan="2">
+                                        <span class="isj-badge isj-badge-critical">CRITICAL</span>
+                                    </th>
+                                    <th class="isj-badge-matrix-sev-head" colspan="2">
+                                        <span class="isj-badge isj-badge-high">HIGH</span>
+                                    </th>
+                                    <th class="isj-badge-matrix-sev-head" colspan="2">
+                                        <span class="isj-badge isj-badge-medium">MEDIUM</span>
+                                    </th>
+                                    <th class="isj-badge-matrix-sev-head" colspan="2">
+                                        <span class="isj-badge isj-badge-low">LOW</span>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th class="isj-badge-matrix-subhead">Today</th>
+                                    <th class="isj-badge-matrix-subhead">L7D</th>
+                                    <th class="isj-badge-matrix-subhead">Today</th>
+                                    <th class="isj-badge-matrix-subhead">L7D</th>
+                                    <th class="isj-badge-matrix-subhead">Today</th>
+                                    <th class="isj-badge-matrix-subhead">L7D</th>
+                                    <th class="isj-badge-matrix-subhead">Today</th>
+                                    <th class="isj-badge-matrix-subhead">L7D</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="isj-badge-matrix-source">EPSS</td>
+                                    <td class="isj-badge-matrix-cell isj-badge-matrix-today">
+                                        <span class="isj-count-zero">0</span>
+                                    </td>
+                                    <td class="isj-badge-matrix-cell isj-badge-matrix-l7d">
+                                        <span class="isj-count-zero">0</span>
+                                    </td>
+                                    <td class="isj-badge-matrix-cell isj-badge-matrix-today">
+                                        <span class="isj-count-zero">0</span>
+                                    </td>
+                                    <td class="isj-badge-matrix-cell isj-badge-matrix-l7d">
+                                        <span class="isj-count-zero">0</span>
+                                    </td>
+                                    <td class="isj-badge-matrix-cell isj-badge-matrix-today">
+                                        <span class="isj-count-zero">0</span>
+                                    </td>
+                                    <td class="isj-badge-matrix-cell isj-badge-matrix-l7d">
+                                        <span class="isj-count-zero">0</span>
+                                    </td>
+                                    <td class="isj-badge-matrix-cell isj-badge-matrix-today">
+                                        <span class="isj-count-zero">0</span>
+                                    </td>
+                                    <td class="isj-badge-matrix-cell isj-badge-matrix-l7d">
+                                        <span class="isj-count-circle isj-count-low">1</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="isj-badge-matrix-source">CVSS v4.0</td>
+                                    <td class="isj-badge-matrix-cell isj-badge-matrix-today">
+                                        <span class="isj-count-zero">0</span>
+                                    </td>
+                                    <td class="isj-badge-matrix-cell isj-badge-matrix-l7d">
+                                        <span class="isj-count-zero">0</span>
+                                    </td>
+                                    <td class="isj-badge-matrix-cell isj-badge-matrix-today">
+                                        <span class="isj-count-zero">0</span>
+                                    </td>
+                                    <td class="isj-badge-matrix-cell isj-badge-matrix-l7d">
+                                        <span class="isj-count-circle isj-count-high">1</span>
+                                    </td>
+                                    <td class="isj-badge-matrix-cell isj-badge-matrix-today">
+                                        <span class="isj-count-zero">0</span>
+                                    </td>
+                                    <td class="isj-badge-matrix-cell isj-badge-matrix-l7d">
+                                        <span class="isj-count-zero">0</span>
+                                    </td>
+                                    <td class="isj-badge-matrix-cell isj-badge-matrix-today">
+                                        <span class="isj-count-zero">0</span>
+                                    </td>
+                                    <td class="isj-badge-matrix-cell isj-badge-matrix-l7d">
+                                        <span class="isj-count-zero">0</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="isj-badge-matrix-source">CVSS v3.1</td>
+                                    <td class="isj-badge-matrix-cell isj-badge-matrix-today">
+                                        <span class="isj-count-zero">0</span>
+                                    </td>
+                                    <td class="isj-badge-matrix-cell isj-badge-matrix-l7d">
+                                        <span class="isj-count-zero">0</span>
+                                    </td>
+                                    <td class="isj-badge-matrix-cell isj-badge-matrix-today">
+                                        <span class="isj-count-zero">0</span>
+                                    </td>
+                                    <td class="isj-badge-matrix-cell isj-badge-matrix-l7d">
+                                        <span class="isj-count-zero">0</span>
+                                    </td>
+                                    <td class="isj-badge-matrix-cell isj-badge-matrix-today">
+                                        <span class="isj-count-zero">0</span>
+                                    </td>
+                                    <td class="isj-badge-matrix-cell isj-badge-matrix-l7d">
+                                        <span class="isj-count-circle isj-count-medium">1</span>
+                                    </td>
+                                    <td class="isj-badge-matrix-cell isj-badge-matrix-today">
+                                        <span class="isj-count-zero">0</span>
+                                    </td>
+                                    <td class="isj-badge-matrix-cell isj-badge-matrix-l7d">
+                                        <span class="isj-count-zero">0</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="isj-badge-matrix-source">CVSS v3.0</td>
+                                    <td class="isj-badge-matrix-cell isj-badge-matrix-today">
+                                        <span class="isj-count-zero">0</span>
+                                    </td>
+                                    <td class="isj-badge-matrix-cell isj-badge-matrix-l7d">
+                                        <span class="isj-count-zero">0</span>
+                                    </td>
+                                    <td class="isj-badge-matrix-cell isj-badge-matrix-today">
+                                        <span class="isj-count-zero">0</span>
+                                    </td>
+                                    <td class="isj-badge-matrix-cell isj-badge-matrix-l7d">
+                                        <span class="isj-count-zero">0</span>
+                                    </td>
+                                    <td class="isj-badge-matrix-cell isj-badge-matrix-today">
+                                        <span class="isj-count-zero">0</span>
+                                    </td>
+                                    <td class="isj-badge-matrix-cell isj-badge-matrix-l7d">
+                                        <span class="isj-count-zero">0</span>
+                                    </td>
+                                    <td class="isj-badge-matrix-cell isj-badge-matrix-today">
+                                        <span class="isj-count-zero">0</span>
+                                    </td>
+                                    <td class="isj-badge-matrix-cell isj-badge-matrix-l7d">
+                                        <span class="isj-count-zero">0</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="isj-badge-matrix-source">CVSS v2.0</td>
+                                    <td class="isj-badge-matrix-cell isj-badge-matrix-today">
+                                        <span class="isj-count-zero">0</span>
+                                    </td>
+                                    <td class="isj-badge-matrix-cell isj-badge-matrix-l7d">
+                                        <span class="isj-count-zero">0</span>
+                                    </td>
+                                    <td class="isj-badge-matrix-cell isj-badge-matrix-today">
+                                        <span class="isj-count-zero">0</span>
+                                    </td>
+                                    <td class="isj-badge-matrix-cell isj-badge-matrix-l7d">
+                                        <span class="isj-count-zero">0</span>
+                                    </td>
+                                    <td class="isj-badge-matrix-cell isj-badge-matrix-today">
+                                        <span class="isj-count-zero">0</span>
+                                    </td>
+                                    <td class="isj-badge-matrix-cell isj-badge-matrix-l7d">
+                                        <span class="isj-count-zero">0</span>
+                                    </td>
+                                    <td class="isj-badge-matrix-cell isj-badge-matrix-today">
+                                        <span class="isj-count-zero">0</span>
+                                    </td>
+                                    <td class="isj-badge-matrix-cell isj-badge-matrix-l7d">
+                                        <span class="isj-count-zero">0</span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p class="isj-badge-matrix-legend">Today / Last 7 Days count, by severity and scoring source.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- END TOP SUMMARY -->
+            <!-- BEGIN 2nd SUMMARY -->
+            <div class="row report-row">
+                <div class="col-md-12 report-col-12">
+                    <div class="container kpi-row">
+                        <div class="row card-row"> 
+                            <div class="col-md-3 card-col-3">
+                                <div class="card card-cve">
+                                    <div class="cve-today">
+                                        <div class="card-body">
+                                            <div class="label">CVEs (Today)</div>
+                                            <div class="value">
+        0
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 card-col-3">
+                                <div class="card card-cve">
+                                    <div class="cve-l7d">
+                                        <div class="card-body">
+                                            <div class="label">CVEs (L7D)</div>
+                                            <div class="value">
+        2
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 card-col-3">
+                                <div class="card card-cwe">
+                                    <div class="cwe-today">
+                                        <div class="card-body">
+                                            <div class="label">CWEs (Today)</div>
+                                            <div class="value">
+        0
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 card-col-3">
+                                <div class="card card-cwe">
+                                    <div class="cwe-l7d">
+                                        <div class="card-body">
+                                            <div class="label">CWEs (L7D)</div>
+                                            <div class="value">
+        2
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- END 2nd SUMMARY -->
+            <!-- LAYOUT -->
+            <div class="row report-row">
+                <div class="col-md-9 report-col-9">
+                <!-- CVE CONTENT -->
+                <div class="isj-section-header">
+                    <h3 class="isj-section-title">CISA Catalog of Known Exploited Vulnerabilities</h3>
+                    <p class="isj-section-subtitle">Individual vulnerabilities confirmed as actively exploited, with EPSS and CVSS scoring by source.</p>
+                </div>
+                    <div class="row cve-row" id="CVE-2026-18577">
+                        <div class="col-md-9">
+                            <div class="cve-post">
+                                <h2 class="cve-title">CVE-2026-18577</h2>
+                                <h4 class="cve-vuln">N-able N-central Authentication Bypass Using an Alternate Path or Channel Vulnerability</h4>
+                                <div class="isj-badge-row">
+                                    <span class="isj-badge isj-badge-low">
+                                        <span class="isj-badge-source">EPSS</span>
+                                        <span class="isj-badge-severity">LOW</span>
+                                        <span class="isj-badge-score">0.01</span>
+                                    </span>
+                                    <span class="isj-badge isj-badge-high">
+                                        <span class="isj-badge-source">CVSS v4.0</span>
+                                        <span class="isj-badge-severity">HIGH</span>
+                                        <span class="isj-badge-score">8.20</span>
+                                    </span>
+                                </div>
+                                <h6 class="cve-date">Date Added: 2026-08-03</h6>
+                                <div class="cve-description">
+                                    <h6>Description</h6>
+                                    <p class="cve-description-p">N-able N-central contains an authentication bypass using an alternate path or channel allows for authentication bypass and account takeover in N-central. This vulnerability is the result of an incomplete patch for CVE-2026-18556.</p>
+                                </div>
+                                <div class="cve-action">
+                                    <h6>Required Action</h6>
+                                    <p class="cve-action-p">Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.</p>
+                                </div><div class="cvss_metrics">
+                                    <div class="cve-cvss-block">
+                                        <h6>CVSS v4.0</h6>
+                                        <table class="cwe-table cve-cvss-table cve-cvss-table-4col">
+                                            <tbody>
+                                                <tr>
+                                                    <th>Source</th><td>a5532a13-c4dd-4202-bef1-e0b8f2f8d12b</td>
+                                                    <th>Type</th><td>Secondary</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Base Score</th><td>8.2</td>
+                                                    <th>Base Severity</th><td><span class="isj-badge isj-badge-high">HIGH</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Attack Vector</th><td>NETWORK</td>
+                                                    <th>Attack Complexity</th><td>HIGH</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Privileges Req.</th><td>NONE</td>
+                                                    <th>User Interaction</th><td>NONE</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Vector</th>
+                                                    <td class="cve-cvss-vector" colspan="3">CVSS:4.0/AV:N/AC:H/AT:N/PR:N/UI:N/VC:H/VI:N/VA:N/SC:L/SI:L/SA:L/E:A/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div></div></div>
+                        </div>
+                        <div class="col-md-3"><div class="cve-status">
+                                <b>Status:</b>
+                Received
+                            </div><table class="cve-vendor-table">
+                                <tbody>
+                                    <tr>
+                                        <td class="cve-vendor-label">Vendor:</td>
+                                    </tr><tr>
+                                        <td class="cve-vendor-name">N-able</td>
+                                    </tr><tr>
+                                        <td class="cve-product-label">Product:</td>
+                                    </tr><tr>
+                                        <td class="cve-product-name">N-central</td>
+                                    </tr>
+                                </tbody>
+                            </table><table class="cve-epss-table">
+                                <tbody>
+                                    <tr>
+                                        <td class="cve-epss-label">EPSS:</td>
+                                    </tr><tr>
+                                        <td class="cve-epss-value">0.014770000</td>
+                                    </tr><tr>
+                                        <td class="cve-percentile-label">Percentile:</td>
+                                    </tr><tr>
+                                        <td class="cve-percentile-value">0.713200000</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <table class="isj-xref-table">
+                                <tbody>
+                                    <tr>
+                                        <td class="isj-xref-label">Related CWEs:</td>
+                                    </tr><tr>
+                                        <td class="isj-xref-links">
+                                            <a href="#CWE-288" class="isj-xref-link">CWE-288</a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table></div>
+                    </div>
+                    <div class="row cve-row" id="CVE-2026-20316">
+                        <div class="col-md-9">
+                            <div class="cve-post">
+                                <h2 class="cve-title">CVE-2026-20316</h2>
+                                <h4 class="cve-vuln">Cisco Secure Firewall Management Center Use of Hard-coded Password Vulnerability</h4>
+                                <div class="isj-badge-row">
+                                    <span class="isj-badge isj-badge-medium">
+                                        <span class="isj-badge-source">CVSS v3.1</span>
+                                        <span class="isj-badge-severity">MEDIUM</span>
+                                        <span class="isj-badge-score">5.30</span>
+                                    </span>
+                                </div>
+                                <h6 class="cve-date">Date Added: 2026-07-29</h6>
+                                <div class="cve-description">
+                                    <h6>Description</h6>
+                                    <p class="cve-description-p">Cisco Secure Firewall Management Center (FMC) formerly known as Firepower Management Center contains a use of hard-coded password vulnerability that could allow an unauthenticated, remote attacker to log in to an affected device using a low-privileged account to access sensitive data within the impacted systems.</p>
+                                </div>
+                                <div class="cve-action">
+                                    <h6>Required Action</h6>
+                                    <p class="cve-action-p">Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.</p>
+                                </div><div class="cvss_metrics">
+                                    <div class="cve-cvss-block">
+                                        <h6>CVSS v3.1</h6>
+                                        <table class="cwe-table cve-cvss-table cve-cvss-table-4col">
+                                            <tbody>
+                                                <tr>
+                                                    <th>Source</th><td>psirt@cisco.com</td>
+                                                    <th>Type</th><td>Secondary</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Base Score</th><td>5.3</td>
+                                                    <th>Base Severity</th><td><span class="isj-badge isj-badge-medium">MEDIUM</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Attack Vector</th><td>NETWORK</td>
+                                                    <th>Attack Complexity</th><td>LOW</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Privileges Req.</th><td>NONE</td>
+                                                    <th>User Interaction</th><td>NONE</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Scope</th><td>UNCHANGED</td>
+                                                    <th>Confidentiality</th><td>LOW</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Integrity</th><td>NONE</td>
+                                                    <th>Availability</th><td>NONE</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Exploitability</th><td>3.9</td>
+                                                    <th>Impact Score</th><td>1.4</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Vector</th>
+                                                    <td class="cve-cvss-vector" colspan="3">CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div></div></div>
+                        </div>
+                        <div class="col-md-3"><div class="cve-status">
+                                <b>Status:</b>
+                Modified
+                            </div><table class="cve-vendor-table">
+                                <tbody>
+                                    <tr>
+                                        <td class="cve-vendor-label">Vendor:</td>
+                                    </tr><tr>
+                                        <td class="cve-vendor-name">Cisco</td>
+                                    </tr><tr>
+                                        <td class="cve-product-label">Product:</td>
+                                    </tr><tr>
+                                        <td class="cve-product-name">Secure Firewall Management Center (FMC)</td>
+                                    </tr>
+                                </tbody>
+                            </table><table class="cve-epss-table">
+                                <tbody>
+                                    <tr>
+                                        <td class="cve-epss-label">EPSS:</td>
+                                    </tr><tr>
+                                        <td class="cve-epss-value"></td>
+                                    </tr><tr>
+                                        <td class="cve-percentile-label">Percentile:</td>
+                                    </tr><tr>
+                                        <td class="cve-percentile-value"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <table class="isj-xref-table">
+                                <tbody>
+                                    <tr>
+                                        <td class="isj-xref-label">Related CWEs:</td>
+                                    </tr><tr>
+                                        <td class="isj-xref-links">
+                                            <a href="#CWE-259" class="isj-xref-link">CWE-259</a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table></div>
+                    </div>
+                <!-- END CVE CONTENT -->
+                <!-- CWE CONTENT -->
+                <div class="isj-section-separator"></div>
+                <div class="isj-section-header">
+                    <h3 class="isj-section-title">Common Weakness Enumeration</h3>
+                    <p class="isj-section-subtitle">The underlying weakness patterns behind the vulnerabilities above &mdash; root-cause categories, not individual exploits.</p>
+                </div>
+                    <div class="row cwe-row" id="CWE-259">
+                        <div class="col-md-9">
+                            <div class="cwe-post">
+                                <h2 class="cwe-title">CWE-259</h2>
+                                <h4 class="cwe-vuln">Use of Hard-coded Password</h4>
+                                <h6 class="cwe-status">Status: Draft</h6>
+                                <div class="cwe-description">
+                                    <h6>Description</h6>
+                                    <p class="cwe-description-p">The product contains a hard-coded password, which it uses for its own inbound authentication or for outbound communication to external components.</p>
+                                </div>
+                                <div class="cwe-diagram-wrapper">
+                                    <h6>Diagram</h6>
+                                    <img src="https://cwe.mitre.org/data/images/CWE-259-Diagram.png" class="cwe-diagram" width="600" style="vertical-align:middle;margin:auto" />
+                                </div>
+                                <div class="cwe-platforms">
+                                    <h6>Applicable Platforms</h6>
+                                    <table class="cwe-table cwe-platforms-table">
+                                        <thead>
+                                            <tr><th>Type</th><th>Name</th><th>Prevalence</th></tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Language</td>
+                                                <td>Not Language-Specific</td>
+                                                <td>Undetermined</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Technology</td>
+                                                <td>ICS/OT</td>
+                                                <td>Undetermined</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="cwe-consequences">
+                                    <h6>Common Consequences</h6>
+                                    <table class="cwe-table cwe-consequences-table">
+                                        <thead>
+                                            <tr><th>Scope</th><th>Impact</th><th>Note</th></tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Access Control</td>
+                                                <td>Gain Privileges or Assume Identity</td>
+                                                <td>If hard-coded passwords are used, it is almost certain that malicious users can gain access through the account in question.</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Access Control</td>
+                                                <td>Gain Privileges or Assume Identity, Hide Activities, Reduce Maintainability</td>
+                                                <td>A hard-coded password typically leads to a significant authentication failure that can be difficult for the system administrator to detect. Once detected, it can be difficult to fix, so the administrator may be forced into disabling the product entirely.</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="cwe-mitigations">
+                                    <h6>Potential Mitigations</h6>
+                                    <table class="cwe-table cwe-mitigations-table">
+                                        <thead>
+                                            <tr><th>Phase</th><th>Description</th></tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Architecture and Design</td>
+                                                <td>For outbound authentication: store passwords outside of the code in a strongly-protected, encrypted configuration file or database that is protected from access by all outsiders, including other local users on the same system. Properly protect the key (CWE-320). If you cannot use encryption to protect the file, then make sure that the permissions are as restrictive as possible.</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Architecture and Design</td>
+                                                <td>For inbound authentication: Rather than hard-code a default username and password for first time logins, utilize a &#34;first login&#34; mode that requires the user to enter a unique strong password.</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Architecture and Design</td>
+                                                <td>Perform access control checks and limit which entities can access the feature that requires the hard-coded password. For example, a feature might only be enabled through the system console instead of through a network connection.</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Architecture and Design</td>
+                                                <td>
+
+For inbound authentication: apply strong one-way hashes to your passwords and store those hashes in a configuration file or database with appropriate access control. That way, theft of the file/database still requires the attacker to try to crack the password. When receiving an incoming password during authentication, take the hash of the password and compare it to the hash that you have saved.
+
+
+Use randomly assigned salts for each separate hash that you generate. This increases the amount of computation that an attacker needs to conduct a brute-force attack, possibly limiting the effectiveness of the rainbow table method.
+</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Architecture and Design</td>
+                                                <td>
+
+For front-end to back-end connections: Three solutions are possible, although none are complete.
+
+```
+		The first suggestion involves the use of generated passwords which are changed automatically and must be entered at given time intervals by a system administrator. These passwords will be held in memory and only be valid for the time intervals.
+		Next, the passwords used should be limited at the back end to only performing actions valid for the front end, as opposed to having full access.
+		Finally, the messages sent should be tagged and checksummed with time sensitive values so as to prevent replay style attacks.
+```
+</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="cwe-likelihood">
+                                <div class="isj-badge-label">Exploit Likelihood</div>
+                                <span class="isj-badge isj-badge-high">High</span>
+                            </div>
+                            <div class="cwe-abstraction">
+                                <b>Abstraction:</b> Variant
+                            </div>
+                            <div class="cwe-referenced-by">
+                                <table class="isj-xref-table">
+                                    <tbody>
+                                        <tr>
+                                            <td class="isj-xref-label">Referenced By CVEs:</td>
+                                        </tr><tr>
+                                            <td class="isj-xref-links">
+                                                <a href="#CVE-2026-20316" class="isj-xref-link">CVE-2026-20316</a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="cwe-related">
+                                <b>Related Weaknesses:</b>
+                                <table class="cwe-table cwe-related-table">
+                                    <thead>
+                                        <tr><th>Nature</th><th>CWE</th><th>View</th></tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>ChildOf</td>
+                                            <td>CWE-798
+                                            </td>
+                                            <td>1000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>ChildOf</td>
+                                            <td>CWE-798
+                                            </td>
+                                            <td>1305</td>
+                                        </tr>
+                                        <tr>
+                                            <td>ChildOf</td>
+                                            <td>CWE-798
+                                            </td>
+                                            <td>1340</td>
+                                        </tr>
+                                        <tr>
+                                            <td>PeerOf</td>
+                                            <td>CWE-321
+                                            </td>
+                                            <td>1000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>PeerOf</td>
+                                            <td>CWE-257
+                                            </td>
+                                            <td>1000</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row cwe-row" id="CWE-288">
+                        <div class="col-md-9">
+                            <div class="cwe-post">
+                                <h2 class="cwe-title">CWE-288</h2>
+                                <h4 class="cwe-vuln">Authentication Bypass Using an Alternate Path or Channel</h4>
+                                <h6 class="cwe-status">Status: Incomplete</h6>
+                                <div class="cwe-description">
+                                    <h6>Description</h6>
+                                    <p class="cwe-description-p">The product requires authentication, but the product has an alternate path or channel that does not require authentication.</p>
+                                </div>
+                                <div class="cwe-diagram-wrapper">
+                                    <h6>Diagram</h6>
+                                    <img src="https://cwe.mitre.org/data/images/CWE-288-Diagram.png" class="cwe-diagram" width="600" style="vertical-align:middle;margin:auto" />
+                                </div>
+                                <div class="cwe-platforms">
+                                    <h6>Applicable Platforms</h6>
+                                    <table class="cwe-table cwe-platforms-table">
+                                        <thead>
+                                            <tr><th>Type</th><th>Name</th><th>Prevalence</th></tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Language</td>
+                                                <td>Not Language-Specific</td>
+                                                <td>Undetermined</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Technology</td>
+                                                <td>Not Technology-Specific</td>
+                                                <td>Undetermined</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Technology</td>
+                                                <td>Web Based</td>
+                                                <td>Undetermined</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="cwe-consequences">
+                                    <h6>Common Consequences</h6>
+                                    <table class="cwe-table cwe-consequences-table">
+                                        <thead>
+                                            <tr><th>Scope</th><th>Impact</th><th>Note</th></tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Access Control</td>
+                                                <td>Bypass Protection Mechanism</td>
+                                                <td></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="cwe-mitigations">
+                                    <h6>Potential Mitigations</h6>
+                                    <table class="cwe-table cwe-mitigations-table">
+                                        <thead>
+                                            <tr><th>Phase</th><th>Description</th></tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Architecture and Design</td>
+                                                <td>Funnel all access through a single choke point to simplify how users can access a resource. For every access, perform a check to determine if the user has permissions to access the resource.</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="cwe-abstraction">
+                                <b>Abstraction:</b> Base
+                            </div>
+                            <div class="cwe-referenced-by">
+                                <table class="isj-xref-table">
+                                    <tbody>
+                                        <tr>
+                                            <td class="isj-xref-label">Referenced By CVEs:</td>
+                                        </tr><tr>
+                                            <td class="isj-xref-links">
+                                                <a href="#CVE-2026-18577" class="isj-xref-link">CVE-2026-18577</a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="cwe-related">
+                                <b>Related Weaknesses:</b>
+                                <table class="cwe-table cwe-related-table">
+                                    <thead>
+                                        <tr><th>Nature</th><th>CWE</th><th>View</th></tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>ChildOf</td>
+                                            <td>CWE-306
+                                            </td>
+                                            <td>1000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>ChildOf</td>
+                                            <td>CWE-284
+                                            </td>
+                                            <td>1340</td>
+                                        </tr>
+                                        <tr>
+                                            <td>PeerOf</td>
+                                            <td>CWE-420
+                                            </td>
+                                            <td>1000</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                <!-- END CWE CONTENT -->
+                </div>
+                <!-- SIDEBAR CONTENT -->
+                <div class="col-md-3 report-col-3"><!-- BY VENDOR -->
+                    <div class=" sidebar-table">
+                        <div class="label">By Vendor</div>
+                        <table class="table table-hover">
+                            <thead><tr><th>Vendor</th><th>Count</th></tr></thead>
+                            <tbody>
+                                <tr><td>N-able</td><td>1</td></tr>
+                                <tr><td>Cisco</td><td>1</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- END BY VENDOR --><!-- BY DATE ADDED -->
+                    <div class=" sidebar-table">
+                        <div class="label">By Date Added</div>
+                        <table class="table table-hover">
+                            <thead><tr><th>Date Added</th><th>Count</th></tr></thead>
+                            <tbody>
+                                <tr><td>2026-08-03</td><td>1</td></tr>
+                                <tr><td>2026-07-29</td><td>1</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- END BY DATE ADDED -->
+                </div>
+                <!-- END SIDEBAR CONTENT -->
+            </div>
+           <!-- END LAYOUT -->
+        </div>
+    </div>
+</div>
